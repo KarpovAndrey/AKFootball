@@ -1,0 +1,26 @@
+//
+//  AKFootballProjectPrefix.pch
+//  AKFootball
+//
+//  Created by Admin on 29.06.16.
+//  Copyright © 2016 Karpov Andrey. All rights reserved.
+//
+
+#ifndef AKFootballProjectPrefix_pch
+#define AKFootballProjectPrefix_pch
+
+#import "AKMacroIOS.h"
+#import "AKMacroObjC.h"
+#import "UIViewController+AKCategory.h"
+#import "CGGeometry+AKCategory.h"
+#import "NSString+AKExtensions.h"
+#import "UIWindow+AKCategory.h"
+#import "UITableView+AKCategory.h"
+#import "UINib+AKCategory.h"
+#import "NSFileManager+AKCategory.h"
+#import "NSBundle+AKCategory.h"
+#import "UINavigationController+AKCategory.h"
+#import "UICollectionView+AKCategory.h"
+
+
+#endif /* AKFootballProjectPrefix_pch */

@@ -7,25 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84BEC03F1D23D300008E43E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC03E1D23D300008E43E5 /* main.m */; };
-		84BEC0421D23D300008E43E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0411D23D300008E43E5 /* AppDelegate.m */; };
-		84BEC0451D23D300008E43E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0441D23D300008E43E5 /* ViewController.m */; };
-		84BEC0481D23D300008E43E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0461D23D300008E43E5 /* Main.storyboard */; };
-		84BEC04A1D23D300008E43E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0491D23D300008E43E5 /* Assets.xcassets */; };
-		84BEC04D1D23D300008E43E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC04B1D23D300008E43E5 /* LaunchScreen.storyboard */; };
+		4E4A13F179BBA67B103596BB /* libPods-AKFootball.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72AC836A2541D7B05226C64 /* libPods-AKFootball.a */; };
+		84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0581D23DA60008E43E5 /* AKAlphabet.m */; };
+		84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */; };
+		84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */; };
+		84BEC0D21D23DA60008E43E5 /* AKStringAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05F1D23DA60008E43E5 /* AKStringAlphabet.m */; };
+		84BEC0D31D23DA60008E43E5 /* AKDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0621D23DA60008E43E5 /* AKDispatch.m */; };
+		84BEC0D41D23DA60008E43E5 /* AKObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0651D23DA60008E43E5 /* AKObserver.m */; };
+		84BEC0D51D23DA60008E43E5 /* AKObserverArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0691D23DA60008E43E5 /* AKObserverArray.m */; };
+		84BEC0D61D23DA60008E43E5 /* AKObserverDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC06C1D23DA60008E43E5 /* AKObserverDictionary.m */; };
+		84BEC0D71D23DA60008E43E5 /* AKObserverObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC06F1D23DA60008E43E5 /* AKObserverObject.m */; };
+		84BEC0D81D23DA60008E43E5 /* CGGeometry+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0731D23DA60008E43E5 /* CGGeometry+AKCategory.m */; };
+		84BEC0D91D23DA60008E43E5 /* NSBundle+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0761D23DA60008E43E5 /* NSBundle+AKCategory.m */; };
+		84BEC0DA1D23DA60008E43E5 /* NSFileManager+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0791D23DA60008E43E5 /* NSFileManager+AKCategory.m */; };
+		84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC07C1D23DA60008E43E5 /* NSObject+AKExtensions.m */; };
+		84BEC0DC1D23DA60008E43E5 /* NSString+AKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC07F1D23DA60008E43E5 /* NSString+AKExtensions.m */; };
+		84BEC0DD1D23DA60008E43E5 /* UICollectionView+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0821D23DA60008E43E5 /* UICollectionView+AKCategory.m */; };
+		84BEC0DE1D23DA60008E43E5 /* UINavigationController+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0851D23DA60008E43E5 /* UINavigationController+AKCategory.m */; };
+		84BEC0DF1D23DA60008E43E5 /* UINib+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0881D23DA60008E43E5 /* UINib+AKCategory.m */; };
+		84BEC0E01D23DA60008E43E5 /* UITableView+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC08B1D23DA60008E43E5 /* UITableView+AKCategory.m */; };
+		84BEC0E11D23DA60008E43E5 /* UIViewController+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC08E1D23DA60008E43E5 /* UIViewController+AKCategory.m */; };
+		84BEC0E21D23DA60008E43E5 /* UIWindow+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0911D23DA60008E43E5 /* UIWindow+AKCategory.m */; };
+		84BEC0E31D23DA60008E43E5 /* AKArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0981D23DA60008E43E5 /* AKArrayModel.m */; };
+		84BEC0E41D23DA60008E43E5 /* AKArrayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC09B1D23DA60008E43E5 /* AKArrayManager.m */; };
+		84BEC0E51D23DA60008E43E5 /* AKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC09E1D23DA60008E43E5 /* AKModel.m */; };
+		84BEC0E61D23DA60008E43E5 /* AKSharedCacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0A11D23DA60008E43E5 /* AKSharedCacheModel.m */; };
+		84BEC0E71D23DA60008E43E5 /* AKStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0A41D23DA60008E43E5 /* AKStateModel.m */; };
+		84BEC0E81D23DA60008E43E5 /* AKStringModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0A71D23DA60008E43E5 /* AKStringModel.m */; };
+		84BEC0E91D23DA60008E43E5 /* AKImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0AC1D23DA60008E43E5 /* AKImageModel.m */; };
+		84BEC0EA1D23DA60008E43E5 /* AKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0AE1D23DA60008E43E5 /* AKImageView.m */; };
+		84BEC0EB1D23DA60008E43E5 /* AKUserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0B11D23DA60008E43E5 /* AKUserViewCell.m */; };
+		84BEC0EC1D23DA60008E43E5 /* AKUserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0B21D23DA60008E43E5 /* AKUserViewCell.xib */; };
+		84BEC0ED1D23DA60008E43E5 /* AKUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0B61D23DA60008E43E5 /* AKUserView.m */; };
+		84BEC0EE1D23DA60008E43E5 /* AKUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0B81D23DA60008E43E5 /* AKUserViewController.m */; };
+		84BEC0EF1D23DA60008E43E5 /* AKUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0B91D23DA60008E43E5 /* AKUserViewController.xib */; };
+		84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0BD1D23DA60008E43E5 /* AKLoadingView.m */; };
+		84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0BE1D23DA60008E43E5 /* AKLoadingView.xib */; };
+		84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0C01D23DA60008E43E5 /* AKView.m */; };
+		84BEC0F31D23DA60008E43E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0C31D23DA60008E43E5 /* ViewController.m */; };
+		84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0C81D23DA60008E43E5 /* Assets.xcassets */; };
+		84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0C91D23DA60008E43E5 /* LaunchScreen.storyboard */; };
+		84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0CB1D23DA60008E43E5 /* Main.storyboard */; };
+		84BEC0F91D23DA60008E43E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0CE1D23DA60008E43E5 /* main.m */; };
+		84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031C4257E0310E7DB1AB3400 /* Pods-AKFootball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKFootball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball.debug.xcconfig"; sourceTree = "<group>"; };
 		84BEC03A1D23D300008E43E5 /* AKFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84BEC03E1D23D300008E43E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84BEC0401D23D300008E43E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		84BEC0411D23D300008E43E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84BEC0431D23D300008E43E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84BEC0441D23D300008E43E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		84BEC0471D23D300008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84BEC0491D23D300008E43E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84BEC04C1D23D300008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84BEC04E1D23D300008E43E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BEC0571D23DA60008E43E5 /* AKAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAlphabet.h; sourceTree = "<group>"; };
+		84BEC0581D23DA60008E43E5 /* AKAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAlphabet.m; sourceTree = "<group>"; };
+		84BEC05A1D23DA60008E43E5 /* AKClusterAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKClusterAlphabet.h; sourceTree = "<group>"; };
+		84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKClusterAlphabet.m; sourceTree = "<group>"; };
+		84BEC05C1D23DA60008E43E5 /* AKRangeAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRangeAlphabet.h; sourceTree = "<group>"; };
+		84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRangeAlphabet.m; sourceTree = "<group>"; };
+		84BEC05E1D23DA60008E43E5 /* AKStringAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKStringAlphabet.h; sourceTree = "<group>"; };
+		84BEC05F1D23DA60008E43E5 /* AKStringAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKStringAlphabet.m; sourceTree = "<group>"; };
+		84BEC0611D23DA60008E43E5 /* AKDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDispatch.h; sourceTree = "<group>"; };
+		84BEC0621D23DA60008E43E5 /* AKDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDispatch.m; sourceTree = "<group>"; };
+		84BEC0641D23DA60008E43E5 /* AKObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKObserver.h; sourceTree = "<group>"; };
+		84BEC0651D23DA60008E43E5 /* AKObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKObserver.m; sourceTree = "<group>"; };
+		84BEC0681D23DA60008E43E5 /* AKObserverArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKObserverArray.h; sourceTree = "<group>"; };
+		84BEC0691D23DA60008E43E5 /* AKObserverArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKObserverArray.m; sourceTree = "<group>"; };
+		84BEC06B1D23DA60008E43E5 /* AKObserverDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKObserverDictionary.h; sourceTree = "<group>"; };
+		84BEC06C1D23DA60008E43E5 /* AKObserverDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKObserverDictionary.m; sourceTree = "<group>"; };
+		84BEC06E1D23DA60008E43E5 /* AKObserverObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKObserverObject.h; sourceTree = "<group>"; };
+		84BEC06F1D23DA60008E43E5 /* AKObserverObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKObserverObject.m; sourceTree = "<group>"; };
+		84BEC0721D23DA60008E43E5 /* CGGeometry+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0731D23DA60008E43E5 /* CGGeometry+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0751D23DA60008E43E5 /* NSBundle+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0761D23DA60008E43E5 /* NSBundle+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0781D23DA60008E43E5 /* NSFileManager+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0791D23DA60008E43E5 /* NSFileManager+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC07B1D23DA60008E43E5 /* NSObject+AKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AKExtensions.h"; sourceTree = "<group>"; };
+		84BEC07C1D23DA60008E43E5 /* NSObject+AKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AKExtensions.m"; sourceTree = "<group>"; };
+		84BEC07E1D23DA60008E43E5 /* NSString+AKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AKExtensions.h"; sourceTree = "<group>"; };
+		84BEC07F1D23DA60008E43E5 /* NSString+AKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AKExtensions.m"; sourceTree = "<group>"; };
+		84BEC0811D23DA60008E43E5 /* UICollectionView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0821D23DA60008E43E5 /* UICollectionView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0841D23DA60008E43E5 /* UINavigationController+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0851D23DA60008E43E5 /* UINavigationController+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0871D23DA60008E43E5 /* UINib+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINib+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0881D23DA60008E43E5 /* UINib+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINib+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC08A1D23DA60008E43E5 /* UITableView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC08B1D23DA60008E43E5 /* UITableView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC08D1D23DA60008E43E5 /* UIViewController+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC08E1D23DA60008E43E5 /* UIViewController+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0901D23DA60008E43E5 /* UIWindow+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+AKCategory.h"; sourceTree = "<group>"; };
+		84BEC0911D23DA60008E43E5 /* UIWindow+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+AKCategory.m"; sourceTree = "<group>"; };
+		84BEC0931D23DA60008E43E5 /* AKMacroIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMacroIOS.h; sourceTree = "<group>"; };
+		84BEC0941D23DA60008E43E5 /* AKMacroObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMacroObjC.h; sourceTree = "<group>"; };
+		84BEC0971D23DA60008E43E5 /* AKArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKArrayModel.h; sourceTree = "<group>"; };
+		84BEC0981D23DA60008E43E5 /* AKArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKArrayModel.m; sourceTree = "<group>"; };
+		84BEC09A1D23DA60008E43E5 /* AKArrayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKArrayManager.h; sourceTree = "<group>"; };
+		84BEC09B1D23DA60008E43E5 /* AKArrayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKArrayManager.m; sourceTree = "<group>"; };
+		84BEC09D1D23DA60008E43E5 /* AKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKModel.h; sourceTree = "<group>"; };
+		84BEC09E1D23DA60008E43E5 /* AKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKModel.m; sourceTree = "<group>"; };
+		84BEC0A01D23DA60008E43E5 /* AKSharedCacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSharedCacheModel.h; sourceTree = "<group>"; };
+		84BEC0A11D23DA60008E43E5 /* AKSharedCacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSharedCacheModel.m; sourceTree = "<group>"; };
+		84BEC0A31D23DA60008E43E5 /* AKStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKStateModel.h; sourceTree = "<group>"; };
+		84BEC0A41D23DA60008E43E5 /* AKStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKStateModel.m; sourceTree = "<group>"; };
+		84BEC0A61D23DA60008E43E5 /* AKStringModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKStringModel.h; sourceTree = "<group>"; };
+		84BEC0A71D23DA60008E43E5 /* AKStringModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKStringModel.m; sourceTree = "<group>"; };
+		84BEC0AB1D23DA60008E43E5 /* AKImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKImageModel.h; sourceTree = "<group>"; };
+		84BEC0AC1D23DA60008E43E5 /* AKImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKImageModel.m; sourceTree = "<group>"; };
+		84BEC0AD1D23DA60008E43E5 /* AKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKImageView.h; sourceTree = "<group>"; };
+		84BEC0AE1D23DA60008E43E5 /* AKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKImageView.m; sourceTree = "<group>"; };
+		84BEC0B01D23DA60008E43E5 /* AKUserViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKUserViewCell.h; sourceTree = "<group>"; };
+		84BEC0B11D23DA60008E43E5 /* AKUserViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKUserViewCell.m; sourceTree = "<group>"; };
+		84BEC0B21D23DA60008E43E5 /* AKUserViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKUserViewCell.xib; sourceTree = "<group>"; };
+		84BEC0B51D23DA60008E43E5 /* AKUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKUserView.h; sourceTree = "<group>"; };
+		84BEC0B61D23DA60008E43E5 /* AKUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKUserView.m; sourceTree = "<group>"; };
+		84BEC0B71D23DA60008E43E5 /* AKUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKUserViewController.h; sourceTree = "<group>"; };
+		84BEC0B81D23DA60008E43E5 /* AKUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKUserViewController.m; sourceTree = "<group>"; };
+		84BEC0B91D23DA60008E43E5 /* AKUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKUserViewController.xib; sourceTree = "<group>"; };
+		84BEC0BC1D23DA60008E43E5 /* AKLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLoadingView.h; sourceTree = "<group>"; };
+		84BEC0BD1D23DA60008E43E5 /* AKLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLoadingView.m; sourceTree = "<group>"; };
+		84BEC0BE1D23DA60008E43E5 /* AKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKLoadingView.xib; sourceTree = "<group>"; };
+		84BEC0BF1D23DA60008E43E5 /* AKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKView.h; sourceTree = "<group>"; };
+		84BEC0C01D23DA60008E43E5 /* AKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKView.m; sourceTree = "<group>"; };
+		84BEC0C21D23DA60008E43E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84BEC0C31D23DA60008E43E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84BEC0C81D23DA60008E43E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BEC0CA1D23DA60008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BEC0CC1D23DA60008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BEC0CD1D23DA60008E43E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BEC0CE1D23DA60008E43E5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84BEC0FB1D23DA7D008E43E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84BEC0FF1D23DBA8008E43E5 /* AKFootballProjectPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFootballProjectPrefix.pch; sourceTree = "<group>"; };
+		A8F10CC3C65573CD46A07B05 /* Pods-AKFootball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKFootball.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball.release.xcconfig"; sourceTree = "<group>"; };
+		B72AC836A2541D7B05226C64 /* libPods-AKFootball.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKFootball.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +145,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4A13F179BBA67B103596BB /* libPods-AKFootball.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A407A817F3F9C77A44C4575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				031C4257E0310E7DB1AB3400 /* Pods-AKFootball.debug.xcconfig */,
+				A8F10CC3C65573CD46A07B05 /* Pods-AKFootball.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84BEC0311D23D300008E43E5 = {
 			isa = PBXGroup;
 			children = (
-				84BEC03C1D23D300008E43E5 /* AKFootball */,
+				84BEC0541D23DA60008E43E5 /* AKFootball */,
 				84BEC03B1D23D300008E43E5 /* Products */,
+				5A407A817F3F9C77A44C4575 /* Pods */,
+				E9D230563178911E60355775 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,28 +179,421 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84BEC03C1D23D300008E43E5 /* AKFootball */ = {
+		84BEC0541D23DA60008E43E5 /* AKFootball */ = {
 			isa = PBXGroup;
 			children = (
-				84BEC0401D23D300008E43E5 /* AppDelegate.h */,
-				84BEC0411D23D300008E43E5 /* AppDelegate.m */,
-				84BEC0431D23D300008E43E5 /* ViewController.h */,
-				84BEC0441D23D300008E43E5 /* ViewController.m */,
-				84BEC0461D23D300008E43E5 /* Main.storyboard */,
-				84BEC0491D23D300008E43E5 /* Assets.xcassets */,
-				84BEC04B1D23D300008E43E5 /* LaunchScreen.storyboard */,
-				84BEC04E1D23D300008E43E5 /* Info.plist */,
-				84BEC03D1D23D300008E43E5 /* Supporting Files */,
+				84BEC0551D23DA60008E43E5 /* Library */,
+				84BEC0C11D23DA60008E43E5 /* Source */,
+				84BEC0C41D23DA60008E43E5 /* SupportingFiles */,
 			);
 			path = AKFootball;
 			sourceTree = "<group>";
 		};
-		84BEC03D1D23D300008E43E5 /* Supporting Files */ = {
+		84BEC0551D23DA60008E43E5 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				84BEC03E1D23D300008E43E5 /* main.m */,
+				84BEC0561D23DA60008E43E5 /* AKAlphabet */,
+				84BEC0601D23DA60008E43E5 /* AKDispatch */,
+				84BEC0631D23DA60008E43E5 /* AKObserver */,
+				84BEC0701D23DA60008E43E5 /* Extentions */,
+				84BEC0921D23DA60008E43E5 /* Macro */,
+				84BEC0951D23DA60008E43E5 /* Models */,
+				84BEC0A81D23DA60008E43E5 /* UI */,
 			);
-			name = "Supporting Files";
+			path = Library;
+			sourceTree = "<group>";
+		};
+		84BEC0561D23DA60008E43E5 /* AKAlphabet */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0571D23DA60008E43E5 /* AKAlphabet.h */,
+				84BEC0581D23DA60008E43E5 /* AKAlphabet.m */,
+				84BEC0591D23DA60008E43E5 /* Private */,
+			);
+			path = AKAlphabet;
+			sourceTree = "<group>";
+		};
+		84BEC0591D23DA60008E43E5 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC05A1D23DA60008E43E5 /* AKClusterAlphabet.h */,
+				84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */,
+				84BEC05C1D23DA60008E43E5 /* AKRangeAlphabet.h */,
+				84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */,
+				84BEC05E1D23DA60008E43E5 /* AKStringAlphabet.h */,
+				84BEC05F1D23DA60008E43E5 /* AKStringAlphabet.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		84BEC0601D23DA60008E43E5 /* AKDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0611D23DA60008E43E5 /* AKDispatch.h */,
+				84BEC0621D23DA60008E43E5 /* AKDispatch.m */,
+			);
+			path = AKDispatch;
+			sourceTree = "<group>";
+		};
+		84BEC0631D23DA60008E43E5 /* AKObserver */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0641D23DA60008E43E5 /* AKObserver.h */,
+				84BEC0651D23DA60008E43E5 /* AKObserver.m */,
+				84BEC0661D23DA60008E43E5 /* Private */,
+			);
+			path = AKObserver;
+			sourceTree = "<group>";
+		};
+		84BEC0661D23DA60008E43E5 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0671D23DA60008E43E5 /* AKObserverArray */,
+				84BEC06A1D23DA60008E43E5 /* AKObserverDictionary */,
+				84BEC06D1D23DA60008E43E5 /* AKObserverObject */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		84BEC0671D23DA60008E43E5 /* AKObserverArray */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0681D23DA60008E43E5 /* AKObserverArray.h */,
+				84BEC0691D23DA60008E43E5 /* AKObserverArray.m */,
+			);
+			path = AKObserverArray;
+			sourceTree = "<group>";
+		};
+		84BEC06A1D23DA60008E43E5 /* AKObserverDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC06B1D23DA60008E43E5 /* AKObserverDictionary.h */,
+				84BEC06C1D23DA60008E43E5 /* AKObserverDictionary.m */,
+			);
+			path = AKObserverDictionary;
+			sourceTree = "<group>";
+		};
+		84BEC06D1D23DA60008E43E5 /* AKObserverObject */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC06E1D23DA60008E43E5 /* AKObserverObject.h */,
+				84BEC06F1D23DA60008E43E5 /* AKObserverObject.m */,
+			);
+			path = AKObserverObject;
+			sourceTree = "<group>";
+		};
+		84BEC0701D23DA60008E43E5 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0711D23DA60008E43E5 /* CGGeometry+AKCategory */,
+				84BEC0741D23DA60008E43E5 /* NSBundle+AKCategory */,
+				84BEC0771D23DA60008E43E5 /* NSFileManager+AKCategory */,
+				84BEC07A1D23DA60008E43E5 /* NSObject+AKExtensions */,
+				84BEC07D1D23DA60008E43E5 /* NSString+AKExtensions */,
+				84BEC0801D23DA60008E43E5 /* UICollectionView+AKCategory */,
+				84BEC0831D23DA60008E43E5 /* UINavigationController+AKCategory */,
+				84BEC0861D23DA60008E43E5 /* UINib+AKCategory */,
+				84BEC0891D23DA60008E43E5 /* UITabelView+AKCategory */,
+				84BEC08C1D23DA60008E43E5 /* UIViewController+AKCategory */,
+				84BEC08F1D23DA60008E43E5 /* UIWindow+AKCategory */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		84BEC0711D23DA60008E43E5 /* CGGeometry+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0721D23DA60008E43E5 /* CGGeometry+AKCategory.h */,
+				84BEC0731D23DA60008E43E5 /* CGGeometry+AKCategory.m */,
+			);
+			path = "CGGeometry+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0741D23DA60008E43E5 /* NSBundle+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0751D23DA60008E43E5 /* NSBundle+AKCategory.h */,
+				84BEC0761D23DA60008E43E5 /* NSBundle+AKCategory.m */,
+			);
+			path = "NSBundle+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0771D23DA60008E43E5 /* NSFileManager+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0781D23DA60008E43E5 /* NSFileManager+AKCategory.h */,
+				84BEC0791D23DA60008E43E5 /* NSFileManager+AKCategory.m */,
+			);
+			path = "NSFileManager+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC07A1D23DA60008E43E5 /* NSObject+AKExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC07B1D23DA60008E43E5 /* NSObject+AKExtensions.h */,
+				84BEC07C1D23DA60008E43E5 /* NSObject+AKExtensions.m */,
+			);
+			path = "NSObject+AKExtensions";
+			sourceTree = "<group>";
+		};
+		84BEC07D1D23DA60008E43E5 /* NSString+AKExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC07E1D23DA60008E43E5 /* NSString+AKExtensions.h */,
+				84BEC07F1D23DA60008E43E5 /* NSString+AKExtensions.m */,
+			);
+			path = "NSString+AKExtensions";
+			sourceTree = "<group>";
+		};
+		84BEC0801D23DA60008E43E5 /* UICollectionView+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0811D23DA60008E43E5 /* UICollectionView+AKCategory.h */,
+				84BEC0821D23DA60008E43E5 /* UICollectionView+AKCategory.m */,
+			);
+			path = "UICollectionView+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0831D23DA60008E43E5 /* UINavigationController+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0841D23DA60008E43E5 /* UINavigationController+AKCategory.h */,
+				84BEC0851D23DA60008E43E5 /* UINavigationController+AKCategory.m */,
+			);
+			path = "UINavigationController+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0861D23DA60008E43E5 /* UINib+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0871D23DA60008E43E5 /* UINib+AKCategory.h */,
+				84BEC0881D23DA60008E43E5 /* UINib+AKCategory.m */,
+			);
+			path = "UINib+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0891D23DA60008E43E5 /* UITabelView+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC08A1D23DA60008E43E5 /* UITableView+AKCategory.h */,
+				84BEC08B1D23DA60008E43E5 /* UITableView+AKCategory.m */,
+			);
+			path = "UITabelView+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC08C1D23DA60008E43E5 /* UIViewController+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC08D1D23DA60008E43E5 /* UIViewController+AKCategory.h */,
+				84BEC08E1D23DA60008E43E5 /* UIViewController+AKCategory.m */,
+			);
+			path = "UIViewController+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC08F1D23DA60008E43E5 /* UIWindow+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0901D23DA60008E43E5 /* UIWindow+AKCategory.h */,
+				84BEC0911D23DA60008E43E5 /* UIWindow+AKCategory.m */,
+			);
+			path = "UIWindow+AKCategory";
+			sourceTree = "<group>";
+		};
+		84BEC0921D23DA60008E43E5 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0931D23DA60008E43E5 /* AKMacroIOS.h */,
+				84BEC0941D23DA60008E43E5 /* AKMacroObjC.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		84BEC0951D23DA60008E43E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0961D23DA60008E43E5 /* AKArrayModel */,
+				84BEC09C1D23DA60008E43E5 /* AKModel */,
+				84BEC09F1D23DA60008E43E5 /* AKSharedCacheModel */,
+				84BEC0A21D23DA60008E43E5 /* AKStateModel */,
+				84BEC0A51D23DA60008E43E5 /* AKStringModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84BEC0961D23DA60008E43E5 /* AKArrayModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0971D23DA60008E43E5 /* AKArrayModel.h */,
+				84BEC0981D23DA60008E43E5 /* AKArrayModel.m */,
+				84BEC0991D23DA60008E43E5 /* AKArrayModelManager */,
+			);
+			path = AKArrayModel;
+			sourceTree = "<group>";
+		};
+		84BEC0991D23DA60008E43E5 /* AKArrayModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC09A1D23DA60008E43E5 /* AKArrayManager.h */,
+				84BEC09B1D23DA60008E43E5 /* AKArrayManager.m */,
+			);
+			path = AKArrayModelManager;
+			sourceTree = "<group>";
+		};
+		84BEC09C1D23DA60008E43E5 /* AKModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC09D1D23DA60008E43E5 /* AKModel.h */,
+				84BEC09E1D23DA60008E43E5 /* AKModel.m */,
+			);
+			path = AKModel;
+			sourceTree = "<group>";
+		};
+		84BEC09F1D23DA60008E43E5 /* AKSharedCacheModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0A01D23DA60008E43E5 /* AKSharedCacheModel.h */,
+				84BEC0A11D23DA60008E43E5 /* AKSharedCacheModel.m */,
+			);
+			path = AKSharedCacheModel;
+			sourceTree = "<group>";
+		};
+		84BEC0A21D23DA60008E43E5 /* AKStateModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0A31D23DA60008E43E5 /* AKStateModel.h */,
+				84BEC0A41D23DA60008E43E5 /* AKStateModel.m */,
+			);
+			path = AKStateModel;
+			sourceTree = "<group>";
+		};
+		84BEC0A51D23DA60008E43E5 /* AKStringModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0A61D23DA60008E43E5 /* AKStringModel.h */,
+				84BEC0A71D23DA60008E43E5 /* AKStringModel.m */,
+			);
+			path = AKStringModel;
+			sourceTree = "<group>";
+		};
+		84BEC0A81D23DA60008E43E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0A91D23DA60008E43E5 /* AKImageView */,
+				84BEC0AF1D23DA60008E43E5 /* AKUserViewCell */,
+				84BEC0B31D23DA60008E43E5 /* AKUserViewController */,
+				84BEC0BA1D23DA60008E43E5 /* AKView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84BEC0A91D23DA60008E43E5 /* AKImageView */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0AA1D23DA60008E43E5 /* AKImageModel */,
+				84BEC0AD1D23DA60008E43E5 /* AKImageView.h */,
+				84BEC0AE1D23DA60008E43E5 /* AKImageView.m */,
+			);
+			path = AKImageView;
+			sourceTree = "<group>";
+		};
+		84BEC0AA1D23DA60008E43E5 /* AKImageModel */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0AB1D23DA60008E43E5 /* AKImageModel.h */,
+				84BEC0AC1D23DA60008E43E5 /* AKImageModel.m */,
+			);
+			path = AKImageModel;
+			sourceTree = "<group>";
+		};
+		84BEC0AF1D23DA60008E43E5 /* AKUserViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0B01D23DA60008E43E5 /* AKUserViewCell.h */,
+				84BEC0B11D23DA60008E43E5 /* AKUserViewCell.m */,
+				84BEC0B21D23DA60008E43E5 /* AKUserViewCell.xib */,
+			);
+			path = AKUserViewCell;
+			sourceTree = "<group>";
+		};
+		84BEC0B31D23DA60008E43E5 /* AKUserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0B41D23DA60008E43E5 /* AKUserView */,
+				84BEC0B71D23DA60008E43E5 /* AKUserViewController.h */,
+				84BEC0B81D23DA60008E43E5 /* AKUserViewController.m */,
+				84BEC0B91D23DA60008E43E5 /* AKUserViewController.xib */,
+			);
+			path = AKUserViewController;
+			sourceTree = "<group>";
+		};
+		84BEC0B41D23DA60008E43E5 /* AKUserView */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0B51D23DA60008E43E5 /* AKUserView.h */,
+				84BEC0B61D23DA60008E43E5 /* AKUserView.m */,
+			);
+			path = AKUserView;
+			sourceTree = "<group>";
+		};
+		84BEC0BA1D23DA60008E43E5 /* AKView */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0BB1D23DA60008E43E5 /* AKLoadingView */,
+				84BEC0BF1D23DA60008E43E5 /* AKView.h */,
+				84BEC0C01D23DA60008E43E5 /* AKView.m */,
+			);
+			path = AKView;
+			sourceTree = "<group>";
+		};
+		84BEC0BB1D23DA60008E43E5 /* AKLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0BC1D23DA60008E43E5 /* AKLoadingView.h */,
+				84BEC0BD1D23DA60008E43E5 /* AKLoadingView.m */,
+				84BEC0BE1D23DA60008E43E5 /* AKLoadingView.xib */,
+			);
+			path = AKLoadingView;
+			sourceTree = "<group>";
+		};
+		84BEC0C11D23DA60008E43E5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0C21D23DA60008E43E5 /* ViewController.h */,
+				84BEC0C31D23DA60008E43E5 /* ViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		84BEC0C41D23DA60008E43E5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0FA1D23DA7D008E43E5 /* AppDelegate */,
+				84BEC0C81D23DA60008E43E5 /* Assets.xcassets */,
+				84BEC0C91D23DA60008E43E5 /* LaunchScreen.storyboard */,
+				84BEC0CB1D23DA60008E43E5 /* Main.storyboard */,
+				84BEC0CD1D23DA60008E43E5 /* Info.plist */,
+				84BEC0CE1D23DA60008E43E5 /* main.m */,
+				84BEC0FF1D23DBA8008E43E5 /* AKFootballProjectPrefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		84BEC0FA1D23DA7D008E43E5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84BEC0FB1D23DA7D008E43E5 /* AppDelegate.h */,
+				84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			path = AKAppDelegate;
+			sourceTree = "<group>";
+		};
+		E9D230563178911E60355775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B72AC836A2541D7B05226C64 /* libPods-AKFootball.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +603,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BEC0511D23D300008E43E5 /* Build configuration list for PBXNativeTarget "AKFootball" */;
 			buildPhases = (
+				F6D46D7AFE19DF29EC3DA1A2 /* [CP] Check Pods Manifest.lock */,
 				84BEC0361D23D300008E43E5 /* Sources */,
 				84BEC0371D23D300008E43E5 /* Frameworks */,
 				84BEC0381D23D300008E43E5 /* Resources */,
+				5E01B3FEE36541A484CED403 /* [CP] Embed Pods Frameworks */,
+				5E46D4997224D37DB8C00F08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,42 +656,126 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BEC04D1D23D300008E43E5 /* LaunchScreen.storyboard in Resources */,
-				84BEC04A1D23D300008E43E5 /* Assets.xcassets in Resources */,
-				84BEC0481D23D300008E43E5 /* Main.storyboard in Resources */,
+				84BEC0EC1D23DA60008E43E5 /* AKUserViewCell.xib in Resources */,
+				84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */,
+				84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */,
+				84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */,
+				84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */,
+				84BEC0EF1D23DA60008E43E5 /* AKUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E01B3FEE36541A484CED403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E46D4997224D37DB8C00F08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D46D7AFE19DF29EC3DA1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84BEC0361D23D300008E43E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BEC0451D23D300008E43E5 /* ViewController.m in Sources */,
-				84BEC0421D23D300008E43E5 /* AppDelegate.m in Sources */,
-				84BEC03F1D23D300008E43E5 /* main.m in Sources */,
+				84BEC0F31D23DA60008E43E5 /* ViewController.m in Sources */,
+				84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */,
+				84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */,
+				84BEC0ED1D23DA60008E43E5 /* AKUserView.m in Sources */,
+				84BEC0D81D23DA60008E43E5 /* CGGeometry+AKCategory.m in Sources */,
+				84BEC0DA1D23DA60008E43E5 /* NSFileManager+AKCategory.m in Sources */,
+				84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */,
+				84BEC0D51D23DA60008E43E5 /* AKObserverArray.m in Sources */,
+				84BEC0D21D23DA60008E43E5 /* AKStringAlphabet.m in Sources */,
+				84BEC0E81D23DA60008E43E5 /* AKStringModel.m in Sources */,
+				84BEC0D91D23DA60008E43E5 /* NSBundle+AKCategory.m in Sources */,
+				84BEC0E61D23DA60008E43E5 /* AKSharedCacheModel.m in Sources */,
+				84BEC0DC1D23DA60008E43E5 /* NSString+AKExtensions.m in Sources */,
+				84BEC0D61D23DA60008E43E5 /* AKObserverDictionary.m in Sources */,
+				84BEC0DF1D23DA60008E43E5 /* UINib+AKCategory.m in Sources */,
+				84BEC0EE1D23DA60008E43E5 /* AKUserViewController.m in Sources */,
+				84BEC0DD1D23DA60008E43E5 /* UICollectionView+AKCategory.m in Sources */,
+				84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */,
+				84BEC0D71D23DA60008E43E5 /* AKObserverObject.m in Sources */,
+				84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */,
+				84BEC0D31D23DA60008E43E5 /* AKDispatch.m in Sources */,
+				84BEC0EB1D23DA60008E43E5 /* AKUserViewCell.m in Sources */,
+				84BEC0E31D23DA60008E43E5 /* AKArrayModel.m in Sources */,
+				84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */,
+				84BEC0E11D23DA60008E43E5 /* UIViewController+AKCategory.m in Sources */,
+				84BEC0E51D23DA60008E43E5 /* AKModel.m in Sources */,
+				84BEC0E21D23DA60008E43E5 /* UIWindow+AKCategory.m in Sources */,
+				84BEC0DE1D23DA60008E43E5 /* UINavigationController+AKCategory.m in Sources */,
+				84BEC0E01D23DA60008E43E5 /* UITableView+AKCategory.m in Sources */,
+				84BEC0EA1D23DA60008E43E5 /* AKImageView.m in Sources */,
+				84BEC0E41D23DA60008E43E5 /* AKArrayManager.m in Sources */,
+				84BEC0E91D23DA60008E43E5 /* AKImageModel.m in Sources */,
+				84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */,
+				84BEC0E71D23DA60008E43E5 /* AKStateModel.m in Sources */,
+				84BEC0F91D23DA60008E43E5 /* main.m in Sources */,
+				84BEC0D41D23DA60008E43E5 /* AKObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84BEC0461D23D300008E43E5 /* Main.storyboard */ = {
+		84BEC0C91D23DA60008E43E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84BEC0471D23D300008E43E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84BEC04B1D23D300008E43E5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BEC04C1D23D300008E43E5 /* Base */,
+				84BEC0CA1D23DA60008E43E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84BEC0CB1D23DA60008E43E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BEC0CC1D23DA60008E43E5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,9 +865,12 @@
 		};
 		84BEC0521D23D300008E43E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031C4257E0310E7DB1AB3400 /* Pods-AKFootball.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AKFootball/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AKFootball/SupportingFiles/AKFootballProjectPrefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AKFootball/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AK.AKFootball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +879,12 @@
 		};
 		84BEC0531D23D300008E43E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F10CC3C65573CD46A07B05 /* Pods-AKFootball.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AKFootball/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AKFootball/SupportingFiles/AKFootballProjectPrefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AKFootball/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AK.AKFootball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +910,7 @@
 				84BEC0531D23D300008E43E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
