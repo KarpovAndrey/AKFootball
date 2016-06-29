@@ -44,12 +44,16 @@
 		84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0BD1D23DA60008E43E5 /* AKLoadingView.m */; };
 		84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0BE1D23DA60008E43E5 /* AKLoadingView.xib */; };
 		84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0C01D23DA60008E43E5 /* AKView.m */; };
-		84BEC0F31D23DA60008E43E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0C31D23DA60008E43E5 /* ViewController.m */; };
 		84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0C81D23DA60008E43E5 /* Assets.xcassets */; };
 		84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0C91D23DA60008E43E5 /* LaunchScreen.storyboard */; };
 		84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0CB1D23DA60008E43E5 /* Main.storyboard */; };
 		84BEC0F91D23DA60008E43E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0CE1D23DA60008E43E5 /* main.m */; };
 		84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */; };
+		84E277FB1D24363B00F14BBD /* AKSeasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E277F31D24363B00F14BBD /* AKSeasonsView.m */; };
+		84E277FC1D24363B00F14BBD /* AKSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E277F51D24363B00F14BBD /* AKSeasonsViewController.m */; };
+		84E277FD1D24363B00F14BBD /* AKSeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E277F61D24363B00F14BBD /* AKSeasonsViewController.xib */; };
+		84E277FE1D24363B00F14BBD /* AKSeasonsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E277F91D24363B00F14BBD /* AKSeasonsViewCell.m */; };
+		84E277FF1D24363B00F14BBD /* AKSeasonsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E277FA1D24363B00F14BBD /* AKSeasonsViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,8 +130,6 @@
 		84BEC0BE1D23DA60008E43E5 /* AKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKLoadingView.xib; sourceTree = "<group>"; };
 		84BEC0BF1D23DA60008E43E5 /* AKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKView.h; sourceTree = "<group>"; };
 		84BEC0C01D23DA60008E43E5 /* AKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKView.m; sourceTree = "<group>"; };
-		84BEC0C21D23DA60008E43E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84BEC0C31D23DA60008E43E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84BEC0C81D23DA60008E43E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BEC0CA1D23DA60008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BEC0CC1D23DA60008E43E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 		84BEC0FB1D23DA7D008E43E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84BEC0FF1D23DBA8008E43E5 /* AKFootballProjectPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFootballProjectPrefix.pch; sourceTree = "<group>"; };
+		84E277F21D24363B00F14BBD /* AKSeasonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeasonsView.h; sourceTree = "<group>"; };
+		84E277F31D24363B00F14BBD /* AKSeasonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeasonsView.m; sourceTree = "<group>"; };
+		84E277F41D24363B00F14BBD /* AKSeasonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeasonsViewController.h; sourceTree = "<group>"; };
+		84E277F51D24363B00F14BBD /* AKSeasonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeasonsViewController.m; sourceTree = "<group>"; };
+		84E277F61D24363B00F14BBD /* AKSeasonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKSeasonsViewController.xib; sourceTree = "<group>"; };
+		84E277F81D24363B00F14BBD /* AKSeasonsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeasonsViewCell.h; sourceTree = "<group>"; };
+		84E277F91D24363B00F14BBD /* AKSeasonsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeasonsViewCell.m; sourceTree = "<group>"; };
+		84E277FA1D24363B00F14BBD /* AKSeasonsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKSeasonsViewCell.xib; sourceTree = "<group>"; };
 		A8F10CC3C65573CD46A07B05 /* Pods-AKFootball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKFootball.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball.release.xcconfig"; sourceTree = "<group>"; };
 		B72AC836A2541D7B05226C64 /* libPods-AKFootball.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKFootball.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -558,8 +568,7 @@
 		84BEC0C11D23DA60008E43E5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				84BEC0C21D23DA60008E43E5 /* ViewController.h */,
-				84BEC0C31D23DA60008E43E5 /* ViewController.m */,
+				84E277EF1D24363B00F14BBD /* UI */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -586,6 +595,46 @@
 			);
 			name = AppDelegate;
 			path = AKAppDelegate;
+			sourceTree = "<group>";
+		};
+		84E277EF1D24363B00F14BBD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84E277F01D24363B00F14BBD /* AKSeasonsViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84E277F01D24363B00F14BBD /* AKSeasonsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E277F71D24363B00F14BBD /* AKSeasonsViewCell */,
+				84E277F11D24363B00F14BBD /* AKSeasonsView */,
+				84E277F41D24363B00F14BBD /* AKSeasonsViewController.h */,
+				84E277F51D24363B00F14BBD /* AKSeasonsViewController.m */,
+				84E277F61D24363B00F14BBD /* AKSeasonsViewController.xib */,
+			);
+			path = AKSeasonsViewController;
+			sourceTree = "<group>";
+		};
+		84E277F11D24363B00F14BBD /* AKSeasonsView */ = {
+			isa = PBXGroup;
+			children = (
+				84E277F21D24363B00F14BBD /* AKSeasonsView.h */,
+				84E277F31D24363B00F14BBD /* AKSeasonsView.m */,
+			);
+			path = AKSeasonsView;
+			sourceTree = "<group>";
+		};
+		84E277F71D24363B00F14BBD /* AKSeasonsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84E277F81D24363B00F14BBD /* AKSeasonsViewCell.h */,
+				84E277F91D24363B00F14BBD /* AKSeasonsViewCell.m */,
+				84E277FA1D24363B00F14BBD /* AKSeasonsViewCell.xib */,
+			);
+			name = AKSeasonsViewCell;
+			path = AKSeasonViewCell;
 			sourceTree = "<group>";
 		};
 		E9D230563178911E60355775 /* Frameworks */ = {
@@ -658,8 +707,10 @@
 			files = (
 				84BEC0EC1D23DA60008E43E5 /* AKUserViewCell.xib in Resources */,
 				84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */,
+				84E277FD1D24363B00F14BBD /* AKSeasonsViewController.xib in Resources */,
 				84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */,
 				84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */,
+				84E277FF1D24363B00F14BBD /* AKSeasonsViewCell.xib in Resources */,
 				84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */,
 				84BEC0EF1D23DA60008E43E5 /* AKUserViewController.xib in Resources */,
 			);
@@ -720,10 +771,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BEC0F31D23DA60008E43E5 /* ViewController.m in Sources */,
 				84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */,
 				84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */,
 				84BEC0ED1D23DA60008E43E5 /* AKUserView.m in Sources */,
+				84E277FE1D24363B00F14BBD /* AKSeasonsViewCell.m in Sources */,
 				84BEC0D81D23DA60008E43E5 /* CGGeometry+AKCategory.m in Sources */,
 				84BEC0DA1D23DA60008E43E5 /* NSFileManager+AKCategory.m in Sources */,
 				84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */,
@@ -731,6 +782,7 @@
 				84BEC0D21D23DA60008E43E5 /* AKStringAlphabet.m in Sources */,
 				84BEC0E81D23DA60008E43E5 /* AKStringModel.m in Sources */,
 				84BEC0D91D23DA60008E43E5 /* NSBundle+AKCategory.m in Sources */,
+				84E277FC1D24363B00F14BBD /* AKSeasonsViewController.m in Sources */,
 				84BEC0E61D23DA60008E43E5 /* AKSharedCacheModel.m in Sources */,
 				84BEC0DC1D23DA60008E43E5 /* NSString+AKExtensions.m in Sources */,
 				84BEC0D61D23DA60008E43E5 /* AKObserverDictionary.m in Sources */,
@@ -739,6 +791,7 @@
 				84BEC0DD1D23DA60008E43E5 /* UICollectionView+AKCategory.m in Sources */,
 				84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */,
 				84BEC0D71D23DA60008E43E5 /* AKObserverObject.m in Sources */,
+				84E277FB1D24363B00F14BBD /* AKSeasonsView.m in Sources */,
 				84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */,
 				84BEC0D31D23DA60008E43E5 /* AKDispatch.m in Sources */,
 				84BEC0EB1D23DA60008E43E5 /* AKUserViewCell.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AKSeasonsViewController.h
 //  AKFootball
 //
 //  Created by Admin on 29.06.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AKSeasonsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
-
