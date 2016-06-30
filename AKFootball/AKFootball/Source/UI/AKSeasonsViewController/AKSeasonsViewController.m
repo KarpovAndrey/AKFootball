@@ -10,6 +10,8 @@
 #import "AKSeasonsView.h"
 #import "AKSeasonsViewCell.h"
 
+#import "AKLeaguesViewController.h"
+
 static NSUInteger const kAKYearInterval =   3;
 static NSString * const kAKDateFormat   =   @"yyyy";
 
@@ -63,10 +65,10 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    AKFriendsDetailViewController *controller = [AKFriendsDetailViewController new];
+    AKLeaguesViewController *controller = [AKLeaguesViewController new];
 //    controller.user = self.friends[indexPath.row];
 //    [self performTransition];
-//    [self.navigationController pushViewController:controller animated:YES];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark -

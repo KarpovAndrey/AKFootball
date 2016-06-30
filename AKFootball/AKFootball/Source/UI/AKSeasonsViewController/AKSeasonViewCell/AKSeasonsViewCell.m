@@ -13,8 +13,9 @@
 #pragma mark -
 #pragma mark Public
 
-- (void)fillWithModel:(NSString *)string {
-    self.cellLabel.text = [NSString stringWithFormat:@"SEASON %@ YEAR", string];
+- (void)fillWithModel:(NSString *)year {
+    self.cellLabel.text = [NSString stringWithFormat:@"SEASON OF %@ YEAR", year];
+    //NEED TO FIX PROBLEM WITH STRINGS
 }
 
 @end

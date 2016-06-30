@@ -49,6 +49,13 @@
 		84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BEC0CB1D23DA60008E43E5 /* Main.storyboard */; };
 		84BEC0F91D23DA60008E43E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0CE1D23DA60008E43E5 /* main.m */; };
 		84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */; };
+		84E0A7581D2473EE00B86C93 /* AKLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A7561D2473EE00B86C93 /* AKLeaguesViewController.m */; };
+		84E0A7591D2473EE00B86C93 /* AKLeaguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0A7571D2473EE00B86C93 /* AKLeaguesViewController.xib */; };
+		84E0A75D1D2528E900B86C93 /* AKCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A75C1D2528E900B86C93 /* AKCustomViewController.m */; };
+		84E0A7611D252B0100B86C93 /* UIBarButtonItem+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A7601D252B0100B86C93 /* UIBarButtonItem+AKCategory.m */; };
+		84E0A7651D25416200B86C93 /* AKLeaguesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A7641D25416200B86C93 /* AKLeaguesView.m */; };
+		84E0A76A1D254C9400B86C93 /* AKLeaguesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A7681D254C9400B86C93 /* AKLeaguesViewCell.m */; };
+		84E0A76B1D254C9400B86C93 /* AKLeaguesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0A7691D254C9400B86C93 /* AKLeaguesViewCell.xib */; };
 		84E277FB1D24363B00F14BBD /* AKSeasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E277F31D24363B00F14BBD /* AKSeasonsView.m */; };
 		84E277FC1D24363B00F14BBD /* AKSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E277F51D24363B00F14BBD /* AKSeasonsViewController.m */; };
 		84E277FD1D24363B00F14BBD /* AKSeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E277F61D24363B00F14BBD /* AKSeasonsViewController.xib */; };
@@ -138,6 +145,18 @@
 		84BEC0FB1D23DA7D008E43E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84BEC0FC1D23DA7D008E43E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84BEC0FF1D23DBA8008E43E5 /* AKFootballProjectPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFootballProjectPrefix.pch; sourceTree = "<group>"; };
+		84E0A7551D2473EE00B86C93 /* AKLeaguesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLeaguesViewController.h; sourceTree = "<group>"; };
+		84E0A7561D2473EE00B86C93 /* AKLeaguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLeaguesViewController.m; sourceTree = "<group>"; };
+		84E0A7571D2473EE00B86C93 /* AKLeaguesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKLeaguesViewController.xib; sourceTree = "<group>"; };
+		84E0A75B1D2528E900B86C93 /* AKCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKCustomViewController.h; sourceTree = "<group>"; };
+		84E0A75C1D2528E900B86C93 /* AKCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKCustomViewController.m; sourceTree = "<group>"; };
+		84E0A75F1D252B0100B86C93 /* UIBarButtonItem+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AKCategory.h"; sourceTree = "<group>"; };
+		84E0A7601D252B0100B86C93 /* UIBarButtonItem+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AKCategory.m"; sourceTree = "<group>"; };
+		84E0A7631D25416200B86C93 /* AKLeaguesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLeaguesView.h; sourceTree = "<group>"; };
+		84E0A7641D25416200B86C93 /* AKLeaguesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLeaguesView.m; sourceTree = "<group>"; };
+		84E0A7671D254C9400B86C93 /* AKLeaguesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLeaguesViewCell.h; sourceTree = "<group>"; };
+		84E0A7681D254C9400B86C93 /* AKLeaguesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLeaguesViewCell.m; sourceTree = "<group>"; };
+		84E0A7691D254C9400B86C93 /* AKLeaguesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKLeaguesViewCell.xib; sourceTree = "<group>"; };
 		84E277F21D24363B00F14BBD /* AKSeasonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeasonsView.h; sourceTree = "<group>"; };
 		84E277F31D24363B00F14BBD /* AKSeasonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeasonsView.m; sourceTree = "<group>"; };
 		84E277F41D24363B00F14BBD /* AKSeasonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeasonsViewController.h; sourceTree = "<group>"; };
@@ -295,6 +314,7 @@
 		84BEC0701D23DA60008E43E5 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				84E0A75E1D252AF500B86C93 /* UIBarButtonItem+AKCategory */,
 				84BEC0711D23DA60008E43E5 /* CGGeometry+AKCategory */,
 				84BEC0741D23DA60008E43E5 /* NSBundle+AKCategory */,
 				84BEC0771D23DA60008E43E5 /* NSFileManager+AKCategory */,
@@ -597,9 +617,61 @@
 			path = AKAppDelegate;
 			sourceTree = "<group>";
 		};
+		84E0A7541D2473D400B86C93 /* AKLeaguesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A7661D254C9400B86C93 /* AKLeaguesViewCell */,
+				84E0A7621D25414D00B86C93 /* AKLeaguesView */,
+				84E0A7551D2473EE00B86C93 /* AKLeaguesViewController.h */,
+				84E0A7561D2473EE00B86C93 /* AKLeaguesViewController.m */,
+				84E0A7571D2473EE00B86C93 /* AKLeaguesViewController.xib */,
+			);
+			path = AKLeaguesViewController;
+			sourceTree = "<group>";
+		};
+		84E0A75A1D2528E900B86C93 /* AKCustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A75B1D2528E900B86C93 /* AKCustomViewController.h */,
+				84E0A75C1D2528E900B86C93 /* AKCustomViewController.m */,
+			);
+			path = AKCustomViewController;
+			sourceTree = "<group>";
+		};
+		84E0A75E1D252AF500B86C93 /* UIBarButtonItem+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A75F1D252B0100B86C93 /* UIBarButtonItem+AKCategory.h */,
+				84E0A7601D252B0100B86C93 /* UIBarButtonItem+AKCategory.m */,
+			);
+			path = "UIBarButtonItem+AKCategory";
+			sourceTree = "<group>";
+		};
+		84E0A7621D25414D00B86C93 /* AKLeaguesView */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A7631D25416200B86C93 /* AKLeaguesView.h */,
+				84E0A7641D25416200B86C93 /* AKLeaguesView.m */,
+			);
+			path = AKLeaguesView;
+			sourceTree = "<group>";
+		};
+		84E0A7661D254C9400B86C93 /* AKLeaguesViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A7671D254C9400B86C93 /* AKLeaguesViewCell.h */,
+				84E0A7681D254C9400B86C93 /* AKLeaguesViewCell.m */,
+				84E0A7691D254C9400B86C93 /* AKLeaguesViewCell.xib */,
+			);
+			name = AKLeaguesViewCell;
+			path = AKSeasonViewCell;
+			sourceTree = "<group>";
+		};
 		84E277EF1D24363B00F14BBD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				84E0A75A1D2528E900B86C93 /* AKCustomViewController */,
+				84E0A7541D2473D400B86C93 /* AKLeaguesViewController */,
 				84E277F01D24363B00F14BBD /* AKSeasonsViewController */,
 			);
 			path = UI;
@@ -706,7 +778,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BEC0EC1D23DA60008E43E5 /* AKUserViewCell.xib in Resources */,
+				84E0A7591D2473EE00B86C93 /* AKLeaguesViewController.xib in Resources */,
 				84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */,
+				84E0A76B1D254C9400B86C93 /* AKLeaguesViewCell.xib in Resources */,
 				84E277FD1D24363B00F14BBD /* AKSeasonsViewController.xib in Resources */,
 				84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */,
 				84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */,
@@ -772,10 +846,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */,
+				84E0A75D1D2528E900B86C93 /* AKCustomViewController.m in Sources */,
 				84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */,
 				84BEC0ED1D23DA60008E43E5 /* AKUserView.m in Sources */,
 				84E277FE1D24363B00F14BBD /* AKSeasonsViewCell.m in Sources */,
 				84BEC0D81D23DA60008E43E5 /* CGGeometry+AKCategory.m in Sources */,
+				84E0A76A1D254C9400B86C93 /* AKLeaguesViewCell.m in Sources */,
 				84BEC0DA1D23DA60008E43E5 /* NSFileManager+AKCategory.m in Sources */,
 				84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */,
 				84BEC0D51D23DA60008E43E5 /* AKObserverArray.m in Sources */,
@@ -785,6 +861,7 @@
 				84E277FC1D24363B00F14BBD /* AKSeasonsViewController.m in Sources */,
 				84BEC0E61D23DA60008E43E5 /* AKSharedCacheModel.m in Sources */,
 				84BEC0DC1D23DA60008E43E5 /* NSString+AKExtensions.m in Sources */,
+				84E0A7581D2473EE00B86C93 /* AKLeaguesViewController.m in Sources */,
 				84BEC0D61D23DA60008E43E5 /* AKObserverDictionary.m in Sources */,
 				84BEC0DF1D23DA60008E43E5 /* UINib+AKCategory.m in Sources */,
 				84BEC0EE1D23DA60008E43E5 /* AKUserViewController.m in Sources */,
@@ -792,6 +869,7 @@
 				84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */,
 				84BEC0D71D23DA60008E43E5 /* AKObserverObject.m in Sources */,
 				84E277FB1D24363B00F14BBD /* AKSeasonsView.m in Sources */,
+				84E0A7651D25416200B86C93 /* AKLeaguesView.m in Sources */,
 				84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */,
 				84BEC0D31D23DA60008E43E5 /* AKDispatch.m in Sources */,
 				84BEC0EB1D23DA60008E43E5 /* AKUserViewCell.m in Sources */,
@@ -801,6 +879,7 @@
 				84BEC0E51D23DA60008E43E5 /* AKModel.m in Sources */,
 				84BEC0E21D23DA60008E43E5 /* UIWindow+AKCategory.m in Sources */,
 				84BEC0DE1D23DA60008E43E5 /* UINavigationController+AKCategory.m in Sources */,
+				84E0A7611D252B0100B86C93 /* UIBarButtonItem+AKCategory.m in Sources */,
 				84BEC0E01D23DA60008E43E5 /* UITableView+AKCategory.m in Sources */,
 				84BEC0EA1D23DA60008E43E5 /* AKImageView.m in Sources */,
 				84BEC0E41D23DA60008E43E5 /* AKArrayManager.m in Sources */,

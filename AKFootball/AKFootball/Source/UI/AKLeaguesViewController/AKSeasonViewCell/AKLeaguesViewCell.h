@@ -1,5 +1,5 @@
 //
-//  AKSeasonsViewCell.h
+//  AKLeaguesViewCell.h
 //  AKFootball
 //
 //  Created by Admin on 29.06.16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AKSeasonsViewCell : UITableViewCell
+@interface AKLeaguesViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel        *cellLabel;
 
 - (void)fillWithModel:(NSString *)year;
