@@ -6,24 +6,24 @@
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
-//#import "IDPActiveRecordKit.h"
+#import "IDPActiveRecordKit.h"
 
 #import "AppDelegate.h"
 #import "AKSeasonsViewController.h"
 
-//static NSString * const kAKMomName = @"AKUserModel";
+static NSString * const kAKMomName = @"AKLeague";
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [IDPCoreDataManager sharedManagerWithMomName:kAKMomName];
-    
     UIWindow *window = [UIWindow window];
     self.window = window;
     
     AKSeasonsViewController *viewController = [AKSeasonsViewController new];
     UINavigationController *controller = [[UINavigationController alloc]
                                           initWithRootViewController:viewController];
+    
+    [IDPCoreDataManager sharedManagerWithMomName:kAKMomName];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor grayColor]];
     

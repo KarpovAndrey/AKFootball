@@ -11,15 +11,18 @@
 #import "AKSeasonsViewCell.h"
 
 #import "AKLeaguesViewController.h"
+#import "AKLeague.h"
 
-static NSUInteger const kAKYearInterval =   3;
+static NSUInteger const kAKYearInterval =   1;
 static NSString * const kAKDateFormat   =   @"yyyy";
 
 @interface AKSeasonsViewController ()
 @property (nonatomic, readonly) AKSeasonsView           *rootView;
 @property (nonatomic, strong)   NSArray                 *yearsArray;
+@property (nonatomic, strong)   UIRefreshControl        *refreshControl;
 
 - (NSArray *)generateYearsArray;
+- (void)refreshTable;
 
 @end
 
@@ -30,24 +33,27 @@ static NSString * const kAKDateFormat   =   @"yyyy";
 
 AKRootViewAndReturnIfNil(AKSeasonsView);
 
-//- (void)setYearsArray:(NSArray *)yearsArray {
-//    if (_yearsArray != yearsArray) {
-//        _yearsArray = yearsArray;
-//    
-//
-//        
-//        _yearsArray = [self generateYearsArray];
-//    }
-//}
-
 #pragma mark -
 #pragma mark View LifeCycle
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+//    UIRefreshControl *refreshControl = [UIRefreshControl new];
+//    [self.rootView.tableView addSubview:refreshControl];
+//    self.refreshControl = refreshControl;
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    [self.rootView.tableView addSubview:refreshControl];
+    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBarHidden = YES;
     self.yearsArray = [self generateYearsArray];
+    [self.refreshControl beginRefreshing];
 }
 
 #pragma mark -
@@ -66,6 +72,8 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AKLeaguesViewController *controller = [AKLeaguesViewController new];
+    NSUInteger year = [self.yearsArray[indexPath.row] integerValue];
+    controller.year = year;
 //    controller.user = self.friends[indexPath.row];
 //    [self performTransition];
     [self.navigationController pushViewController:controller animated:YES];
@@ -85,6 +93,12 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
     }
     
     return [array mutableCopy];
+}
+
+- (void)refreshTable {
+    //TODO: refresh your data
+    [self.rootView.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
 @end

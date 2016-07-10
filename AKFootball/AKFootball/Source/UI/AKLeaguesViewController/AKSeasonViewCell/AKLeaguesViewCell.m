@@ -7,14 +7,15 @@
 //
 
 #import "AKLeaguesViewCell.h"
+#import "AKLeague.h"
 
 @implementation AKLeaguesViewCell
 
 #pragma mark -
 #pragma mark Public
 
-- (void)fillWithModel:(NSString *)year {
-    self.cellLabel.text = [NSString stringWithFormat:@"LEAGUE"];
+- (void)fillWithModel:(AKLeague *)league {
+    self.cellLabel.text = league.name;
 }
 
 @end

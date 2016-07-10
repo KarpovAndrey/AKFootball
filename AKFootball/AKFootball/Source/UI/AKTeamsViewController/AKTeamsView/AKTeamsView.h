@@ -1,14 +1,14 @@
 //
-//  AKLeaguesView.h
+//  AKTeamsView.h
 //  AKFootball
 //
-//  Created by Admin on 30.06.16.
+//  Created by Admin on 01.07.16.
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
 #import "AKView.h"
 
-@interface AKLeaguesView : AKView
+@interface AKTeamsView : AKView
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end

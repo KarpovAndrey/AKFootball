@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 //@class AKUserModel;
-//@class AKContext;
+@class AKContext;
 
 @interface AKCustomViewController : UIViewController
 //@property (nonatomic, strong)       AKUserModel     *user;

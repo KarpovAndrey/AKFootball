@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AKSeasonsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+#import "AKCustomViewController.h"
+
+@interface AKSeasonsViewController : AKCustomViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

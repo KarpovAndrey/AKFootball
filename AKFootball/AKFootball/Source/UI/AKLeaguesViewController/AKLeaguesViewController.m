@@ -9,11 +9,16 @@
 #import "AKLeaguesViewController.h"
 #import "AKLeaguesView.h"
 #import "AKLeaguesViewCell.h"
+#import "AKLeague.h"
+#import "AKLeagueContext.h"
+#import "AKDispatch.h"
 
 static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
 
 @interface AKLeaguesViewController ()
-@property (nonatomic, readonly) AKLeaguesView   *rootView;
+@property (nonatomic, readonly) AKLeaguesView       *rootView;
+@property (nonatomic, strong)   NSArray             *leaguesArray;
+@property (nonatomic, strong)   AKLeagueContext     *context;
 
 @end
 
@@ -22,12 +27,17 @@ static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
 #pragma mark -
 #pragma mark View LifeCycle
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if (self.context.state == kAKModelLoadingState) {
+        [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
+    }
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBarHidden = NO;
-    self.navigationItem.rightBarButtonItem = nil;
-//    ///////////////////////////////
 }
 
 #pragma mark -
@@ -39,24 +49,66 @@ AKRootViewAndReturnIfNil(AKLeaguesView)
     return kAKNavigationItemTitle;
 }
 
+- (void)setYear:(NSUInteger)year {
+    if (_year != year) {
+        _year = year;
+        
+        self.context = [[AKLeagueContext alloc] initWithYear:year];
+    }
+}
+
+- (void)setContext:(AKLeagueContext *)context {
+    if (_context != context) {
+        [_context cancel];
+        _context = context;
+        [_context load];
+        
+        AKWeakify;
+        [_context addHandler:^(id object) {
+            AKStrongifyAndReturnIfNil
+            AKDispatchAsyncOnMainThread(^{
+                [strongSelf objectDidLoadWithObject:object];
+            });
+        }forState:kAKModelLoadedState
+                      object:self];
+        
+        [_context addHandler:^(id object) {
+            AKStrongifyAndReturnIfNil
+            [strongSelf objectDidFailToLoad:object];
+        }forState:kAKModelFailedState
+                      object:self];
+        
+    }
+}
+
 #pragma mark -
 #pragma mark UITableViewDataSource Protocol
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.leaguesArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AKLeaguesViewCell *cell = [tableView dequeueCellFromNibWithClass:[AKLeaguesViewCell class]];
-//    [cell fillWithModel:self.yearsArray[indexPath.row]];
+    [cell fillWithModel:self.leaguesArray[indexPath.row]];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    AKLeaguesViewController *controller = [AKLeaguesViewController new];
-//    //    [self performTransition];
-//    [self.navigationController pushViewController:controller animated:YES];
+#pragma mark -
+#pragma mark Public
+
+- (void)objectDidLoadWithObject:(NSArray *)leagues {
+    self.leaguesArray = leagues;
+    AKLeaguesView *rootView = self.rootView;
+    [rootView.tableView reloadData];
+    [self.rootView removeLoadingViewAnimated:YES];
+}
+
+- (void)objectDidFailToLoad:(NSArray *)leagues {
+    AKLeaguesView *rootView = self.rootView;
+    [rootView.tableView reloadData];
+    [self.rootView removeLoadingViewAnimated:YES];
 }
 
 @end

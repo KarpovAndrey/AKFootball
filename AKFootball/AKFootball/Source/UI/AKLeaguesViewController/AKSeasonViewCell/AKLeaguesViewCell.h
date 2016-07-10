@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class AKLeague;
+
 @interface AKLeaguesViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel        *cellLabel;
 
-- (void)fillWithModel:(NSString *)year;
+- (void)fillWithModel:(AKLeague *)league;
 
 @end

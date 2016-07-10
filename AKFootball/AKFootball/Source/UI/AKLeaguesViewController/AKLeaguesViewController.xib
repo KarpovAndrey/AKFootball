@@ -11,7 +11,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AKLeaguesView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -19,22 +19,29 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SPL-yE-FVv">
-                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <rect key="frame" x="8" y="60" width="359" height="599"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ssE-zF-qFl"/>
+                        <outlet property="delegate" destination="-1" id="3DS-d8-rzl"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Z6A-M3-Iix" secondAttribute="trailing" id="1l7-R2-IJL"/>
-                <constraint firstAttribute="trailing" secondItem="SPL-yE-FVv" secondAttribute="trailing" id="GGi-JZ-GTI"/>
+                <constraint firstAttribute="trailing" secondItem="SPL-yE-FVv" secondAttribute="trailing" constant="8" id="GGi-JZ-GTI"/>
                 <constraint firstItem="Z6A-M3-Iix" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HSx-7d-QqY"/>
-                <constraint firstAttribute="bottom" secondItem="SPL-yE-FVv" secondAttribute="bottom" id="fLe-EM-pPU"/>
+                <constraint firstAttribute="bottom" secondItem="SPL-yE-FVv" secondAttribute="bottom" constant="8" id="fLe-EM-pPU"/>
                 <constraint firstItem="SPL-yE-FVv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="p2d-wz-WLX"/>
                 <constraint firstAttribute="bottom" secondItem="Z6A-M3-Iix" secondAttribute="bottom" id="pbM-jl-KjU"/>
                 <constraint firstItem="Z6A-M3-Iix" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sdY-Li-xKb"/>
-                <constraint firstItem="SPL-yE-FVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wns-Ot-ISu"/>
+                <constraint firstItem="SPL-yE-FVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="wns-Ot-ISu"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="tableView" destination="SPL-yE-FVv" id="4Ew-3b-WJR"/>
+            </connections>
             <point key="canvasLocation" x="270.5" y="402.5"/>
         </view>
     </objects>
