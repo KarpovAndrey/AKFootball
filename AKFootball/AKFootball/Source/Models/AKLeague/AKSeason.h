@@ -1,8 +1,8 @@
 //
-//  AKLeague.h
+//  AKSeason.h
 //  AKFootball
 //
-//  Created by Admin on 07.07.16.
+//  Created by Admin on 10.07.16.
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
@@ -11,14 +11,16 @@
 
 #import "AKManagedObject.h"
 
+@class AKLeague;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AKLeague : AKManagedObject
+@interface AKSeason : AKManagedObject
 
-@property (nonatomic, assign) NSUInteger    teamsCount;
+// Insert code here to declare functionality of your managed object subclass
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "AKLeague+CoreDataProperties.h"
+#import "AKSeason+CoreDataProperties.h"

@@ -9,14 +9,17 @@
 #import "AKModel.h"
 
 @interface AKContext : AKModel
+@property (nonatomic, assign)       NSUInteger          ID;
+@property (nonatomic, readonly)     NSString            *contextURLString;
+@property (nonatomic, readonly)     NSString            *appendingURLString;
 
-@property (nonatomic, readonly)     NSDictionary        *headerFields;
-@property (nonatomic, readonly)     NSString            *requestURLString;
-
-//- (void)cancel;
+- (void)cancel;
+- (instancetype)initWithID:(NSUInteger)ID;
 
 //these methods are called in subclasses
 //you should never call these method directly from outside subclasses
-//- (void)parseData:(NSDictionary *)result;
+- (void)parseData:(NSDictionary *)result;
+- (void)saveObject;
+- (void)loadObject;
 
 @end

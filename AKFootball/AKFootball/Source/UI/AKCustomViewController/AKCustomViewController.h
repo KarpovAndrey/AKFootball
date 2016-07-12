@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-//@class AKUserModel;
 @class AKContext;
 
 @interface AKCustomViewController : UIViewController
 //@property (nonatomic, strong)       AKUserModel     *user;
-//@property (nonatomic, strong)       AKContext       *context;
+@property (nonatomic, strong)       AKContext       *context;
 
 @property (nonatomic, readonly) NSString            *leftButtonImageName;
 @property (nonatomic, readonly) NSString            *rightButtonImageName;
@@ -28,7 +27,7 @@
 
 //these methods are called in subclasses
 //you should never call these method directly from outside subclasses
-- (void)userDidLoadWithObject:(id)object;
-- (void)userDidFailToLoad:(id)object;
+- (void)objectDidLoadWithObject:(id)object;
+- (void)objectDidFailToLoad:(id)object;
 
 @end

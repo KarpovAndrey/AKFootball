@@ -9,6 +9,7 @@
 #import "AKCustomViewController.h"
 #import "AKView.h"
 #import "AKContext.h"
+#import "AKDispatch.h"
 //#import "AKUserModel.h"
 
 static NSString * const kAKNavigationItemTitle      = @"TITLE";
@@ -58,28 +59,30 @@ static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
     return kAKRightBarBattonImageName;
 }
 
-//
-//- (void)setContext:(AKContext *)context {
-//    if (_context != context) {
-//        [_context cancel];
-//        _context = context;
-//        [_context load];
-//
-//        AKWeakify;
-//        [_context addHandler:^(id object) {
-//            AKStrongifyAndReturnIfNil
-//            [strongSelf userDidLoadWithObject:object];
-//        }forState:kAKModelLoadedState
-//                      object:self];
-//        
-//        [_context addHandler:^(id object) {
-//            AKStrongifyAndReturnIfNil
-//            [strongSelf userDidFailToLoad:object];
-//        }forState:kAKModelFailedState
-//                      object:self];
-//        
-//    }
-//}
+- (void)setContext:(AKContext *)context {
+    if (_context != context) {
+        [_context cancel];
+        _context = context;
+        [_context load];
+
+        AKWeakify;
+        [_context addHandler:^(id object) {
+            AKStrongifyAndReturnIfNil
+            AKDispatchAsyncOnMainThread(^{
+                [strongSelf objectDidLoadWithObject:object];
+            });
+        }forState:kAKModelLoadedState
+                      object:self];
+        
+        [_context addHandler:^(id object) {
+            AKStrongifyAndReturnIfNil
+            AKDispatchAsyncOnMainThread(^{
+                [strongSelf objectDidFailToLoad:object];
+            });
+        }forState:kAKModelFailedState
+                      object:self];
+    }
+}
 
 #pragma mark -
 #pragma mark Private
@@ -119,11 +122,11 @@ static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
                                                                       target:self];
 }
 
-- (void)userDidLoadWithObject:(id)object {
+- (void)objectDidLoadWithObject:(id)object {
     
 }
 
-- (void)userDidFailToLoad:(id)object {
+- (void)objectDidFailToLoad:(id)object {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:kAKAllertControllerTitle
                                                                    message:kAKAllertControllerMessage
                                                             preferredStyle:UIAlertControllerStyleAlert];

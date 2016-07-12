@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rjN-CL-1xB">
-                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <rect key="frame" x="5" y="10" width="365" height="657"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Yme-B4-DDm"/>
@@ -26,10 +26,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="rjN-CL-1xB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QPg-hx-5fR"/>
+                <constraint firstItem="rjN-CL-1xB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="QPg-hx-5fR"/>
                 <constraint firstAttribute="bottom" secondItem="rjN-CL-1xB" secondAttribute="bottom" id="bPR-3i-vPc"/>
-                <constraint firstAttribute="trailing" secondItem="rjN-CL-1xB" secondAttribute="trailing" id="cRY-fS-2nR"/>
-                <constraint firstItem="rjN-CL-1xB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="gHI-hc-sIV"/>
+                <constraint firstAttribute="trailing" secondItem="rjN-CL-1xB" secondAttribute="trailing" constant="5" id="cRY-fS-2nR"/>
+                <constraint firstItem="rjN-CL-1xB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="gHI-hc-sIV"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>

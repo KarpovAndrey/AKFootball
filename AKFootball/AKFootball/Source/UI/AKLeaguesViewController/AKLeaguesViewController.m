@@ -9,8 +9,9 @@
 #import "AKLeaguesViewController.h"
 #import "AKLeaguesView.h"
 #import "AKLeaguesViewCell.h"
-#import "AKLeague.h"
-#import "AKLeagueContext.h"
+#import "AKTeamsViewController.h"
+#import "AKSeason.h"
+#import "AKLeaguesContext.h"
 #import "AKDispatch.h"
 
 static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
@@ -18,7 +19,6 @@ static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
 @interface AKLeaguesViewController ()
 @property (nonatomic, readonly) AKLeaguesView       *rootView;
 @property (nonatomic, strong)   NSArray             *leaguesArray;
-@property (nonatomic, strong)   AKLeagueContext     *context;
 
 @end
 
@@ -53,31 +53,7 @@ AKRootViewAndReturnIfNil(AKLeaguesView)
     if (_year != year) {
         _year = year;
         
-        self.context = [[AKLeagueContext alloc] initWithYear:year];
-    }
-}
-
-- (void)setContext:(AKLeagueContext *)context {
-    if (_context != context) {
-        [_context cancel];
-        _context = context;
-        [_context load];
-        
-        AKWeakify;
-        [_context addHandler:^(id object) {
-            AKStrongifyAndReturnIfNil
-            AKDispatchAsyncOnMainThread(^{
-                [strongSelf objectDidLoadWithObject:object];
-            });
-        }forState:kAKModelLoadedState
-                      object:self];
-        
-        [_context addHandler:^(id object) {
-            AKStrongifyAndReturnIfNil
-            [strongSelf objectDidFailToLoad:object];
-        }forState:kAKModelFailedState
-                      object:self];
-        
+        self.context = [[AKLeaguesContext alloc] initWithID:_year];
     }
 }
 
@@ -95,17 +71,26 @@ AKRootViewAndReturnIfNil(AKLeaguesView)
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    AKTeamsViewController *controller = [AKTeamsViewController new];
+    controller.league = self.leaguesArray[indexPath.row];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 #pragma mark -
 #pragma mark Public
 
-- (void)objectDidLoadWithObject:(NSArray *)leagues {
-    self.leaguesArray = leagues;
+- (void)objectDidLoadWithObject:(NSSet *)leagues {
+    self.leaguesArray = [leagues allObjects];
     AKLeaguesView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];
 }
 
-- (void)objectDidFailToLoad:(NSArray *)leagues {
+- (void)objectDidFailToLoad:(NSSet *)leagues {
+    [super objectDidFailToLoad:leagues];
+    self.leaguesArray = [leagues allObjects];
     AKLeaguesView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];

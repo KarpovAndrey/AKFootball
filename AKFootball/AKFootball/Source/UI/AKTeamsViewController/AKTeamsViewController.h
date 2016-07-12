@@ -8,6 +8,10 @@
 
 #import "AKCustomViewController.h"
 
-@interface AKTeamsViewController : AKCustomViewController
+@class AKLeague;
+@class AKTeamContext;
+
+@interface AKTeamsViewController : AKCustomViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong)   AKLeague        *league;
 
 @end

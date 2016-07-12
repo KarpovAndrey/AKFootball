@@ -8,6 +8,17 @@
 
 #import "AKContext.h"
 
+#import "IDPActiveRecordKit.h"
+
+#import "AKTeamContext.h"
+#import "AKLeague.h"
+#import "AKTeam.h"
+#import "AKSeason.h"
+
+#define kAKAuthToken @{@"X-Auth-Token": @"f39e518c66d64efd9443fc5e8cef9c3a"}
+
+static NSString * const kAKHTTPMethod       = @"GET";
+
 @interface AKContext ()
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
 
@@ -15,42 +26,53 @@
 
 @implementation AKContext
 
-//#pragma mark -
-//#pragma mark Private
-//
-//- (void)parseData:(NSDictionary *)result {
-//    
-//}
-//
-//#pragma mark -
-//#pragma mark Public
-//
-//- (void)setupLoad {
-//    NSDictionary *headers = @{@"X-Auth-Token": @"f39e518c66d64efd9443fc5e8cef9c3a"};
-//    
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://api.football-data.org/alpha/soccerseasons/424/teams"]];
-//    
-//    [request setHTTPMethod:@"GET"];
-//    [request setAllHTTPHeaderFields:headers];
-//    
-//    self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request
-//                                                    completionHandler:^(NSData *data,
-//                                                                        NSURLResponse *response,
-//                                                                        NSError *error) {
-//                                                        if (!error) {
-//                                                            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-//                                                            NSLog(@"%@", dictionary);
-//                                                            [self parseData:dictionary];
-//                                                            //    [self.user saveManagedObject];
-//                                                        } else {
-//                                                            NSLog(@"%@", error);
-//                                                            [self setState:kAKModelFailedState withObject:self.object];
-//                                                        }}];
-//    [self.dataTask resume];
-//}
-//
-//- (void)cancel {
-//    [self.dataTask cancel];
-//}
+#pragma mark -
+#pragma mark Initialization & Deallocation
+
+- (instancetype)initWithID:(NSUInteger)ID {
+    return nil;
+}
+
+#pragma mark -
+#pragma mark Private
+
+- (void)parseData:(NSDictionary *)result {
+}
+
+#pragma mark -
+#pragma mark Public
+
+- (void)setupLoad {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:
+                                                                        self.appendingURLString]];
+    
+    [request setHTTPMethod:kAKHTTPMethod];
+    [request setAllHTTPHeaderFields:kAKAuthToken];
+    
+    self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request
+                                                    completionHandler:^(NSData *data,
+                                                                        NSURLResponse *response,
+                                                                        NSError *error) {
+                                                        if (!error) {
+                                                            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                                            [self parseData:result];
+                                                            [self saveObject];
+                                                        } else {
+                                                            [self loadObject];
+                                                        }}];
+    [self.dataTask resume];
+}
+
+- (void)cancel {
+    [self.dataTask cancel];
+}
+
+- (void)saveObject {
+    
+}
+
+- (void)loadObject {
+    
+}
 
 @end

@@ -4,8 +4,24 @@
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKSeason" inverseName="leagues" inverseEntity="AKSeason" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKTeam" inverseName="league" inverseEntity="AKTeam" syncable="YES"/>
+    </entity>
+    <entity name="AKSeason" representedClassName="AKSeason" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="season" inverseEntity="AKLeague" syncable="YES"/>
+    </entity>
+    <entity name="AKTeam" representedClassName="AKTeam" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureURLPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="teams" inverseEntity="AKLeague" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AKLeague" positionX="-9036" positionY="-846" width="117" height="88"/>
+        <element name="AKLeague" positionX="-9180" positionY="-945" width="117" height="118"/>
+        <element name="AKSeason" positionX="-9405" positionY="-936" width="128" height="103"/>
+        <element name="AKTeam" positionX="-8973" positionY="-870" width="128" height="103"/>
     </elements>
 </model>

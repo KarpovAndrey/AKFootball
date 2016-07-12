@@ -1,5 +1,5 @@
 //
-//  AKLeague+CoreDataProperties.m
+//  AKTeam+CoreDataProperties.m
 //  AKFootball
 //
 //  Created by Admin on 12.07.16.
@@ -9,13 +9,12 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "AKLeague+CoreDataProperties.h"
+#import "AKTeam+CoreDataProperties.h"
 
-@implementation AKLeague (CoreDataProperties)
+@implementation AKTeam (CoreDataProperties)
 
 @dynamic name;
-@dynamic year;
-@dynamic season;
-@dynamic teams;
+@dynamic pictureURLPath;
+@dynamic league;
 
 @end

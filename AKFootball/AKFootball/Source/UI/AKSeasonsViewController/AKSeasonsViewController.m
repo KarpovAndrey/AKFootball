@@ -74,8 +74,6 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
     AKLeaguesViewController *controller = [AKLeaguesViewController new];
     NSUInteger year = [self.yearsArray[indexPath.row] integerValue];
     controller.year = year;
-//    controller.user = self.friends[indexPath.row];
-//    [self performTransition];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

@@ -7,7 +7,22 @@
 //
 
 #import "AKLeague.h"
+#import "IDPActiveRecordKit.h"
+
+static NSString * const kAKTeamsCountKey  = @"teamsCount";
 
 @implementation AKLeague
+@dynamic teamsCount;
+
+#pragma mark -
+#pragma mark Accessors
+
+- (void)setTeamsCount:(NSUInteger)teamsCount {
+    [self setCustomValue:[NSNumber numberWithInteger:teamsCount] forKey:kAKTeamsCountKey];
+}
+
+- (NSUInteger)teamsCount {
+    return [[self customValueForKey:kAKTeamsCountKey] integerValue];
+}
 
 @end
