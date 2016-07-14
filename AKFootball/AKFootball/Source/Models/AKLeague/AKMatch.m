@@ -1,14 +1,15 @@
 //
-//  AKLeague.m
+//  AKMatch.m
 //  AKFootball
 //
-//  Created by Admin on 07.07.16.
+//  Created by Admin on 13.07.16.
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
-#import "AKLeague.h"
 #import "IDPActiveRecordKit.h"
 
-@implementation AKLeague
+#import "AKMatch.h"
+
+@implementation AKMatch
 
 @end

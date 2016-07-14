@@ -15,9 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-HM-opV">
-                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-HM-opV">
+                    <rect key="frame" x="3" y="0.0" width="314" height="565"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="separatorColor" red="0.150069114" green="0.15662898610000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Qmc-rG-qCC"/>
                         <outlet property="delegate" destination="-1" id="W8g-3E-drR"/>
@@ -26,10 +27,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="sVg-HM-opV" secondAttribute="trailing" id="GIp-cl-Ap6"/>
-                <constraint firstItem="sVg-HM-opV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RJ2-ea-1eO"/>
-                <constraint firstAttribute="bottom" secondItem="sVg-HM-opV" secondAttribute="bottom" id="rry-Mk-ZEx"/>
-                <constraint firstItem="sVg-HM-opV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="xVu-53-CCQ"/>
+                <constraint firstAttribute="trailing" secondItem="sVg-HM-opV" secondAttribute="trailing" constant="3" id="GIp-cl-Ap6"/>
+                <constraint firstItem="sVg-HM-opV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="3" id="RJ2-ea-1eO"/>
+                <constraint firstAttribute="bottom" secondItem="sVg-HM-opV" secondAttribute="bottom" constant="3" id="rry-Mk-ZEx"/>
+                <constraint firstItem="sVg-HM-opV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xVu-53-CCQ"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>

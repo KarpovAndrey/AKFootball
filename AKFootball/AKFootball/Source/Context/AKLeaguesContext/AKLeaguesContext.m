@@ -28,19 +28,20 @@ static NSString * const kAKHTTPMethod       = @"GET";
 @implementation AKLeaguesContext
 
 #pragma mark -
-#pragma mark Initialization & Deallocation
+#pragma mark Accessors
 
-- (instancetype)initWithID:(NSUInteger)ID {
-    self = [super init];
-    if (self) {
-        self.ID = ID;
-    }
-    
-    return self;
+- (NSString *)contextURLString {
+    return kAKSeasonsURLString;
+}
+
+- (NSString *)appendingURLString {
+    NSString *yearString = [NSString stringWithFormat:@"%li",  self.ID];
+
+    return [kAKSeasonsURLString stringByAppendingString:yearString];
 }
 
 #pragma mark -
-#pragma mark Private
+#pragma mark Public
 
 - (void)parseData:(NSDictionary *)result {
     self.season = [AKSeason objectWithID:self.ID];
@@ -55,9 +56,6 @@ static NSString * const kAKHTTPMethod       = @"GET";
     [self setState:kAKModelLoadedState withObject:self.season.leagues];
 }
 
-#pragma mark -
-#pragma mark Public
-
 - (void)saveObject {
     [self.season saveManagedObject];
 }
@@ -65,16 +63,6 @@ static NSString * const kAKHTTPMethod       = @"GET";
 - (void)loadObject {
     self.season = [AKSeason objectWithID:self.ID];
     [self setState:kAKModelFailedState withObject:self.season.leagues];
-}
-
-- (NSString *)contextURLString {
-    return kAKSeasonsURLString;
-}
-
-- (NSString *)appendingURLString {
-    NSString *yearString = [NSString stringWithFormat:@"%li",  self.ID];
-    NSString *seasonsURLString = [kAKSeasonsURLString stringByAppendingString:yearString];
-    return seasonsURLString;
 }
 
 @end

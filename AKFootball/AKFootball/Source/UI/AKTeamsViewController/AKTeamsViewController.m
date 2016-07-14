@@ -12,6 +12,9 @@
 #import "AKLeague.h"
 #import "AKTeamContext.h"
 #import "AKDispatch.h"
+#import "AKMatchesViewController.h"
+
+static NSString * const kAKNavigationItemTitle = @"TEAMS";
 
 @interface AKTeamsViewController ()
 @property (nonatomic, readonly) AKTeamsView     *rootView;
@@ -34,6 +37,10 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     }
 }
 
+- (NSString *)navigationItemTitle {
+    return kAKNavigationItemTitle;
+}
+
 #pragma mark -
 #pragma mark UITableViewDataSource Protocol
 
@@ -47,13 +54,13 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     
     return cell;
 }
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    AKTeamsViewController *controller = [AKTeamsViewController new];
-//    controller.league = self.leaguesArray[indexPath.row];
-//    
-//    [self.navigationController pushViewController:controller animated:YES];
-//}
+///////////////////////
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    AKMatchesViewController *controller = [AKMatchesViewController new];
+    controller.league = self.league;
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
 
 #pragma mark -
 #pragma mark Public

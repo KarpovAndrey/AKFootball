@@ -14,12 +14,12 @@
 
 - (void)fillWithModel:(AKTeam *)team {
     self.cellLabel.text = team.name;
-    NSString *URLString = team.pictureURLPath;
-    if ([[URLString substringFromIndex:[URLString length] - 3]  isEqual: @"svg"]) {
-        NSLog(@"EQUAL");
-        return;
-    }
-    self.cellImageView.URL = [NSURL URLWithString:team.pictureURLPath];
+//    NSString *URLString = team.pictureURLPath;
+//    if ([[URLString substringFromIndex:[URLString length] - 3]  isEqual: @"svg"]) {
+//        NSLog(@"EQUAL");
+//        return;
+//    }
+//    self.cellImageView.URL = [NSURL URLWithString:team.pictureURLPath];
 }
 
 @end

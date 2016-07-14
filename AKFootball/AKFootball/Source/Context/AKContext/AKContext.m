@@ -26,11 +26,17 @@ static NSString * const kAKHTTPMethod       = @"GET";
 
 @implementation AKContext
 
+
 #pragma mark -
 #pragma mark Initialization & Deallocation
 
 - (instancetype)initWithID:(NSUInteger)ID {
-    return nil;
+    self = [super init];
+    if (self) {
+        self.ID = ID;
+    }
+    
+    return self;
 }
 
 #pragma mark -

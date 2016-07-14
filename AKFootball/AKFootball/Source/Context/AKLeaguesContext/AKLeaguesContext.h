@@ -14,8 +14,6 @@
 @interface AKLeaguesContext : AKContext
 @property (nonatomic, strong)   AKSeason    *season;
 
-- (instancetype)initWithID:(NSUInteger)ID;
-
 - (void)parseData:(NSDictionary *)result;
 
 @end

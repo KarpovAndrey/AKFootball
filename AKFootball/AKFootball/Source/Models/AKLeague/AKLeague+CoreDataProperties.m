@@ -2,7 +2,7 @@
 //  AKLeague+CoreDataProperties.m
 //  AKFootball
 //
-//  Created by Admin on 12.07.16.
+//  Created by Admin on 13.07.16.
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,5 +17,6 @@
 @dynamic year;
 @dynamic season;
 @dynamic teams;
+@dynamic mathes;
 
 @end

@@ -4,8 +4,19 @@
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="mathes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKMatch" inverseName="relationship" inverseEntity="AKMatch" syncable="YES"/>
         <relationship name="season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKSeason" inverseName="leagues" inverseEntity="AKSeason" syncable="YES"/>
         <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKTeam" inverseName="league" inverseEntity="AKTeam" syncable="YES"/>
+    </entity>
+    <entity name="AKMatch" representedClassName="AKMatch" syncable="YES">
+        <attribute name="awayTeam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goalsAwayTeam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="goalsHomeTeam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeTeam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="mathes" inverseEntity="AKLeague" syncable="YES"/>
     </entity>
     <entity name="AKSeason" representedClassName="AKSeason" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -20,8 +31,9 @@
         <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="teams" inverseEntity="AKLeague" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AKLeague" positionX="-9180" positionY="-945" width="117" height="118"/>
-        <element name="AKSeason" positionX="-9405" positionY="-936" width="128" height="103"/>
-        <element name="AKTeam" positionX="-8973" positionY="-870" width="128" height="103"/>
+        <element name="AKLeague" positionX="-9360" positionY="-999" width="117" height="133"/>
+        <element name="AKSeason" positionX="-9353" positionY="-1143" width="128" height="103"/>
+        <element name="AKTeam" positionX="-9119" positionY="-810" width="128" height="103"/>
+        <element name="AKMatch" positionX="-9360" positionY="-810" width="128" height="163"/>
     </elements>
 </model>

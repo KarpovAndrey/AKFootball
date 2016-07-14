@@ -27,20 +27,21 @@ static NSString * const kAKTeamsString      = @"/teams";
 @implementation AKTeamContext
 
 #pragma mark -
-#pragma mark Initialization & Deallocation
+#pragma mark Accessors
 
-- (instancetype)initWithID:(NSUInteger)ID {
-    self = [super init];
-    if (self) {
-        self.league = [AKLeague objectWithID:ID];
-        self.ID = ID;
-    }
-    
-    return self;
+- (NSString *)contextURLString {
+    return kAKLeagueURLString;
+}
+
+- (NSString *)appendingURLString {
+    NSString *teamsURLString = [kAKLeagueURLString stringByAppendingString:
+                                                [NSString stringWithFormat:@"%li", self.ID]];
+
+    return [teamsURLString stringByAppendingString:kAKTeamsString];
 }
 
 #pragma mark -
-#pragma mark Private
+#pragma mark Public
 
 - (void)parseData:(NSDictionary *)result {
     self.league = [AKLeague objectWithID:self.ID];
@@ -64,9 +65,6 @@ static NSString * const kAKTeamsString      = @"/teams";
     [self setState:kAKModelLoadedState withObject:self.league.teams];
 }
 
-#pragma mark -
-#pragma mark Public
-
 - (void)saveObject {
     [self.league saveManagedObject];
 }
@@ -74,16 +72,6 @@ static NSString * const kAKTeamsString      = @"/teams";
 - (void)loadObject {
     self.league = [AKLeague objectWithID:self.league.ID];
     [self setState:kAKModelFailedState withObject:self.league.teams];
-}
-
-- (NSString *)contextURLString {
-    return kAKLeagueURLString;
-}
-
-- (NSString *)appendingURLString {
-    NSString *teamsURLString = [kAKLeagueURLString stringByAppendingString:[NSString stringWithFormat:@"%li", self.ID]];
-    teamsURLString = [teamsURLString stringByAppendingString:kAKTeamsString];
-    return teamsURLString;
 }
 
 @end

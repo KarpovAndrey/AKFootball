@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AKMatchesViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-Zl-GKy" userLabel="Team1">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-xc-XFn" userLabel="Team2">
+                        <rect key="frame" x="180" y="0.0" width="140" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-hE-Jja">
+                        <rect key="frame" x="140" y="0.0" width="40" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="GVV-BP-ZBd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0bV-kg-dao"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dv2-g5-v1g"/>
+                    <constraint firstItem="1Ao-xc-XFn" firstAttribute="leading" secondItem="dW3-hE-Jja" secondAttribute="trailing" id="GdO-op-yIe"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kyc-oZ-z6V"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="leading" secondItem="gtU-Zl-GKy" secondAttribute="trailing" id="OJY-Jj-vHG"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="firstBaseline" secondItem="dW3-hE-Jja" secondAttribute="firstBaseline" id="SeY-nj-x6z"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="VDO-mP-4RN"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ao-xc-XFn" secondAttribute="trailing" id="YwN-Vz-ZKK"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="baseline" secondItem="dW3-hE-Jja" secondAttribute="baseline" id="i0g-DM-D1G"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="firstBaseline" secondItem="1Ao-xc-XFn" secondAttribute="firstBaseline" id="jOB-IO-lR0"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="baseline" secondItem="1Ao-xc-XFn" secondAttribute="baseline" id="twV-gV-PoV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstTeamLabel" destination="gtU-Zl-GKy" id="q1d-MM-A3C"/>
+                <outlet property="resultLabel" destination="dW3-hE-Jja" id="jd2-AK-tzz"/>
+                <outlet property="secongTeamLabel" destination="1Ao-xc-XFn" id="6Oe-1T-YgP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

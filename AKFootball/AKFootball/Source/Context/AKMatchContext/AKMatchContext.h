@@ -1,8 +1,8 @@
 //
-//  AKTeamContext.h
+//  AKMatchContext.h
 //  AKFootball
 //
-//  Created by Admin on 11.07.16.
+//  Created by Admin on 13.07.16.
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
@@ -10,8 +10,10 @@
 
 @class AKLeague;
 
-@interface AKTeamContext : AKContext
+@interface AKMatchContext : AKContext
 @property (nonatomic, strong)   AKLeague     *league;
+
+- (instancetype)initWithID:(NSUInteger)ID;
 
 - (void)parseData:(NSDictionary *)result;
 
