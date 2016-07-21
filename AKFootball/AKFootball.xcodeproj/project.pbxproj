@@ -9,17 +9,26 @@
 /* Begin PBXBuildFile section */
 		4E4A13F179BBA67B103596BB /* libPods-AKFootball.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72AC836A2541D7B05226C64 /* libPods-AKFootball.a */; };
 		843215841D2DAA2100DF9FA3 /* AKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 843215831D2DAA2100DF9FA3 /* AKContext.m */; };
-		843215911D2E5B1E00DF9FA3 /* AKLeague.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8432158F1D2E5B1E00DF9FA3 /* AKLeague.xcdatamodeld */; };
-		843215961D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 843215931D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.m */; };
-		843215971D2E5BE600DF9FA3 /* AKLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 843215951D2E5BE600DF9FA3 /* AKLeague.m */; };
-		8432159B1D2E5C2900DF9FA3 /* AKManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432159A1D2E5C2900DF9FA3 /* AKManagedObject.m */; };
-		843215A01D32319100DF9FA3 /* AKSeason+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432159D1D32319100DF9FA3 /* AKSeason+CoreDataProperties.m */; };
-		843215A11D32319100DF9FA3 /* AKSeason.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432159F1D32319100DF9FA3 /* AKSeason.m */; };
+		84354D431D3F8C5D001DF034 /* AKFootball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84354D2A1D3F8C5D001DF034 /* AKFootball.xcdatamodeld */; };
+		84354D441D3F8C5D001DF034 /* AKLeague+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D2E1D3F8C5D001DF034 /* AKLeague+CoreDataProperties.m */; };
+		84354D451D3F8C5D001DF034 /* AKLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D301D3F8C5D001DF034 /* AKLeague.m */; };
+		84354D461D3F8C5D001DF034 /* AKManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D331D3F8C5D001DF034 /* AKManagedObject.m */; };
+		84354D471D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D361D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m */; };
+		84354D481D3F8C5D001DF034 /* AKMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D381D3F8C5D001DF034 /* AKMatch.m */; };
+		84354D491D3F8C5D001DF034 /* AKSeason+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D3B1D3F8C5D001DF034 /* AKSeason+CoreDataProperties.m */; };
+		84354D4A1D3F8C5D001DF034 /* AKSeason.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D3D1D3F8C5D001DF034 /* AKSeason.m */; };
+		84354D4B1D3F8C5D001DF034 /* AKTeam+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D401D3F8C5D001DF034 /* AKTeam+CoreDataProperties.m */; };
+		84354D4C1D3F8C5D001DF034 /* AKTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354D421D3F8C5D001DF034 /* AKTeam.m */; };
+		843E0E951D3A5DAD00C733C2 /* AKTournamentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0E931D3A5DAD00C733C2 /* AKTournamentViewCell.m */; };
+		843E0E961D3A5DAD00C733C2 /* AKTournamentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843E0E941D3A5DAD00C733C2 /* AKTournamentViewCell.xib */; };
+		843E0E9A1D3A5F9700C733C2 /* AKTournamentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0E991D3A5F9700C733C2 /* AKTournamentContext.m */; };
+		843E0EA11D3CE28400C733C2 /* AKTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */; };
+		843E0EA51D3CE2B900C733C2 /* AKTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */; };
+		843E0EA91D3CE31600C733C2 /* AKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EA81D3CE31600C733C2 /* AKTabBarView.m */; };
+		843E0EAD1D3D5AC800C733C2 /* UIView+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */; };
 		8444DA8C1D364CAA005909BA /* AKMatchesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA8A1D364CAA005909BA /* AKMatchesViewCell.m */; };
 		8444DA8D1D364CAA005909BA /* AKMatchesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */; };
 		8444DA911D3656EA005909BA /* AKMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA901D3656EA005909BA /* AKMatchContext.m */; };
-		8444DA961D36BFAC005909BA /* AKMatch+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA931D36BFAC005909BA /* AKMatch+CoreDataProperties.m */; };
-		8444DA971D36BFAC005909BA /* AKMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA951D36BFAC005909BA /* AKMatch.m */; };
 		84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0581D23DA60008E43E5 /* AKAlphabet.m */; };
 		84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */; };
 		84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */; };
@@ -85,8 +94,6 @@
 		84F0F3BD1D33D402002A8A94 /* AKLeaguesContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0F3BC1D33D402002A8A94 /* AKLeaguesContext.m */; };
 		84F0F3C21D33D60B002A8A94 /* AKTeamsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0F3C01D33D60B002A8A94 /* AKTeamsViewCell.m */; };
 		84F0F3C31D33D60B002A8A94 /* AKTeamsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F0F3C11D33D60B002A8A94 /* AKTeamsViewCell.xib */; };
-		84F0F3C81D33DAD3002A8A94 /* AKTeam+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0F3C51D33DAD3002A8A94 /* AKTeam+CoreDataProperties.m */; };
-		84F0F3C91D33DAD3002A8A94 /* AKTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0F3C71D33DAD3002A8A94 /* AKTeam.m */; };
 		84F0F3CD1D3406BB002A8A94 /* AKTeamContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0F3CC1D3406BB002A8A94 /* AKTeamContext.m */; };
 /* End PBXBuildFile section */
 
@@ -94,26 +101,43 @@
 		031C4257E0310E7DB1AB3400 /* Pods-AKFootball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKFootball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball.debug.xcconfig"; sourceTree = "<group>"; };
 		843215821D2DAA2100DF9FA3 /* AKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKContext.h; sourceTree = "<group>"; };
 		843215831D2DAA2100DF9FA3 /* AKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKContext.m; sourceTree = "<group>"; };
-		843215901D2E5B1E00DF9FA3 /* AKLeague.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AKLeague.xcdatamodel; sourceTree = "<group>"; };
-		843215921D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKLeague+CoreDataProperties.h"; sourceTree = "<group>"; };
-		843215931D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKLeague+CoreDataProperties.m"; sourceTree = "<group>"; };
-		843215941D2E5BE600DF9FA3 /* AKLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLeague.h; sourceTree = "<group>"; };
-		843215951D2E5BE600DF9FA3 /* AKLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLeague.m; sourceTree = "<group>"; };
-		843215991D2E5C2900DF9FA3 /* AKManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKManagedObject.h; sourceTree = "<group>"; };
-		8432159A1D2E5C2900DF9FA3 /* AKManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKManagedObject.m; sourceTree = "<group>"; };
-		8432159C1D32319100DF9FA3 /* AKSeason+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKSeason+CoreDataProperties.h"; sourceTree = "<group>"; };
-		8432159D1D32319100DF9FA3 /* AKSeason+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKSeason+CoreDataProperties.m"; sourceTree = "<group>"; };
-		8432159E1D32319100DF9FA3 /* AKSeason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeason.h; sourceTree = "<group>"; };
-		8432159F1D32319100DF9FA3 /* AKSeason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeason.m; sourceTree = "<group>"; };
+		84354D2B1D3F8C5D001DF034 /* AKFootball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AKFootball.xcdatamodel; sourceTree = "<group>"; };
+		84354D2D1D3F8C5D001DF034 /* AKLeague+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKLeague+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84354D2E1D3F8C5D001DF034 /* AKLeague+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKLeague+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84354D2F1D3F8C5D001DF034 /* AKLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLeague.h; sourceTree = "<group>"; };
+		84354D301D3F8C5D001DF034 /* AKLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLeague.m; sourceTree = "<group>"; };
+		84354D321D3F8C5D001DF034 /* AKManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKManagedObject.h; sourceTree = "<group>"; };
+		84354D331D3F8C5D001DF034 /* AKManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKManagedObject.m; sourceTree = "<group>"; };
+		84354D351D3F8C5D001DF034 /* AKMatch+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKMatch+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84354D361D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKMatch+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84354D371D3F8C5D001DF034 /* AKMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatch.h; sourceTree = "<group>"; };
+		84354D381D3F8C5D001DF034 /* AKMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatch.m; sourceTree = "<group>"; };
+		84354D3A1D3F8C5D001DF034 /* AKSeason+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKSeason+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84354D3B1D3F8C5D001DF034 /* AKSeason+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKSeason+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84354D3C1D3F8C5D001DF034 /* AKSeason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSeason.h; sourceTree = "<group>"; };
+		84354D3D1D3F8C5D001DF034 /* AKSeason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSeason.m; sourceTree = "<group>"; };
+		84354D3F1D3F8C5D001DF034 /* AKTeam+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKTeam+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84354D401D3F8C5D001DF034 /* AKTeam+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKTeam+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84354D411D3F8C5D001DF034 /* AKTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTeam.h; sourceTree = "<group>"; };
+		84354D421D3F8C5D001DF034 /* AKTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTeam.m; sourceTree = "<group>"; };
+		843E0E921D3A5DAD00C733C2 /* AKTournamentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTournamentViewCell.h; sourceTree = "<group>"; };
+		843E0E931D3A5DAD00C733C2 /* AKTournamentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTournamentViewCell.m; sourceTree = "<group>"; };
+		843E0E941D3A5DAD00C733C2 /* AKTournamentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTournamentViewCell.xib; sourceTree = "<group>"; };
+		843E0E981D3A5F9700C733C2 /* AKTournamentContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTournamentContext.h; sourceTree = "<group>"; };
+		843E0E991D3A5F9700C733C2 /* AKTournamentContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTournamentContext.m; sourceTree = "<group>"; };
+		843E0E9D1D3B62D400C733C2 /* AKFootballConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKFootballConstants.h; sourceTree = "<group>"; };
+		843E0E9F1D3CE28400C733C2 /* AKTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarViewController.h; sourceTree = "<group>"; };
+		843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarViewController.m; sourceTree = "<group>"; };
+		843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTabBarViewController.xib; sourceTree = "<group>"; };
+		843E0EA71D3CE31600C733C2 /* AKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarView.h; sourceTree = "<group>"; };
+		843E0EA81D3CE31600C733C2 /* AKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarView.m; sourceTree = "<group>"; };
+		843E0EAB1D3D5AC800C733C2 /* UIView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKCategory.h"; sourceTree = "<group>"; };
+		843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKCategory.m"; sourceTree = "<group>"; };
 		8444DA891D364CAA005909BA /* AKMatchesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatchesViewCell.h; sourceTree = "<group>"; };
 		8444DA8A1D364CAA005909BA /* AKMatchesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatchesViewCell.m; sourceTree = "<group>"; };
 		8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKMatchesViewCell.xib; sourceTree = "<group>"; };
 		8444DA8F1D3656EA005909BA /* AKMatchContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatchContext.h; sourceTree = "<group>"; };
 		8444DA901D3656EA005909BA /* AKMatchContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatchContext.m; sourceTree = "<group>"; };
-		8444DA921D36BFAC005909BA /* AKMatch+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKMatch+CoreDataProperties.h"; sourceTree = "<group>"; };
-		8444DA931D36BFAC005909BA /* AKMatch+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKMatch+CoreDataProperties.m"; sourceTree = "<group>"; };
-		8444DA941D36BFAC005909BA /* AKMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatch.h; sourceTree = "<group>"; };
-		8444DA951D36BFAC005909BA /* AKMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatch.m; sourceTree = "<group>"; };
 		84BEC03A1D23D300008E43E5 /* AKFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BEC0571D23DA60008E43E5 /* AKAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAlphabet.h; sourceTree = "<group>"; };
 		84BEC0581D23DA60008E43E5 /* AKAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAlphabet.m; sourceTree = "<group>"; };
@@ -234,10 +258,6 @@
 		84F0F3BF1D33D60B002A8A94 /* AKTeamsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTeamsViewCell.h; sourceTree = "<group>"; };
 		84F0F3C01D33D60B002A8A94 /* AKTeamsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTeamsViewCell.m; sourceTree = "<group>"; };
 		84F0F3C11D33D60B002A8A94 /* AKTeamsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTeamsViewCell.xib; sourceTree = "<group>"; };
-		84F0F3C41D33DAD3002A8A94 /* AKTeam+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKTeam+CoreDataProperties.h"; sourceTree = "<group>"; };
-		84F0F3C51D33DAD3002A8A94 /* AKTeam+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKTeam+CoreDataProperties.m"; sourceTree = "<group>"; };
-		84F0F3C61D33DAD3002A8A94 /* AKTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTeam.h; sourceTree = "<group>"; };
-		84F0F3C71D33DAD3002A8A94 /* AKTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTeam.m; sourceTree = "<group>"; };
 		84F0F3CB1D3406BB002A8A94 /* AKTeamContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTeamContext.h; sourceTree = "<group>"; };
 		84F0F3CC1D3406BB002A8A94 /* AKTeamContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTeamContext.m; sourceTree = "<group>"; };
 		A8F10CC3C65573CD46A07B05 /* Pods-AKFootball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKFootball.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKFootball/Pods-AKFootball.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,43 +297,123 @@
 		8432158D1D2E5AC800DF9FA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8432158E1D2E5AD900DF9FA3 /* AKLeague */,
+				84354D291D3F8C5D001DF034 /* AKCoreData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8432158E1D2E5AD900DF9FA3 /* AKLeague */ = {
+		84354D291D3F8C5D001DF034 /* AKCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				843215981D2E5C1300DF9FA3 /* AKManagedObject */,
-				8432158F1D2E5B1E00DF9FA3 /* AKLeague.xcdatamodeld */,
-				8444DA921D36BFAC005909BA /* AKMatch+CoreDataProperties.h */,
-				8444DA931D36BFAC005909BA /* AKMatch+CoreDataProperties.m */,
-				8444DA941D36BFAC005909BA /* AKMatch.h */,
-				8444DA951D36BFAC005909BA /* AKMatch.m */,
-				84F0F3C41D33DAD3002A8A94 /* AKTeam+CoreDataProperties.h */,
-				84F0F3C51D33DAD3002A8A94 /* AKTeam+CoreDataProperties.m */,
-				84F0F3C61D33DAD3002A8A94 /* AKTeam.h */,
-				84F0F3C71D33DAD3002A8A94 /* AKTeam.m */,
-				8432159C1D32319100DF9FA3 /* AKSeason+CoreDataProperties.h */,
-				8432159D1D32319100DF9FA3 /* AKSeason+CoreDataProperties.m */,
-				8432159E1D32319100DF9FA3 /* AKSeason.h */,
-				8432159F1D32319100DF9FA3 /* AKSeason.m */,
-				843215921D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.h */,
-				843215931D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.m */,
-				843215941D2E5BE600DF9FA3 /* AKLeague.h */,
-				843215951D2E5BE600DF9FA3 /* AKLeague.m */,
+				84354D2A1D3F8C5D001DF034 /* AKFootball.xcdatamodeld */,
+				84354D2C1D3F8C5D001DF034 /* AKLeague */,
+				84354D311D3F8C5D001DF034 /* AKManagedObject */,
+				84354D341D3F8C5D001DF034 /* AKMatch */,
+				84354D391D3F8C5D001DF034 /* AKSeason */,
+				84354D3E1D3F8C5D001DF034 /* AKTeam */,
+			);
+			path = AKCoreData;
+			sourceTree = "<group>";
+		};
+		84354D2C1D3F8C5D001DF034 /* AKLeague */ = {
+			isa = PBXGroup;
+			children = (
+				84354D2D1D3F8C5D001DF034 /* AKLeague+CoreDataProperties.h */,
+				84354D2E1D3F8C5D001DF034 /* AKLeague+CoreDataProperties.m */,
+				84354D2F1D3F8C5D001DF034 /* AKLeague.h */,
+				84354D301D3F8C5D001DF034 /* AKLeague.m */,
 			);
 			path = AKLeague;
 			sourceTree = "<group>";
 		};
-		843215981D2E5C1300DF9FA3 /* AKManagedObject */ = {
+		84354D311D3F8C5D001DF034 /* AKManagedObject */ = {
 			isa = PBXGroup;
 			children = (
-				843215991D2E5C2900DF9FA3 /* AKManagedObject.h */,
-				8432159A1D2E5C2900DF9FA3 /* AKManagedObject.m */,
+				84354D321D3F8C5D001DF034 /* AKManagedObject.h */,
+				84354D331D3F8C5D001DF034 /* AKManagedObject.m */,
 			);
 			path = AKManagedObject;
+			sourceTree = "<group>";
+		};
+		84354D341D3F8C5D001DF034 /* AKMatch */ = {
+			isa = PBXGroup;
+			children = (
+				84354D351D3F8C5D001DF034 /* AKMatch+CoreDataProperties.h */,
+				84354D361D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m */,
+				84354D371D3F8C5D001DF034 /* AKMatch.h */,
+				84354D381D3F8C5D001DF034 /* AKMatch.m */,
+			);
+			path = AKMatch;
+			sourceTree = "<group>";
+		};
+		84354D391D3F8C5D001DF034 /* AKSeason */ = {
+			isa = PBXGroup;
+			children = (
+				84354D3A1D3F8C5D001DF034 /* AKSeason+CoreDataProperties.h */,
+				84354D3B1D3F8C5D001DF034 /* AKSeason+CoreDataProperties.m */,
+				84354D3C1D3F8C5D001DF034 /* AKSeason.h */,
+				84354D3D1D3F8C5D001DF034 /* AKSeason.m */,
+			);
+			path = AKSeason;
+			sourceTree = "<group>";
+		};
+		84354D3E1D3F8C5D001DF034 /* AKTeam */ = {
+			isa = PBXGroup;
+			children = (
+				84354D3F1D3F8C5D001DF034 /* AKTeam+CoreDataProperties.h */,
+				84354D401D3F8C5D001DF034 /* AKTeam+CoreDataProperties.m */,
+				84354D411D3F8C5D001DF034 /* AKTeam.h */,
+				84354D421D3F8C5D001DF034 /* AKTeam.m */,
+			);
+			path = AKTeam;
+			sourceTree = "<group>";
+		};
+		843E0E911D3A5D8800C733C2 /* AKTournamentViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				843E0E921D3A5DAD00C733C2 /* AKTournamentViewCell.h */,
+				843E0E931D3A5DAD00C733C2 /* AKTournamentViewCell.m */,
+				843E0E941D3A5DAD00C733C2 /* AKTournamentViewCell.xib */,
+			);
+			path = AKTournamentViewCell;
+			sourceTree = "<group>";
+		};
+		843E0E971D3A5F3A00C733C2 /* AKTournamentContext */ = {
+			isa = PBXGroup;
+			children = (
+				843E0E981D3A5F9700C733C2 /* AKTournamentContext.h */,
+				843E0E991D3A5F9700C733C2 /* AKTournamentContext.m */,
+			);
+			path = AKTournamentContext;
+			sourceTree = "<group>";
+		};
+		843E0E9E1D3CE24600C733C2 /* AKTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				843E0EA61D3CE2D200C733C2 /* AKTabBarVIew */,
+				843E0E9F1D3CE28400C733C2 /* AKTabBarViewController.h */,
+				843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */,
+				843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */,
+			);
+			path = AKTabBarViewController;
+			sourceTree = "<group>";
+		};
+		843E0EA61D3CE2D200C733C2 /* AKTabBarVIew */ = {
+			isa = PBXGroup;
+			children = (
+				843E0EA71D3CE31600C733C2 /* AKTabBarView.h */,
+				843E0EA81D3CE31600C733C2 /* AKTabBarView.m */,
+			);
+			path = AKTabBarVIew;
+			sourceTree = "<group>";
+		};
+		843E0EAA1D3D5A6000C733C2 /* UIView+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				843E0EAB1D3D5AC800C733C2 /* UIView+AKCategory.h */,
+				843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */,
+			);
+			name = "UIView+AKCategory";
 			sourceTree = "<group>";
 		};
 		8444DA881D364C80005909BA /* AKMatchesViewCell */ = {
@@ -459,6 +559,7 @@
 		84BEC0701D23DA60008E43E5 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				843E0EAA1D3D5A6000C733C2 /* UIView+AKCategory */,
 				84E0A75E1D252AF500B86C93 /* UIBarButtonItem+AKCategory */,
 				84BEC0711D23DA60008E43E5 /* CGGeometry+AKCategory */,
 				84BEC0741D23DA60008E43E5 /* NSBundle+AKCategory */,
@@ -750,6 +851,7 @@
 				84BEC0CD1D23DA60008E43E5 /* Info.plist */,
 				84BEC0CE1D23DA60008E43E5 /* main.m */,
 				84BEC0FF1D23DBA8008E43E5 /* AKFootballProjectPrefix.pch */,
+				843E0E9D1D3B62D400C733C2 /* AKFootballConstants.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -817,10 +919,11 @@
 		84E0A76C1D254EBE00B86C93 /* Context */ = {
 			isa = PBXGroup;
 			children = (
+				843215811D2DAA0D00DF9FA3 /* AKContext */,
+				843E0E971D3A5F3A00C733C2 /* AKTournamentContext */,
 				8444DA8E1D3656D5005909BA /* AKMatchContext */,
 				84F0F3CA1D340690002A8A94 /* AKTeamContext */,
 				84F0F3BA1D33D402002A8A94 /* AKLeaguesContext */,
-				843215811D2DAA0D00DF9FA3 /* AKContext */,
 			);
 			path = Context;
 			sourceTree = "<group>";
@@ -870,6 +973,7 @@
 		84E0A7811D26993500B86C93 /* AKTournamentViewController */ = {
 			isa = PBXGroup;
 			children = (
+				843E0E911D3A5D8800C733C2 /* AKTournamentViewCell */,
 				84E0A7871D26995F00B86C93 /* AKTournamentView */,
 				84E0A7821D26995100B86C93 /* AKTournamentViewController.h */,
 				84E0A7831D26995100B86C93 /* AKTournamentViewController.m */,
@@ -890,6 +994,7 @@
 		84E277EF1D24363B00F14BBD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				843E0E9E1D3CE24600C733C2 /* AKTabBarViewController */,
 				84E0A75A1D2528E900B86C93 /* AKCustomViewController */,
 				84E0A7811D26993500B86C93 /* AKTournamentViewController */,
 				84E0A7771D26979D00B86C93 /* AKMatchesViewController */,
@@ -1041,8 +1146,10 @@
 				84E0A7721D26949700B86C93 /* AKTeamsViewController.xib in Resources */,
 				84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */,
 				84BEC0EF1D23DA60008E43E5 /* AKUserViewController.xib in Resources */,
+				843E0E961D3A5DAD00C733C2 /* AKTournamentViewCell.xib in Resources */,
 				84E0A7861D26995100B86C93 /* AKTournamentViewController.xib in Resources */,
 				84F0F3C31D33D60B002A8A94 /* AKTeamsViewCell.xib in Resources */,
+				843E0EA51D3CE2B900C733C2 /* AKTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,37 +1213,39 @@
 				84BEC0FD1D23DA7D008E43E5 /* AppDelegate.m in Sources */,
 				84BEC0ED1D23DA60008E43E5 /* AKUserView.m in Sources */,
 				84E277FE1D24363B00F14BBD /* AKSeasonsViewCell.m in Sources */,
-				843215A11D32319100DF9FA3 /* AKSeason.m in Sources */,
 				84BEC0D81D23DA60008E43E5 /* CGGeometry+AKCategory.m in Sources */,
 				84E0A76A1D254C9400B86C93 /* AKLeaguesViewCell.m in Sources */,
 				84F0F3BD1D33D402002A8A94 /* AKLeaguesContext.m in Sources */,
 				84BEC0DA1D23DA60008E43E5 /* NSFileManager+AKCategory.m in Sources */,
+				84354D431D3F8C5D001DF034 /* AKFootball.xcdatamodeld in Sources */,
+				84354D441D3F8C5D001DF034 /* AKLeague+CoreDataProperties.m in Sources */,
 				8444DA911D3656EA005909BA /* AKMatchContext.m in Sources */,
-				8444DA961D36BFAC005909BA /* AKMatch+CoreDataProperties.m in Sources */,
 				84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */,
 				84E0A78A1D26997100B86C93 /* AKTournamentView.m in Sources */,
-				843215961D2E5BE600DF9FA3 /* AKLeague+CoreDataProperties.m in Sources */,
 				84BEC0D51D23DA60008E43E5 /* AKObserverArray.m in Sources */,
-				8432159B1D2E5C2900DF9FA3 /* AKManagedObject.m in Sources */,
+				843E0EAD1D3D5AC800C733C2 /* UIView+AKCategory.m in Sources */,
 				84E0A7761D26957000B86C93 /* AKTeamsView.m in Sources */,
 				84BEC0D21D23DA60008E43E5 /* AKStringAlphabet.m in Sources */,
+				84354D471D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m in Sources */,
 				84BEC0E81D23DA60008E43E5 /* AKStringModel.m in Sources */,
+				84354D4C1D3F8C5D001DF034 /* AKTeam.m in Sources */,
 				84BEC0D91D23DA60008E43E5 /* NSBundle+AKCategory.m in Sources */,
 				84E277FC1D24363B00F14BBD /* AKSeasonsViewController.m in Sources */,
+				84354D451D3F8C5D001DF034 /* AKLeague.m in Sources */,
 				84BEC0E61D23DA60008E43E5 /* AKSharedCacheModel.m in Sources */,
 				84BEC0DC1D23DA60008E43E5 /* NSString+AKExtensions.m in Sources */,
+				84354D481D3F8C5D001DF034 /* AKMatch.m in Sources */,
 				84E0A7581D2473EE00B86C93 /* AKLeaguesViewController.m in Sources */,
+				843E0E9A1D3A5F9700C733C2 /* AKTournamentContext.m in Sources */,
 				84BEC0D61D23DA60008E43E5 /* AKObserverDictionary.m in Sources */,
 				84BEC0DF1D23DA60008E43E5 /* UINib+AKCategory.m in Sources */,
+				84354D4B1D3F8C5D001DF034 /* AKTeam+CoreDataProperties.m in Sources */,
 				84BEC0EE1D23DA60008E43E5 /* AKUserViewController.m in Sources */,
 				84BEC0DD1D23DA60008E43E5 /* UICollectionView+AKCategory.m in Sources */,
 				84BEC0F01D23DA60008E43E5 /* AKLoadingView.m in Sources */,
 				84BEC0D71D23DA60008E43E5 /* AKObserverObject.m in Sources */,
 				84E277FB1D24363B00F14BBD /* AKSeasonsView.m in Sources */,
 				84E0A7651D25416200B86C93 /* AKLeaguesView.m in Sources */,
-				8444DA971D36BFAC005909BA /* AKMatch.m in Sources */,
-				843215911D2E5B1E00DF9FA3 /* AKLeague.xcdatamodeld in Sources */,
-				843215971D2E5BE600DF9FA3 /* AKLeague.m in Sources */,
 				84F0F3CD1D3406BB002A8A94 /* AKTeamContext.m in Sources */,
 				84BEC0F21D23DA60008E43E5 /* AKView.m in Sources */,
 				84BEC0D31D23DA60008E43E5 /* AKDispatch.m in Sources */,
@@ -1146,7 +1255,9 @@
 				84BEC0E31D23DA60008E43E5 /* AKArrayModel.m in Sources */,
 				84E0A7851D26995100B86C93 /* AKTournamentViewController.m in Sources */,
 				843215841D2DAA2100DF9FA3 /* AKContext.m in Sources */,
+				843E0E951D3A5DAD00C733C2 /* AKTournamentViewCell.m in Sources */,
 				84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */,
+				84354D491D3F8C5D001DF034 /* AKSeason+CoreDataProperties.m in Sources */,
 				84BEC0E11D23DA60008E43E5 /* UIViewController+AKCategory.m in Sources */,
 				84E0A7711D26949700B86C93 /* AKTeamsViewController.m in Sources */,
 				84BEC0E51D23DA60008E43E5 /* AKModel.m in Sources */,
@@ -1155,17 +1266,18 @@
 				84E0A7611D252B0100B86C93 /* UIBarButtonItem+AKCategory.m in Sources */,
 				84BEC0E01D23DA60008E43E5 /* UITableView+AKCategory.m in Sources */,
 				84BEC0EA1D23DA60008E43E5 /* AKImageView.m in Sources */,
-				843215A01D32319100DF9FA3 /* AKSeason+CoreDataProperties.m in Sources */,
-				84F0F3C91D33DAD3002A8A94 /* AKTeam.m in Sources */,
+				843E0EA91D3CE31600C733C2 /* AKTabBarView.m in Sources */,
 				84BEC0E41D23DA60008E43E5 /* AKArrayManager.m in Sources */,
 				84F0F3C21D33D60B002A8A94 /* AKTeamsViewCell.m in Sources */,
 				84BEC0E91D23DA60008E43E5 /* AKImageModel.m in Sources */,
 				84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */,
 				84BEC0E71D23DA60008E43E5 /* AKStateModel.m in Sources */,
+				84354D4A1D3F8C5D001DF034 /* AKSeason.m in Sources */,
 				84BEC0F91D23DA60008E43E5 /* main.m in Sources */,
+				84354D461D3F8C5D001DF034 /* AKManagedObject.m in Sources */,
 				84BEC0D41D23DA60008E43E5 /* AKObserver.m in Sources */,
 				84E0A7801D2697DA00B86C93 /* AKMatchesView.m in Sources */,
-				84F0F3C81D33DAD3002A8A94 /* AKTeam+CoreDataProperties.m in Sources */,
+				843E0EA11D3CE28400C733C2 /* AKTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1325,13 +1437,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8432158F1D2E5B1E00DF9FA3 /* AKLeague.xcdatamodeld */ = {
+		84354D2A1D3F8C5D001DF034 /* AKFootball.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				843215901D2E5B1E00DF9FA3 /* AKLeague.xcdatamodel */,
+				84354D2B1D3F8C5D001DF034 /* AKFootball.xcdatamodel */,
 			);
-			currentVersion = 843215901D2E5B1E00DF9FA3 /* AKLeague.xcdatamodel */;
-			path = AKLeague.xcdatamodeld;
+			currentVersion = 84354D2B1D3F8C5D001DF034 /* AKFootball.xcdatamodel */;
+			path = AKFootball.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -13,7 +13,6 @@
 
 @implementation AKTeam (CoreDataProperties)
 
-@dynamic id;
 @dynamic name;
 @dynamic pictureURLPath;
 @dynamic points;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="AKLeague" representedClassName="AKLeague" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="matches" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKMatch" inverseName="relationship" inverseEntity="AKMatch" syncable="YES"/>
+        <relationship name="season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKSeason" inverseName="leagues" inverseEntity="AKSeason" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKTeam" inverseName="league" inverseEntity="AKTeam" syncable="YES"/>
+    </entity>
+    <entity name="AKMatch" representedClassName="AKMatch" syncable="YES">
+        <attribute name="awayTeam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goalsAwayTeam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="goalsHomeTeam" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeTeam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="matches" inverseEntity="AKLeague" syncable="YES"/>
+    </entity>
+    <entity name="AKSeason" representedClassName="AKSeason" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="season" inverseEntity="AKLeague" syncable="YES"/>
+    </entity>
+    <entity name="AKTeam" representedClassName="AKTeam" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureURLPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AKLeague" inverseName="teams" inverseEntity="AKLeague" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AKLeague" positionX="-9360" positionY="-999" width="117" height="133"/>
+        <element name="AKMatch" positionX="-9360" positionY="-810" width="128" height="165"/>
+        <element name="AKSeason" positionX="-9353" positionY="-1143" width="128" height="103"/>
+        <element name="AKTeam" positionX="-9119" positionY="-810" width="128" height="135"/>
+    </elements>
+</model>
