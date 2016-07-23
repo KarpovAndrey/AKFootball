@@ -10,14 +10,7 @@
 #import "AKView.h"
 #import "AKContext.h"
 #import "AKDispatch.h"
-//#import "AKUserModel.h"
-
-static NSString * const kAKNavigationItemTitle      = @"TITLE";
-static NSString * const kAKAllertControllerTitle    = @"No Interner Connection";
-static NSString * const kAKAllertControllerMessage  = @"Make sure your device is connected to the internet";
-static NSString * const kAKActionTitle              = @"OK";
-static NSString * const kAKLeftBarBattonImageName   = @"BackButton";
-static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
+#import "AKFootballConstants.h"
 
 @interface AKCustomViewController ()
 
@@ -69,7 +62,7 @@ static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
         [_context addHandler:^(id object) {
             AKStrongifyAndReturnIfNil
             AKDispatchAsyncOnMainThread(^{
-                [strongSelf objectDidLoadWithObject:object];
+                [strongSelf contextDidLoadWithObject:object];
             });
         }forState:kAKModelLoadedState
                       object:self];
@@ -77,7 +70,7 @@ static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
         [_context addHandler:^(id object) {
             AKStrongifyAndReturnIfNil
             AKDispatchAsyncOnMainThread(^{
-                [strongSelf objectDidFailToLoad:object];
+                [strongSelf contextDidFailToLoad:object];
             });
         }forState:kAKModelFailedState
                       object:self];
@@ -122,11 +115,11 @@ static NSString * const kAKRightBarBattonImageName  = @"HomeButton";
                                                                       target:self];
 }
 
-- (void)objectDidLoadWithObject:(id)object {
+- (void)contextDidLoadWithObject:(id)object {
     
 }
 
-- (void)objectDidFailToLoad:(id)object {
+- (void)contextDidFailToLoad:(id)object {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:kAKAllertControllerTitle
                                                                    message:kAKAllertControllerMessage
                                                             preferredStyle:UIAlertControllerStyleAlert];

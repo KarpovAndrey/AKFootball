@@ -11,28 +11,12 @@
 #import "AKLeaguesContext.h"
 #import "AKLeague.h"
 #import "AKSeason.h"
-
-#define kAKAuthToken @{@"X-Auth-Token": @"f39e518c66d64efd9443fc5e8cef9c3a"}
-
-static NSString * const kAKSeasonsURLString = @"http://api.football-data.org/v1/soccerseasons/?season=";
-static NSString * const kAKCaptionKey       = @"caption";
-static NSString * const kAKNameKey          = @"name";
-static NSString * const kAKIDKey            = @"id";
-static NSString * const kAKHTTPMethod       = @"GET";
-
-@interface AKLeaguesContext ()
-@property (nonatomic, strong) NSURLSessionDataTask *dataTask;
-
-@end
+#import "AKFootballConstants.h"
 
 @implementation AKLeaguesContext
 
 #pragma mark -
 #pragma mark Accessors
-
-- (NSString *)contextURLString {
-    return kAKSeasonsURLString;
-}
 
 - (NSString *)appendingURLString {
     NSString *yearString = [NSString stringWithFormat:@"%li",  self.ID];
@@ -45,19 +29,17 @@ static NSString * const kAKHTTPMethod       = @"GET";
 
 - (void)parseData:(NSDictionary *)result {
     self.season = [AKSeason objectWithID:self.ID];
+    self.season.year = self.ID;
 
     for (NSDictionary *dictionary in result) {
         NSUInteger integerID = [[dictionary valueForKey:kAKIDKey] integerValue];
         AKLeague *league = [AKLeague objectWithID:integerID];
         league.name = [dictionary valueForKey:kAKCaptionKey];
+        league.year = [[dictionary valueForKey:kAKYearKey] integerValue];
         [self.season addLeaguesObject:league];
     }
     
     [self setState:kAKModelLoadedState withObject:self.season.leagues];
-}
-
-- (void)saveObject {
-    [self.season saveManagedObject];
 }
 
 - (void)loadObject {

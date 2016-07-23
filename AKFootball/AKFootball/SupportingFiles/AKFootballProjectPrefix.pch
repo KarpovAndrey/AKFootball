@@ -22,5 +22,6 @@
 #import "UINavigationController+AKCategory.h"
 #import "UICollectionView+AKCategory.h"
 #import "UIBarButtonItem+AKCategory.h"
+#import "UIView+AKCategory.h"
 
 #endif /* AKFootballProjectPrefix_pch */

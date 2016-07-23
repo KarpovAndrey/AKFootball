@@ -8,14 +8,17 @@
 
 #import "AKMatchesViewCell.h"
 #import "AKMatch.h"
+#import "AKFootballConstants.h"
 
 @implementation AKMatchesViewCell
 
 - (void)fillWithModel:(AKMatch *)match {
     self.firstTeamLabel.text = match.homeTeam;
     self.secongTeamLabel.text = match.awayTeam;
-    if ([match.status isEqualToString:@"FINISHED"]) {
-        self.resultLabel.text = [NSString stringWithFormat:@"%@ : %@", match.goalsHomeTeam, match.goalsAwayTeam];
+    if ([match.status isEqualToString:kAKFinishedKey]) {
+        self.resultLabel.text = [NSString stringWithFormat:@"%@ : %@", match.goalsHomeTeam,
+                                                                       match.goalsAwayTeam];
+        self.dateLabel.text = [match.date substringToIndex:10];
     } else {
         self.resultLabel.text = [match.date substringToIndex:10];
     }

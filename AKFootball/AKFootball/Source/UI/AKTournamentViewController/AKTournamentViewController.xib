@@ -14,8 +14,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AKTournamentView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-hE-FVc">
+                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-hH-KHx">
+                    <rect key="frame" x="3" y="65" width="314" height="500"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pew-WK-t4e"/>
+                        <outlet property="delegate" destination="-1" id="SHX-9e-UZQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IGm-hE-FVc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1B9-Ig-i25"/>
+                <constraint firstItem="IGm-hE-FVc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="767-Qe-pY1"/>
+                <constraint firstItem="bn9-hH-KHx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="3" id="R6S-86-9n7"/>
+                <constraint firstAttribute="bottom" secondItem="bn9-hH-KHx" secondAttribute="bottom" constant="3" id="Ydx-dh-XQQ"/>
+                <constraint firstAttribute="trailing" secondItem="bn9-hH-KHx" secondAttribute="trailing" constant="3" id="enC-BV-Ccp"/>
+                <constraint firstItem="bn9-hH-KHx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="frH-Ki-f2y"/>
+                <constraint firstAttribute="trailing" secondItem="IGm-hE-FVc" secondAttribute="trailing" id="w9t-pg-wpD"/>
+                <constraint firstAttribute="bottom" secondItem="IGm-hE-FVc" secondAttribute="bottom" id="zZb-XO-sd7"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="tableView" destination="bn9-hH-KHx" id="C87-8r-ljS"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="screenWallpaper" width="320" height="568"/>
+    </resources>
 </document>

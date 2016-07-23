@@ -10,12 +10,19 @@
 
 @implementation AKTabBarView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark -
+#pragma mark Handling Interface
+
+- (IBAction)onMatchesButtonClick:(id)sender {
+    
 }
-*/
+
+- (IBAction)onTeamesButtonClick:(id)sender {
+    
+}
+
+- (IBAction)onTournamentButtonClick:(id)sender {
+    
+}
 
 @end

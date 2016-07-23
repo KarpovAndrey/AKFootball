@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +15,50 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-Cx-E2K" userLabel="Position">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Z4a-9D-Mja"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="7IV-Vw-obj" userLabel="Points">
+                        <rect key="frame" x="277" y="0.0" width="44" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-1a-fpf" userLabel="Team">
+                        <rect key="frame" x="44" y="0.0" width="232" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="trailing" id="25u-Uh-vHn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7IV-Vw-obj" secondAttribute="trailing" constant="-9" id="36E-aY-8ab"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="firstBaseline" secondItem="7IV-Vw-obj" secondAttribute="firstBaseline" id="5yj-Jt-2vT"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="firstBaseline" secondItem="9qH-1a-fpf" secondAttribute="firstBaseline" id="68b-w7-9bs"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eup-jj-yd1"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tfl-Xl-anq"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bfa-ym-tPB"/>
+                    <constraint firstItem="7IV-Vw-obj" firstAttribute="leading" secondItem="9qH-1a-fpf" secondAttribute="trailing" constant="1" id="i3f-m2-8Ef"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iOC-ct-gyw"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="baseline" secondItem="7IV-Vw-obj" secondAttribute="baseline" id="jre-fK-olG"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" id="yd7-x5-Bav"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="teamNameLabel" destination="9qH-1a-fpf" id="ikv-Eb-OCf"/>
+                <outlet property="teamPointsLabel" destination="7IV-Vw-obj" id="uHy-eg-Zpf"/>
+                <outlet property="teamPositionLabel" destination="YWF-Cx-E2K" id="Jpn-Xv-Vkq"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

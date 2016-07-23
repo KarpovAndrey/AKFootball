@@ -8,13 +8,6 @@
 
 #import "AKContext.h"
 
-@class AKLeague;
-
 @interface AKMatchContext : AKContext
-@property (nonatomic, strong)   AKLeague     *league;
-
-- (instancetype)initWithID:(NSUInteger)ID;
-
-- (void)parseData:(NSDictionary *)result;
 
 @end

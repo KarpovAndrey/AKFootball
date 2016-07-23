@@ -7,6 +7,7 @@
 //
 
 #import "AKSeasonsViewCell.h"
+#import "AKFootballConstants.h"
 
 @implementation AKSeasonsViewCell
 
@@ -14,7 +15,7 @@
 #pragma mark Public
 
 - (void)fillWithModel:(NSString *)year {
-    self.cellLabel.text = [NSString stringWithFormat:@"SEASON OF %@ YEAR", year];
+    self.cellLabel.text = [NSString stringWithFormat:@"%@ %@ %@", kAKSeasonOfString, year, kAKYearString];
     //NEED TO FIX PROBLEM WITH STRINGS
 }
 

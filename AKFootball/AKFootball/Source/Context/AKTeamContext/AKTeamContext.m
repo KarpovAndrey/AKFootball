@@ -12,66 +12,47 @@
 #import "AKLeague.h"
 #import "AKTeam.h"
 #import "AKSeason.h"
-
-#define kAKAuthToken @{@"X-Auth-Token": @"f39e518c66d64efd9443fc5e8cef9c3a"}
-
-static NSString * const kAKLeagueURLString  = @"http://api.football-data.org/v1/soccerseasons/";
-static NSString * const kAKHTTPMethod       = @"GET";
-static NSString * const kAKTeamsString      = @"/teams";
-
-@interface AKTeamContext ()
-@property (nonatomic, strong) NSURLSessionDataTask *dataTask;
-
-@end
+#import "AKFootballConstants.h"
 
 @implementation AKTeamContext
 
 #pragma mark -
 #pragma mark Accessors
 
-- (NSString *)contextURLString {
-    return kAKLeagueURLString;
-}
-
 - (NSString *)appendingURLString {
-    NSString *teamsURLString = [kAKLeagueURLString stringByAppendingString:
+    NSString *teamsURLString = [kAKFootballURLString stringByAppendingString:
                                                 [NSString stringWithFormat:@"%li", self.ID]];
 
-    return [teamsURLString stringByAppendingString:kAKTeamsString];
+    return [teamsURLString stringByAppendingString:kAKTeamsPathKey];
 }
 
 #pragma mark -
 #pragma mark Public
 
 - (void)parseData:(NSDictionary *)result {
-    self.league = [AKLeague objectWithID:self.ID];
+    AKLeague *league = [AKLeague objectWithID:self.ID];
     
-    NSArray *dictionary = [result valueForKey:@"teams"];
+    NSArray *dictionary = [result valueForKey:kAKTeamsKey];
     for (NSDictionary *teamDictionary in dictionary) {
-        //        NSString *code = [teamDictionary valueForKey:@"code"];
-        //        NSLog(@"%@", code);
-        NSDictionary *array = [teamDictionary valueForKey:@"_links"];
-        NSArray *selfDictionary = [array valueForKey:@"self"];
-        NSString *dict1 = [selfDictionary valueForKey:@"href"];
-        NSString *ID = [dict1 lastPathComponent];
-        NSUInteger integerID = [ID integerValue];
+        NSDictionary *linksDictionary = [teamDictionary valueForKey:kAKLinksKey];
+        NSArray *selfArray = [linksDictionary valueForKey:kAKSelfKey];
+        NSString *stringID = [selfArray valueForKey:kAKHrefKey];
+        NSUInteger integerID = [[stringID lastPathComponent] integerValue];
         
         AKTeam *team = [AKTeam objectWithID:integerID];
-        team.pictureURLPath = [teamDictionary valueForKey:@"crestUrl"];
-        team.name = [teamDictionary valueForKey:@"name"];
-        [self.league addTeamsObject:team];
+        team.pictureURLPath = [teamDictionary valueForKey:kAKCrestURLKey];
+        team.name = [teamDictionary valueForKey:kAKNameKey];
+        [league addTeamsObject:team];
     }
     
-    [self setState:kAKModelLoadedState withObject:self.league.teams];
-}
-
-- (void)saveObject {
-    [self.league saveManagedObject];
+    self.season = [AKSeason objectWithID:league.year];
+    [self.season addLeaguesObject:league];
+    [self setState:kAKModelLoadedState withObject:league.teams];
 }
 
 - (void)loadObject {
-    self.league = [AKLeague objectWithID:self.league.ID];
-    [self setState:kAKModelFailedState withObject:self.league.teams];
+    AKLeague *league = [AKLeague objectWithID:self.ID];
+    [self setState:kAKModelFailedState withObject:league.teams];
 }
 
 @end

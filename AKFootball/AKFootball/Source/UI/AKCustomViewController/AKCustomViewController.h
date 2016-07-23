@@ -27,7 +27,7 @@
 
 //these methods are called in subclasses
 //you should never call these method directly from outside subclasses
-- (void)objectDidLoadWithObject:(id)object;
-- (void)objectDidFailToLoad:(id)object;
+- (void)contextDidLoadWithObject:(id)object;
+- (void)contextDidFailToLoad:(id)object;
 
 @end

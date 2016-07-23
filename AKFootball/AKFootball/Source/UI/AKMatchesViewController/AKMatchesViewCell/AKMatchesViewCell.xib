@@ -28,7 +28,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-hE-Jja">
-                        <rect key="frame" x="140" y="0.0" width="40" height="44"/>
+                        <rect key="frame" x="140" y="18" width="40" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="GVV-BP-ZBd"/>
                         </constraints>
@@ -36,22 +36,31 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-cA-SUn" userLabel="Date">
+                        <rect key="frame" x="140" y="1" width="40" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="gtU-Zl-GKy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0bV-kg-dao"/>
                     <constraint firstItem="gtU-Zl-GKy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dv2-g5-v1g"/>
                     <constraint firstItem="1Ao-xc-XFn" firstAttribute="leading" secondItem="dW3-hE-Jja" secondAttribute="trailing" id="GdO-op-yIe"/>
                     <constraint firstItem="gtU-Zl-GKy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kyc-oZ-z6V"/>
                     <constraint firstItem="dW3-hE-Jja" firstAttribute="leading" secondItem="gtU-Zl-GKy" secondAttribute="trailing" id="OJY-Jj-vHG"/>
-                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="firstBaseline" secondItem="dW3-hE-Jja" secondAttribute="firstBaseline" id="SeY-nj-x6z"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="firstBaseline" secondItem="dW3-hE-Jja" secondAttribute="firstBaseline" constant="-18" id="SeY-nj-x6z"/>
                     <constraint firstItem="dW3-hE-Jja" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="VDO-mP-4RN"/>
                     <constraint firstAttribute="trailing" secondItem="1Ao-xc-XFn" secondAttribute="trailing" id="YwN-Vz-ZKK"/>
-                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="baseline" secondItem="dW3-hE-Jja" secondAttribute="baseline" id="i0g-DM-D1G"/>
-                    <constraint firstItem="dW3-hE-Jja" firstAttribute="firstBaseline" secondItem="1Ao-xc-XFn" secondAttribute="firstBaseline" id="jOB-IO-lR0"/>
-                    <constraint firstItem="dW3-hE-Jja" firstAttribute="baseline" secondItem="1Ao-xc-XFn" secondAttribute="baseline" id="twV-gV-PoV"/>
+                    <constraint firstItem="gtU-Zl-GKy" firstAttribute="baseline" secondItem="dW3-hE-Jja" secondAttribute="baseline" constant="2" id="i0g-DM-D1G"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="firstBaseline" secondItem="1Ao-xc-XFn" secondAttribute="firstBaseline" constant="18" id="jOB-IO-lR0"/>
+                    <constraint firstItem="dW3-hE-Jja" firstAttribute="baseline" secondItem="1Ao-xc-XFn" secondAttribute="baseline" constant="-2" id="twV-gV-PoV"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="dateLabel" destination="kxd-cA-SUn" id="3pb-zx-ONc"/>
                 <outlet property="firstTeamLabel" destination="gtU-Zl-GKy" id="q1d-MM-A3C"/>
                 <outlet property="resultLabel" destination="dW3-hE-Jja" id="jd2-AK-tzz"/>
                 <outlet property="secongTeamLabel" destination="1Ao-xc-XFn" id="6Oe-1T-YgP"/>

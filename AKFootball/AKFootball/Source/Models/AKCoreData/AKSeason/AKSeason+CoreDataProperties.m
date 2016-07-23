@@ -14,7 +14,6 @@
 @implementation AKSeason (CoreDataProperties)
 
 @dynamic name;
-@dynamic year;
 @dynamic leagues;
 
 @end

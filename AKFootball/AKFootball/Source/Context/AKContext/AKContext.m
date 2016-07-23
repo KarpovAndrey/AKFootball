@@ -7,17 +7,9 @@
 //
 
 #import "AKContext.h"
-
 #import "IDPActiveRecordKit.h"
-
-#import "AKTeamContext.h"
-#import "AKLeague.h"
-#import "AKTeam.h"
+#import "AKFootballConstants.h"
 #import "AKSeason.h"
-
-#define kAKAuthToken @{@"X-Auth-Token": @"f39e518c66d64efd9443fc5e8cef9c3a"}
-
-static NSString * const kAKHTTPMethod       = @"GET";
 
 @interface AKContext ()
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
@@ -25,7 +17,6 @@ static NSString * const kAKHTTPMethod       = @"GET";
 @end
 
 @implementation AKContext
-
 
 #pragma mark -
 #pragma mark Initialization & Deallocation
@@ -37,12 +28,6 @@ static NSString * const kAKHTTPMethod       = @"GET";
     }
     
     return self;
-}
-
-#pragma mark -
-#pragma mark Private
-
-- (void)parseData:(NSDictionary *)result {
 }
 
 #pragma mark -
@@ -62,7 +47,7 @@ static NSString * const kAKHTTPMethod       = @"GET";
                                                         if (!error) {
                                                             NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                                             [self parseData:result];
-                                                            [self saveObject];
+                                                            [self.season saveManagedObject];
                                                         } else {
                                                             [self loadObject];
                                                         }}];
@@ -73,7 +58,7 @@ static NSString * const kAKHTTPMethod       = @"GET";
     [self.dataTask cancel];
 }
 
-- (void)saveObject {
+- (void)parseData:(NSDictionary *)result {
     
 }
 

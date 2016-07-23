@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B7219331553AAF66E4D7B897F8D4A38152A93C13",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7219331553AAF66E4D7B897F8D4A38152A93C13" : 0,
+    "50D42489EB17CA4893867BB507B4D40CB956EEFF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A8E09136-5FC7-40F3-A8ED-56FA528CEDAB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7219331553AAF66E4D7B897F8D4A38152A93C13" : "AKFootball\/",
+    "50D42489EB17CA4893867BB507B4D40CB956EEFF" : "AKFacebook\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AKFootball",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AKFootball\/AKFootball.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KarpovAndrey\/AKFacebook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50D42489EB17CA4893867BB507B4D40CB956EEFF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KarpovAndrey\/AKFootball.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7219331553AAF66E4D7B897F8D4A38152A93C13"
+    }
+  ]
+}

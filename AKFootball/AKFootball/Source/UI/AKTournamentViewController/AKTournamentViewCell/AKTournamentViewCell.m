@@ -7,18 +7,23 @@
 //
 
 #import "AKTournamentViewCell.h"
+#import "AKTeam.h"
+
+static CGFloat const kAKBorderCornerRadius = 50.0f;
 
 @implementation AKTournamentViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
+#pragma mark -
+#pragma mark Public
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)fillWithModel:(AKTeam *)team {
+    [self.teamPositionLabel addDefaultBorderWithCornerRadius:kAKBorderCornerRadius];
+    [self.teamNameLabel addDefaultBorder];
+    [self.teamPointsLabel addDefaultBorder];
+    
+    self.teamPositionLabel.text = [NSString stringWithFormat:@"%@", team.position] ;
+    self.teamNameLabel.text = [NSString stringWithFormat:@" %@", team.name];
+    self.teamPointsLabel.text = [NSString stringWithFormat:@"%@", team.points];
 }
 
 @end

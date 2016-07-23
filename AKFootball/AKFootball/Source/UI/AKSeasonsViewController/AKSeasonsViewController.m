@@ -9,12 +9,9 @@
 #import "AKSeasonsViewController.h"
 #import "AKSeasonsView.h"
 #import "AKSeasonsViewCell.h"
-
 #import "AKLeaguesViewController.h"
 #import "AKLeague.h"
-
-static NSUInteger const kAKYearInterval =   1;
-static NSString * const kAKDateFormat   =   @"yyyy";
+#import "AKFootballConstants.h"
 
 @interface AKSeasonsViewController ()
 @property (nonatomic, readonly) AKSeasonsView           *rootView;

@@ -10,8 +10,7 @@
 
 #import "AppDelegate.h"
 #import "AKSeasonsViewController.h"
-
-static NSString * const kAKMomName = @"AKLeague";
+#import "AKFootballConstants.h"
 
 @implementation AppDelegate
 

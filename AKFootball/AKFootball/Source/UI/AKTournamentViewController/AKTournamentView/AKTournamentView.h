@@ -9,5 +9,6 @@
 #import "AKView.h"
 
 @interface AKTournamentView : AKView
+@property (nonatomic, strong) IBOutlet UITableView     *tableView;
 
 @end

@@ -16,6 +16,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-Yt-0PK">
                         <rect key="frame" x="0.0" y="0.0" width="265" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="265" id="xVP-mh-vNA"/>
                         </constraints>
@@ -28,6 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="jv3-dg-esl" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="3fd-og-qLf"/>
                     <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="MPy-MH-xR9"/>
@@ -38,6 +40,7 @@
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="wJg-jm-X1k"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="cellImageView" destination="jv3-dg-esl" id="zmy-Jb-kDP"/>
                 <outlet property="cellLabel" destination="DEf-Yt-0PK" id="6kb-OE-phH"/>

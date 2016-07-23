@@ -6,11 +6,22 @@
 //  Copyright © 2016 Karpov Andrey. All rights reserved.
 //
 
+#import "IDPActiveRecordKit.h"
 #import "AKSeason.h"
 #import "AKLeague.h"
+#import "AKFootballConstants.h"
 
 @implementation AKSeason
+@dynamic year;
 
-// Insert code here to add functionality to your managed object subclass
+#pragma mark -
+#pragma mark Accessors
 
+- (void)setYear:(NSUInteger)year {
+    [self setCustomValue:[NSNumber numberWithUnsignedInteger:year] forKey:kAKYearKey];
+}
+
+- (NSUInteger)year {
+    return [[self customValueForKey:kAKYearKey] unsignedIntegerValue];
+}
 @end

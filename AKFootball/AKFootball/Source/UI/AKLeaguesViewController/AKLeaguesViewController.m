@@ -13,8 +13,7 @@
 #import "AKSeason.h"
 #import "AKLeaguesContext.h"
 #import "AKDispatch.h"
-
-static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
+#import "AKFootballConstants.h"
 
 @interface AKLeaguesViewController ()
 @property (nonatomic, readonly) AKLeaguesView       *rootView;
@@ -32,12 +31,32 @@ static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
     if (self.context.state == kAKModelLoadingState) {
         [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     }
+    
+    UIRefreshControl *refresh = [UIRefreshControl new];
+    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"PULL TO REFRESH"];
+    [refresh addTarget:self action:@selector(refreshView:) forControlEvents:UIControlEventValueChanged];
+    [self.rootView.tableView addSubview:refresh];
+}
+
+- (void)refreshView:(UIRefreshControl *)refreshControl {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MMM d, h:mm a"];
+    NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
+    NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor blackColor]
+                                                                forKey:NSForegroundColorAttributeName];
+    NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+    refreshControl.attributedTitle = attributedTitle;
+    [self.rootView.tableView reloadData];
+    
+    [refreshControl endRefreshing];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBarHidden = NO;
+    ///////////
+    self.navigationController.navigationItem.rightBarButtonItem.image = nil;
 }
 
 #pragma mark -
@@ -46,7 +65,7 @@ static NSString * const kAKNavigationItemTitle      = @"LEAGUES";
 AKRootViewAndReturnIfNil(AKLeaguesView)
 
 - (NSString *)navigationItemTitle {
-    return kAKNavigationItemTitle;
+    return kAKLeaguesNavigationItemTitle;
 }
 
 - (void)setYear:(NSUInteger)year {
@@ -81,15 +100,15 @@ AKRootViewAndReturnIfNil(AKLeaguesView)
 #pragma mark -
 #pragma mark Public
 
-- (void)objectDidLoadWithObject:(NSSet *)leagues {
+- (void)contextDidLoadWithObject:(NSSet *)leagues {
     self.leaguesArray = [leagues allObjects];
     AKLeaguesView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];
 }
 
-- (void)objectDidFailToLoad:(NSSet *)leagues {
-    [super objectDidFailToLoad:leagues];
+- (void)contextDidFailToLoad:(NSSet *)leagues {
+    [super contextDidFailToLoad:leagues];
     self.leaguesArray = [leagues allObjects];
     AKLeaguesView *rootView = self.rootView;
     [rootView.tableView reloadData];

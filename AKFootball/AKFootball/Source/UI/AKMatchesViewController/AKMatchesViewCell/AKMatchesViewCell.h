@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet  UILabel        *firstTeamLabel;
 @property (nonatomic, strong) IBOutlet  UILabel        *secongTeamLabel;
 @property (nonatomic, strong) IBOutlet  UILabel        *resultLabel;
+@property (nonatomic, strong) IBOutlet  UILabel        *dateLabel;
 
 - (void)fillWithModel:(AKMatch *)match;
 

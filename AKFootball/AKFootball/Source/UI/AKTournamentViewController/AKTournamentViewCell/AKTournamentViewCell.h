@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class AKTeam;
+
 @interface AKTournamentViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet  UILabel        *teamPositionLabel;
+@property (nonatomic, strong) IBOutlet  UILabel        *teamNameLabel;
+@property (nonatomic, strong) IBOutlet  UILabel        *teamPointsLabel;
+
+- (void)fillWithModel:(AKTeam *)team;
 
 @end

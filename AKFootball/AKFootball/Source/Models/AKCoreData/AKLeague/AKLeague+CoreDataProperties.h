@@ -15,9 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AKLeague (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSNumber *id;
 @property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) NSNumber *year;
 @property (nullable, nonatomic, retain) NSSet<AKMatch *> *matches;
 @property (nullable, nonatomic, retain) AKSeason *season;
 @property (nullable, nonatomic, retain) NSSet<AKTeam *> *teams;

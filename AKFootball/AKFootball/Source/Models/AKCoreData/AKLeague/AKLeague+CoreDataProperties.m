@@ -13,9 +13,7 @@
 
 @implementation AKLeague (CoreDataProperties)
 
-@dynamic id;
 @dynamic name;
-@dynamic year;
 @dynamic matches;
 @dynamic season;
 @dynamic teams;
