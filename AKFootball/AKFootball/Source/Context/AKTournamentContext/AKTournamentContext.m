@@ -19,7 +19,7 @@
 #pragma mark -
 #pragma mark Accessors
 
-- (NSString *)appendingURLString {
+- (NSString *)contextURLString {
     NSString *teamsURLString = [kAKFootballURLString stringByAppendingString:
                                 [NSString stringWithFormat:@"%li", self.ID]];
     

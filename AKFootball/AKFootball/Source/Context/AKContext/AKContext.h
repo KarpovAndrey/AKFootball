@@ -12,7 +12,7 @@
 
 @interface AKContext : AKModel
 @property (nonatomic, assign)       NSUInteger          ID;
-@property (nonatomic, readonly)     NSString            *appendingURLString;
+@property (nonatomic, readonly)     NSString            *contextURLString;
 @property (nonatomic, strong)       AKSeason            *season;
 
 - (void)cancel;

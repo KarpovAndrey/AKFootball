@@ -35,7 +35,7 @@
 
 - (void)setupLoad {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:
-                                                                        self.appendingURLString]];
+                                                                        self.contextURLString]];
     
     [request setHTTPMethod:kAKHTTPMethod];
     [request setAllHTTPHeaderFields:kAKAuthToken];
