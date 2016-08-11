@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AKSeasonsViewCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UILabel        *cellLabel;
+@property (nonatomic, strong) IBOutlet UILabel        *seasonLabel;
+@property (nonatomic, strong) IBOutlet UILabel        *yearLabel;
 
 - (void)fillWithModel:(NSString *)year;
 

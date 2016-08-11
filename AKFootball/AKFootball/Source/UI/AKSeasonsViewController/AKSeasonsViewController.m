@@ -19,6 +19,7 @@
 @property (nonatomic, strong)   UIRefreshControl        *refreshControl;
 
 - (NSArray *)generateYearsArray;
+- (void)addRefreshControl;
 - (void)refreshTable;
 
 @end
@@ -33,16 +34,21 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 #pragma mark -
 #pragma mark View LifeCycle
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIRefreshControl *refreshControl = [UIRefreshControl new];
-//    [self.rootView.tableView addSubview:refreshControl];
-//    self.refreshControl = refreshControl;
-    UIRefreshControl *refreshControl = [UIRefreshControl new];
-    [self.rootView.tableView addSubview:refreshControl];
-    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+    [self addRefreshControl];
+}
+
+- (void)addRefreshControl {
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    refreshControl.backgroundColor = [UIColor grayColor];
+    refreshControl.tintColor = [UIColor whiteColor];
+    [refreshControl addTarget:self
+                            action:@selector(refreshTable)
+                  forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    [self.rootView.tableView addSubview:self.refreshControl];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -50,7 +56,6 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
     
     self.navigationController.navigationBarHidden = YES;
     self.yearsArray = [self generateYearsArray];
-    [self.refreshControl beginRefreshing];
 }
 
 #pragma mark -
@@ -92,8 +97,26 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 
 - (void)refreshTable {
     //TODO: refresh your data
+    [self reloadData];
+}
+
+- (void)reloadData {
+    // Reload table data
     [self.rootView.tableView reloadData];
-    [self.refreshControl endRefreshing];
+    
+    // End the refreshing
+    if (self.refreshControl) {
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"MMM d, h:mm a"];
+        NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
+        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                                                                    forKey:NSForegroundColorAttributeName];
+        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+        self.refreshControl.attributedTitle = attributedTitle;
+        
+        [self.refreshControl endRefreshing];
+    }
 }
 
 @end

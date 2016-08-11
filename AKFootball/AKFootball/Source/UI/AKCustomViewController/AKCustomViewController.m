@@ -14,7 +14,6 @@
 
 @interface AKCustomViewController ()
 
-
 - (void)leftBarButtonClick;
 - (void)rightBarButtonClick;
 - (void)showCustomNavigationBar;
@@ -26,7 +25,6 @@
 @dynamic leftButtonImageName;
 @dynamic rightButtonImageName;
 @dynamic loadingViewMessage;
-//@dynamic navigationItemTitle;
 
 #pragma mark -
 #pragma mark View LifeCycle
@@ -102,8 +100,16 @@
               rightButtonImageName:(NSString *)rightButtonImageName
 {
     self.navigationController.navigationBarHidden = NO;
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    [navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    navigationBar.shadowImage = [UIImage new];
+    navigationBar.translucent = YES;
+    NSDictionary *titleTextAttributes =@{NSFontAttributeName:[UIFont fontWithName:
+                                                              kAKFontName size:kAKFontSize],
+                                                              NSForegroundColorAttributeName:
+                                                              [UIColor whiteColor]};
+    navigationBar.titleTextAttributes = titleTextAttributes;
     UINavigationItem *navigationItem = self.navigationItem;
-    
     navigationItem.title = title;
     
     navigationItem.leftBarButtonItem = [UIBarButtonItem buttonWithImageName:leftButtonImageName

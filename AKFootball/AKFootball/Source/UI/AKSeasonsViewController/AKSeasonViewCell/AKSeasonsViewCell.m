@@ -15,8 +15,8 @@
 #pragma mark Public
 
 - (void)fillWithModel:(NSString *)year {
-    self.cellLabel.text = [NSString stringWithFormat:@"%@ %@ %@", kAKSeasonOfString, year, kAKYearString];
-    //NEED TO FIX PROBLEM WITH STRINGS
+    self.seasonLabel.text = [NSString stringWithFormat:@"%@", kAKFootballSeasonString];
+    self.yearLabel.text = [NSString stringWithFormat:@"%@", year];
 }
 
 @end

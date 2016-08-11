@@ -16,18 +16,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="feh-Ju-Jnb">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="feh-Ju-Jnb">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rjN-CL-1xB">
-                    <rect key="frame" x="5" y="65" width="365" height="602"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Yme-B4-DDm"/>
-                        <outlet property="delegate" destination="-1" id="xWA-nW-Uhp"/>
-                    </connections>
-                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQo-ND-U0B">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,15 +26,24 @@
                         <constraint firstAttribute="width" secondItem="YQo-ND-U0B" secondAttribute="height" multiplier="15:2" id="mnS-bB-1Tm"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rjN-CL-1xB">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Yme-B4-DDm"/>
+                        <outlet property="delegate" destination="-1" id="xWA-nW-Uhp"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="feh-Ju-Jnb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8JE-Ws-hDB"/>
                 <constraint firstAttribute="trailing" secondItem="feh-Ju-Jnb" secondAttribute="trailing" id="9Ti-N2-63a"/>
                 <constraint firstAttribute="trailing" secondItem="YQo-ND-U0B" secondAttribute="trailing" id="AZC-Rm-v4c"/>
-                <constraint firstItem="rjN-CL-1xB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="QPg-hx-5fR"/>
+                <constraint firstItem="rjN-CL-1xB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QPg-hx-5fR"/>
                 <constraint firstAttribute="bottom" secondItem="rjN-CL-1xB" secondAttribute="bottom" id="bPR-3i-vPc"/>
-                <constraint firstAttribute="trailing" secondItem="rjN-CL-1xB" secondAttribute="trailing" constant="5" id="cRY-fS-2nR"/>
+                <constraint firstAttribute="trailing" secondItem="rjN-CL-1xB" secondAttribute="trailing" id="cRY-fS-2nR"/>
                 <constraint firstAttribute="bottom" secondItem="feh-Ju-Jnb" secondAttribute="bottom" id="dT1-yQ-fee"/>
                 <constraint firstItem="rjN-CL-1xB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="gHI-hc-sIV"/>
                 <constraint firstItem="YQo-ND-U0B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jlM-xO-9ck"/>
@@ -59,6 +59,6 @@
         </view>
     </objects>
     <resources>
-        <image name="screenWallpaper" width="320" height="568"/>
+        <image name="wallpaper" width="320" height="568"/>
     </resources>
 </document>

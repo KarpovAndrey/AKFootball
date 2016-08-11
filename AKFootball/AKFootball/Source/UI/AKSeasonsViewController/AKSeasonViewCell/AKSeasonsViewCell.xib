@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,26 +14,53 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-D6-BUj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOTBALL Season" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-D6-BUj" userLabel="seasonLabel">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="OAu-1M-ABV"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
-                        <color key="textColor" red="1" green="0.99529539734212125" blue="0.34085233694090633" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.32574176788330078" green="0.074253268539905548" blue="0.38463038206100464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="UmV-Wk-Av8" userLabel="yearLabel">
+                        <rect key="frame" x="160" y="0.0" width="160" height="50"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="51"/>
+                        <color key="textColor" red="0.0" green="0.90337022457408356" blue="0.27073544792216608" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="Cli-8j-e4h" userLabel="cellShadowUp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="i32-Uy-Bc9" userLabel="cellShadowDown">
+                        <rect key="frame" x="0.0" y="44" width="320" height="6"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="6Jy-RJ-xo4"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="U8k-jX-Tlg"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ah8-Va-h8l"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="l7k-v9-IUE"/>
+                    <constraint firstItem="UmV-Wk-Av8" firstAttribute="trailing" secondItem="i32-Uy-Bc9" secondAttribute="trailing" id="1zq-VI-1vD"/>
+                    <constraint firstItem="UmV-Wk-Av8" firstAttribute="leading" secondItem="zhF-D6-BUj" secondAttribute="trailing" id="3JV-Tj-guz"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="leading" secondItem="Cli-8j-e4h" secondAttribute="leading" id="Ojj-zI-QFr"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="leading" secondItem="i32-Uy-Bc9" secondAttribute="leading" id="Sbv-gc-fqu"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="top" secondItem="Cli-8j-e4h" secondAttribute="top" id="ekr-SZ-Lna"/>
+                    <constraint firstItem="Cli-8j-e4h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="k1i-Vu-0V8"/>
+                    <constraint firstItem="i32-Uy-Bc9" firstAttribute="bottom" secondItem="zhF-D6-BUj" secondAttribute="bottom" id="qcq-OG-X3v"/>
+                    <constraint firstItem="Cli-8j-e4h" firstAttribute="top" secondItem="UmV-Wk-Av8" secondAttribute="top" id="rGE-DC-57j"/>
+                    <constraint firstItem="Cli-8j-e4h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="svz-PD-rF9"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="bottom" secondItem="UmV-Wk-Av8" secondAttribute="bottom" id="tUu-jK-Id0"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ydr-aQ-fJk"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="cellLabel" destination="zhF-D6-BUj" id="6KS-Nd-zZe"/>
+                <outlet property="seasonLabel" destination="zhF-D6-BUj" id="exC-f8-SkD"/>
+                <outlet property="yearLabel" destination="UmV-Wk-Av8" id="2jz-nq-8v6"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="cellShadowDown" width="320" height="6"/>
+        <image name="cellShadowUp" width="320" height="6"/>
+    </resources>
 </document>

@@ -31,6 +31,12 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="7id-gr-YkV" userLabel="shadowUp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="rGk-4L-Ede" userLabel="shadowDown">
+                        <rect key="frame" x="0.0" y="36" width="320" height="6"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-1a-fpf" userLabel="Team">
                         <rect key="frame" x="44" y="0.0" width="232" height="44"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
@@ -61,4 +67,8 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="cellShadowDown" width="320" height="6"/>
+        <image name="cellShadowUp" width="320" height="6"/>
+    </resources>
 </document>

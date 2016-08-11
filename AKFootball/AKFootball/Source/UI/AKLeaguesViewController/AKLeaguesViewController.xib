@@ -15,14 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-M3-Iix">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-M3-Iix">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SPL-yE-FVv">
-                    <rect key="frame" x="8" y="60" width="359" height="599"/>
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ssE-zF-qFl"/>
@@ -33,13 +33,13 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Z6A-M3-Iix" secondAttribute="trailing" id="1l7-R2-IJL"/>
-                <constraint firstAttribute="trailing" secondItem="SPL-yE-FVv" secondAttribute="trailing" constant="8" id="GGi-JZ-GTI"/>
+                <constraint firstAttribute="trailing" secondItem="SPL-yE-FVv" secondAttribute="trailing" id="GGi-JZ-GTI"/>
                 <constraint firstItem="Z6A-M3-Iix" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HSx-7d-QqY"/>
-                <constraint firstAttribute="bottom" secondItem="SPL-yE-FVv" secondAttribute="bottom" constant="8" id="fLe-EM-pPU"/>
+                <constraint firstAttribute="bottom" secondItem="SPL-yE-FVv" secondAttribute="bottom" id="fLe-EM-pPU"/>
                 <constraint firstItem="SPL-yE-FVv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="p2d-wz-WLX"/>
                 <constraint firstAttribute="bottom" secondItem="Z6A-M3-Iix" secondAttribute="bottom" id="pbM-jl-KjU"/>
                 <constraint firstItem="Z6A-M3-Iix" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sdY-Li-xKb"/>
-                <constraint firstItem="SPL-yE-FVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="wns-Ot-ISu"/>
+                <constraint firstItem="SPL-yE-FVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wns-Ot-ISu"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
@@ -49,6 +49,6 @@
         </view>
     </objects>
     <resources>
-        <image name="screenWallpaper" width="320" height="568"/>
+        <image name="wallpaper" width="320" height="568"/>
     </resources>
 </document>

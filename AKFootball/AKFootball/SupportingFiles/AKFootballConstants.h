@@ -16,7 +16,7 @@ static NSString * const kAKAllertControllerTitle         = @"No Interner Connect
 static NSString * const kAKAllertControllerMessage       = @"Make sure your device is connected to the internet";
 static NSString * const kAKActionTitle                   = @"OK";
 static NSString * const kAKLeftBarBattonImageName        = @"BackButton";
-static NSString * const kAKRightBarBattonImageName       = @"HomeButton";
+static NSString * const kAKRightBarBattonImageName       = @"logo";
 static NSString * const kAKNavigationItemTitle           = @"TITLE";
 static NSString * const kAKMatchesNavigationItemTitle    = @"MATCHES";
 static NSString * const kAKTeamsNavigationItemTitle      = @"TEAMS";
@@ -28,10 +28,12 @@ static NSString * const kAKSheduledMatchesTitle          = @"SHEDULED MATCHES";
 static NSString * const kAKSeasonsURLString     = @"http://api.football-data.org/v1/soccerseasons/?season=";
 static NSString * const kAKFootballURLString    = @"http://api.football-data.org/v1/soccerseasons/";
 static NSString * const kAKHTTPMethod           = @"GET";
-static NSString * const kAKSeasonOfString       = @"SEASON OF";
+static NSString * const kAKFootballSeasonString = @"FOOTBALL Season";
 static NSString * const kAKYearString           = @"YEAR";
 static NSUInteger const kAKYearInterval         = 1;
 static NSString * const kAKDateFormat           = @"yyyy";
+static NSString * const kAKFontName             = @"HelveticaNeue-BoldItalic";
+static NSUInteger const kAKFontSize             = 20;
 
 //Context constants
 static NSString * const kAKFinishedMatchesKey   = @"FINISHED MATCHES";

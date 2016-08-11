@@ -18,10 +18,10 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-JS-7Gq">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GpQ-sx-vbT">
-                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GpQ-sx-vbT">
+                    <rect key="frame" x="0.0" y="144" width="375" height="523"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.0" green="0.90337022460000005" blue="0.27073544789999998" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -30,19 +30,40 @@
                         <outlet property="delegate" destination="-1" id="Tfn-2C-hvo"/>
                     </connections>
                 </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tAV-Oc-oF2">
+                    <rect key="frame" x="152" y="18" width="71" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="IQ3-q0-WhC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOTBALL SEASONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-8a-5fM">
+                    <rect key="frame" x="0.0" y="79" width="375" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="s29-5G-CMB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="29"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="GpQ-sx-vbT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BeW-5q-TXM"/>
-                <constraint firstItem="dwo-JS-7Gq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CsR-IC-7Zg"/>
-                <constraint firstAttribute="trailing" secondItem="dwo-JS-7Gq" secondAttribute="trailing" id="KKV-DG-CpP"/>
-                <constraint firstAttribute="trailing" secondItem="dwo-JS-7Gq" secondAttribute="trailing" id="M13-gY-kQd"/>
-                <constraint firstAttribute="trailing" secondItem="GpQ-sx-vbT" secondAttribute="trailing" id="Oqp-8P-VGt"/>
-                <constraint firstItem="dwo-JS-7Gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Se9-jz-dg5"/>
-                <constraint firstAttribute="bottom" secondItem="dwo-JS-7Gq" secondAttribute="bottom" id="lfk-IY-EhD"/>
-                <constraint firstItem="GpQ-sx-vbT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="sp9-jj-fE5"/>
-                <constraint firstAttribute="bottom" secondItem="GpQ-sx-vbT" secondAttribute="bottom" id="wgm-YW-eF8"/>
+                <constraint firstItem="tAV-Oc-oF2" firstAttribute="centerX" secondItem="D1P-8a-5fM" secondAttribute="centerX" id="158-eV-3T7"/>
+                <constraint firstItem="dwo-JS-7Gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6M0-hM-eZr"/>
+                <constraint firstItem="GpQ-sx-vbT" firstAttribute="top" secondItem="D1P-8a-5fM" secondAttribute="bottom" constant="8" symbolic="YES" id="7H6-Fj-1br"/>
+                <constraint firstItem="D1P-8a-5fM" firstAttribute="leading" secondItem="GpQ-sx-vbT" secondAttribute="leading" id="GJx-Fh-DBm"/>
+                <constraint firstItem="D1P-8a-5fM" firstAttribute="trailing" secondItem="GpQ-sx-vbT" secondAttribute="trailing" id="SUr-ZA-4NY"/>
+                <constraint firstItem="dwo-JS-7Gq" firstAttribute="leading" secondItem="GpQ-sx-vbT" secondAttribute="leading" id="UaE-2N-Xhk"/>
+                <constraint firstItem="D1P-8a-5fM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="VN0-xi-kLZ"/>
+                <constraint firstItem="GpQ-sx-vbT" firstAttribute="top" secondItem="tAV-Oc-oF2" secondAttribute="bottom" constant="58" id="b7P-4o-ZYT"/>
+                <constraint firstItem="dwo-JS-7Gq" firstAttribute="bottom" secondItem="GpQ-sx-vbT" secondAttribute="bottom" id="dY5-Tu-87T"/>
+                <constraint firstItem="dwo-JS-7Gq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iPc-v8-gjI"/>
+                <constraint firstAttribute="trailing" secondItem="dwo-JS-7Gq" secondAttribute="trailing" id="nYU-dg-DTX"/>
+                <constraint firstItem="tAV-Oc-oF2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="qdo-0W-vJU"/>
+                <constraint firstItem="dwo-JS-7Gq" firstAttribute="trailing" secondItem="GpQ-sx-vbT" secondAttribute="trailing" id="szT-vH-c8L"/>
+                <constraint firstAttribute="bottom" secondItem="GpQ-sx-vbT" secondAttribute="bottom" id="z33-52-J1g"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="tableView" destination="GpQ-sx-vbT" id="VwK-qu-LF1"/>
@@ -50,6 +71,7 @@
         </view>
     </objects>
     <resources>
-        <image name="wallpaper" width="360" height="640"/>
+        <image name="logo" width="44" height="44"/>
+        <image name="wallpaper" width="320" height="568"/>
     </resources>
 </document>

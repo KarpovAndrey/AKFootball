@@ -15,36 +15,46 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-Yt-0PK">
-                        <rect key="frame" x="0.0" y="0.0" width="265" height="43"/>
+                        <rect key="frame" x="8" y="0.0" width="257" height="43"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="265" id="xVP-mh-vNA"/>
+                            <constraint firstAttribute="width" constant="257" id="xVP-mh-vNA"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.32574176788330078" green="0.074253268539905548" blue="0.38463038206100464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv3-dg-esl" customClass="AKImageView">
                         <rect key="frame" x="267" y="0.0" width="53" height="43"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
+                        <rect key="frame" x="0.0" y="38" width="320" height="6"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="jv3-dg-esl" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="3fd-og-qLf"/>
                     <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="MPy-MH-xR9"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mon-gf-aDc"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mon-gf-aDc"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="bJb-76-gFo"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hBw-Js-Mbk"/>
                     <constraint firstAttribute="trailing" secondItem="jv3-dg-esl" secondAttribute="trailing" id="u8s-ZI-gAy"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="wJg-jm-X1k"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="cellImageView" destination="jv3-dg-esl" id="zmy-Jb-kDP"/>
                 <outlet property="cellLabel" destination="DEf-Yt-0PK" id="6kb-OE-phH"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="cellShadowDown" width="320" height="6"/>
+        <image name="cellShadowUp" width="320" height="6"/>
+    </resources>
 </document>

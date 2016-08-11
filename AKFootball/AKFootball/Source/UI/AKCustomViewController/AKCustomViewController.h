@@ -11,7 +11,6 @@
 @class AKContext;
 
 @interface AKCustomViewController : UIViewController
-//@property (nonatomic, strong)       AKUserModel     *user;
 @property (nonatomic, strong)       AKContext       *context;
 
 @property (nonatomic, readonly) NSString            *leftButtonImageName;
