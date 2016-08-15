@@ -105,18 +105,6 @@ AKRootViewAndReturnIfNil(AKMatchesView)
 }
 
 #pragma mark -
-#pragma mark Public
-
-- (void)contextDidLoadWithObject:(NSSet *)matches {
-    [self loadWithObject:matches];
-}
-
-- (void)contextDidFailToLoad:(NSSet *)matches {
-    [super contextDidFailToLoad:matches];
-    [self loadWithObject:matches];
-}
-
-#pragma mark -
 #pragma mark Private
 
 - (void)loadWithObject:(NSSet *)matches {
@@ -153,6 +141,24 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     AKMatchesView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark Public
+
+- (void)contextDidLoadWithObject:(NSSet *)matches {
+    [self loadWithObject:matches];
+}
+
+- (void)contextDidFailToLoad:(NSSet *)matches {
+    [super contextDidFailToLoad:matches];
+    [self loadWithObject:matches];
+}
+
+- (void)refreshTable {
+    [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
+    self.context = [[AKMatchContext alloc] initWithID:self.league.ID];
+    [super refreshTable];
 }
 
 @end

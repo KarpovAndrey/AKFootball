@@ -21,7 +21,7 @@
 
 - (NSString *)contextURLString {
     NSString *teamsURLString = [kAKFootballURLString stringByAppendingString:
-                                [NSString stringWithFormat:@"%li", self.ID]];
+                                [NSString stringWithFormat:@"%li", (unsigned long)self.ID]];
     
     return [teamsURLString stringByAppendingString:kAKLeagueTablePathKey];
 }

@@ -32,6 +32,8 @@ static NSString * const kAKFootballSeasonString = @"FOOTBALL Season";
 static NSString * const kAKYearString           = @"YEAR";
 static NSUInteger const kAKYearInterval         = 1;
 static NSString * const kAKDateFormat           = @"yyyy";
+static NSString * const kAKRefreshDateFormat    = @"MMM d, h:mm a";
+static NSString * const kAKRefreshString        = @"Last update: %@";
 static NSString * const kAKFontName             = @"HelveticaNeue-BoldItalic";
 static NSUInteger const kAKFontSize             = 20;
 

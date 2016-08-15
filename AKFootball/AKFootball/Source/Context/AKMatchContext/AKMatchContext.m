@@ -20,7 +20,7 @@
 
 - (NSString *)contextURLString {
     NSString *matchURLString = [kAKFootballURLString stringByAppendingString:
-                                               [NSString stringWithFormat:@"%li", self.ID]];
+                                               [NSString stringWithFormat:@"%li", (unsigned long)self.ID]];
 
     return [matchURLString stringByAppendingString:kAKFixturesPathKey];
 }

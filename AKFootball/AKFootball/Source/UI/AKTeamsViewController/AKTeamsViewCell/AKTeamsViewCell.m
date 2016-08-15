@@ -14,8 +14,11 @@
 
 - (void)fillWithModel:(AKTeam *)team {
     self.cellLabel.text = team.name;
+    if (team.pictureURLPath == nil) {
+        self.noLogoImageView.image = [UIImage imageNamed:@"noLogo"];
+    }
 //    NSString *URLString = team.pictureURLPath;
-//    if ([[URLString substringFromIndex:[URLString length] - 3]  isEqual: @"svg"]) {
+//    if ([[URLString substringFromIndex:[URLString length] - 3]  isEqual:@"svg"]) {
 //        NSLog(@"EQUAL");
 //        return;
 //    }

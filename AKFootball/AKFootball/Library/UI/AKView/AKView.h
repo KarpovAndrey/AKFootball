@@ -10,6 +10,9 @@
 
 @interface AKView: UIView
 
+@property (nonatomic, strong) UITableView   *tableView;
+
+
 - (void)showLoadingView;
 - (void)showLoadingViewWithDefaultMessageAnimated:(BOOL)animated;
 - (void)showLoadingViewAnimated:(BOOL)animated;

@@ -13,10 +13,15 @@
 #import "AKFootballConstants.h"
 
 @interface AKCustomViewController ()
+@property (nonatomic, readonly) AKView                  *rootView;
+@property (nonatomic, strong)   UIRefreshControl        *refreshControl;
+
 
 - (void)leftBarButtonClick;
 - (void)rightBarButtonClick;
 - (void)showCustomNavigationBar;
+
+- (void)addRefreshControl;
 
 @end
 
@@ -33,6 +38,12 @@
     [super viewWillAppear:animated];
     
     [self showCustomNavigationBar];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self addRefreshControl];
 }
 
 #pragma mark -
@@ -137,5 +148,32 @@
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+- (void)addRefreshControl {
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    refreshControl.backgroundColor = [UIColor grayColor];
+    refreshControl.tintColor = [UIColor whiteColor];
+    [refreshControl addTarget:self
+                       action:@selector(refreshTable)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    [self.rootView.tableView addSubview:self.refreshControl];
+}
+
+- (void)refreshTable {    
+    if (self.refreshControl) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:kAKRefreshDateFormat];
+        NSString *title = [NSString stringWithFormat:kAKRefreshString, [formatter stringFromDate:[NSDate date]]];
+        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                                                                    forKey:NSForegroundColorAttributeName];
+        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title
+                                                                              attributes:attrsDictionary];
+        self.refreshControl.attributedTitle = attributedTitle;
+        
+        [self.refreshControl endRefreshing];
+    }
+}
+
 
 @end

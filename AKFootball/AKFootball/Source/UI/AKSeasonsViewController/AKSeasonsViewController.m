@@ -16,11 +16,8 @@
 @interface AKSeasonsViewController ()
 @property (nonatomic, readonly) AKSeasonsView           *rootView;
 @property (nonatomic, strong)   NSArray                 *yearsArray;
-@property (nonatomic, strong)   UIRefreshControl        *refreshControl;
 
 - (NSArray *)generateYearsArray;
-- (void)addRefreshControl;
-- (void)refreshTable;
 
 @end
 
@@ -36,19 +33,6 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self addRefreshControl];
-}
-
-- (void)addRefreshControl {
-    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    refreshControl.backgroundColor = [UIColor grayColor];
-    refreshControl.tintColor = [UIColor whiteColor];
-    [refreshControl addTarget:self
-                            action:@selector(refreshTable)
-                  forControlEvents:UIControlEventValueChanged];
-    self.refreshControl = refreshControl;
-    [self.rootView.tableView addSubview:self.refreshControl];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,27 +80,10 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 }
 
 - (void)refreshTable {
-    //TODO: refresh your data
-    [self reloadData];
-}
-
-- (void)reloadData {
-    // Reload table data
+    [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     [self.rootView.tableView reloadData];
-    
-    // End the refreshing
-    if (self.refreshControl) {
-        
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"MMM d, h:mm a"];
-        NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
-        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
-                                                                    forKey:NSForegroundColorAttributeName];
-        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
-        self.refreshControl.attributedTitle = attributedTitle;
-        
-        [self.refreshControl endRefreshing];
-    }
+    [super refreshTable];
+    [self.rootView removeLoadingViewAnimated:YES];
 }
 
 @end

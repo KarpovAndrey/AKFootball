@@ -9,5 +9,6 @@
 #import "AKLeaguesView.h"
 
 @implementation AKLeaguesView
+@dynamic tableView;
 
 @end

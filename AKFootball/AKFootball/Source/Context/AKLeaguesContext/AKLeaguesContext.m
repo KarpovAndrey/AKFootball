@@ -19,7 +19,7 @@
 #pragma mark Accessors
 
 - (NSString *)contextURLString {
-    NSString *yearString = [NSString stringWithFormat:@"%li",  self.ID];
+    NSString *yearString = [NSString stringWithFormat:@"%li",  (unsigned long)self.ID];
 
     return [kAKSeasonsURLString stringByAppendingString:yearString];
 }

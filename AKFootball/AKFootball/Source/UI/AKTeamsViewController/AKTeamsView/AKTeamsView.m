@@ -9,6 +9,6 @@
 #import "AKTeamsView.h"
 
 @implementation AKTeamsView
-
+@dynamic tableView;
 
 @end

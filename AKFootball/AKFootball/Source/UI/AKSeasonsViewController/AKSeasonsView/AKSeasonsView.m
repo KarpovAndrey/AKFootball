@@ -9,5 +9,6 @@
 #import "AKSeasonsView.h"
 
 @implementation AKSeasonsView
+@dynamic tableView;
 
 @end

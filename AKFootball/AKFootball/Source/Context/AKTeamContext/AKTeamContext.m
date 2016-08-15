@@ -21,7 +21,7 @@
 
 - (NSString *)contextURLString {
     NSString *teamsURLString = [kAKFootballURLString stringByAppendingString:
-                                                [NSString stringWithFormat:@"%li", self.ID]];
+                                                [NSString stringWithFormat:@"%li", (unsigned long)self.ID]];
 
     return [teamsURLString stringByAppendingString:kAKTeamsPathKey];
 }
@@ -38,9 +38,11 @@
         NSArray *selfArray = [linksDictionary valueForKey:kAKSelfKey];
         NSString *stringID = [selfArray valueForKey:kAKHrefKey];
         NSUInteger integerID = [[stringID lastPathComponent] integerValue];
-        
         AKTeam *team = [AKTeam objectWithID:integerID];
-        team.pictureURLPath = [teamDictionary valueForKey:kAKCrestURLKey];
+        if (!([teamDictionary valueForKey:kAKCrestURLKey] == (NSString *)[NSNull null])) {
+            team.pictureURLPath = [teamDictionary valueForKey:kAKCrestURLKey];
+        }
+        
         team.name = [teamDictionary valueForKey:kAKNameKey];
         [league addTeamsObject:team];
     }

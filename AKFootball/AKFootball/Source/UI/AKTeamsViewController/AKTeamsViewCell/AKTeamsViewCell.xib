@@ -26,22 +26,34 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv3-dg-esl" customClass="AKImageView">
                         <rect key="frame" x="267" y="0.0" width="53" height="43"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
                         <rect key="frame" x="0.0" y="38" width="320" height="6"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fqd-ge-Xan" userLabel="noLogo">
+                        <rect key="frame" x="267" y="0.0" width="53" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="jv3-dg-esl" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="3fd-og-qLf"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="6x3-xJ-Ia6"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="leading" secondItem="jv3-dg-esl" secondAttribute="leading" id="8al-qs-kxc"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="drt-Hp-U8b" secondAttribute="leading" id="K16-LM-BcN"/>
                     <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="MPy-MH-xR9"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mon-gf-aDc"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="trailing" secondItem="jv3-dg-esl" secondAttribute="trailing" id="Syh-km-zNA"/>
+                    <constraint firstItem="drt-Hp-U8b" firstAttribute="top" secondItem="OtI-SA-hfi" secondAttribute="bottom" constant="32" id="TtH-b7-f1p"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="bJb-76-gFo"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hBw-Js-Mbk"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="trailing" secondItem="OtI-SA-hfi" secondAttribute="trailing" id="kiw-Fp-pgR"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="mtl-vm-K5g"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="fqd-ge-Xan" secondAttribute="top" id="rxT-16-5SM"/>
                     <constraint firstAttribute="trailing" secondItem="jv3-dg-esl" secondAttribute="trailing" id="u8s-ZI-gAy"/>
                     <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="wJg-jm-X1k"/>
                 </constraints>
@@ -50,6 +62,7 @@
             <connections>
                 <outlet property="cellImageView" destination="jv3-dg-esl" id="zmy-Jb-kDP"/>
                 <outlet property="cellLabel" destination="DEf-Yt-0PK" id="6kb-OE-phH"/>
+                <outlet property="noLogoImageView" destination="fqd-ge-Xan" id="S95-VY-Wob"/>
             </connections>
         </tableViewCell>
     </objects>

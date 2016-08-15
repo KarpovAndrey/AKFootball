@@ -22,6 +22,8 @@
 @property (nonatomic, strong)   NSArray                 *teamsArray;
 @property (nonatomic, strong)   AKTabBarViewController  *tabBarController;
 
+- (void)loadContextWithObject:(NSSet *)teams;
+
 @end
 
 @implementation AKTeamsViewController
@@ -128,21 +130,31 @@ AKRootViewAndReturnIfNil(AKTeamsView)
 }
 
 #pragma mark -
-#pragma mark Public
+#pragma mark Private
 
-- (void)contextDidLoadWithObject:(NSSet *)teams {
+- (void)loadContextWithObject:(NSSet *)teams {
     self.teamsArray = [teams allObjects];
     AKTeamsView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];
 }
 
+#pragma mark -
+#pragma mark Public
+
+- (void)contextDidLoadWithObject:(NSSet *)teams {
+    [self loadContextWithObject:teams];
+}
+
 - (void)contextDidFailToLoad:(NSSet *)teams {
     [super contextDidFailToLoad:teams];
-    self.teamsArray = [teams allObjects];
-    AKTeamsView *rootView = self.rootView;
-    [rootView.tableView reloadData];
-    [self.rootView removeLoadingViewAnimated:YES];
+    [self loadContextWithObject:teams];
+}
+
+- (void)refreshTable {
+    [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
+    self.context = [[AKTeamContext alloc] initWithID:self.league.ID];
+    [super refreshTable];
 }
 
 @end

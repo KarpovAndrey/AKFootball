@@ -59,7 +59,7 @@
                     <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" id="yd7-x5-Bav"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="teamNameLabel" destination="9qH-1a-fpf" id="ikv-Eb-OCf"/>
                 <outlet property="teamPointsLabel" destination="7IV-Vw-obj" id="uHy-eg-Zpf"/>

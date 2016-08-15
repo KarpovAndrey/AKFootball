@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) AKTournamentView            *rootView;
 @property (nonatomic, strong)   NSArray                     *teamsArray;
 
-- (void)loadWithObject:(id)object;
+- (void)loadContextWithObject:(NSSet *)teams;
 
 @end
 
@@ -65,21 +65,9 @@ AKRootViewAndReturnIfNil(AKTournamentView)
 }
 
 #pragma mark -
-#pragma mark Public
-
-- (void)contextDidLoadWithObject:(NSSet *)teams {
-    [self loadWithObject:teams];
-}
-
-- (void)contextDidFailToLoad:(NSSet *)teams {
-    [super contextDidFailToLoad:teams];
-    [self loadWithObject:teams];
-}
-
-#pragma mark -
 #pragma mark Private
 
-- (void)loadWithObject:(NSSet *)teams {
+- (void)loadContextWithObject:(NSSet *)teams {
     NSArray *arrayTeams = [[teams allObjects] mutableCopy];
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:kAKPointsKey ascending:NO];
     self.teamsArray = [arrayTeams sortedArrayUsingDescriptors:@[sortDescriptor]];
@@ -87,6 +75,24 @@ AKRootViewAndReturnIfNil(AKTournamentView)
     AKTournamentView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [self.rootView removeLoadingViewAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark Public
+
+- (void)contextDidLoadWithObject:(NSSet *)teams {
+    [self loadContextWithObject:teams];
+}
+
+- (void)contextDidFailToLoad:(NSSet *)teams {
+    [super contextDidFailToLoad:teams];
+    [self loadContextWithObject:teams];
+}
+
+- (void)refreshTable {
+    [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
+    self.context = [[AKTournamentContext alloc] initWithID:self.league.ID];
+    [super refreshTable];
 }
 
 @end
