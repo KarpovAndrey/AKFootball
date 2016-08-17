@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AKTabBarViewController : UIViewController
+@interface AKTabBarViewController : UITabBarController
 
 @end

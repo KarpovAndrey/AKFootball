@@ -10,7 +10,9 @@
 #import "AKTabBarView.h"
 
 @interface AKTeamsView : AKView
-@property (nonatomic, strong) IBOutlet UITableView        *tableView;
-@property (nonatomic, strong) IBOutlet AKTabBarView       *tabBarView;
+@property (nonatomic, strong) IBOutlet UITableView                            *tableView;
+@property (nonatomic, strong) IBOutlet AKTabBarView                           *tabBarView;
+@property (nonatomic, strong) IBOutletCollection(UIViewController)  NSArray   *controllersCollection;
+@property (nonatomic, strong) UIViewController                                *currentViewController;
 
 @end

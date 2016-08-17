@@ -130,7 +130,7 @@
 		843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarViewController.m; sourceTree = "<group>"; };
 		843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTabBarViewController.xib; sourceTree = "<group>"; };
 		843E0EA71D3CE31600C733C2 /* AKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarView.h; sourceTree = "<group>"; };
-		843E0EA81D3CE31600C733C2 /* AKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKTabBarView.m; path = AKTabBarVIew/AKTabBarView.m; sourceTree = "<group>"; };
+		843E0EA81D3CE31600C733C2 /* AKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarView.m; sourceTree = "<group>"; };
 		843E0EAB1D3D5AC800C733C2 /* UIView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKCategory.h"; sourceTree = "<group>"; };
 		843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKCategory.m"; sourceTree = "<group>"; };
 		8444DA891D364CAA005909BA /* AKMatchesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatchesViewCell.h; sourceTree = "<group>"; };
@@ -392,7 +392,6 @@
 			children = (
 				843E0EA61D3CE2D200C733C2 /* AKTabBarVIew */,
 				843E0E9F1D3CE28400C733C2 /* AKTabBarViewController.h */,
-				843E0EA81D3CE31600C733C2 /* AKTabBarView.m */,
 				843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */,
 				843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */,
 			);
@@ -402,6 +401,7 @@
 		843E0EA61D3CE2D200C733C2 /* AKTabBarVIew */ = {
 			isa = PBXGroup;
 			children = (
+				843E0EA81D3CE31600C733C2 /* AKTabBarView.m */,
 				843E0EA71D3CE31600C733C2 /* AKTabBarView.h */,
 			);
 			path = AKTabBarVIew;

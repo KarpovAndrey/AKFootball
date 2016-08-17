@@ -117,22 +117,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AKFootball/Source/UI/AKTeamsViewController/AKTeamsViewController.m"
-            timestampString = "492943326.988226"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "-refreshTable"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AKFootball/Source/UI/AKSeasonsViewController/AKSeasonsViewController.m"
             timestampString = "492942179.232474"
             startingColumnNumber = "9223372036854775807"
@@ -150,11 +134,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AKFootball/Source/UI/AKTeamsViewController/AKTeamsViewCell/AKTeamsViewCell.m"
-            timestampString = "492950940.481135"
+            timestampString = "493135464.073071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-webViewDidFinishLoad:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AKFootball/Source/UI/AKTeamsViewController/AKTeamsViewCell/AKTeamsViewCell.m"
+            timestampString = "493135192.337558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-fillWithModel:"
             landmarkType = "5">
          </BreakpointContent>

@@ -10,15 +10,11 @@
 #import "AKTabBarVIew.h"
 
 @interface AKTabBarViewController ()
-@property (nonatomic, readonly) AKTabBarView            *rootView;
+
 
 @end
 
 @implementation AKTabBarViewController
 
-#pragma mark -
-#pragma mark Accessors
-
-AKRootViewAndReturnIfNil(AKTabBarView)
 
 @end

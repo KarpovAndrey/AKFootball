@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -26,7 +28,26 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv3-dg-esl" customClass="AKImageView">
                         <rect key="frame" x="267" y="0.0" width="53" height="43"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-F3-KNd">
+                                <rect key="frame" x="0.0" y="0.0" width="53" height="43"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hdq-F3-KNd" secondAttribute="height" multiplier="53:43" id="uvb-ve-lsn"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="JlB-Mm-r8w"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hdq-F3-KNd" secondAttribute="trailing" id="1ay-L1-Xiw"/>
+                            <constraint firstItem="hdq-F3-KNd" firstAttribute="leading" secondItem="jv3-dg-esl" secondAttribute="leading" id="2wW-AA-jkf"/>
+                            <constraint firstAttribute="bottom" secondItem="hdq-F3-KNd" secondAttribute="bottom" id="Zns-QA-6kd"/>
+                            <constraint firstItem="hdq-F3-KNd" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="c1e-KX-O2x"/>
+                        </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
@@ -41,27 +62,28 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="jv3-dg-esl" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="3fd-og-qLf"/>
-                    <constraint firstItem="fqd-ge-Xan" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="6x3-xJ-Ia6"/>
-                    <constraint firstItem="fqd-ge-Xan" firstAttribute="leading" secondItem="jv3-dg-esl" secondAttribute="leading" id="8al-qs-kxc"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="drt-Hp-U8b" secondAttribute="leading" id="K16-LM-BcN"/>
-                    <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="MPy-MH-xR9"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mon-gf-aDc"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="trailing" secondItem="jv3-dg-esl" secondAttribute="trailing" id="Syh-km-zNA"/>
-                    <constraint firstItem="drt-Hp-U8b" firstAttribute="top" secondItem="OtI-SA-hfi" secondAttribute="bottom" constant="32" id="TtH-b7-f1p"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="bJb-76-gFo"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hBw-Js-Mbk"/>
-                    <constraint firstItem="fqd-ge-Xan" firstAttribute="trailing" secondItem="OtI-SA-hfi" secondAttribute="trailing" id="kiw-Fp-pgR"/>
-                    <constraint firstItem="fqd-ge-Xan" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="mtl-vm-K5g"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="fqd-ge-Xan" secondAttribute="top" id="rxT-16-5SM"/>
-                    <constraint firstAttribute="trailing" secondItem="jv3-dg-esl" secondAttribute="trailing" id="u8s-ZI-gAy"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="jv3-dg-esl" secondAttribute="bottom" id="wJg-jm-X1k"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3As-5G-BHM"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="fqd-ge-Xan" secondAttribute="bottom" id="3IL-B4-BOi"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="70b-bD-8e0"/>
+                    <constraint firstItem="drt-Hp-U8b" firstAttribute="top" secondItem="OtI-SA-hfi" secondAttribute="bottom" constant="32" id="A1F-7q-w4w"/>
+                    <constraint firstItem="jv3-dg-esl" firstAttribute="bottom" secondItem="fqd-ge-Xan" secondAttribute="bottom" id="BSF-od-b5c"/>
+                    <constraint firstItem="jv3-dg-esl" firstAttribute="leading" secondItem="fqd-ge-Xan" secondAttribute="leading" id="CBM-s6-DfO"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="DEf-Yt-0PK" secondAttribute="top" id="NU9-UD-BMh"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="drt-Hp-U8b" secondAttribute="leading" id="Rym-Gk-8oc"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="trailing" secondItem="OtI-SA-hfi" secondAttribute="trailing" id="S1f-W2-rqj"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="TbV-cG-tNx"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="top" secondItem="jv3-dg-esl" secondAttribute="top" id="VQQ-Vw-MOa"/>
+                    <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="XdF-lF-oR3"/>
+                    <constraint firstItem="jv3-dg-esl" firstAttribute="trailing" secondItem="OtI-SA-hfi" secondAttribute="trailing" id="ZOU-JF-Y8O"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="apo-YL-Gpy"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pBh-uw-AgL"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="cellImageView" destination="jv3-dg-esl" id="zmy-Jb-kDP"/>
                 <outlet property="cellLabel" destination="DEf-Yt-0PK" id="6kb-OE-phH"/>
+                <outlet property="imageWebView" destination="hdq-F3-KNd" id="iUV-cr-Rn2"/>
                 <outlet property="noLogoImageView" destination="fqd-ge-Xan" id="S95-VY-Wob"/>
             </connections>
         </tableViewCell>
