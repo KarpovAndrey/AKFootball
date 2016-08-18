@@ -25,7 +25,6 @@
 		843E0EA11D3CE28400C733C2 /* AKTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EA01D3CE28400C733C2 /* AKTabBarViewController.m */; };
 		843E0EA51D3CE2B900C733C2 /* AKTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */; };
 		843E0EA91D3CE31600C733C2 /* AKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EA81D3CE31600C733C2 /* AKTabBarView.m */; };
-		843E0EAD1D3D5AC800C733C2 /* UIView+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */; };
 		8444DA8C1D364CAA005909BA /* AKMatchesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA8A1D364CAA005909BA /* AKMatchesViewCell.m */; };
 		8444DA8D1D364CAA005909BA /* AKMatchesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */; };
 		8444DA911D3656EA005909BA /* AKMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA901D3656EA005909BA /* AKMatchContext.m */; };
@@ -326,6 +325,8 @@
 		845E08AF1D653B6B00AF4C7A /* West_Ham_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07861D653B6B00AF4C7A /* West_Ham_United_FC.png */; };
 		845E08B01D653B6B00AF4C7A /* Wigan_Athletic.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07871D653B6B00AF4C7A /* Wigan_Athletic.png */; };
 		845E08B11D653B6B00AF4C7A /* Willem_II_Tilburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07881D653B6B00AF4C7A /* Willem_II_Tilburg.png */; };
+		845E08B51D65DEA500AF4C7A /* UIColor+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E08B41D65DEA500AF4C7A /* UIColor+AKCategory.m */; };
+		845E08B91D65DF1500AF4C7A /* UIView+AKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E08B81D65DF1500AF4C7A /* UIView+AKCategory.m */; };
 		84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0581D23DA60008E43E5 /* AKAlphabet.m */; };
 		84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */; };
 		84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */; };
@@ -428,8 +429,6 @@
 		843E0EA41D3CE2B800C733C2 /* AKTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKTabBarViewController.xib; sourceTree = "<group>"; };
 		843E0EA71D3CE31600C733C2 /* AKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarView.h; sourceTree = "<group>"; };
 		843E0EA81D3CE31600C733C2 /* AKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarView.m; sourceTree = "<group>"; };
-		843E0EAB1D3D5AC800C733C2 /* UIView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKCategory.h"; sourceTree = "<group>"; };
-		843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKCategory.m"; sourceTree = "<group>"; };
 		8444DA891D364CAA005909BA /* AKMatchesViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatchesViewCell.h; sourceTree = "<group>"; };
 		8444DA8A1D364CAA005909BA /* AKMatchesViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatchesViewCell.m; sourceTree = "<group>"; };
 		8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKMatchesViewCell.xib; sourceTree = "<group>"; };
@@ -732,6 +731,10 @@
 		845E07861D653B6B00AF4C7A /* West_Ham_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = West_Ham_United_FC.png; sourceTree = "<group>"; };
 		845E07871D653B6B00AF4C7A /* Wigan_Athletic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wigan_Athletic.png; sourceTree = "<group>"; };
 		845E07881D653B6B00AF4C7A /* Willem_II_Tilburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Willem_II_Tilburg.png; sourceTree = "<group>"; };
+		845E08B31D65DEA500AF4C7A /* UIColor+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AKCategory.h"; sourceTree = "<group>"; };
+		845E08B41D65DEA500AF4C7A /* UIColor+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AKCategory.m"; sourceTree = "<group>"; };
+		845E08B71D65DF1500AF4C7A /* UIView+AKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKCategory.h"; sourceTree = "<group>"; };
+		845E08B81D65DF1500AF4C7A /* UIView+AKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKCategory.m"; sourceTree = "<group>"; };
 		84BEC03A1D23D300008E43E5 /* AKFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BEC0571D23DA60008E43E5 /* AKAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAlphabet.h; sourceTree = "<group>"; };
 		84BEC0581D23DA60008E43E5 /* AKAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAlphabet.m; sourceTree = "<group>"; };
@@ -999,15 +1002,6 @@
 				843E0EA71D3CE31600C733C2 /* AKTabBarView.h */,
 			);
 			path = AKTabBarVIew;
-			sourceTree = "<group>";
-		};
-		843E0EAA1D3D5A6000C733C2 /* UIView+AKCategory */ = {
-			isa = PBXGroup;
-			children = (
-				843E0EAB1D3D5AC800C733C2 /* UIView+AKCategory.h */,
-				843E0EAC1D3D5AC800C733C2 /* UIView+AKCategory.m */,
-			);
-			name = "UIView+AKCategory";
 			sourceTree = "<group>";
 		};
 		8444DA881D364C80005909BA /* AKMatchesViewCell */ = {
@@ -1333,6 +1327,24 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
+		845E08B21D65DE8800AF4C7A /* UIColor+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				845E08B31D65DEA500AF4C7A /* UIColor+AKCategory.h */,
+				845E08B41D65DEA500AF4C7A /* UIColor+AKCategory.m */,
+			);
+			path = "UIColor+AKCategory";
+			sourceTree = "<group>";
+		};
+		845E08B61D65DF1500AF4C7A /* UIView+AKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				845E08B71D65DF1500AF4C7A /* UIView+AKCategory.h */,
+				845E08B81D65DF1500AF4C7A /* UIView+AKCategory.m */,
+			);
+			path = "UIView+AKCategory";
+			sourceTree = "<group>";
+		};
 		84BEC0311D23D300008E43E5 = {
 			isa = PBXGroup;
 			children = (
@@ -1458,7 +1470,8 @@
 		84BEC0701D23DA60008E43E5 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				843E0EAA1D3D5A6000C733C2 /* UIView+AKCategory */,
+				845E08B61D65DF1500AF4C7A /* UIView+AKCategory */,
+				845E08B21D65DE8800AF4C7A /* UIColor+AKCategory */,
 				84E0A75E1D252AF500B86C93 /* UIBarButtonItem+AKCategory */,
 				84BEC0711D23DA60008E43E5 /* CGGeometry+AKCategory */,
 				84BEC0741D23DA60008E43E5 /* NSBundle+AKCategory */,
@@ -2419,7 +2432,6 @@
 				84BEC0DB1D23DA60008E43E5 /* NSObject+AKExtensions.m in Sources */,
 				84E0A78A1D26997100B86C93 /* AKTournamentView.m in Sources */,
 				84BEC0D51D23DA60008E43E5 /* AKObserverArray.m in Sources */,
-				843E0EAD1D3D5AC800C733C2 /* UIView+AKCategory.m in Sources */,
 				84E0A7761D26957000B86C93 /* AKTeamsView.m in Sources */,
 				84BEC0D21D23DA60008E43E5 /* AKStringAlphabet.m in Sources */,
 				84354D471D3F8C5D001DF034 /* AKMatch+CoreDataProperties.m in Sources */,
@@ -2457,6 +2469,8 @@
 				84BEC0E11D23DA60008E43E5 /* UIViewController+AKCategory.m in Sources */,
 				84E0A7711D26949700B86C93 /* AKTeamsViewController.m in Sources */,
 				84BEC0E51D23DA60008E43E5 /* AKModel.m in Sources */,
+				845E08B51D65DEA500AF4C7A /* UIColor+AKCategory.m in Sources */,
+				845E08B91D65DF1500AF4C7A /* UIView+AKCategory.m in Sources */,
 				84BEC0E21D23DA60008E43E5 /* UIWindow+AKCategory.m in Sources */,
 				84BEC0DE1D23DA60008E43E5 /* UINavigationController+AKCategory.m in Sources */,
 				84E0A7611D252B0100B86C93 /* UIBarButtonItem+AKCategory.m in Sources */,

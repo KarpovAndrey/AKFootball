@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet  UILabel        *teamPositionLabel;
 @property (nonatomic, strong) IBOutlet  UILabel        *teamNameLabel;
 @property (nonatomic, strong) IBOutlet  UILabel        *teamPointsLabel;
+@property (nonatomic, strong) IBOutlet  UIImageView    *teamImageLogo;
 
 - (void)fillWithModel:(AKTeam *)team;
 

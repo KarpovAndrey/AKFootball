@@ -31,10 +31,6 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 #pragma mark -
 #pragma mark View LifeCycle
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -80,10 +76,11 @@ AKRootViewAndReturnIfNil(AKSeasonsView);
 }
 
 - (void)refreshTable {
-    [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
-    [self.rootView.tableView reloadData];
+    AKSeasonsView *rootView = self.rootView;
+    [rootView showLoadingViewWithDefaultMessageAnimated:YES];
+    [rootView.tableView reloadData];
     [super refreshTable];
-    [self.rootView removeLoadingViewAnimated:YES];
+    [rootView removeLoadingViewAnimated:YES];
 }
 
 @end

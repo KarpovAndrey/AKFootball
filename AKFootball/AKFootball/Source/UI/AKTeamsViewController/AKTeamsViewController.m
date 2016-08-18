@@ -20,7 +20,7 @@
 @interface AKTeamsViewController ()
 @property (nonatomic, readonly) AKTeamsView             *rootView;
 @property (nonatomic, strong)   NSArray                 *teamsArray;
-@property (nonatomic, strong)   AKTabBarViewController  *tabBarController;
+//@property (nonatomic, strong)   AKTabBarViewController  *tabBarController;
 
 - (void)loadContextWithObject:(NSSet *)teams;
 
@@ -34,20 +34,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    AKTabBarViewController *tabBarController = [AKTabBarViewController new];
-    CGRect screenBound = [[UIScreen mainScreen] bounds];
-    CGSize screenSize = screenBound.size;
-    
-    CGRect rect = CGRectMake(0, screenSize.height - 50, screenSize.width, 50);
-    tabBarController.view.frame = rect;
-
-    [self addChildViewController:tabBarController];
-    [self.rootView.tabBarView addSubview:tabBarController.view];
-    [tabBarController didMoveToParentViewController:self];
+//    AKTabBarViewController *tabBarController = [AKTabBarViewController new];
+//    CGRect screenBound = [[UIScreen mainScreen] bounds];
+//    CGSize screenSize = screenBound.size;
+//    
+//    CGRect rect = CGRectMake(0, screenSize.height - 50, screenSize.width, 50);
+//    tabBarController.view.frame = rect;
+//
+//    [self addChildViewController:tabBarController];
+//    [self.rootView.tabBarView addSubview:tabBarController.view];
+//    [tabBarController didMoveToParentViewController:self];
     
     if (self.context.state == kAKModelLoadingState) {
         [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     }
+    
 }
 
 //- (void)presentDetailController:(AKTabBarViewController *)detailVC{
@@ -121,6 +122,7 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     
     return cell;
 }
+
 ///////////////////////need to delete whet tab bar will ready
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AKMatchesViewController *controller = [AKMatchesViewController new];
@@ -136,7 +138,7 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     self.teamsArray = [teams allObjects];
     AKTeamsView *rootView = self.rootView;
     [rootView.tableView reloadData];
-    [self.rootView removeLoadingViewAnimated:YES];
+    [rootView removeLoadingViewAnimated:YES];
 }
 
 #pragma mark -

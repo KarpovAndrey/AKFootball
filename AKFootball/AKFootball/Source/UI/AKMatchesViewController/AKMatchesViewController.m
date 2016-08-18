@@ -15,6 +15,9 @@
 #import "AKTournamentViewController.h"
 #import "AKFootballConstants.h"
 
+#define kAKCGRectHeaderValue        CGRectMake(0, 30, tableView.frame.size.width, 20)
+#define kAKCGRectHeaderViewValue    CGRectMake(0, 20, tableView.frame.size.width, 10)
+
 @interface AKMatchesViewController ()
 @property (nonatomic, readonly) AKMatchesView           *rootView;
 @property (nonatomic, strong)   NSMutableArray          *arrayMatches;
@@ -78,19 +81,15 @@ AKRootViewAndReturnIfNil(AKMatchesView)
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    // 1. The view for the header
-    UIView* headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, tableView.frame.size.width, 10)];
-    
-    // 3. Add a label
-    UILabel *headerLabel = [[UILabel alloc] init];
-    headerLabel.frame = CGRectMake(0, 30, tableView.frame.size.width, 20);
+    UIView* headerView = [[UIView alloc] initWithFrame:kAKCGRectHeaderViewValue];
+    UILabel *headerLabel = [UILabel new];
+    headerLabel.frame = kAKCGRectHeaderValue;
     headerLabel.backgroundColor = [UIColor clearColor];
-    headerLabel.textColor = [UIColor brownColor];
-    headerLabel.font = [UIFont boldSystemFontOfSize:17.0];
+    headerLabel.textColor = [UIColor whiteColor];
+    headerLabel.font = [UIFont boldSystemFontOfSize:kAKHeaderTableViewFontSize];
     headerLabel.text = [self.arrayMatches[section] objectForKey:kAKTitleKey];
     headerLabel.textAlignment = NSTextAlignmentCenter;
     
-    // 4. Add the label to the header view
     [headerView addSubview:headerLabel];
     
     return headerView;
@@ -140,7 +139,7 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     
     AKMatchesView *rootView = self.rootView;
     [rootView.tableView reloadData];
-    [self.rootView removeLoadingViewAnimated:YES];
+    [rootView removeLoadingViewAnimated:YES];
 }
 
 #pragma mark -

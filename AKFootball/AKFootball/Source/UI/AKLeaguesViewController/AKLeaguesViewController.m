@@ -38,8 +38,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBarHidden = NO;
-    self.navigationController.navigationItem.rightBarButtonItem.image = nil;
+    UINavigationController *сontroller = self.navigationController;
+    сontroller.navigationBarHidden = NO;
+    сontroller.navigationItem.rightBarButtonItem.image = nil;
 }
 
 #pragma mark -

@@ -19,10 +19,16 @@ static CGFloat const kAKDefaultBorderCornerRadius    = 0;
                 cornerRadius:kAKDefaultBorderCornerRadius];
 }
 
-- (void)addDefaultBorderWithCornerRadius:(CGFloat)cornerRadius {
+- (void)addBorderWithCornerRadius:(CGFloat)cornerRadius {
     [self addBorderWithColor:[UIColor blackColor]
                        width:kAKDefaultBorderWidth
                 cornerRadius:cornerRadius];
+}
+
+- (void)addDefaultBorderWithColor:(UIColor *)color {
+    [self addBorderWithColor:color
+                       width:kAKDefaultBorderWidth
+                cornerRadius:kAKDefaultBorderCornerRadius];
 }
 
 - (void)addBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)cornerRadius {

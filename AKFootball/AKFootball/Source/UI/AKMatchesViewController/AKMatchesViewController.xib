@@ -40,6 +40,7 @@
                 <constraint firstAttribute="bottom" secondItem="sVg-HM-opV" secondAttribute="bottom" id="rry-Mk-ZEx"/>
                 <constraint firstItem="sVg-HM-opV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="xVu-53-CCQ"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outlet property="tableView" destination="sVg-HM-opV" id="orH-7u-8hr"/>

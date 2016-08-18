@@ -23,9 +23,7 @@
                leftButtonImageName:(NSString *)leftButtonImageName
               rightButtonImageName:(NSString *)rightButtonImageName;
 
-
 - (void)refreshTable;
-
 
 //these methods are called in subclasses
 //you should never call these method directly from outside subclasses

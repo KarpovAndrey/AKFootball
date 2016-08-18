@@ -16,11 +16,9 @@
 @property (nonatomic, readonly) AKView                  *rootView;
 @property (nonatomic, strong)   UIRefreshControl        *refreshControl;
 
-
 - (void)leftBarButtonClick;
 - (void)rightBarButtonClick;
 - (void)showCustomNavigationBar;
-
 - (void)addRefreshControl;
 
 @end
@@ -66,7 +64,7 @@
         [_context cancel];
         _context = context;
         [_context load];
-
+        
         AKWeakify;
         [_context addHandler:^(id object) {
             AKStrongifyAndReturnIfNil
@@ -117,8 +115,8 @@
     navigationBar.translucent = YES;
     NSDictionary *titleTextAttributes =@{NSFontAttributeName:[UIFont fontWithName:
                                                               kAKFontName size:kAKFontSize],
-                                                              NSForegroundColorAttributeName:
-                                                              [UIColor whiteColor]};
+                                         NSForegroundColorAttributeName:
+                                             [UIColor whiteColor]};
     navigationBar.titleTextAttributes = titleTextAttributes;
     UINavigationItem *navigationItem = self.navigationItem;
     navigationItem.title = title;
@@ -160,7 +158,7 @@
     [self.rootView.tableView addSubview:self.refreshControl];
 }
 
-- (void)refreshTable {    
+- (void)refreshTable {
     if (self.refreshControl) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:kAKRefreshDateFormat];
@@ -174,6 +172,5 @@
         [self.refreshControl endRefreshing];
     }
 }
-
 
 @end

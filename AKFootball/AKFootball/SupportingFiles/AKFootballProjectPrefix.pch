@@ -23,5 +23,6 @@
 #import "UICollectionView+AKCategory.h"
 #import "UIBarButtonItem+AKCategory.h"
 #import "UIView+AKCategory.h"
+#import "UIColor+AKCategory.h"
 
 #endif /* AKFootballProjectPrefix_pch */

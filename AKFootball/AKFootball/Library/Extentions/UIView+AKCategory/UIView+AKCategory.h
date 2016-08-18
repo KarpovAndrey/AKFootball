@@ -11,7 +11,8 @@
 @interface UIView (AKCategory)
 
 - (void)addDefaultBorder;
-- (void)addDefaultBorderWithCornerRadius:(CGFloat)cornerRadius;
+- (void)addBorderWithCornerRadius:(CGFloat)cornerRadius;
+- (void)addDefaultBorderWithColor:(UIColor *)color;
 - (void)addBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)cornerRadius;
 
 @end

@@ -50,6 +50,7 @@
                 <constraint firstItem="feh-Ju-Jnb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="npn-zH-73F"/>
                 <constraint firstItem="YQo-ND-U0B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="617" id="rrv-a1-bcc"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="tabBarView" destination="YQo-ND-U0B" id="vBP-4U-VVZ"/>

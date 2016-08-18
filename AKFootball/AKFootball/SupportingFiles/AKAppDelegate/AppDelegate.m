@@ -11,6 +11,9 @@
 #import "AppDelegate.h"
 #import "AKSeasonsViewController.h"
 #import "AKFootballConstants.h"
+#import "AKTeamsViewController.h"
+#import "AKMatchesViewController.h"
+#import "AKTournamentViewController.h"
 
 @implementation AppDelegate
 

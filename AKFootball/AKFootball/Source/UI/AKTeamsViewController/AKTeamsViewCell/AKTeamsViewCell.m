@@ -23,7 +23,7 @@
     } else {
         NSString *imageFullName = team.pictureURLPath.lastPathComponent;
         self.customImageView.image = [UIImage imageNamed:[imageFullName substringToIndex:
-                                                          [imageFullName length] - kAKImageSubstringSubstring]];
+                                                          [imageFullName length] - kAKImageSubstring]];
     }
 }
 

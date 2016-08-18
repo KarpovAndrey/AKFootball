@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AKCustomViewController.h"
 
-@class AKSeason;
-
 @interface AKLeaguesViewController : AKCustomViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, assign)   NSUInteger          year;
 

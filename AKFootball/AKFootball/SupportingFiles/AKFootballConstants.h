@@ -24,6 +24,7 @@ static NSString * const kAKTournamentNavigationItemTitle = @"TOURNAMENT";
 static NSString * const kAKLeaguesNavigationItemTitle    = @"LEAGUES";
 static NSString * const kAKFinishedMatchesTitle          = @"FINISHED MATCHES";
 static NSString * const kAKSheduledMatchesTitle          = @"SHEDULED MATCHES";
+static NSString * const kAKNoLogoImageName              = @"noLogo";
 
 static NSString * const kAKSeasonsURLString     = @"http://api.football-data.org/v1/soccerseasons/?season=";
 static NSString * const kAKFootballURLString    = @"http://api.football-data.org/v1/soccerseasons/";
@@ -38,7 +39,8 @@ static NSString * const kAKRefreshString             = @"Last update: %@";
 static NSString * const kAKFontName                  = @"HelveticaNeue-BoldItalic";
 static NSUInteger const kAKFontSize                  = 20;
 static NSUInteger const kAKMatchDateSubstring        = 10;
-static NSUInteger const kAKImageSubstringSubstring   = 4;
+static NSUInteger const kAKImageSubstring            = 4;
+static NSUInteger const kAKHeaderTableViewFontSize   = 19.0;
 
 //Context constants
 static NSString * const kAKFinishedMatchesKey   = @"FINISHED MATCHES";
@@ -70,6 +72,5 @@ static NSString * const kAKPositionKey          = @"position";
 static NSString * const kAKTeamsPathKey         = @"/teams";
 static NSString * const kAKFixturesPathKey      = @"/fixtures";
 static NSString * const kAKLeagueTablePathKey   = @"/leagueTable";
-static NSString * const kAKNoLogoImageName      = @"noLogo";
 
 #endif /* AKFootballConstants_h */

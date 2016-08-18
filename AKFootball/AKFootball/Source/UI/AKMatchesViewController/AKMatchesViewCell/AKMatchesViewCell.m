@@ -12,6 +12,9 @@
 
 @implementation AKMatchesViewCell
 
+#pragma mark -
+#pragma mark Public
+
 - (void)fillWithModel:(AKMatch *)match {
     self.firstTeamLabel.text = match.homeTeam;
     self.secongTeamLabel.text = match.awayTeam;

@@ -45,7 +45,6 @@
         
         team.name = [teamDictionary valueForKey:kAKNameKey];
         [league addTeamsObject:team];
-        NSLog(@"%@", team.pictureURLPath);
     }
     
     self.season = [AKSeason objectWithID:league.year];

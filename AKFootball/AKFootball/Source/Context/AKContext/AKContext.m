@@ -45,7 +45,9 @@
                                                                         NSURLResponse *response,
                                                                         NSError *error) {
                                                         if (!error) {
-                                                            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                                            NSDictionary *result = [NSJSONSerialization
+                                                                                    JSONObjectWithData:data
+                                                                                    options:0 error:nil];
                                                             [self parseData:result];
                                                             [self.season saveManagedObject];
                                                         } else {
