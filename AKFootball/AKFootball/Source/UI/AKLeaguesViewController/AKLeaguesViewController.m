@@ -39,7 +39,6 @@
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBarHidden = NO;
-    ///////////
     self.navigationController.navigationItem.rightBarButtonItem.image = nil;
 }
 
@@ -80,7 +79,6 @@ AKRootViewAndReturnIfNil(AKLeaguesView)
     
     [self.navigationController pushViewController:controller animated:YES];
 }
-
 
 #pragma mark -
 #pragma mark Private

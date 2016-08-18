@@ -10,6 +10,5 @@
 #import "AKView.h"
 
 @interface AKUserView : AKView
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end

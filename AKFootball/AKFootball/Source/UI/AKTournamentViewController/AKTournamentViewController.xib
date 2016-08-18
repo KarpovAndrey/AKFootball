@@ -44,6 +44,7 @@
                 <constraint firstAttribute="trailing" secondItem="IGm-hE-FVc" secondAttribute="trailing" id="w9t-pg-wpD"/>
                 <constraint firstAttribute="bottom" secondItem="IGm-hE-FVc" secondAttribute="bottom" id="zZb-XO-sd7"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outlet property="tableView" destination="bn9-hH-KHx" id="C87-8r-ljS"/>

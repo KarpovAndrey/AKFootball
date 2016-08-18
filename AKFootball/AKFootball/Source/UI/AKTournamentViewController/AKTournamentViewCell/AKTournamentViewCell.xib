@@ -19,44 +19,49 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-Cx-E2K" userLabel="Position">
                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="Z4a-9D-Mja"/>
+                            <constraint firstAttribute="width" constant="44" id="gW1-QU-od0"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="7IV-Vw-obj" userLabel="Points">
                         <rect key="frame" x="277" y="0.0" width="44" height="44"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="7id-gr-YkV" userLabel="shadowUp">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="7id-gr-YkV" userLabel="shadowUp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="rGk-4L-Ede" userLabel="shadowDown">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="rGk-4L-Ede" userLabel="shadowDown">
                         <rect key="frame" x="0.0" y="36" width="320" height="6"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-1a-fpf" userLabel="Team">
                         <rect key="frame" x="44" y="0.0" width="232" height="44"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="trailing" id="25u-Uh-vHn"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="7IV-Vw-obj" secondAttribute="trailing" constant="-9" id="36E-aY-8ab"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="firstBaseline" secondItem="7IV-Vw-obj" secondAttribute="firstBaseline" id="5yj-Jt-2vT"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="firstBaseline" secondItem="9qH-1a-fpf" secondAttribute="firstBaseline" id="68b-w7-9bs"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eup-jj-yd1"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tfl-Xl-anq"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bfa-ym-tPB"/>
-                    <constraint firstItem="7IV-Vw-obj" firstAttribute="leading" secondItem="9qH-1a-fpf" secondAttribute="trailing" constant="1" id="i3f-m2-8Ef"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iOC-ct-gyw"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="baseline" secondItem="7IV-Vw-obj" secondAttribute="baseline" id="jre-fK-olG"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" id="yd7-x5-Bav"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5S9-aQ-EIG"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="firstBaseline" secondItem="7IV-Vw-obj" secondAttribute="firstBaseline" id="6fC-q8-ukL"/>
+                    <constraint firstItem="7IV-Vw-obj" firstAttribute="leading" secondItem="9qH-1a-fpf" secondAttribute="trailing" constant="1" id="9aE-X3-PUo"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="firstBaseline" secondItem="9qH-1a-fpf" secondAttribute="firstBaseline" id="I2q-uf-ZTa"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="rGk-4L-Ede" secondAttribute="leading" id="JHg-9g-SZd"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="trailing" id="R2m-y6-jJy"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="S6R-4H-HAZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7IV-Vw-obj" secondAttribute="trailing" constant="-9" id="VN8-eZ-PBG"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="top" secondItem="9qH-1a-fpf" secondAttribute="top" id="bnZ-hD-w3Q"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="centerX" secondItem="9qH-1a-fpf" secondAttribute="centerX" id="dLw-zv-53S"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="trailing" secondItem="rGk-4L-Ede" secondAttribute="trailing" id="hZ0-DA-snW"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="leading" id="iVN-bn-btx"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="baseline" secondItem="7IV-Vw-obj" secondAttribute="baseline" id="kMW-T5-qKf"/>
+                    <constraint firstItem="rGk-4L-Ede" firstAttribute="top" secondItem="7id-gr-YkV" secondAttribute="bottom" constant="30" id="l7H-Ck-8cc"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="slr-po-gC1"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" id="yLX-Qj-isu"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

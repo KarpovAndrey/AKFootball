@@ -27,15 +27,18 @@ static NSString * const kAKSheduledMatchesTitle          = @"SHEDULED MATCHES";
 
 static NSString * const kAKSeasonsURLString     = @"http://api.football-data.org/v1/soccerseasons/?season=";
 static NSString * const kAKFootballURLString    = @"http://api.football-data.org/v1/soccerseasons/";
-static NSString * const kAKHTTPMethod           = @"GET";
-static NSString * const kAKFootballSeasonString = @"FOOTBALL Season";
-static NSString * const kAKYearString           = @"YEAR";
-static NSUInteger const kAKYearInterval         = 1;
-static NSString * const kAKDateFormat           = @"yyyy";
-static NSString * const kAKRefreshDateFormat    = @"MMM d, h:mm a";
-static NSString * const kAKRefreshString        = @"Last update: %@";
-static NSString * const kAKFontName             = @"HelveticaNeue-BoldItalic";
-static NSUInteger const kAKFontSize             = 20;
+
+static NSString * const kAKHTTPMethod                = @"GET";
+static NSString * const kAKFootballSeasonString      = @"FOOTBALL Season";
+static NSString * const kAKYearString                = @"YEAR";
+static NSUInteger const kAKYearInterval              = 1;
+static NSString * const kAKDateFormat                = @"yyyy";
+static NSString * const kAKRefreshDateFormat         = @"MMM d, h:mm a";
+static NSString * const kAKRefreshString             = @"Last update: %@";
+static NSString * const kAKFontName                  = @"HelveticaNeue-BoldItalic";
+static NSUInteger const kAKFontSize                  = 20;
+static NSUInteger const kAKMatchDateSubstring        = 10;
+static NSUInteger const kAKImageSubstringSubstring   = 4;
 
 //Context constants
 static NSString * const kAKFinishedMatchesKey   = @"FINISHED MATCHES";
@@ -67,5 +70,6 @@ static NSString * const kAKPositionKey          = @"position";
 static NSString * const kAKTeamsPathKey         = @"/teams";
 static NSString * const kAKFixturesPathKey      = @"/fixtures";
 static NSString * const kAKLeagueTablePathKey   = @"/leagueTable";
+static NSString * const kAKNoLogoImageName      = @"noLogo";
 
 #endif /* AKFootballConstants_h */

@@ -18,9 +18,9 @@
     if ([match.status isEqualToString:kAKFinishedKey]) {
         self.resultLabel.text = [NSString stringWithFormat:@"%@ : %@", match.goalsHomeTeam,
                                                                        match.goalsAwayTeam];
-        self.dateLabel.text = [match.date substringToIndex:10];
+        self.dateLabel.text = [match.date substringToIndex:kAKMatchDateSubstring];
     } else {
-        self.resultLabel.text = [match.date substringToIndex:10];
+        self.resultLabel.text = [match.date substringToIndex:kAKMatchDateSubstring];
     }
 }
 

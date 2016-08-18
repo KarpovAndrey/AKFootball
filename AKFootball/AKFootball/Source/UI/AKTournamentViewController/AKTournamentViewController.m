@@ -69,12 +69,12 @@ AKRootViewAndReturnIfNil(AKTournamentView)
 
 - (void)loadContextWithObject:(NSSet *)teams {
     NSArray *arrayTeams = [[teams allObjects] mutableCopy];
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:kAKPointsKey ascending:NO];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:kAKPointsKey ascending:YES];
     self.teamsArray = [arrayTeams sortedArrayUsingDescriptors:@[sortDescriptor]];
         
     AKTournamentView *rootView = self.rootView;
     [rootView.tableView reloadData];
-    [self.rootView removeLoadingViewAnimated:YES];
+    [rootView removeLoadingViewAnimated:YES];
 }
 
 #pragma mark -

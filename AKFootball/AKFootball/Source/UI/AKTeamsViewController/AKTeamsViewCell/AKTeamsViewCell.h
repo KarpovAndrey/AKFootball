@@ -9,13 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class AKTeam;
-@class AKImageView;
 
-@interface AKTeamsViewCell : UITableViewCell <UIWebViewDelegate>
+@interface AKTeamsViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet  UILabel        *cellLabel;
-@property (nonatomic, strong) IBOutlet  AKImageView    *cellImageView;
-@property (nonatomic, strong) IBOutlet  UIImageView    *noLogoImageView;
-@property (strong, nonatomic) IBOutlet  UIWebView      *imageWebView;
+@property (nonatomic, strong) IBOutlet  UIImageView    *customImageView;
 
 - (void)fillWithModel:(AKTeam *)team;
 

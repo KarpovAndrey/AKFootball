@@ -29,6 +29,303 @@
 		8444DA8C1D364CAA005909BA /* AKMatchesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA8A1D364CAA005909BA /* AKMatchesViewCell.m */; };
 		8444DA8D1D364CAA005909BA /* AKMatchesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */; };
 		8444DA911D3656EA005909BA /* AKMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444DA901D3656EA005909BA /* AKMatchContext.m */; };
+		845E07891D653B6B00AF4C7A /* 1._FC_Heidenheim_1846.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06601D653B6A00AF4C7A /* 1._FC_Heidenheim_1846.png */; };
+		845E078A1D653B6B00AF4C7A /* 1._FC_Köln.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06611D653B6A00AF4C7A /* 1._FC_Köln.png */; };
+		845E078B1D653B6B00AF4C7A /* 1._FC_Nürnberg_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06621D653B6A00AF4C7A /* 1._FC_Nürnberg_logo.png */; };
+		845E078C1D653B6B00AF4C7A /* 1._FC_Union_Berlin.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06631D653B6A00AF4C7A /* 1._FC_Union_Berlin.png */; };
+		845E078D1D653B6B00AF4C7A /* 180px-Club_Deportivo_Leganés.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06641D653B6A00AF4C7A /* 180px-Club_Deportivo_Leganés.png */; };
+		845E078E1D653B6B00AF4C7A /* 1_FC_Magdeburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06651D653B6A00AF4C7A /* 1_FC_Magdeburg.png */; };
+		845E078F1D653B6B00AF4C7A /* 200px-Union_sportive_Orléans_Loiret_football_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06661D653B6A00AF4C7A /* 200px-Union_sportive_Orléans_Loiret_football_2.png */; };
+		845E07901D653B6B00AF4C7A /* AC_Ajaccio.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06671D653B6A00AF4C7A /* AC_Ajaccio.png */; };
+		845E07911D653B6B00AF4C7A /* AC_Chievo_Verona.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06681D653B6A00AF4C7A /* AC_Chievo_Verona.png */; };
+		845E07921D653B6B00AF4C7A /* AC_Florenz.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06691D653B6A00AF4C7A /* AC_Florenz.png */; };
+		845E07931D653B6B00AF4C7A /* AC_Mailand_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066A1D653B6A00AF4C7A /* AC_Mailand_Logo.png */; };
+		845E07941D653B6B00AF4C7A /* AD_Alcorcón_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066B1D653B6A00AF4C7A /* AD_Alcorcón_logo.png */; };
+		845E07951D653B6B00AF4C7A /* ADO_Den_Haag.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066C1D653B6A00AF4C7A /* ADO_Den_Haag.png */; };
+		845E07961D653B6B00AF4C7A /* Afc_bournemouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066D1D653B6A00AF4C7A /* Afc_bournemouth.png */; };
+		845E07971D653B6B00AF4C7A /* AFC_Sunderland.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066E1D653B6A00AF4C7A /* AFC_Sunderland.png */; };
+		845E07981D653B6B00AF4C7A /* AJ_Auxerre.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E066F1D653B6A00AF4C7A /* AJ_Auxerre.png */; };
+		845E07991D653B6B00AF4C7A /* Ajax_Amsterdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06701D653B6A00AF4C7A /* Ajax_Amsterdam.png */; };
+		845E079A1D653B6B00AF4C7A /* Albacete_balompie.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06711D653B6A00AF4C7A /* Albacete_balompie.png */; };
+		845E079B1D653B6B00AF4C7A /* Arsenal_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06721D653B6A00AF4C7A /* Arsenal_FC.png */; };
+		845E079C1D653B6B00AF4C7A /* AS_Monaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06731D653B6A00AF4C7A /* AS_Monaco.png */; };
+		845E079D1D653B6B00AF4C7A /* AS_Nancy_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06741D653B6A00AF4C7A /* AS_Nancy_Logo.png */; };
+		845E079E1D653B6B00AF4C7A /* AS_Rom.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06751D653B6A00AF4C7A /* AS_Rom.png */; };
+		845E079F1D653B6B00AF4C7A /* AS_Saint-Etienne_(aktuell).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06761D653B6A00AF4C7A /* AS_Saint-Etienne_(aktuell).png */; };
+		845E07A01D653B6B00AF4C7A /* Aston_Villa_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06771D653B6A00AF4C7A /* Aston_Villa_logo.png */; };
+		845E07A11D653B6B00AF4C7A /* Atalanta_BC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06781D653B6A00AF4C7A /* Atalanta_BC.png */; };
+		845E07A21D653B6B00AF4C7A /* Athletic_Club_Bilbao.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06791D653B6A00AF4C7A /* Athletic_Club_Bilbao.png */; };
+		845E07A31D653B6B00AF4C7A /* Athletic_Club_Bilbao.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067A1D653B6A00AF4C7A /* Athletic_Club_Bilbao.svg.png */; };
+		845E07A41D653B6B00AF4C7A /* Atletico_Madrid_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067B1D653B6A00AF4C7A /* Atletico_Madrid_logo.png */; };
+		845E07A51D653B6B00AF4C7A /* Atletico_Osasuna.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067C1D653B6A00AF4C7A /* Atletico_Osasuna.png */; };
+		845E07A61D653B6B00AF4C7A /* AZ_Alkmaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067D1D653B6A00AF4C7A /* AZ_Alkmaar.png */; };
+		845E07A71D653B6B00AF4C7A /* Barnsley_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067E1D653B6A00AF4C7A /* Barnsley_FC.png */; };
+		845E07A81D653B6B00AF4C7A /* Bayer_04_Leverkusen_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E067F1D653B6A00AF4C7A /* Bayer_04_Leverkusen_Logo.png */; };
+		845E07A91D653B6B00AF4C7A /* Belenenses_Lissabon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06801D653B6A00AF4C7A /* Belenenses_Lissabon.png */; };
+		845E07AA1D653B6B00AF4C7A /* Birmingham_City_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06811D653B6A00AF4C7A /* Birmingham_City_FC_logo.png */; };
+		845E07AB1D653B6B00AF4C7A /* Blackpool_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06821D653B6A00AF4C7A /* Blackpool_FC_logo.png */; };
+		845E07AC1D653B6B00AF4C7A /* Boavista_F.C._logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06831D653B6A00AF4C7A /* Boavista_F.C._logo.png */; };
+		845E07AD1D653B6B00AF4C7A /* Borussia_Dortmund_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06841D653B6A00AF4C7A /* Borussia_Dortmund_logo.png */; };
+		845E07AE1D653B6B00AF4C7A /* Borussia_Mönchengladbach_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06851D653B6A00AF4C7A /* Borussia_Mönchengladbach_logo.png */; };
+		845E07AF1D653B6B00AF4C7A /* Bradford_City_AFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06861D653B6A00AF4C7A /* Bradford_City_AFC.png */; };
+		845E07B01D653B6B00AF4C7A /* Brighton_&_Hove_Albion_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06871D653B6A00AF4C7A /* Brighton_&_Hove_Albion_logo.png */; };
+		845E07B11D653B6B00AF4C7A /* Burnley_FC_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06881D653B6A00AF4C7A /* Burnley_FC_badge.png */; };
+		845E07B21D653B6B00AF4C7A /* Burton_Albion_FC_logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06891D653B6A00AF4C7A /* Burton_Albion_FC_logo.svg.png */; };
+		845E07B31D653B6B00AF4C7A /* Bury_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068A1D653B6A00AF4C7A /* Bury_FC.png */; };
+		845E07B41D653B6B00AF4C7A /* Cagliari_Calcio.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068B1D653B6A00AF4C7A /* Cagliari_Calcio.png */; };
+		845E07B51D653B6B00AF4C7A /* Cardiff_City_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068C1D653B6A00AF4C7A /* Cardiff_City_Logo.png */; };
+		845E07B61D653B6B00AF4C7A /* Carpi_FC_1909_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068D1D653B6A00AF4C7A /* Carpi_FC_1909_logo.png */; };
+		845E07B71D653B6B00AF4C7A /* Cádiz_CF_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068E1D653B6A00AF4C7A /* Cádiz_CF_logo.png */; };
+		845E07B81D653B6B00AF4C7A /* CD_Lugo_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E068F1D653B6A00AF4C7A /* CD_Lugo_logo.png */; };
+		845E07B91D653B6B00AF4C7A /* CD_Mirandés_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06901D653B6A00AF4C7A /* CD_Mirandés_logo.png */; };
+		845E07BA1D653B6B00AF4C7A /* CD_Numancia_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06911D653B6A00AF4C7A /* CD_Numancia_logo.png */; };
+		845E07BB1D653B6B00AF4C7A /* CD_Tenerife_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06921D653B6A00AF4C7A /* CD_Tenerife_Logo.png */; };
+		845E07BC1D653B6B00AF4C7A /* Celta_Vigo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06931D653B6A00AF4C7A /* Celta_Vigo.png */; };
+		845E07BD1D653B6B00AF4C7A /* Cf_reus_deportiu_200.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06941D653B6A00AF4C7A /* Cf_reus_deportiu_200.png */; };
+		845E07BE1D653B6B00AF4C7A /* Chamois_Niort_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06951D653B6A00AF4C7A /* Chamois_Niort_Logo.png */; };
+		845E07BF1D653B6B00AF4C7A /* Chelsea_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06961D653B6A00AF4C7A /* Chelsea_crest.png */; };
+		845E07C01D653B6B00AF4C7A /* Chemnitzer_FC_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06971D653B6A00AF4C7A /* Chemnitzer_FC_Logo.png */; };
+		845E07C11D653B6B00AF4C7A /* Chesterfield_FC_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06981D653B6A00AF4C7A /* Chesterfield_FC_crest.png */; };
+		845E07C21D653B6B00AF4C7A /* Clermont_Foot_Auvergne.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06991D653B6A00AF4C7A /* Clermont_Foot_Auvergne.png */; };
+		845E07C31D653B6B00AF4C7A /* Colchester_United_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069A1D653B6A00AF4C7A /* Colchester_United_FC_logo.png */; };
+		845E07C41D653B6B00AF4C7A /* Coventry_City_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069B1D653B6A00AF4C7A /* Coventry_City_FC_logo.png */; };
+		845E07C51D653B6B00AF4C7A /* Córdoba_CF_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069C1D653B6A00AF4C7A /* Córdoba_CF_logo.png */; };
+		845E07C61D653B6B00AF4C7A /* Crewe_Alexandra.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069D1D653B6A00AF4C7A /* Crewe_Alexandra.png */; };
+		845E07C71D653B6B00AF4C7A /* Crystal_Palace_F.C._logo_(2013).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069E1D653B6A00AF4C7A /* Crystal_Palace_F.C._logo_(2013).png */; };
+		845E07C81D653B6B00AF4C7A /* CSKA_Moscow_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E069F1D653B6A00AF4C7A /* CSKA_Moscow_logo.png */; };
+		845E07C91D653B6B00AF4C7A /* Degraafschap.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A01D653B6A00AF4C7A /* Degraafschap.png */; };
+		845E07CA1D653B6B00AF4C7A /* Deportivo_Alaves_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A11D653B6A00AF4C7A /* Deportivo_Alaves_logo.png */; };
+		845E07CB1D653B6B00AF4C7A /* Derby_County_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A21D653B6A00AF4C7A /* Derby_County_crest.png */; };
+		845E07CC1D653B6B00AF4C7A /* Doncaster_Rovers_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A31D653B6A00AF4C7A /* Doncaster_Rovers_FC.png */; };
+		845E07CD1D653B6B00AF4C7A /* EA_Guingamp_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A41D653B6A00AF4C7A /* EA_Guingamp_Logo.png */; };
+		845E07CE1D653B6B00AF4C7A /* Eintracht_Frankfurt_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A51D653B6A00AF4C7A /* Eintracht_Frankfurt_Logo.png */; };
+		845E07CF1D653B6B00AF4C7A /* Elche_CF.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A61D653B6A00AF4C7A /* Elche_CF.png */; };
+		845E07D01D653B6B00AF4C7A /* Emblema_CD_Tondela.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A71D653B6A00AF4C7A /* Emblema_CD_Tondela.png */; };
+		845E07D11D653B6B00AF4C7A /* ES_Troyes_AC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A81D653B6A00AF4C7A /* ES_Troyes_AC.png */; };
+		845E07D21D653B6B00AF4C7A /* Everton_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06A91D653B6A00AF4C7A /* Everton_FC.png */; };
+		845E07D31D653B6B00AF4C7A /* Evian_Thonon_Gaillard.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AA1D653B6A00AF4C7A /* Evian_Thonon_Gaillard.png */; };
+		845E07D41D653B6B00AF4C7A /* FC-Ingolstadt_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AB1D653B6A00AF4C7A /* FC-Ingolstadt_logo.png */; };
+		845E07D51D653B6B00AF4C7A /* FC_Arouca.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AC1D653B6A00AF4C7A /* FC_Arouca.png */; };
+		845E07D61D653B6B00AF4C7A /* FC_Astana_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AD1D653B6A00AF4C7A /* FC_Astana_Logo.png */; };
+		845E07D71D653B6B00AF4C7A /* Fc_barcelona.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AE1D653B6A00AF4C7A /* Fc_barcelona.png */; };
+		845E07D81D653B6B00AF4C7A /* FC_Bologna.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06AF1D653B6A00AF4C7A /* FC_Bologna.png */; };
+		845E07D91D653B6B00AF4C7A /* FC_Crotone.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B01D653B6A00AF4C7A /* FC_Crotone.png */; };
+		845E07DA1D653B6B00AF4C7A /* FC_Dynamo_Kyiv_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B11D653B6A00AF4C7A /* FC_Dynamo_Kyiv_logo.png */; };
+		845E07DB1D653B6B00AF4C7A /* Fc_erzgebirge_aue.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B21D653B6A00AF4C7A /* Fc_erzgebirge_aue.png */; };
+		845E07DC1D653B6B00AF4C7A /* FC_Gillingham_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B31D653B6A00AF4C7A /* FC_Gillingham_Logo.svg.png */; };
+		845E07DD1D653B6B00AF4C7A /* FC_Groningen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B41D653B6A00AF4C7A /* FC_Groningen.png */; };
+		845E07DE1D653B6B00AF4C7A /* FC_Hansa_Rostock.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B51D653B6A00AF4C7A /* FC_Hansa_Rostock.png */; };
+		845E07DF1D653B6B00AF4C7A /* FC_Liverpool.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B61D653B6A00AF4C7A /* FC_Liverpool.png */; };
+		845E07E01D653B6B00AF4C7A /* FC_Lorient_neu.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B71D653B6A00AF4C7A /* FC_Lorient_neu.png */; };
+		845E07E11D653B6B00AF4C7A /* FC_Málaga.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B81D653B6A00AF4C7A /* FC_Málaga.png */; };
+		845E07E21D653B6B00AF4C7A /* FC_Metz_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06B91D653B6A00AF4C7A /* FC_Metz_Logo.png */; };
+		845E07E31D653B6B00AF4C7A /* FC_Nantes_(seit_2008).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BA1D653B6A00AF4C7A /* FC_Nantes_(seit_2008).png */; };
+		845E07E41D653B6B00AF4C7A /* FC_Pacos_de_Ferreira.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BB1D653B6A00AF4C7A /* FC_Pacos_de_Ferreira.png */; };
+		845E07E51D653B6B00AF4C7A /* FC_Porto_1922-2005.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BC1D653B6A00AF4C7A /* FC_Porto_1922-2005.png */; };
+		845E07E61D653B6B00AF4C7A /* FC_Schalke_04_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BD1D653B6A00AF4C7A /* FC_Schalke_04_Logo.png */; };
+		845E07E71D653B6B00AF4C7A /* FC_Shakhtar_Donetsk.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BE1D653B6A00AF4C7A /* FC_Shakhtar_Donetsk.png */; };
+		845E07E81D653B6B00AF4C7A /* FC_Sochaux_Logo_2010.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06BF1D653B6A00AF4C7A /* FC_Sochaux_Logo_2010.png */; };
+		845E07E91D653B6B00AF4C7A /* FC_Southampton.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C01D653B6A00AF4C7A /* FC_Southampton.png */; };
+		845E07EA1D653B6B00AF4C7A /* FC_Toulouse_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C11D653B6A00AF4C7A /* FC_Toulouse_Logo.png */; };
+		845E07EB1D653B6B00AF4C7A /* FC_Tours.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C21D653B6A00AF4C7A /* FC_Tours.png */; };
+		845E07EC1D653B6B00AF4C7A /* FC_Twente_Enschede_(ab_2006).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C31D653B6A00AF4C7A /* FC_Twente_Enschede_(ab_2006).png */; };
+		845E07ED1D653B6B00AF4C7A /* FC_Utrecht.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C41D653B6A00AF4C7A /* FC_Utrecht.png */; };
+		845E07EE1D653B6B00AF4C7A /* FC_Valencia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C51D653B6A00AF4C7A /* FC_Valencia.png */; };
+		845E07EF1D653B6B00AF4C7A /* FC_Zenit_1_star_2015_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C61D653B6A00AF4C7A /* FC_Zenit_1_star_2015_logo.png */; };
+		845E07F01D653B6B00AF4C7A /* Fcenergie.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C71D653B6A00AF4C7A /* Fcenergie.png */; };
+		845E07F11D653B6B00AF4C7A /* FCO_Dijon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C81D653B6A00AF4C7A /* FCO_Dijon.png */; };
+		845E07F21D653B6B00AF4C7A /* Flag_of_Albania.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06C91D653B6A00AF4C7A /* Flag_of_Albania.png */; };
+		845E07F31D653B6B00AF4C7A /* Flag_of_Austria.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CA1D653B6A00AF4C7A /* Flag_of_Austria.png */; };
+		845E07F41D653B6B00AF4C7A /* Flag_of_Belgium.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CB1D653B6A00AF4C7A /* Flag_of_Belgium.png */; };
+		845E07F51D653B6B00AF4C7A /* Flag_of_Croatia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CC1D653B6A00AF4C7A /* Flag_of_Croatia.png */; };
+		845E07F61D653B6B00AF4C7A /* Flag_of_England.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CD1D653B6A00AF4C7A /* Flag_of_England.png */; };
+		845E07F71D653B6B00AF4C7A /* Flag_of_France.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CE1D653B6A00AF4C7A /* Flag_of_France.png */; };
+		845E07F81D653B6B00AF4C7A /* Flag_of_Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06CF1D653B6A00AF4C7A /* Flag_of_Germany.png */; };
+		845E07F91D653B6B00AF4C7A /* Flag_of_Hungary.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D01D653B6A00AF4C7A /* Flag_of_Hungary.png */; };
+		845E07FA1D653B6B00AF4C7A /* Flag_of_Iceland.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D11D653B6A00AF4C7A /* Flag_of_Iceland.png */; };
+		845E07FB1D653B6B00AF4C7A /* Flag_of_Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D21D653B6A00AF4C7A /* Flag_of_Ireland.png */; };
+		845E07FC1D653B6B00AF4C7A /* Flag_of_Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D31D653B6A00AF4C7A /* Flag_of_Italy.png */; };
+		845E07FD1D653B6B00AF4C7A /* Flag_of_Northern_Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D41D653B6A00AF4C7A /* Flag_of_Northern_Ireland.png */; };
+		845E07FE1D653B6B00AF4C7A /* Flag_of_Poland.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D51D653B6A00AF4C7A /* Flag_of_Poland.png */; };
+		845E07FF1D653B6B00AF4C7A /* Flag_of_Portugal.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D61D653B6A00AF4C7A /* Flag_of_Portugal.png */; };
+		845E08001D653B6B00AF4C7A /* Flag_of_Romania.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D71D653B6A00AF4C7A /* Flag_of_Romania.png */; };
+		845E08011D653B6B00AF4C7A /* Flag_of_Russia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D81D653B6A00AF4C7A /* Flag_of_Russia.png */; };
+		845E08021D653B6B00AF4C7A /* Flag_of_Slovakia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06D91D653B6A00AF4C7A /* Flag_of_Slovakia.png */; };
+		845E08031D653B6B00AF4C7A /* Flag_of_Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DA1D653B6A00AF4C7A /* Flag_of_Spain.png */; };
+		845E08041D653B6B00AF4C7A /* Flag_of_Sweden.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DB1D653B6A00AF4C7A /* Flag_of_Sweden.png */; };
+		845E08051D653B6B00AF4C7A /* Flag_of_Switzerland_(Pantone).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DC1D653B6A00AF4C7A /* Flag_of_Switzerland_(Pantone).png */; };
+		845E08061D653B6B00AF4C7A /* Flag_of_the_Czech_Republic.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DD1D653B6A00AF4C7A /* Flag_of_the_Czech_Republic.png */; };
+		845E08071D653B6B00AF4C7A /* Flag_of_Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DE1D653B6A00AF4C7A /* Flag_of_Turkey.png */; };
+		845E08081D653B6B00AF4C7A /* Flag_of_Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06DF1D653B6A00AF4C7A /* Flag_of_Ukraine.png */; };
+		845E08091D653B6B00AF4C7A /* Flag_of_Wales_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E01D653B6A00AF4C7A /* Flag_of_Wales_2.png */; };
+		845E080A1D653B6B00AF4C7A /* Fleetwood_Town_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E11D653B6A00AF4C7A /* Fleetwood_Town_FC.png */; };
+		845E080B1D653B6B00AF4C7A /* Football_Bourg_en_Bresse_Péronnas_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E21D653B6A00AF4C7A /* Football_Bourg_en_Bresse_Péronnas_logo.png */; };
+		845E080C1D653B6B00AF4C7A /* For_article_Girona_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E31D653B6A00AF4C7A /* For_article_Girona_FC.png */; };
+		845E080D1D653B6B00AF4C7A /* Fortuna_Düsseldorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E41D653B6A00AF4C7A /* Fortuna_Düsseldorf.png */; };
+		845E080E1D653B6B00AF4C7A /* Frosinonestemma.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E51D653B6A00AF4C7A /* Frosinonestemma.png */; };
+		845E080F1D653B6B00AF4C7A /* FSV_Frankfurt_1899.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E61D653B6A00AF4C7A /* FSV_Frankfurt_1899.png */; };
+		845E08101D653B6B00AF4C7A /* FSV_Mainz_05_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E71D653B6A00AF4C7A /* FSV_Mainz_05_Logo.png */; };
+		845E08111D653B6B00AF4C7A /* Fulham_fc.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E81D653B6A00AF4C7A /* Fulham_fc.png */; };
+		845E08121D653B6B00AF4C7A /* G_D_Chaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06E91D653B6A00AF4C7A /* G_D_Chaves.png */; };
+		845E08131D653B6B00AF4C7A /* Galatasaray_Sports_Club_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06EA1D653B6A00AF4C7A /* Galatasaray_Sports_Club_Logo.png */; };
+		845E08141D653B6B00AF4C7A /* Gazélec_Ajaccio_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06EB1D653B6A00AF4C7A /* Gazélec_Ajaccio_logo.png */; };
+		845E08151D653B6B00AF4C7A /* GD_Estoril_Praia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06EC1D653B6A00AF4C7A /* GD_Estoril_Praia.png */; };
+		845E08161D653B6B00AF4C7A /* Genoa_CFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06ED1D653B6A00AF4C7A /* Genoa_CFC.png */; };
+		845E08171D653B6B00AF4C7A /* Getafe_CF.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06EE1D653B6A00AF4C7A /* Getafe_CF.png */; };
+		845E08181D653B6B00AF4C7A /* Gimnàstic_tarragona_200px.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06EF1D653B6A00AF4C7A /* Gimnàstic_tarragona_200px.png */; };
+		845E08191D653B6B00AF4C7A /* Girondins_Bordeaux_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F01D653B6A00AF4C7A /* Girondins_Bordeaux_Logo.png */; };
+		845E081A1D653B6B00AF4C7A /* Go_Ahead_Eagles.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F11D653B6A00AF4C7A /* Go_Ahead_Eagles.png */; };
+		845E081B1D653B6B00AF4C7A /* Granada_CF.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F21D653B6A00AF4C7A /* Granada_CF.png */; };
+		845E081C1D653B6B00AF4C7A /* Hallescher_FC_Logo_2012.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F31D653B6A00AF4C7A /* Hallescher_FC_Logo_2012.png */; };
+		845E081D1D653B6B00AF4C7A /* Hannover_96_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F41D653B6A00AF4C7A /* Hannover_96_Logo.png */; };
+		845E081E1D653B6B00AF4C7A /* Hellas_Verona_1903_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F51D653B6A00AF4C7A /* Hellas_Verona_1903_FC.png */; };
+		845E081F1D653B6B00AF4C7A /* Heracles_Almelo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F61D653B6A00AF4C7A /* Heracles_Almelo.png */; };
+		845E08201D653B6B00AF4C7A /* Hertha_BSC_Logo_2012.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F71D653B6A00AF4C7A /* Hertha_BSC_Logo_2012.png */; };
+		845E08211D653B6B00AF4C7A /* Holstein_Kiel_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F81D653B6A00AF4C7A /* Holstein_Kiel_Logo.png */; };
+		845E08221D653B6B00AF4C7A /* HSC_Montpellier_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06F91D653B6A00AF4C7A /* HSC_Montpellier_Logo.png */; };
+		845E08231D653B6B00AF4C7A /* HSV-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FA1D653B6A00AF4C7A /* HSV-Logo.png */; };
+		845E08241D653B6B00AF4C7A /* Huddersfield_Town_F.C.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FB1D653B6A00AF4C7A /* Huddersfield_Town_F.C.png */; };
+		845E08251D653B6B00AF4C7A /* Hull_City_AFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FC1D653B6A00AF4C7A /* Hull_City_AFC.png */; };
+		845E08261D653B6B00AF4C7A /* Ipswich_Town.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FD1D653B6A00AF4C7A /* Ipswich_Town.png */; };
+		845E08271D653B6B00AF4C7A /* Jahn_Regensburg_logo2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FE1D653B6A00AF4C7A /* Jahn_Regensburg_logo2014.png */; };
+		845E08281D653B6B00AF4C7A /* Juventus_Turin.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E06FF1D653B6A00AF4C7A /* Juventus_Turin.png */; };
+		845E08291D653B6B00AF4C7A /* KAA_Gent_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07001D653B6A00AF4C7A /* KAA_Gent_logo.png */; };
+		845E082A1D653B6B00AF4C7A /* Karlsruher_SC_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07011D653B6A00AF4C7A /* Karlsruher_SC_Logo.png */; };
+		845E082B1D653B6B00AF4C7A /* Kickers_Wurzburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07021D653B6A00AF4C7A /* Kickers_Wurzburg.png */; };
+		845E082C1D653B6B00AF4C7A /* Lazio_Rom.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07031D653B6A00AF4C7A /* Lazio_Rom.svg.png */; };
+		845E082D1D653B6B00AF4C7A /* Le_Havre_AC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07041D653B6A00AF4C7A /* Le_Havre_AC.png */; };
+		845E082E1D653B6B00AF4C7A /* Leicester02.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07051D653B6A00AF4C7A /* Leicester02.png */; };
+		845E082F1D653B6B00AF4C7A /* Levante_ud.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07061D653B6A00AF4C7A /* Levante_ud.png */; };
+		845E08301D653B6B00AF4C7A /* Logo-VfL-Wolfsburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07071D653B6A00AF4C7A /* Logo-VfL-Wolfsburg.png */; };
+		845E08311D653B6B00AF4C7A /* Logo_1_FC_Kaiserslautern.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07081D653B6A00AF4C7A /* Logo_1_FC_Kaiserslautern.png */; };
+		845E08321D653B6B00AF4C7A /* Logo_Academica_de_Coimbra.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07091D653B6A00AF4C7A /* Logo_Academica_de_Coimbra.png */; };
+		845E08331D653B6B00AF4C7A /* Logo_Arminia_Bielefeld.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070A1D653B6A00AF4C7A /* Logo_Arminia_Bielefeld.png */; };
+		845E08341D653B6B00AF4C7A /* Logo_BATE_Baryssau.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070B1D653B6A00AF4C7A /* Logo_BATE_Baryssau.svg.png */; };
+		845E08351D653B6B00AF4C7A /* Logo_Benfica_Lissabon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070C1D653B6A00AF4C7A /* Logo_Benfica_Lissabon.png */; };
+		845E08361D653B6B00AF4C7A /* Logo_Eintracht_Braunschweig.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070D1D653B6A00AF4C7A /* Logo_Eintracht_Braunschweig.png */; };
+		845E08371D653B6B00AF4C7A /* Logo_FC_Augsburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070E1D653B6A00AF4C7A /* Logo_FC_Augsburg.png */; };
+		845E08381D653B6B00AF4C7A /* Logo_FC_Bayern_München.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E070F1D653B6A00AF4C7A /* Logo_FC_Bayern_München.png */; };
+		845E08391D653B6B00AF4C7A /* Logo_FC_Empoli.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07101D653B6A00AF4C7A /* Logo_FC_Empoli.png */; };
+		845E083A1D653B6B00AF4C7A /* Logo_FC_Internazionale_Milano_2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07111D653B6A00AF4C7A /* Logo_FC_Internazionale_Milano_2014.png */; };
+		845E083B1D653B6B00AF4C7A /* Logo_FC_St_Pauli.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07121D653B6A00AF4C7A /* Logo_FC_St_Pauli.png */; };
+		845E083C1D653B6B00AF4C7A /* Logo_Feyenoord_Rotterdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07131D653B6A00AF4C7A /* Logo_Feyenoord_Rotterdam.png */; };
+		845E083D1D653B6B00AF4C7A /* Logo_Malmö_FF.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07141D653B6A00AF4C7A /* Logo_Malmö_FF.png */; };
+		845E083E1D653B6B00AF4C7A /* Logo_Manchester_City.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07151D653B6A00AF4C7A /* Logo_Manchester_City.png */; };
+		845E083F1D653B6B00AF4C7A /* Logo_Moreirense.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07161D653B6A00AF4C7A /* Logo_Moreirense.png */; };
+		845E08401D653B6B00AF4C7A /* Logo_Olympiakos_Piräus.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07171D653B6A00AF4C7A /* Logo_Olympiakos_Piräus.png */; };
+		845E08411D653B6B00AF4C7A /* Logo_ParisFC_2011.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07181D653B6A00AF4C7A /* Logo_ParisFC_2011.png */; };
+		845E08421D653B6B00AF4C7A /* Logo_RedStarFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07191D653B6A00AF4C7A /* Logo_RedStarFC.png */; };
+		845E08431D653B6B00AF4C7A /* Logo_SG_Dynamo_Dresden_neu.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071A1D653B6A00AF4C7A /* Logo_SG_Dynamo_Dresden_neu.png */; };
+		845E08441D653B6B00AF4C7A /* Logo_SV_Wehen_Wiesbaden.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071B1D653B6A00AF4C7A /* Logo_SV_Wehen_Wiesbaden.png */; };
+		845E08451D653B6B00AF4C7A /* Logo_TSG_Hoffenheim.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071C1D653B6A00AF4C7A /* Logo_TSG_Hoffenheim.png */; };
+		845E08461D653B6B00AF4C7A /* Logo_Vfl_Osnabrueck.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071D1D653B6A00AF4C7A /* Logo_Vfl_Osnabrueck.png */; };
+		845E08471D653B6B00AF4C7A /* LogoSmc2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071E1D653B6A00AF4C7A /* LogoSmc2013.png */; };
+		845E08481D653B6B00AF4C7A /* LOSC_Lille_Crest_2012.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E071F1D653B6A00AF4C7A /* LOSC_Lille_Crest_2012.png */; };
+		845E08491D653B6B00AF4C7A /* main-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07201D653B6A00AF4C7A /* main-logo.png */; };
+		845E084A1D653B6B00AF4C7A /* Manchester_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07211D653B6A00AF4C7A /* Manchester_United_FC.png */; };
+		845E084B1D653B6B00AF4C7A /* Marítimo_Funchal.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07221D653B6A00AF4C7A /* Marítimo_Funchal.png */; };
+		845E084C1D653B6B00AF4C7A /* Middlesbrough_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07231D653B6A00AF4C7A /* Middlesbrough_crest.png */; };
+		845E084D1D653B6B00AF4C7A /* Millwall_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07241D653B6A00AF4C7A /* Millwall_FC_logo.png */; };
+		845E084E1D653B6B00AF4C7A /* Msv_duisburg(neu).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07251D653B6A00AF4C7A /* Msv_duisburg(neu).png */; };
+		845E084F1D653B6B00AF4C7A /* MTAFC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07261D653B6A00AF4C7A /* MTAFC_logo.png */; };
+		845E08501D653B6B00AF4C7A /* Nacional_Funchal.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07271D653B6A00AF4C7A /* Nacional_Funchal.png */; };
+		845E08511D653B6B00AF4C7A /* NEC_Nijmegen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07281D653B6A00AF4C7A /* NEC_Nijmegen.png */; };
+		845E08521D653B6B00AF4C7A /* Newcastle_United_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07291D653B6A00AF4C7A /* Newcastle_United_Logo.png */; };
+		845E08531D653B6B00AF4C7A /* Norwich_City.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072A1D653B6A00AF4C7A /* Norwich_City.png */; };
+		845E08541D653B6B00AF4C7A /* Nottingham_Forest_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072B1D653B6A00AF4C7A /* Nottingham_Forest_logo.png */; };
+		845E08551D653B6B00AF4C7A /* OGC_Nice_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072C1D653B6A00AF4C7A /* OGC_Nice_logo.png */; };
+		845E08561D653B6B00AF4C7A /* Oldham_Athletic_new_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072D1D653B6A00AF4C7A /* Oldham_Athletic_new_badge.png */; };
+		845E08571D653B6B00AF4C7A /* Olympique_Lyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072E1D653B6A00AF4C7A /* Olympique_Lyon.png */; };
+		845E08581D653B6B00AF4C7A /* Olympique_Marseille_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E072F1D653B6A00AF4C7A /* Olympique_Marseille_Logo.png */; };
+		845E08591D653B6B00AF4C7A /* Olympique_Nimes.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07301D653B6A00AF4C7A /* Olympique_Nimes.png */; };
+		845E085A1D653B6B00AF4C7A /* Paris_Saint-Germain_(seit_2013).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07311D653B6A00AF4C7A /* Paris_Saint-Germain_(seit_2013).png */; };
+		845E085B1D653B6B00AF4C7A /* PEC_Zwolle_2012.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07321D653B6A00AF4C7A /* PEC_Zwolle_2012.png */; };
+		845E085C1D653B6B00AF4C7A /* Pescara_Calcio.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07331D653B6A00AF4C7A /* Pescara_Calcio.png */; };
+		845E085D1D653B6B00AF4C7A /* Peterborough_United.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07341D653B6A00AF4C7A /* Peterborough_United.png */; };
+		845E085E1D653B6B00AF4C7A /* Port_Vale_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07351D653B6A00AF4C7A /* Port_Vale_logo.png */; };
+		845E085F1D653B6B00AF4C7A /* PSV_Eindhoven.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07361D653B6A00AF4C7A /* PSV_Eindhoven.png */; };
+		845E08601D653B6B00AF4C7A /* Queens_Park_Rangers.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07371D653B6A00AF4C7A /* Queens_Park_Rangers.png */; };
+		845E08611D653B6B00AF4C7A /* Rayo_vallecano_madrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07381D653B6A00AF4C7A /* Rayo_vallecano_madrid.png */; };
+		845E08621D653B6B00AF4C7A /* RB_Leipzig_2010_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07391D653B6A00AF4C7A /* RB_Leipzig_2010_logo.png */; };
+		845E08631D653B6B00AF4C7A /* RC_Deportivo_La_Coruña_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073A1D653B6A00AF4C7A /* RC_Deportivo_La_Coruña_logo.png */; };
+		845E08641D653B6B00AF4C7A /* RC_Lens_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073B1D653B6A00AF4C7A /* RC_Lens_Logo.png */; };
+		845E08651D653B6B00AF4C7A /* RCD_Espanyol_De_Barcelona.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073C1D653B6A00AF4C7A /* RCD_Espanyol_De_Barcelona.png */; };
+		845E08661D653B6B00AF4C7A /* Rcd_mallorca.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073D1D653B6A00AF4C7A /* Rcd_mallorca.png */; };
+		845E08671D653B6B00AF4C7A /* Real_Betis.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073E1D653B6A00AF4C7A /* Real_Betis.png */; };
+		845E08681D653B6B00AF4C7A /* Real_Madrid_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E073F1D653B6A00AF4C7A /* Real_Madrid_Logo.png */; };
+		845E08691D653B6B00AF4C7A /* Real_Oviedo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07401D653B6A00AF4C7A /* Real_Oviedo.png */; };
+		845E086A1D653B6B00AF4C7A /* Real_Sociedad_San_Sebastián.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07411D653B6A00AF4C7A /* Real_Sociedad_San_Sebastián.png */; };
+		845E086B1D653B6B00AF4C7A /* Real_Sporting_de_Gijon.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07421D653B6A00AF4C7A /* Real_Sporting_de_Gijon.png */; };
+		845E086C1D653B6B00AF4C7A /* Real_Valladolid_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07431D653B6A00AF4C7A /* Real_Valladolid_Logo.png */; };
+		845E086D1D653B6B00AF4C7A /* Real_zaragoza.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07441D653B6A00AF4C7A /* Real_zaragoza.png */; };
+		845E086E1D653B6B00AF4C7A /* Rio_Ave_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07451D653B6A00AF4C7A /* Rio_Ave_FC.png */; };
+		845E086F1D653B6B00AF4C7A /* Rochdale_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07461D653B6A00AF4C7A /* Rochdale_badge.png */; };
+		845E08701D653B6B00AF4C7A /* Roda_JC_Kerkrade_(2011).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07471D653B6A00AF4C7A /* Roda_JC_Kerkrade_(2011).png */; };
+		845E08711D653B6B00AF4C7A /* Rot_Weiss_Erfurt_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07481D653B6A00AF4C7A /* Rot_Weiss_Erfurt_Logo.png */; };
+		845E08721D653B6B00AF4C7A /* Rotherham_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07491D653B6A00AF4C7A /* Rotherham_United_FC.png */; };
+		845E08731D653B6B00AF4C7A /* S.S.C._Napoli_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074A1D653B6A00AF4C7A /* S.S.C._Napoli_logo.png */; };
+		845E08741D653B6B00AF4C7A /* Sampdoria_Genua.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074B1D653B6A00AF4C7A /* Sampdoria_Genua.png */; };
+		845E08751D653B6B00AF4C7A /* SBV_Excelsior_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074C1D653B6A00AF4C7A /* SBV_Excelsior_logo.png */; };
+		845E08761D653B6B00AF4C7A /* SC-Freiburg_Logo-neu.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074D1D653B6A00AF4C7A /* SC-Freiburg_Logo-neu.png */; };
+		845E08771D653B6B00AF4C7A /* SC_Bastia.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074E1D653B6A00AF4C7A /* SC_Bastia.png */; };
+		845E08781D653B6B00AF4C7A /* SC_Cambuur-Leeuwarden.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E074F1D653B6A00AF4C7A /* SC_Cambuur-Leeuwarden.png */; };
+		845E08791D653B6B00AF4C7A /* SC_Fortuna_Koln.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07501D653B6A00AF4C7A /* SC_Fortuna_Koln.png */; };
+		845E087A1D653B6B00AF4C7A /* SC_Heerenveen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07511D653B6A00AF4C7A /* SC_Heerenveen.png */; };
+		845E087B1D653B6B00AF4C7A /* SC_Paderborn_07_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07521D653B6A00AF4C7A /* SC_Paderborn_07_Logo.png */; };
+		845E087C1D653B6B00AF4C7A /* SC_Preussen_Muenster_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07531D653B6A00AF4C7A /* SC_Preussen_Muenster_Logo.png */; };
+		845E087D1D653B6B00AF4C7A /* SCO_Angers.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07541D653B6A00AF4C7A /* SCO_Angers.png */; };
+		845E087E1D653B6B00AF4C7A /* Scunthorpe_United_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07551D653B6A00AF4C7A /* Scunthorpe_United_FC_logo.png */; };
+		845E087F1D653B6B00AF4C7A /* SD_Eibar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07561D653B6A00AF4C7A /* SD_Eibar_logo.png */; };
+		845E08801D653B6B00AF4C7A /* Sd_huesca.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07571D653B6A00AF4C7A /* Sd_huesca.png */; };
+		845E08811D653B6B00AF4C7A /* SD_Ponferradina_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07581D653B6A00AF4C7A /* SD_Ponferradina_logo.png */; };
+		845E08821D653B6B00AF4C7A /* Sevilla_cf_200px.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07591D653B6A00AF4C7A /* Sevilla_cf_200px.png */; };
+		845E08831D653B6B00AF4C7A /* SG_Sonnenhof.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075A1D653B6A00AF4C7A /* SG_Sonnenhof.png */; };
+		845E08841D653B6B00AF4C7A /* Sheffield_United_FC_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075B1D653B6A00AF4C7A /* Sheffield_United_FC_logo.png */; };
+		845E08851D653B6B00AF4C7A /* Sheffield_Wednesday_crest_from_2016.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075C1D653B6A00AF4C7A /* Sheffield_Wednesday_crest_from_2016.png */; };
+		845E08861D653B6B00AF4C7A /* Shrewsbury_Town_Badge_2015-.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075D1D653B6A00AF4C7A /* Shrewsbury_Town_Badge_2015-.png */; };
+		845E08871D653B6B00AF4C7A /* Southend_United.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075E1D653B6A00AF4C7A /* Southend_United.png */; };
+		845E08881D653B6B00AF4C7A /* Sparta_Rotterdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E075F1D653B6A00AF4C7A /* Sparta_Rotterdam.png */; };
+		845E08891D653B6B00AF4C7A /* Sporting_Clube_de_Braga.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07601D653B6A00AF4C7A /* Sporting_Clube_de_Braga.png */; };
+		845E088A1D653B6B00AF4C7A /* Sporting_Clube_de_Portugal.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07611D653B6A00AF4C7A /* Sporting_Clube_de_Portugal.png */; };
+		845E088B1D653B6B00AF4C7A /* SpVgg_Greuther_Fürth_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07621D653B6A00AF4C7A /* SpVgg_Greuther_Fürth_logo.png */; };
+		845E088C1D653B6B00AF4C7A /* SpVgg_Unterhaching_Logo_2012.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07631D653B6A00AF4C7A /* SpVgg_Unterhaching_Logo_2012.png */; };
+		845E088D1D653B6B00AF4C7A /* Stade_Brestois_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07641D653B6A00AF4C7A /* Stade_Brestois_29.png */; };
+		845E088E1D653B6B00AF4C7A /* Stade_Laval.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07651D653B6A00AF4C7A /* Stade_Laval.png */; };
+		845E088F1D653B6B00AF4C7A /* Stade_Reims_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07661D653B6A00AF4C7A /* Stade_Reims_Logo.png */; };
+		845E08901D653B6B00AF4C7A /* Stade_Rennais_Football_Club.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07671D653B6A00AF4C7A /* Stade_Rennais_Football_Club.png */; };
+		845E08911D653B6B00AF4C7A /* Stoke_City.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07681D653B6A00AF4C7A /* Stoke_City.png */; };
+		845E08921D653B6B00AF4C7A /* Stuttgarter_Kickers.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07691D653B6A00AF4C7A /* Stuttgarter_Kickers.png */; };
+		845E08931D653B6B00AF4C7A /* SV-Werder-Bremen-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076A1D653B6A00AF4C7A /* SV-Werder-Bremen-Logo.png */; };
+		845E08941D653B6B00AF4C7A /* SV_Sandhausen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076B1D653B6A00AF4C7A /* SV_Sandhausen.png */; };
+		845E08951D653B6B00AF4C7A /* Svdarmstadt98.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076C1D653B6B00AF4C7A /* Svdarmstadt98.png */; };
+		845E08961D653B6B00AF4C7A /* Swansea_City_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076D1D653B6B00AF4C7A /* Swansea_City_Logo.png */; };
+		845E08971D653B6B00AF4C7A /* Swindon_Town_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076E1D653B6B00AF4C7A /* Swindon_Town_FC.png */; };
+		845E08981D653B6B00AF4C7A /* Torino_FC_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E076F1D653B6B00AF4C7A /* Torino_FC_Logo.png */; };
+		845E08991D653B6B00AF4C7A /* Tottenham_Hotspur.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07701D653B6B00AF4C7A /* Tottenham_Hotspur.png */; };
+		845E089A1D653B6B00AF4C7A /* TSV_1860_München.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07711D653B6B00AF4C7A /* TSV_1860_München.png */; };
+		845E089B1D653B6B00AF4C7A /* UD_Las_Palmas_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07721D653B6B00AF4C7A /* UD_Las_Palmas_logo.png */; };
+		845E089C1D653B6B00AF4C7A /* Udinese_Calcio.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07731D653B6B00AF4C7A /* Udinese_Calcio.png */; };
+		845E089D1D653B6B00AF4C7A /* UE_Llagostera.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07741D653B6B00AF4C7A /* UE_Llagostera.png */; };
+		845E089E1D653B6B00AF4C7A /* UMadeira.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07751D653B6B00AF4C7A /* UMadeira.png */; };
+		845E089F1D653B6B00AF4C7A /* Union_Deportiva_Almeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07761D653B6B00AF4C7A /* Union_Deportiva_Almeria.png */; };
+		845E08A01D653B6B00AF4C7A /* US_Créteil.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07771D653B6B00AF4C7A /* US_Créteil.png */; };
+		845E08A11D653B6B00AF4C7A /* US_Palermo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07781D653B6B00AF4C7A /* US_Palermo.png */; };
+		845E08A21D653B6B00AF4C7A /* US_Sassuolo_Calcio.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07791D653B6B00AF4C7A /* US_Sassuolo_Calcio.png */; };
+		845E08A31D653B6B00AF4C7A /* Valenciennes_AFC_(2008).png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077A1D653B6B00AF4C7A /* Valenciennes_AFC_(2008).png */; };
+		845E08A41D653B6B00AF4C7A /* VfB_Lubeck.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077B1D653B6B00AF4C7A /* VfB_Lubeck.png */; };
+		845E08A51D653B6B00AF4C7A /* VfB_Stuttgart_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077C1D653B6B00AF4C7A /* VfB_Stuttgart_Logo.png */; };
+		845E08A61D653B6B00AF4C7A /* VfL_Bochum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077D1D653B6B00AF4C7A /* VfL_Bochum_logo.png */; };
+		845E08A71D653B6B00AF4C7A /* VfR_Aalen_Wappen.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077E1D653B6B00AF4C7A /* VfR_Aalen_Wappen.png */; };
+		845E08A81D653B6B00AF4C7A /* Villarreal_CF_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E077F1D653B6B00AF4C7A /* Villarreal_CF_logo.png */; };
+		845E08A91D653B6B00AF4C7A /* Vitesse_Arnheim.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07801D653B6B00AF4C7A /* Vitesse_Arnheim.png */; };
+		845E08AA1D653B6B00AF4C7A /* Vitoria_Guimaraes.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07811D653B6B00AF4C7A /* Vitoria_Guimaraes.png */; };
+		845E08AB1D653B6B00AF4C7A /* Vitória_Setúbal.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07821D653B6B00AF4C7A /* Vitória_Setúbal.png */; };
+		845E08AC1D653B6B00AF4C7A /* Walsall_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07831D653B6B00AF4C7A /* Walsall_FC.png */; };
+		845E08AD1D653B6B00AF4C7A /* Watford.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07841D653B6B00AF4C7A /* Watford.png */; };
+		845E08AE1D653B6B00AF4C7A /* West_Bromwich_Albion.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07851D653B6B00AF4C7A /* West_Bromwich_Albion.png */; };
+		845E08AF1D653B6B00AF4C7A /* West_Ham_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07861D653B6B00AF4C7A /* West_Ham_United_FC.png */; };
+		845E08B01D653B6B00AF4C7A /* Wigan_Athletic.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07871D653B6B00AF4C7A /* Wigan_Athletic.png */; };
+		845E08B11D653B6B00AF4C7A /* Willem_II_Tilburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E07881D653B6B00AF4C7A /* Willem_II_Tilburg.png */; };
 		84BEC0CF1D23DA60008E43E5 /* AKAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC0581D23DA60008E43E5 /* AKAlphabet.m */; };
 		84BEC0D01D23DA60008E43E5 /* AKClusterAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05B1D23DA60008E43E5 /* AKClusterAlphabet.m */; };
 		84BEC0D11D23DA60008E43E5 /* AKRangeAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BEC05D1D23DA60008E43E5 /* AKRangeAlphabet.m */; };
@@ -138,6 +435,303 @@
 		8444DA8B1D364CAA005909BA /* AKMatchesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKMatchesViewCell.xib; sourceTree = "<group>"; };
 		8444DA8F1D3656EA005909BA /* AKMatchContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMatchContext.h; sourceTree = "<group>"; };
 		8444DA901D3656EA005909BA /* AKMatchContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMatchContext.m; sourceTree = "<group>"; };
+		845E06601D653B6A00AF4C7A /* 1._FC_Heidenheim_1846.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1._FC_Heidenheim_1846.png; sourceTree = "<group>"; };
+		845E06611D653B6A00AF4C7A /* 1._FC_Köln.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1._FC_Köln.png"; sourceTree = "<group>"; };
+		845E06621D653B6A00AF4C7A /* 1._FC_Nürnberg_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1._FC_Nürnberg_logo.png"; sourceTree = "<group>"; };
+		845E06631D653B6A00AF4C7A /* 1._FC_Union_Berlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1._FC_Union_Berlin.png; sourceTree = "<group>"; };
+		845E06641D653B6A00AF4C7A /* 180px-Club_Deportivo_Leganés.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180px-Club_Deportivo_Leganés.png"; sourceTree = "<group>"; };
+		845E06651D653B6A00AF4C7A /* 1_FC_Magdeburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_FC_Magdeburg.png; sourceTree = "<group>"; };
+		845E06661D653B6A00AF4C7A /* 200px-Union_sportive_Orléans_Loiret_football_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-Union_sportive_Orléans_Loiret_football_2.png"; sourceTree = "<group>"; };
+		845E06671D653B6A00AF4C7A /* AC_Ajaccio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AC_Ajaccio.png; sourceTree = "<group>"; };
+		845E06681D653B6A00AF4C7A /* AC_Chievo_Verona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AC_Chievo_Verona.png; sourceTree = "<group>"; };
+		845E06691D653B6A00AF4C7A /* AC_Florenz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AC_Florenz.png; sourceTree = "<group>"; };
+		845E066A1D653B6A00AF4C7A /* AC_Mailand_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AC_Mailand_Logo.png; sourceTree = "<group>"; };
+		845E066B1D653B6A00AF4C7A /* AD_Alcorcón_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AD_Alcorcón_logo.png"; sourceTree = "<group>"; };
+		845E066C1D653B6A00AF4C7A /* ADO_Den_Haag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADO_Den_Haag.png; sourceTree = "<group>"; };
+		845E066D1D653B6A00AF4C7A /* Afc_bournemouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afc_bournemouth.png; sourceTree = "<group>"; };
+		845E066E1D653B6A00AF4C7A /* AFC_Sunderland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AFC_Sunderland.png; sourceTree = "<group>"; };
+		845E066F1D653B6A00AF4C7A /* AJ_Auxerre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AJ_Auxerre.png; sourceTree = "<group>"; };
+		845E06701D653B6A00AF4C7A /* Ajax_Amsterdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ajax_Amsterdam.png; sourceTree = "<group>"; };
+		845E06711D653B6A00AF4C7A /* Albacete_balompie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Albacete_balompie.png; sourceTree = "<group>"; };
+		845E06721D653B6A00AF4C7A /* Arsenal_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arsenal_FC.png; sourceTree = "<group>"; };
+		845E06731D653B6A00AF4C7A /* AS_Monaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AS_Monaco.png; sourceTree = "<group>"; };
+		845E06741D653B6A00AF4C7A /* AS_Nancy_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AS_Nancy_Logo.png; sourceTree = "<group>"; };
+		845E06751D653B6A00AF4C7A /* AS_Rom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AS_Rom.png; sourceTree = "<group>"; };
+		845E06761D653B6A00AF4C7A /* AS_Saint-Etienne_(aktuell).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AS_Saint-Etienne_(aktuell).png"; sourceTree = "<group>"; };
+		845E06771D653B6A00AF4C7A /* Aston_Villa_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aston_Villa_logo.png; sourceTree = "<group>"; };
+		845E06781D653B6A00AF4C7A /* Atalanta_BC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atalanta_BC.png; sourceTree = "<group>"; };
+		845E06791D653B6A00AF4C7A /* Athletic_Club_Bilbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Athletic_Club_Bilbao.png; sourceTree = "<group>"; };
+		845E067A1D653B6A00AF4C7A /* Athletic_Club_Bilbao.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Athletic_Club_Bilbao.svg.png; sourceTree = "<group>"; };
+		845E067B1D653B6A00AF4C7A /* Atletico_Madrid_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atletico_Madrid_logo.png; sourceTree = "<group>"; };
+		845E067C1D653B6A00AF4C7A /* Atletico_Osasuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atletico_Osasuna.png; sourceTree = "<group>"; };
+		845E067D1D653B6A00AF4C7A /* AZ_Alkmaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AZ_Alkmaar.png; sourceTree = "<group>"; };
+		845E067E1D653B6A00AF4C7A /* Barnsley_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barnsley_FC.png; sourceTree = "<group>"; };
+		845E067F1D653B6A00AF4C7A /* Bayer_04_Leverkusen_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bayer_04_Leverkusen_Logo.png; sourceTree = "<group>"; };
+		845E06801D653B6A00AF4C7A /* Belenenses_Lissabon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Belenenses_Lissabon.png; sourceTree = "<group>"; };
+		845E06811D653B6A00AF4C7A /* Birmingham_City_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birmingham_City_FC_logo.png; sourceTree = "<group>"; };
+		845E06821D653B6A00AF4C7A /* Blackpool_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blackpool_FC_logo.png; sourceTree = "<group>"; };
+		845E06831D653B6A00AF4C7A /* Boavista_F.C._logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boavista_F.C._logo.png; sourceTree = "<group>"; };
+		845E06841D653B6A00AF4C7A /* Borussia_Dortmund_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Borussia_Dortmund_logo.png; sourceTree = "<group>"; };
+		845E06851D653B6A00AF4C7A /* Borussia_Mönchengladbach_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Borussia_Mönchengladbach_logo.png"; sourceTree = "<group>"; };
+		845E06861D653B6A00AF4C7A /* Bradford_City_AFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bradford_City_AFC.png; sourceTree = "<group>"; };
+		845E06871D653B6A00AF4C7A /* Brighton_&_Hove_Albion_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brighton_&_Hove_Albion_logo.png"; sourceTree = "<group>"; };
+		845E06881D653B6A00AF4C7A /* Burnley_FC_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burnley_FC_badge.png; sourceTree = "<group>"; };
+		845E06891D653B6A00AF4C7A /* Burton_Albion_FC_logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burton_Albion_FC_logo.svg.png; sourceTree = "<group>"; };
+		845E068A1D653B6A00AF4C7A /* Bury_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bury_FC.png; sourceTree = "<group>"; };
+		845E068B1D653B6A00AF4C7A /* Cagliari_Calcio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cagliari_Calcio.png; sourceTree = "<group>"; };
+		845E068C1D653B6A00AF4C7A /* Cardiff_City_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cardiff_City_Logo.png; sourceTree = "<group>"; };
+		845E068D1D653B6A00AF4C7A /* Carpi_FC_1909_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carpi_FC_1909_logo.png; sourceTree = "<group>"; };
+		845E068E1D653B6A00AF4C7A /* Cádiz_CF_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cádiz_CF_logo.png"; sourceTree = "<group>"; };
+		845E068F1D653B6A00AF4C7A /* CD_Lugo_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CD_Lugo_logo.png; sourceTree = "<group>"; };
+		845E06901D653B6A00AF4C7A /* CD_Mirandés_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CD_Mirandés_logo.png"; sourceTree = "<group>"; };
+		845E06911D653B6A00AF4C7A /* CD_Numancia_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CD_Numancia_logo.png; sourceTree = "<group>"; };
+		845E06921D653B6A00AF4C7A /* CD_Tenerife_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CD_Tenerife_Logo.png; sourceTree = "<group>"; };
+		845E06931D653B6A00AF4C7A /* Celta_Vigo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Celta_Vigo.png; sourceTree = "<group>"; };
+		845E06941D653B6A00AF4C7A /* Cf_reus_deportiu_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cf_reus_deportiu_200.png; sourceTree = "<group>"; };
+		845E06951D653B6A00AF4C7A /* Chamois_Niort_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chamois_Niort_Logo.png; sourceTree = "<group>"; };
+		845E06961D653B6A00AF4C7A /* Chelsea_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chelsea_crest.png; sourceTree = "<group>"; };
+		845E06971D653B6A00AF4C7A /* Chemnitzer_FC_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chemnitzer_FC_Logo.png; sourceTree = "<group>"; };
+		845E06981D653B6A00AF4C7A /* Chesterfield_FC_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chesterfield_FC_crest.png; sourceTree = "<group>"; };
+		845E06991D653B6A00AF4C7A /* Clermont_Foot_Auvergne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clermont_Foot_Auvergne.png; sourceTree = "<group>"; };
+		845E069A1D653B6A00AF4C7A /* Colchester_United_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Colchester_United_FC_logo.png; sourceTree = "<group>"; };
+		845E069B1D653B6A00AF4C7A /* Coventry_City_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coventry_City_FC_logo.png; sourceTree = "<group>"; };
+		845E069C1D653B6A00AF4C7A /* Córdoba_CF_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Córdoba_CF_logo.png"; sourceTree = "<group>"; };
+		845E069D1D653B6A00AF4C7A /* Crewe_Alexandra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crewe_Alexandra.png; sourceTree = "<group>"; };
+		845E069E1D653B6A00AF4C7A /* Crystal_Palace_F.C._logo_(2013).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crystal_Palace_F.C._logo_(2013).png"; sourceTree = "<group>"; };
+		845E069F1D653B6A00AF4C7A /* CSKA_Moscow_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CSKA_Moscow_logo.png; sourceTree = "<group>"; };
+		845E06A01D653B6A00AF4C7A /* Degraafschap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Degraafschap.png; sourceTree = "<group>"; };
+		845E06A11D653B6A00AF4C7A /* Deportivo_Alaves_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deportivo_Alaves_logo.png; sourceTree = "<group>"; };
+		845E06A21D653B6A00AF4C7A /* Derby_County_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Derby_County_crest.png; sourceTree = "<group>"; };
+		845E06A31D653B6A00AF4C7A /* Doncaster_Rovers_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doncaster_Rovers_FC.png; sourceTree = "<group>"; };
+		845E06A41D653B6A00AF4C7A /* EA_Guingamp_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EA_Guingamp_Logo.png; sourceTree = "<group>"; };
+		845E06A51D653B6A00AF4C7A /* Eintracht_Frankfurt_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eintracht_Frankfurt_Logo.png; sourceTree = "<group>"; };
+		845E06A61D653B6A00AF4C7A /* Elche_CF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Elche_CF.png; sourceTree = "<group>"; };
+		845E06A71D653B6A00AF4C7A /* Emblema_CD_Tondela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emblema_CD_Tondela.png; sourceTree = "<group>"; };
+		845E06A81D653B6A00AF4C7A /* ES_Troyes_AC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ES_Troyes_AC.png; sourceTree = "<group>"; };
+		845E06A91D653B6A00AF4C7A /* Everton_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Everton_FC.png; sourceTree = "<group>"; };
+		845E06AA1D653B6A00AF4C7A /* Evian_Thonon_Gaillard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Evian_Thonon_Gaillard.png; sourceTree = "<group>"; };
+		845E06AB1D653B6A00AF4C7A /* FC-Ingolstadt_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FC-Ingolstadt_logo.png"; sourceTree = "<group>"; };
+		845E06AC1D653B6A00AF4C7A /* FC_Arouca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Arouca.png; sourceTree = "<group>"; };
+		845E06AD1D653B6A00AF4C7A /* FC_Astana_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Astana_Logo.png; sourceTree = "<group>"; };
+		845E06AE1D653B6A00AF4C7A /* Fc_barcelona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fc_barcelona.png; sourceTree = "<group>"; };
+		845E06AF1D653B6A00AF4C7A /* FC_Bologna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Bologna.png; sourceTree = "<group>"; };
+		845E06B01D653B6A00AF4C7A /* FC_Crotone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Crotone.png; sourceTree = "<group>"; };
+		845E06B11D653B6A00AF4C7A /* FC_Dynamo_Kyiv_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Dynamo_Kyiv_logo.png; sourceTree = "<group>"; };
+		845E06B21D653B6A00AF4C7A /* Fc_erzgebirge_aue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fc_erzgebirge_aue.png; sourceTree = "<group>"; };
+		845E06B31D653B6A00AF4C7A /* FC_Gillingham_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Gillingham_Logo.svg.png; sourceTree = "<group>"; };
+		845E06B41D653B6A00AF4C7A /* FC_Groningen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Groningen.png; sourceTree = "<group>"; };
+		845E06B51D653B6A00AF4C7A /* FC_Hansa_Rostock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Hansa_Rostock.png; sourceTree = "<group>"; };
+		845E06B61D653B6A00AF4C7A /* FC_Liverpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Liverpool.png; sourceTree = "<group>"; };
+		845E06B71D653B6A00AF4C7A /* FC_Lorient_neu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Lorient_neu.png; sourceTree = "<group>"; };
+		845E06B81D653B6A00AF4C7A /* FC_Málaga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FC_Málaga.png"; sourceTree = "<group>"; };
+		845E06B91D653B6A00AF4C7A /* FC_Metz_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Metz_Logo.png; sourceTree = "<group>"; };
+		845E06BA1D653B6A00AF4C7A /* FC_Nantes_(seit_2008).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FC_Nantes_(seit_2008).png"; sourceTree = "<group>"; };
+		845E06BB1D653B6A00AF4C7A /* FC_Pacos_de_Ferreira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Pacos_de_Ferreira.png; sourceTree = "<group>"; };
+		845E06BC1D653B6A00AF4C7A /* FC_Porto_1922-2005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FC_Porto_1922-2005.png"; sourceTree = "<group>"; };
+		845E06BD1D653B6A00AF4C7A /* FC_Schalke_04_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Schalke_04_Logo.png; sourceTree = "<group>"; };
+		845E06BE1D653B6A00AF4C7A /* FC_Shakhtar_Donetsk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Shakhtar_Donetsk.png; sourceTree = "<group>"; };
+		845E06BF1D653B6A00AF4C7A /* FC_Sochaux_Logo_2010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Sochaux_Logo_2010.png; sourceTree = "<group>"; };
+		845E06C01D653B6A00AF4C7A /* FC_Southampton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Southampton.png; sourceTree = "<group>"; };
+		845E06C11D653B6A00AF4C7A /* FC_Toulouse_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Toulouse_Logo.png; sourceTree = "<group>"; };
+		845E06C21D653B6A00AF4C7A /* FC_Tours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Tours.png; sourceTree = "<group>"; };
+		845E06C31D653B6A00AF4C7A /* FC_Twente_Enschede_(ab_2006).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FC_Twente_Enschede_(ab_2006).png"; sourceTree = "<group>"; };
+		845E06C41D653B6A00AF4C7A /* FC_Utrecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Utrecht.png; sourceTree = "<group>"; };
+		845E06C51D653B6A00AF4C7A /* FC_Valencia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Valencia.png; sourceTree = "<group>"; };
+		845E06C61D653B6A00AF4C7A /* FC_Zenit_1_star_2015_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Zenit_1_star_2015_logo.png; sourceTree = "<group>"; };
+		845E06C71D653B6A00AF4C7A /* Fcenergie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fcenergie.png; sourceTree = "<group>"; };
+		845E06C81D653B6A00AF4C7A /* FCO_Dijon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FCO_Dijon.png; sourceTree = "<group>"; };
+		845E06C91D653B6A00AF4C7A /* Flag_of_Albania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Albania.png; sourceTree = "<group>"; };
+		845E06CA1D653B6A00AF4C7A /* Flag_of_Austria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Austria.png; sourceTree = "<group>"; };
+		845E06CB1D653B6A00AF4C7A /* Flag_of_Belgium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Belgium.png; sourceTree = "<group>"; };
+		845E06CC1D653B6A00AF4C7A /* Flag_of_Croatia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Croatia.png; sourceTree = "<group>"; };
+		845E06CD1D653B6A00AF4C7A /* Flag_of_England.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_England.png; sourceTree = "<group>"; };
+		845E06CE1D653B6A00AF4C7A /* Flag_of_France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_France.png; sourceTree = "<group>"; };
+		845E06CF1D653B6A00AF4C7A /* Flag_of_Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Germany.png; sourceTree = "<group>"; };
+		845E06D01D653B6A00AF4C7A /* Flag_of_Hungary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Hungary.png; sourceTree = "<group>"; };
+		845E06D11D653B6A00AF4C7A /* Flag_of_Iceland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Iceland.png; sourceTree = "<group>"; };
+		845E06D21D653B6A00AF4C7A /* Flag_of_Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Ireland.png; sourceTree = "<group>"; };
+		845E06D31D653B6A00AF4C7A /* Flag_of_Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Italy.png; sourceTree = "<group>"; };
+		845E06D41D653B6A00AF4C7A /* Flag_of_Northern_Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Northern_Ireland.png; sourceTree = "<group>"; };
+		845E06D51D653B6A00AF4C7A /* Flag_of_Poland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Poland.png; sourceTree = "<group>"; };
+		845E06D61D653B6A00AF4C7A /* Flag_of_Portugal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Portugal.png; sourceTree = "<group>"; };
+		845E06D71D653B6A00AF4C7A /* Flag_of_Romania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Romania.png; sourceTree = "<group>"; };
+		845E06D81D653B6A00AF4C7A /* Flag_of_Russia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Russia.png; sourceTree = "<group>"; };
+		845E06D91D653B6A00AF4C7A /* Flag_of_Slovakia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Slovakia.png; sourceTree = "<group>"; };
+		845E06DA1D653B6A00AF4C7A /* Flag_of_Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Spain.png; sourceTree = "<group>"; };
+		845E06DB1D653B6A00AF4C7A /* Flag_of_Sweden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Sweden.png; sourceTree = "<group>"; };
+		845E06DC1D653B6A00AF4C7A /* Flag_of_Switzerland_(Pantone).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flag_of_Switzerland_(Pantone).png"; sourceTree = "<group>"; };
+		845E06DD1D653B6A00AF4C7A /* Flag_of_the_Czech_Republic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_the_Czech_Republic.png; sourceTree = "<group>"; };
+		845E06DE1D653B6A00AF4C7A /* Flag_of_Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Turkey.png; sourceTree = "<group>"; };
+		845E06DF1D653B6A00AF4C7A /* Flag_of_Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Ukraine.png; sourceTree = "<group>"; };
+		845E06E01D653B6A00AF4C7A /* Flag_of_Wales_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag_of_Wales_2.png; sourceTree = "<group>"; };
+		845E06E11D653B6A00AF4C7A /* Fleetwood_Town_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fleetwood_Town_FC.png; sourceTree = "<group>"; };
+		845E06E21D653B6A00AF4C7A /* Football_Bourg_en_Bresse_Péronnas_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Football_Bourg_en_Bresse_Péronnas_logo.png"; sourceTree = "<group>"; };
+		845E06E31D653B6A00AF4C7A /* For_article_Girona_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = For_article_Girona_FC.png; sourceTree = "<group>"; };
+		845E06E41D653B6A00AF4C7A /* Fortuna_Düsseldorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fortuna_Düsseldorf.png"; sourceTree = "<group>"; };
+		845E06E51D653B6A00AF4C7A /* Frosinonestemma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frosinonestemma.png; sourceTree = "<group>"; };
+		845E06E61D653B6A00AF4C7A /* FSV_Frankfurt_1899.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSV_Frankfurt_1899.png; sourceTree = "<group>"; };
+		845E06E71D653B6A00AF4C7A /* FSV_Mainz_05_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSV_Mainz_05_Logo.png; sourceTree = "<group>"; };
+		845E06E81D653B6A00AF4C7A /* Fulham_fc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fulham_fc.png; sourceTree = "<group>"; };
+		845E06E91D653B6A00AF4C7A /* G_D_Chaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_D_Chaves.png; sourceTree = "<group>"; };
+		845E06EA1D653B6A00AF4C7A /* Galatasaray_Sports_Club_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galatasaray_Sports_Club_Logo.png; sourceTree = "<group>"; };
+		845E06EB1D653B6A00AF4C7A /* Gazélec_Ajaccio_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gazélec_Ajaccio_logo.png"; sourceTree = "<group>"; };
+		845E06EC1D653B6A00AF4C7A /* GD_Estoril_Praia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GD_Estoril_Praia.png; sourceTree = "<group>"; };
+		845E06ED1D653B6A00AF4C7A /* Genoa_CFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Genoa_CFC.png; sourceTree = "<group>"; };
+		845E06EE1D653B6A00AF4C7A /* Getafe_CF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Getafe_CF.png; sourceTree = "<group>"; };
+		845E06EF1D653B6A00AF4C7A /* Gimnàstic_tarragona_200px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gimnàstic_tarragona_200px.png"; sourceTree = "<group>"; };
+		845E06F01D653B6A00AF4C7A /* Girondins_Bordeaux_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girondins_Bordeaux_Logo.png; sourceTree = "<group>"; };
+		845E06F11D653B6A00AF4C7A /* Go_Ahead_Eagles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Go_Ahead_Eagles.png; sourceTree = "<group>"; };
+		845E06F21D653B6A00AF4C7A /* Granada_CF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Granada_CF.png; sourceTree = "<group>"; };
+		845E06F31D653B6A00AF4C7A /* Hallescher_FC_Logo_2012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hallescher_FC_Logo_2012.png; sourceTree = "<group>"; };
+		845E06F41D653B6A00AF4C7A /* Hannover_96_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hannover_96_Logo.png; sourceTree = "<group>"; };
+		845E06F51D653B6A00AF4C7A /* Hellas_Verona_1903_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hellas_Verona_1903_FC.png; sourceTree = "<group>"; };
+		845E06F61D653B6A00AF4C7A /* Heracles_Almelo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heracles_Almelo.png; sourceTree = "<group>"; };
+		845E06F71D653B6A00AF4C7A /* Hertha_BSC_Logo_2012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hertha_BSC_Logo_2012.png; sourceTree = "<group>"; };
+		845E06F81D653B6A00AF4C7A /* Holstein_Kiel_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holstein_Kiel_Logo.png; sourceTree = "<group>"; };
+		845E06F91D653B6A00AF4C7A /* HSC_Montpellier_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HSC_Montpellier_Logo.png; sourceTree = "<group>"; };
+		845E06FA1D653B6A00AF4C7A /* HSV-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HSV-Logo.png"; sourceTree = "<group>"; };
+		845E06FB1D653B6A00AF4C7A /* Huddersfield_Town_F.C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Huddersfield_Town_F.C.png; sourceTree = "<group>"; };
+		845E06FC1D653B6A00AF4C7A /* Hull_City_AFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hull_City_AFC.png; sourceTree = "<group>"; };
+		845E06FD1D653B6A00AF4C7A /* Ipswich_Town.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ipswich_Town.png; sourceTree = "<group>"; };
+		845E06FE1D653B6A00AF4C7A /* Jahn_Regensburg_logo2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jahn_Regensburg_logo2014.png; sourceTree = "<group>"; };
+		845E06FF1D653B6A00AF4C7A /* Juventus_Turin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Juventus_Turin.png; sourceTree = "<group>"; };
+		845E07001D653B6A00AF4C7A /* KAA_Gent_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KAA_Gent_logo.png; sourceTree = "<group>"; };
+		845E07011D653B6A00AF4C7A /* Karlsruher_SC_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Karlsruher_SC_Logo.png; sourceTree = "<group>"; };
+		845E07021D653B6A00AF4C7A /* Kickers_Wurzburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kickers_Wurzburg.png; sourceTree = "<group>"; };
+		845E07031D653B6A00AF4C7A /* Lazio_Rom.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazio_Rom.svg.png; sourceTree = "<group>"; };
+		845E07041D653B6A00AF4C7A /* Le_Havre_AC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Le_Havre_AC.png; sourceTree = "<group>"; };
+		845E07051D653B6A00AF4C7A /* Leicester02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leicester02.png; sourceTree = "<group>"; };
+		845E07061D653B6A00AF4C7A /* Levante_ud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Levante_ud.png; sourceTree = "<group>"; };
+		845E07071D653B6A00AF4C7A /* Logo-VfL-Wolfsburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-VfL-Wolfsburg.png"; sourceTree = "<group>"; };
+		845E07081D653B6A00AF4C7A /* Logo_1_FC_Kaiserslautern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_1_FC_Kaiserslautern.png; sourceTree = "<group>"; };
+		845E07091D653B6A00AF4C7A /* Logo_Academica_de_Coimbra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Academica_de_Coimbra.png; sourceTree = "<group>"; };
+		845E070A1D653B6A00AF4C7A /* Logo_Arminia_Bielefeld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Arminia_Bielefeld.png; sourceTree = "<group>"; };
+		845E070B1D653B6A00AF4C7A /* Logo_BATE_Baryssau.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_BATE_Baryssau.svg.png; sourceTree = "<group>"; };
+		845E070C1D653B6A00AF4C7A /* Logo_Benfica_Lissabon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Benfica_Lissabon.png; sourceTree = "<group>"; };
+		845E070D1D653B6A00AF4C7A /* Logo_Eintracht_Braunschweig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Eintracht_Braunschweig.png; sourceTree = "<group>"; };
+		845E070E1D653B6A00AF4C7A /* Logo_FC_Augsburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_FC_Augsburg.png; sourceTree = "<group>"; };
+		845E070F1D653B6A00AF4C7A /* Logo_FC_Bayern_München.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo_FC_Bayern_München.png"; sourceTree = "<group>"; };
+		845E07101D653B6A00AF4C7A /* Logo_FC_Empoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_FC_Empoli.png; sourceTree = "<group>"; };
+		845E07111D653B6A00AF4C7A /* Logo_FC_Internazionale_Milano_2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_FC_Internazionale_Milano_2014.png; sourceTree = "<group>"; };
+		845E07121D653B6A00AF4C7A /* Logo_FC_St_Pauli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_FC_St_Pauli.png; sourceTree = "<group>"; };
+		845E07131D653B6A00AF4C7A /* Logo_Feyenoord_Rotterdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Feyenoord_Rotterdam.png; sourceTree = "<group>"; };
+		845E07141D653B6A00AF4C7A /* Logo_Malmö_FF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo_Malmö_FF.png"; sourceTree = "<group>"; };
+		845E07151D653B6A00AF4C7A /* Logo_Manchester_City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Manchester_City.png; sourceTree = "<group>"; };
+		845E07161D653B6A00AF4C7A /* Logo_Moreirense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Moreirense.png; sourceTree = "<group>"; };
+		845E07171D653B6A00AF4C7A /* Logo_Olympiakos_Piräus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo_Olympiakos_Piräus.png"; sourceTree = "<group>"; };
+		845E07181D653B6A00AF4C7A /* Logo_ParisFC_2011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_ParisFC_2011.png; sourceTree = "<group>"; };
+		845E07191D653B6A00AF4C7A /* Logo_RedStarFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_RedStarFC.png; sourceTree = "<group>"; };
+		845E071A1D653B6A00AF4C7A /* Logo_SG_Dynamo_Dresden_neu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_SG_Dynamo_Dresden_neu.png; sourceTree = "<group>"; };
+		845E071B1D653B6A00AF4C7A /* Logo_SV_Wehen_Wiesbaden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_SV_Wehen_Wiesbaden.png; sourceTree = "<group>"; };
+		845E071C1D653B6A00AF4C7A /* Logo_TSG_Hoffenheim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_TSG_Hoffenheim.png; sourceTree = "<group>"; };
+		845E071D1D653B6A00AF4C7A /* Logo_Vfl_Osnabrueck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Vfl_Osnabrueck.png; sourceTree = "<group>"; };
+		845E071E1D653B6A00AF4C7A /* LogoSmc2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoSmc2013.png; sourceTree = "<group>"; };
+		845E071F1D653B6A00AF4C7A /* LOSC_Lille_Crest_2012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOSC_Lille_Crest_2012.png; sourceTree = "<group>"; };
+		845E07201D653B6A00AF4C7A /* main-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-logo.png"; sourceTree = "<group>"; };
+		845E07211D653B6A00AF4C7A /* Manchester_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manchester_United_FC.png; sourceTree = "<group>"; };
+		845E07221D653B6A00AF4C7A /* Marítimo_Funchal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marítimo_Funchal.png"; sourceTree = "<group>"; };
+		845E07231D653B6A00AF4C7A /* Middlesbrough_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Middlesbrough_crest.png; sourceTree = "<group>"; };
+		845E07241D653B6A00AF4C7A /* Millwall_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Millwall_FC_logo.png; sourceTree = "<group>"; };
+		845E07251D653B6A00AF4C7A /* Msv_duisburg(neu).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Msv_duisburg(neu).png"; sourceTree = "<group>"; };
+		845E07261D653B6A00AF4C7A /* MTAFC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTAFC_logo.png; sourceTree = "<group>"; };
+		845E07271D653B6A00AF4C7A /* Nacional_Funchal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nacional_Funchal.png; sourceTree = "<group>"; };
+		845E07281D653B6A00AF4C7A /* NEC_Nijmegen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEC_Nijmegen.png; sourceTree = "<group>"; };
+		845E07291D653B6A00AF4C7A /* Newcastle_United_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Newcastle_United_Logo.png; sourceTree = "<group>"; };
+		845E072A1D653B6A00AF4C7A /* Norwich_City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Norwich_City.png; sourceTree = "<group>"; };
+		845E072B1D653B6A00AF4C7A /* Nottingham_Forest_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nottingham_Forest_logo.png; sourceTree = "<group>"; };
+		845E072C1D653B6A00AF4C7A /* OGC_Nice_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OGC_Nice_logo.png; sourceTree = "<group>"; };
+		845E072D1D653B6A00AF4C7A /* Oldham_Athletic_new_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oldham_Athletic_new_badge.png; sourceTree = "<group>"; };
+		845E072E1D653B6A00AF4C7A /* Olympique_Lyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Olympique_Lyon.png; sourceTree = "<group>"; };
+		845E072F1D653B6A00AF4C7A /* Olympique_Marseille_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Olympique_Marseille_Logo.png; sourceTree = "<group>"; };
+		845E07301D653B6A00AF4C7A /* Olympique_Nimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Olympique_Nimes.png; sourceTree = "<group>"; };
+		845E07311D653B6A00AF4C7A /* Paris_Saint-Germain_(seit_2013).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paris_Saint-Germain_(seit_2013).png"; sourceTree = "<group>"; };
+		845E07321D653B6A00AF4C7A /* PEC_Zwolle_2012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PEC_Zwolle_2012.png; sourceTree = "<group>"; };
+		845E07331D653B6A00AF4C7A /* Pescara_Calcio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pescara_Calcio.png; sourceTree = "<group>"; };
+		845E07341D653B6A00AF4C7A /* Peterborough_United.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peterborough_United.png; sourceTree = "<group>"; };
+		845E07351D653B6A00AF4C7A /* Port_Vale_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Port_Vale_logo.png; sourceTree = "<group>"; };
+		845E07361D653B6A00AF4C7A /* PSV_Eindhoven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PSV_Eindhoven.png; sourceTree = "<group>"; };
+		845E07371D653B6A00AF4C7A /* Queens_Park_Rangers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Queens_Park_Rangers.png; sourceTree = "<group>"; };
+		845E07381D653B6A00AF4C7A /* Rayo_vallecano_madrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rayo_vallecano_madrid.png; sourceTree = "<group>"; };
+		845E07391D653B6A00AF4C7A /* RB_Leipzig_2010_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RB_Leipzig_2010_logo.png; sourceTree = "<group>"; };
+		845E073A1D653B6A00AF4C7A /* RC_Deportivo_La_Coruña_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RC_Deportivo_La_Coruña_logo.png"; sourceTree = "<group>"; };
+		845E073B1D653B6A00AF4C7A /* RC_Lens_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RC_Lens_Logo.png; sourceTree = "<group>"; };
+		845E073C1D653B6A00AF4C7A /* RCD_Espanyol_De_Barcelona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCD_Espanyol_De_Barcelona.png; sourceTree = "<group>"; };
+		845E073D1D653B6A00AF4C7A /* Rcd_mallorca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rcd_mallorca.png; sourceTree = "<group>"; };
+		845E073E1D653B6A00AF4C7A /* Real_Betis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_Betis.png; sourceTree = "<group>"; };
+		845E073F1D653B6A00AF4C7A /* Real_Madrid_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_Madrid_Logo.png; sourceTree = "<group>"; };
+		845E07401D653B6A00AF4C7A /* Real_Oviedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_Oviedo.png; sourceTree = "<group>"; };
+		845E07411D653B6A00AF4C7A /* Real_Sociedad_San_Sebastián.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Real_Sociedad_San_Sebastián.png"; sourceTree = "<group>"; };
+		845E07421D653B6A00AF4C7A /* Real_Sporting_de_Gijon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_Sporting_de_Gijon.png; sourceTree = "<group>"; };
+		845E07431D653B6A00AF4C7A /* Real_Valladolid_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_Valladolid_Logo.png; sourceTree = "<group>"; };
+		845E07441D653B6A00AF4C7A /* Real_zaragoza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real_zaragoza.png; sourceTree = "<group>"; };
+		845E07451D653B6A00AF4C7A /* Rio_Ave_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rio_Ave_FC.png; sourceTree = "<group>"; };
+		845E07461D653B6A00AF4C7A /* Rochdale_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rochdale_badge.png; sourceTree = "<group>"; };
+		845E07471D653B6A00AF4C7A /* Roda_JC_Kerkrade_(2011).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roda_JC_Kerkrade_(2011).png"; sourceTree = "<group>"; };
+		845E07481D653B6A00AF4C7A /* Rot_Weiss_Erfurt_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rot_Weiss_Erfurt_Logo.png; sourceTree = "<group>"; };
+		845E07491D653B6A00AF4C7A /* Rotherham_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotherham_United_FC.png; sourceTree = "<group>"; };
+		845E074A1D653B6A00AF4C7A /* S.S.C._Napoli_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S.S.C._Napoli_logo.png; sourceTree = "<group>"; };
+		845E074B1D653B6A00AF4C7A /* Sampdoria_Genua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sampdoria_Genua.png; sourceTree = "<group>"; };
+		845E074C1D653B6A00AF4C7A /* SBV_Excelsior_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SBV_Excelsior_logo.png; sourceTree = "<group>"; };
+		845E074D1D653B6A00AF4C7A /* SC-Freiburg_Logo-neu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SC-Freiburg_Logo-neu.png"; sourceTree = "<group>"; };
+		845E074E1D653B6A00AF4C7A /* SC_Bastia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Bastia.png; sourceTree = "<group>"; };
+		845E074F1D653B6A00AF4C7A /* SC_Cambuur-Leeuwarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SC_Cambuur-Leeuwarden.png"; sourceTree = "<group>"; };
+		845E07501D653B6A00AF4C7A /* SC_Fortuna_Koln.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Fortuna_Koln.png; sourceTree = "<group>"; };
+		845E07511D653B6A00AF4C7A /* SC_Heerenveen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Heerenveen.png; sourceTree = "<group>"; };
+		845E07521D653B6A00AF4C7A /* SC_Paderborn_07_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Paderborn_07_Logo.png; sourceTree = "<group>"; };
+		845E07531D653B6A00AF4C7A /* SC_Preussen_Muenster_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Preussen_Muenster_Logo.png; sourceTree = "<group>"; };
+		845E07541D653B6A00AF4C7A /* SCO_Angers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SCO_Angers.png; sourceTree = "<group>"; };
+		845E07551D653B6A00AF4C7A /* Scunthorpe_United_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scunthorpe_United_FC_logo.png; sourceTree = "<group>"; };
+		845E07561D653B6A00AF4C7A /* SD_Eibar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SD_Eibar_logo.png; sourceTree = "<group>"; };
+		845E07571D653B6A00AF4C7A /* Sd_huesca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sd_huesca.png; sourceTree = "<group>"; };
+		845E07581D653B6A00AF4C7A /* SD_Ponferradina_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SD_Ponferradina_logo.png; sourceTree = "<group>"; };
+		845E07591D653B6A00AF4C7A /* Sevilla_cf_200px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sevilla_cf_200px.png; sourceTree = "<group>"; };
+		845E075A1D653B6A00AF4C7A /* SG_Sonnenhof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SG_Sonnenhof.png; sourceTree = "<group>"; };
+		845E075B1D653B6A00AF4C7A /* Sheffield_United_FC_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sheffield_United_FC_logo.png; sourceTree = "<group>"; };
+		845E075C1D653B6A00AF4C7A /* Sheffield_Wednesday_crest_from_2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sheffield_Wednesday_crest_from_2016.png; sourceTree = "<group>"; };
+		845E075D1D653B6A00AF4C7A /* Shrewsbury_Town_Badge_2015-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shrewsbury_Town_Badge_2015-.png"; sourceTree = "<group>"; };
+		845E075E1D653B6A00AF4C7A /* Southend_United.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Southend_United.png; sourceTree = "<group>"; };
+		845E075F1D653B6A00AF4C7A /* Sparta_Rotterdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparta_Rotterdam.png; sourceTree = "<group>"; };
+		845E07601D653B6A00AF4C7A /* Sporting_Clube_de_Braga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sporting_Clube_de_Braga.png; sourceTree = "<group>"; };
+		845E07611D653B6A00AF4C7A /* Sporting_Clube_de_Portugal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sporting_Clube_de_Portugal.png; sourceTree = "<group>"; };
+		845E07621D653B6A00AF4C7A /* SpVgg_Greuther_Fürth_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpVgg_Greuther_Fürth_logo.png"; sourceTree = "<group>"; };
+		845E07631D653B6A00AF4C7A /* SpVgg_Unterhaching_Logo_2012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpVgg_Unterhaching_Logo_2012.png; sourceTree = "<group>"; };
+		845E07641D653B6A00AF4C7A /* Stade_Brestois_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Brestois_29.png; sourceTree = "<group>"; };
+		845E07651D653B6A00AF4C7A /* Stade_Laval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Laval.png; sourceTree = "<group>"; };
+		845E07661D653B6A00AF4C7A /* Stade_Reims_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Reims_Logo.png; sourceTree = "<group>"; };
+		845E07671D653B6A00AF4C7A /* Stade_Rennais_Football_Club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Rennais_Football_Club.png; sourceTree = "<group>"; };
+		845E07681D653B6A00AF4C7A /* Stoke_City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stoke_City.png; sourceTree = "<group>"; };
+		845E07691D653B6A00AF4C7A /* Stuttgarter_Kickers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stuttgarter_Kickers.png; sourceTree = "<group>"; };
+		845E076A1D653B6A00AF4C7A /* SV-Werder-Bremen-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SV-Werder-Bremen-Logo.png"; sourceTree = "<group>"; };
+		845E076B1D653B6A00AF4C7A /* SV_Sandhausen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SV_Sandhausen.png; sourceTree = "<group>"; };
+		845E076C1D653B6B00AF4C7A /* Svdarmstadt98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Svdarmstadt98.png; sourceTree = "<group>"; };
+		845E076D1D653B6B00AF4C7A /* Swansea_City_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swansea_City_Logo.png; sourceTree = "<group>"; };
+		845E076E1D653B6B00AF4C7A /* Swindon_Town_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swindon_Town_FC.png; sourceTree = "<group>"; };
+		845E076F1D653B6B00AF4C7A /* Torino_FC_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Torino_FC_Logo.png; sourceTree = "<group>"; };
+		845E07701D653B6B00AF4C7A /* Tottenham_Hotspur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tottenham_Hotspur.png; sourceTree = "<group>"; };
+		845E07711D653B6B00AF4C7A /* TSV_1860_München.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TSV_1860_München.png"; sourceTree = "<group>"; };
+		845E07721D653B6B00AF4C7A /* UD_Las_Palmas_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UD_Las_Palmas_logo.png; sourceTree = "<group>"; };
+		845E07731D653B6B00AF4C7A /* Udinese_Calcio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Udinese_Calcio.png; sourceTree = "<group>"; };
+		845E07741D653B6B00AF4C7A /* UE_Llagostera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UE_Llagostera.png; sourceTree = "<group>"; };
+		845E07751D653B6B00AF4C7A /* UMadeira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMadeira.png; sourceTree = "<group>"; };
+		845E07761D653B6B00AF4C7A /* Union_Deportiva_Almeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Union_Deportiva_Almeria.png; sourceTree = "<group>"; };
+		845E07771D653B6B00AF4C7A /* US_Créteil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "US_Créteil.png"; sourceTree = "<group>"; };
+		845E07781D653B6B00AF4C7A /* US_Palermo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = US_Palermo.png; sourceTree = "<group>"; };
+		845E07791D653B6B00AF4C7A /* US_Sassuolo_Calcio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = US_Sassuolo_Calcio.png; sourceTree = "<group>"; };
+		845E077A1D653B6B00AF4C7A /* Valenciennes_AFC_(2008).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Valenciennes_AFC_(2008).png"; sourceTree = "<group>"; };
+		845E077B1D653B6B00AF4C7A /* VfB_Lubeck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VfB_Lubeck.png; sourceTree = "<group>"; };
+		845E077C1D653B6B00AF4C7A /* VfB_Stuttgart_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VfB_Stuttgart_Logo.png; sourceTree = "<group>"; };
+		845E077D1D653B6B00AF4C7A /* VfL_Bochum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VfL_Bochum_logo.png; sourceTree = "<group>"; };
+		845E077E1D653B6B00AF4C7A /* VfR_Aalen_Wappen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VfR_Aalen_Wappen.png; sourceTree = "<group>"; };
+		845E077F1D653B6B00AF4C7A /* Villarreal_CF_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Villarreal_CF_logo.png; sourceTree = "<group>"; };
+		845E07801D653B6B00AF4C7A /* Vitesse_Arnheim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vitesse_Arnheim.png; sourceTree = "<group>"; };
+		845E07811D653B6B00AF4C7A /* Vitoria_Guimaraes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vitoria_Guimaraes.png; sourceTree = "<group>"; };
+		845E07821D653B6B00AF4C7A /* Vitória_Setúbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vitória_Setúbal.png"; sourceTree = "<group>"; };
+		845E07831D653B6B00AF4C7A /* Walsall_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Walsall_FC.png; sourceTree = "<group>"; };
+		845E07841D653B6B00AF4C7A /* Watford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Watford.png; sourceTree = "<group>"; };
+		845E07851D653B6B00AF4C7A /* West_Bromwich_Albion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = West_Bromwich_Albion.png; sourceTree = "<group>"; };
+		845E07861D653B6B00AF4C7A /* West_Ham_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = West_Ham_United_FC.png; sourceTree = "<group>"; };
+		845E07871D653B6B00AF4C7A /* Wigan_Athletic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wigan_Athletic.png; sourceTree = "<group>"; };
+		845E07881D653B6B00AF4C7A /* Willem_II_Tilburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Willem_II_Tilburg.png; sourceTree = "<group>"; };
 		84BEC03A1D23D300008E43E5 /* AKFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BEC0571D23DA60008E43E5 /* AKAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAlphabet.h; sourceTree = "<group>"; };
 		84BEC0581D23DA60008E43E5 /* AKAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAlphabet.m; sourceTree = "<group>"; };
@@ -435,6 +1029,310 @@
 			path = AKMatchContext;
 			sourceTree = "<group>";
 		};
+		845E065F1D653B6A00AF4C7A /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				845E06601D653B6A00AF4C7A /* 1._FC_Heidenheim_1846.png */,
+				845E06611D653B6A00AF4C7A /* 1._FC_Köln.png */,
+				845E06621D653B6A00AF4C7A /* 1._FC_Nürnberg_logo.png */,
+				845E06631D653B6A00AF4C7A /* 1._FC_Union_Berlin.png */,
+				845E06641D653B6A00AF4C7A /* 180px-Club_Deportivo_Leganés.png */,
+				845E06651D653B6A00AF4C7A /* 1_FC_Magdeburg.png */,
+				845E06661D653B6A00AF4C7A /* 200px-Union_sportive_Orléans_Loiret_football_2.png */,
+				845E06671D653B6A00AF4C7A /* AC_Ajaccio.png */,
+				845E06681D653B6A00AF4C7A /* AC_Chievo_Verona.png */,
+				845E06691D653B6A00AF4C7A /* AC_Florenz.png */,
+				845E066A1D653B6A00AF4C7A /* AC_Mailand_Logo.png */,
+				845E066B1D653B6A00AF4C7A /* AD_Alcorcón_logo.png */,
+				845E066C1D653B6A00AF4C7A /* ADO_Den_Haag.png */,
+				845E066D1D653B6A00AF4C7A /* Afc_bournemouth.png */,
+				845E066E1D653B6A00AF4C7A /* AFC_Sunderland.png */,
+				845E066F1D653B6A00AF4C7A /* AJ_Auxerre.png */,
+				845E06701D653B6A00AF4C7A /* Ajax_Amsterdam.png */,
+				845E06711D653B6A00AF4C7A /* Albacete_balompie.png */,
+				845E06721D653B6A00AF4C7A /* Arsenal_FC.png */,
+				845E06731D653B6A00AF4C7A /* AS_Monaco.png */,
+				845E06741D653B6A00AF4C7A /* AS_Nancy_Logo.png */,
+				845E06751D653B6A00AF4C7A /* AS_Rom.png */,
+				845E06761D653B6A00AF4C7A /* AS_Saint-Etienne_(aktuell).png */,
+				845E06771D653B6A00AF4C7A /* Aston_Villa_logo.png */,
+				845E06781D653B6A00AF4C7A /* Atalanta_BC.png */,
+				845E06791D653B6A00AF4C7A /* Athletic_Club_Bilbao.png */,
+				845E067A1D653B6A00AF4C7A /* Athletic_Club_Bilbao.svg.png */,
+				845E067B1D653B6A00AF4C7A /* Atletico_Madrid_logo.png */,
+				845E067C1D653B6A00AF4C7A /* Atletico_Osasuna.png */,
+				845E067D1D653B6A00AF4C7A /* AZ_Alkmaar.png */,
+				845E067E1D653B6A00AF4C7A /* Barnsley_FC.png */,
+				845E067F1D653B6A00AF4C7A /* Bayer_04_Leverkusen_Logo.png */,
+				845E06801D653B6A00AF4C7A /* Belenenses_Lissabon.png */,
+				845E06811D653B6A00AF4C7A /* Birmingham_City_FC_logo.png */,
+				845E06821D653B6A00AF4C7A /* Blackpool_FC_logo.png */,
+				845E06831D653B6A00AF4C7A /* Boavista_F.C._logo.png */,
+				845E06841D653B6A00AF4C7A /* Borussia_Dortmund_logo.png */,
+				845E06851D653B6A00AF4C7A /* Borussia_Mönchengladbach_logo.png */,
+				845E06861D653B6A00AF4C7A /* Bradford_City_AFC.png */,
+				845E06871D653B6A00AF4C7A /* Brighton_&_Hove_Albion_logo.png */,
+				845E06881D653B6A00AF4C7A /* Burnley_FC_badge.png */,
+				845E06891D653B6A00AF4C7A /* Burton_Albion_FC_logo.svg.png */,
+				845E068A1D653B6A00AF4C7A /* Bury_FC.png */,
+				845E068B1D653B6A00AF4C7A /* Cagliari_Calcio.png */,
+				845E068C1D653B6A00AF4C7A /* Cardiff_City_Logo.png */,
+				845E068D1D653B6A00AF4C7A /* Carpi_FC_1909_logo.png */,
+				845E068E1D653B6A00AF4C7A /* Cádiz_CF_logo.png */,
+				845E068F1D653B6A00AF4C7A /* CD_Lugo_logo.png */,
+				845E06901D653B6A00AF4C7A /* CD_Mirandés_logo.png */,
+				845E06911D653B6A00AF4C7A /* CD_Numancia_logo.png */,
+				845E06921D653B6A00AF4C7A /* CD_Tenerife_Logo.png */,
+				845E06931D653B6A00AF4C7A /* Celta_Vigo.png */,
+				845E06941D653B6A00AF4C7A /* Cf_reus_deportiu_200.png */,
+				845E06951D653B6A00AF4C7A /* Chamois_Niort_Logo.png */,
+				845E06961D653B6A00AF4C7A /* Chelsea_crest.png */,
+				845E06971D653B6A00AF4C7A /* Chemnitzer_FC_Logo.png */,
+				845E06981D653B6A00AF4C7A /* Chesterfield_FC_crest.png */,
+				845E06991D653B6A00AF4C7A /* Clermont_Foot_Auvergne.png */,
+				845E069A1D653B6A00AF4C7A /* Colchester_United_FC_logo.png */,
+				845E069B1D653B6A00AF4C7A /* Coventry_City_FC_logo.png */,
+				845E069C1D653B6A00AF4C7A /* Córdoba_CF_logo.png */,
+				845E069D1D653B6A00AF4C7A /* Crewe_Alexandra.png */,
+				845E069E1D653B6A00AF4C7A /* Crystal_Palace_F.C._logo_(2013).png */,
+				845E069F1D653B6A00AF4C7A /* CSKA_Moscow_logo.png */,
+				845E06A01D653B6A00AF4C7A /* Degraafschap.png */,
+				845E06A11D653B6A00AF4C7A /* Deportivo_Alaves_logo.png */,
+				845E06A21D653B6A00AF4C7A /* Derby_County_crest.png */,
+				845E06A31D653B6A00AF4C7A /* Doncaster_Rovers_FC.png */,
+				845E06A41D653B6A00AF4C7A /* EA_Guingamp_Logo.png */,
+				845E06A51D653B6A00AF4C7A /* Eintracht_Frankfurt_Logo.png */,
+				845E06A61D653B6A00AF4C7A /* Elche_CF.png */,
+				845E06A71D653B6A00AF4C7A /* Emblema_CD_Tondela.png */,
+				845E06A81D653B6A00AF4C7A /* ES_Troyes_AC.png */,
+				845E06A91D653B6A00AF4C7A /* Everton_FC.png */,
+				845E06AA1D653B6A00AF4C7A /* Evian_Thonon_Gaillard.png */,
+				845E06AB1D653B6A00AF4C7A /* FC-Ingolstadt_logo.png */,
+				845E06AC1D653B6A00AF4C7A /* FC_Arouca.png */,
+				845E06AD1D653B6A00AF4C7A /* FC_Astana_Logo.png */,
+				845E06AE1D653B6A00AF4C7A /* Fc_barcelona.png */,
+				845E06AF1D653B6A00AF4C7A /* FC_Bologna.png */,
+				845E06B01D653B6A00AF4C7A /* FC_Crotone.png */,
+				845E06B11D653B6A00AF4C7A /* FC_Dynamo_Kyiv_logo.png */,
+				845E06B21D653B6A00AF4C7A /* Fc_erzgebirge_aue.png */,
+				845E06B31D653B6A00AF4C7A /* FC_Gillingham_Logo.svg.png */,
+				845E06B41D653B6A00AF4C7A /* FC_Groningen.png */,
+				845E06B51D653B6A00AF4C7A /* FC_Hansa_Rostock.png */,
+				845E06B61D653B6A00AF4C7A /* FC_Liverpool.png */,
+				845E06B71D653B6A00AF4C7A /* FC_Lorient_neu.png */,
+				845E06B81D653B6A00AF4C7A /* FC_Málaga.png */,
+				845E06B91D653B6A00AF4C7A /* FC_Metz_Logo.png */,
+				845E06BA1D653B6A00AF4C7A /* FC_Nantes_(seit_2008).png */,
+				845E06BB1D653B6A00AF4C7A /* FC_Pacos_de_Ferreira.png */,
+				845E06BC1D653B6A00AF4C7A /* FC_Porto_1922-2005.png */,
+				845E06BD1D653B6A00AF4C7A /* FC_Schalke_04_Logo.png */,
+				845E06BE1D653B6A00AF4C7A /* FC_Shakhtar_Donetsk.png */,
+				845E06BF1D653B6A00AF4C7A /* FC_Sochaux_Logo_2010.png */,
+				845E06C01D653B6A00AF4C7A /* FC_Southampton.png */,
+				845E06C11D653B6A00AF4C7A /* FC_Toulouse_Logo.png */,
+				845E06C21D653B6A00AF4C7A /* FC_Tours.png */,
+				845E06C31D653B6A00AF4C7A /* FC_Twente_Enschede_(ab_2006).png */,
+				845E06C41D653B6A00AF4C7A /* FC_Utrecht.png */,
+				845E06C51D653B6A00AF4C7A /* FC_Valencia.png */,
+				845E06C61D653B6A00AF4C7A /* FC_Zenit_1_star_2015_logo.png */,
+				845E06C71D653B6A00AF4C7A /* Fcenergie.png */,
+				845E06C81D653B6A00AF4C7A /* FCO_Dijon.png */,
+				845E06C91D653B6A00AF4C7A /* Flag_of_Albania.png */,
+				845E06CA1D653B6A00AF4C7A /* Flag_of_Austria.png */,
+				845E06CB1D653B6A00AF4C7A /* Flag_of_Belgium.png */,
+				845E06CC1D653B6A00AF4C7A /* Flag_of_Croatia.png */,
+				845E06CD1D653B6A00AF4C7A /* Flag_of_England.png */,
+				845E06CE1D653B6A00AF4C7A /* Flag_of_France.png */,
+				845E06CF1D653B6A00AF4C7A /* Flag_of_Germany.png */,
+				845E06D01D653B6A00AF4C7A /* Flag_of_Hungary.png */,
+				845E06D11D653B6A00AF4C7A /* Flag_of_Iceland.png */,
+				845E06D21D653B6A00AF4C7A /* Flag_of_Ireland.png */,
+				845E06D31D653B6A00AF4C7A /* Flag_of_Italy.png */,
+				845E06D41D653B6A00AF4C7A /* Flag_of_Northern_Ireland.png */,
+				845E06D51D653B6A00AF4C7A /* Flag_of_Poland.png */,
+				845E06D61D653B6A00AF4C7A /* Flag_of_Portugal.png */,
+				845E06D71D653B6A00AF4C7A /* Flag_of_Romania.png */,
+				845E06D81D653B6A00AF4C7A /* Flag_of_Russia.png */,
+				845E06D91D653B6A00AF4C7A /* Flag_of_Slovakia.png */,
+				845E06DA1D653B6A00AF4C7A /* Flag_of_Spain.png */,
+				845E06DB1D653B6A00AF4C7A /* Flag_of_Sweden.png */,
+				845E06DC1D653B6A00AF4C7A /* Flag_of_Switzerland_(Pantone).png */,
+				845E06DD1D653B6A00AF4C7A /* Flag_of_the_Czech_Republic.png */,
+				845E06DE1D653B6A00AF4C7A /* Flag_of_Turkey.png */,
+				845E06DF1D653B6A00AF4C7A /* Flag_of_Ukraine.png */,
+				845E06E01D653B6A00AF4C7A /* Flag_of_Wales_2.png */,
+				845E06E11D653B6A00AF4C7A /* Fleetwood_Town_FC.png */,
+				845E06E21D653B6A00AF4C7A /* Football_Bourg_en_Bresse_Péronnas_logo.png */,
+				845E06E31D653B6A00AF4C7A /* For_article_Girona_FC.png */,
+				845E06E41D653B6A00AF4C7A /* Fortuna_Düsseldorf.png */,
+				845E06E51D653B6A00AF4C7A /* Frosinonestemma.png */,
+				845E06E61D653B6A00AF4C7A /* FSV_Frankfurt_1899.png */,
+				845E06E71D653B6A00AF4C7A /* FSV_Mainz_05_Logo.png */,
+				845E06E81D653B6A00AF4C7A /* Fulham_fc.png */,
+				845E06E91D653B6A00AF4C7A /* G_D_Chaves.png */,
+				845E06EA1D653B6A00AF4C7A /* Galatasaray_Sports_Club_Logo.png */,
+				845E06EB1D653B6A00AF4C7A /* Gazélec_Ajaccio_logo.png */,
+				845E06EC1D653B6A00AF4C7A /* GD_Estoril_Praia.png */,
+				845E06ED1D653B6A00AF4C7A /* Genoa_CFC.png */,
+				845E06EE1D653B6A00AF4C7A /* Getafe_CF.png */,
+				845E06EF1D653B6A00AF4C7A /* Gimnàstic_tarragona_200px.png */,
+				845E06F01D653B6A00AF4C7A /* Girondins_Bordeaux_Logo.png */,
+				845E06F11D653B6A00AF4C7A /* Go_Ahead_Eagles.png */,
+				845E06F21D653B6A00AF4C7A /* Granada_CF.png */,
+				845E06F31D653B6A00AF4C7A /* Hallescher_FC_Logo_2012.png */,
+				845E06F41D653B6A00AF4C7A /* Hannover_96_Logo.png */,
+				845E06F51D653B6A00AF4C7A /* Hellas_Verona_1903_FC.png */,
+				845E06F61D653B6A00AF4C7A /* Heracles_Almelo.png */,
+				845E06F71D653B6A00AF4C7A /* Hertha_BSC_Logo_2012.png */,
+				845E06F81D653B6A00AF4C7A /* Holstein_Kiel_Logo.png */,
+				845E06F91D653B6A00AF4C7A /* HSC_Montpellier_Logo.png */,
+				845E06FA1D653B6A00AF4C7A /* HSV-Logo.png */,
+				845E06FB1D653B6A00AF4C7A /* Huddersfield_Town_F.C.png */,
+				845E06FC1D653B6A00AF4C7A /* Hull_City_AFC.png */,
+				845E06FD1D653B6A00AF4C7A /* Ipswich_Town.png */,
+				845E06FE1D653B6A00AF4C7A /* Jahn_Regensburg_logo2014.png */,
+				845E06FF1D653B6A00AF4C7A /* Juventus_Turin.png */,
+				845E07001D653B6A00AF4C7A /* KAA_Gent_logo.png */,
+				845E07011D653B6A00AF4C7A /* Karlsruher_SC_Logo.png */,
+				845E07021D653B6A00AF4C7A /* Kickers_Wurzburg.png */,
+				845E07031D653B6A00AF4C7A /* Lazio_Rom.svg.png */,
+				845E07041D653B6A00AF4C7A /* Le_Havre_AC.png */,
+				845E07051D653B6A00AF4C7A /* Leicester02.png */,
+				845E07061D653B6A00AF4C7A /* Levante_ud.png */,
+				845E07071D653B6A00AF4C7A /* Logo-VfL-Wolfsburg.png */,
+				845E07081D653B6A00AF4C7A /* Logo_1_FC_Kaiserslautern.png */,
+				845E07091D653B6A00AF4C7A /* Logo_Academica_de_Coimbra.png */,
+				845E070A1D653B6A00AF4C7A /* Logo_Arminia_Bielefeld.png */,
+				845E070B1D653B6A00AF4C7A /* Logo_BATE_Baryssau.svg.png */,
+				845E070C1D653B6A00AF4C7A /* Logo_Benfica_Lissabon.png */,
+				845E070D1D653B6A00AF4C7A /* Logo_Eintracht_Braunschweig.png */,
+				845E070E1D653B6A00AF4C7A /* Logo_FC_Augsburg.png */,
+				845E070F1D653B6A00AF4C7A /* Logo_FC_Bayern_München.png */,
+				845E07101D653B6A00AF4C7A /* Logo_FC_Empoli.png */,
+				845E07111D653B6A00AF4C7A /* Logo_FC_Internazionale_Milano_2014.png */,
+				845E07121D653B6A00AF4C7A /* Logo_FC_St_Pauli.png */,
+				845E07131D653B6A00AF4C7A /* Logo_Feyenoord_Rotterdam.png */,
+				845E07141D653B6A00AF4C7A /* Logo_Malmö_FF.png */,
+				845E07151D653B6A00AF4C7A /* Logo_Manchester_City.png */,
+				845E07161D653B6A00AF4C7A /* Logo_Moreirense.png */,
+				845E07171D653B6A00AF4C7A /* Logo_Olympiakos_Piräus.png */,
+				845E07181D653B6A00AF4C7A /* Logo_ParisFC_2011.png */,
+				845E07191D653B6A00AF4C7A /* Logo_RedStarFC.png */,
+				845E071A1D653B6A00AF4C7A /* Logo_SG_Dynamo_Dresden_neu.png */,
+				845E071B1D653B6A00AF4C7A /* Logo_SV_Wehen_Wiesbaden.png */,
+				845E071C1D653B6A00AF4C7A /* Logo_TSG_Hoffenheim.png */,
+				845E071D1D653B6A00AF4C7A /* Logo_Vfl_Osnabrueck.png */,
+				845E071E1D653B6A00AF4C7A /* LogoSmc2013.png */,
+				845E071F1D653B6A00AF4C7A /* LOSC_Lille_Crest_2012.png */,
+				845E07201D653B6A00AF4C7A /* main-logo.png */,
+				845E07211D653B6A00AF4C7A /* Manchester_United_FC.png */,
+				845E07221D653B6A00AF4C7A /* Marítimo_Funchal.png */,
+				845E07231D653B6A00AF4C7A /* Middlesbrough_crest.png */,
+				845E07241D653B6A00AF4C7A /* Millwall_FC_logo.png */,
+				845E07251D653B6A00AF4C7A /* Msv_duisburg(neu).png */,
+				845E07261D653B6A00AF4C7A /* MTAFC_logo.png */,
+				845E07271D653B6A00AF4C7A /* Nacional_Funchal.png */,
+				845E07281D653B6A00AF4C7A /* NEC_Nijmegen.png */,
+				845E07291D653B6A00AF4C7A /* Newcastle_United_Logo.png */,
+				845E072A1D653B6A00AF4C7A /* Norwich_City.png */,
+				845E072B1D653B6A00AF4C7A /* Nottingham_Forest_logo.png */,
+				845E072C1D653B6A00AF4C7A /* OGC_Nice_logo.png */,
+				845E072D1D653B6A00AF4C7A /* Oldham_Athletic_new_badge.png */,
+				845E072E1D653B6A00AF4C7A /* Olympique_Lyon.png */,
+				845E072F1D653B6A00AF4C7A /* Olympique_Marseille_Logo.png */,
+				845E07301D653B6A00AF4C7A /* Olympique_Nimes.png */,
+				845E07311D653B6A00AF4C7A /* Paris_Saint-Germain_(seit_2013).png */,
+				845E07321D653B6A00AF4C7A /* PEC_Zwolle_2012.png */,
+				845E07331D653B6A00AF4C7A /* Pescara_Calcio.png */,
+				845E07341D653B6A00AF4C7A /* Peterborough_United.png */,
+				845E07351D653B6A00AF4C7A /* Port_Vale_logo.png */,
+				845E07361D653B6A00AF4C7A /* PSV_Eindhoven.png */,
+				845E07371D653B6A00AF4C7A /* Queens_Park_Rangers.png */,
+				845E07381D653B6A00AF4C7A /* Rayo_vallecano_madrid.png */,
+				845E07391D653B6A00AF4C7A /* RB_Leipzig_2010_logo.png */,
+				845E073A1D653B6A00AF4C7A /* RC_Deportivo_La_Coruña_logo.png */,
+				845E073B1D653B6A00AF4C7A /* RC_Lens_Logo.png */,
+				845E073C1D653B6A00AF4C7A /* RCD_Espanyol_De_Barcelona.png */,
+				845E073D1D653B6A00AF4C7A /* Rcd_mallorca.png */,
+				845E073E1D653B6A00AF4C7A /* Real_Betis.png */,
+				845E073F1D653B6A00AF4C7A /* Real_Madrid_Logo.png */,
+				845E07401D653B6A00AF4C7A /* Real_Oviedo.png */,
+				845E07411D653B6A00AF4C7A /* Real_Sociedad_San_Sebastián.png */,
+				845E07421D653B6A00AF4C7A /* Real_Sporting_de_Gijon.png */,
+				845E07431D653B6A00AF4C7A /* Real_Valladolid_Logo.png */,
+				845E07441D653B6A00AF4C7A /* Real_zaragoza.png */,
+				845E07451D653B6A00AF4C7A /* Rio_Ave_FC.png */,
+				845E07461D653B6A00AF4C7A /* Rochdale_badge.png */,
+				845E07471D653B6A00AF4C7A /* Roda_JC_Kerkrade_(2011).png */,
+				845E07481D653B6A00AF4C7A /* Rot_Weiss_Erfurt_Logo.png */,
+				845E07491D653B6A00AF4C7A /* Rotherham_United_FC.png */,
+				845E074A1D653B6A00AF4C7A /* S.S.C._Napoli_logo.png */,
+				845E074B1D653B6A00AF4C7A /* Sampdoria_Genua.png */,
+				845E074C1D653B6A00AF4C7A /* SBV_Excelsior_logo.png */,
+				845E074D1D653B6A00AF4C7A /* SC-Freiburg_Logo-neu.png */,
+				845E074E1D653B6A00AF4C7A /* SC_Bastia.png */,
+				845E074F1D653B6A00AF4C7A /* SC_Cambuur-Leeuwarden.png */,
+				845E07501D653B6A00AF4C7A /* SC_Fortuna_Koln.png */,
+				845E07511D653B6A00AF4C7A /* SC_Heerenveen.png */,
+				845E07521D653B6A00AF4C7A /* SC_Paderborn_07_Logo.png */,
+				845E07531D653B6A00AF4C7A /* SC_Preussen_Muenster_Logo.png */,
+				845E07541D653B6A00AF4C7A /* SCO_Angers.png */,
+				845E07551D653B6A00AF4C7A /* Scunthorpe_United_FC_logo.png */,
+				845E07561D653B6A00AF4C7A /* SD_Eibar_logo.png */,
+				845E07571D653B6A00AF4C7A /* Sd_huesca.png */,
+				845E07581D653B6A00AF4C7A /* SD_Ponferradina_logo.png */,
+				845E07591D653B6A00AF4C7A /* Sevilla_cf_200px.png */,
+				845E075A1D653B6A00AF4C7A /* SG_Sonnenhof.png */,
+				845E075B1D653B6A00AF4C7A /* Sheffield_United_FC_logo.png */,
+				845E075C1D653B6A00AF4C7A /* Sheffield_Wednesday_crest_from_2016.png */,
+				845E075D1D653B6A00AF4C7A /* Shrewsbury_Town_Badge_2015-.png */,
+				845E075E1D653B6A00AF4C7A /* Southend_United.png */,
+				845E075F1D653B6A00AF4C7A /* Sparta_Rotterdam.png */,
+				845E07601D653B6A00AF4C7A /* Sporting_Clube_de_Braga.png */,
+				845E07611D653B6A00AF4C7A /* Sporting_Clube_de_Portugal.png */,
+				845E07621D653B6A00AF4C7A /* SpVgg_Greuther_Fürth_logo.png */,
+				845E07631D653B6A00AF4C7A /* SpVgg_Unterhaching_Logo_2012.png */,
+				845E07641D653B6A00AF4C7A /* Stade_Brestois_29.png */,
+				845E07651D653B6A00AF4C7A /* Stade_Laval.png */,
+				845E07661D653B6A00AF4C7A /* Stade_Reims_Logo.png */,
+				845E07671D653B6A00AF4C7A /* Stade_Rennais_Football_Club.png */,
+				845E07681D653B6A00AF4C7A /* Stoke_City.png */,
+				845E07691D653B6A00AF4C7A /* Stuttgarter_Kickers.png */,
+				845E076A1D653B6A00AF4C7A /* SV-Werder-Bremen-Logo.png */,
+				845E076B1D653B6A00AF4C7A /* SV_Sandhausen.png */,
+				845E076C1D653B6B00AF4C7A /* Svdarmstadt98.png */,
+				845E076D1D653B6B00AF4C7A /* Swansea_City_Logo.png */,
+				845E076E1D653B6B00AF4C7A /* Swindon_Town_FC.png */,
+				845E076F1D653B6B00AF4C7A /* Torino_FC_Logo.png */,
+				845E07701D653B6B00AF4C7A /* Tottenham_Hotspur.png */,
+				845E07711D653B6B00AF4C7A /* TSV_1860_München.png */,
+				845E07721D653B6B00AF4C7A /* UD_Las_Palmas_logo.png */,
+				845E07731D653B6B00AF4C7A /* Udinese_Calcio.png */,
+				845E07741D653B6B00AF4C7A /* UE_Llagostera.png */,
+				845E07751D653B6B00AF4C7A /* UMadeira.png */,
+				845E07761D653B6B00AF4C7A /* Union_Deportiva_Almeria.png */,
+				845E07771D653B6B00AF4C7A /* US_Créteil.png */,
+				845E07781D653B6B00AF4C7A /* US_Palermo.png */,
+				845E07791D653B6B00AF4C7A /* US_Sassuolo_Calcio.png */,
+				845E077A1D653B6B00AF4C7A /* Valenciennes_AFC_(2008).png */,
+				845E077B1D653B6B00AF4C7A /* VfB_Lubeck.png */,
+				845E077C1D653B6B00AF4C7A /* VfB_Stuttgart_Logo.png */,
+				845E077D1D653B6B00AF4C7A /* VfL_Bochum_logo.png */,
+				845E077E1D653B6B00AF4C7A /* VfR_Aalen_Wappen.png */,
+				845E077F1D653B6B00AF4C7A /* Villarreal_CF_logo.png */,
+				845E07801D653B6B00AF4C7A /* Vitesse_Arnheim.png */,
+				845E07811D653B6B00AF4C7A /* Vitoria_Guimaraes.png */,
+				845E07821D653B6B00AF4C7A /* Vitória_Setúbal.png */,
+				845E07831D653B6B00AF4C7A /* Walsall_FC.png */,
+				845E07841D653B6B00AF4C7A /* Watford.png */,
+				845E07851D653B6B00AF4C7A /* West_Bromwich_Albion.png */,
+				845E07861D653B6B00AF4C7A /* West_Ham_United_FC.png */,
+				845E07871D653B6B00AF4C7A /* Wigan_Athletic.png */,
+				845E07881D653B6B00AF4C7A /* Willem_II_Tilburg.png */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
 		84BEC0311D23D300008E43E5 = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +1354,7 @@
 		84BEC0541D23DA60008E43E5 /* AKFootball */ = {
 			isa = PBXGroup;
 			children = (
+				845E065F1D653B6A00AF4C7A /* Resourses */,
 				84BEC0551D23DA60008E43E5 /* Library */,
 				84BEC0C11D23DA60008E43E5 /* Source */,
 				84BEC0C41D23DA60008E43E5 /* SupportingFiles */,
@@ -1133,23 +2032,320 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E07C61D653B6B00AF4C7A /* Crewe_Alexandra.png in Resources */,
+				845E08691D653B6B00AF4C7A /* Real_Oviedo.png in Resources */,
+				845E07991D653B6B00AF4C7A /* Ajax_Amsterdam.png in Resources */,
+				845E07D61D653B6B00AF4C7A /* FC_Astana_Logo.png in Resources */,
+				845E081B1D653B6B00AF4C7A /* Granada_CF.png in Resources */,
+				845E078B1D653B6B00AF4C7A /* 1._FC_Nürnberg_logo.png in Resources */,
+				845E07D21D653B6B00AF4C7A /* Everton_FC.png in Resources */,
+				845E07951D653B6B00AF4C7A /* ADO_Den_Haag.png in Resources */,
+				845E08621D653B6B00AF4C7A /* RB_Leipzig_2010_logo.png in Resources */,
+				845E084B1D653B6B00AF4C7A /* Marítimo_Funchal.png in Resources */,
+				845E08961D653B6B00AF4C7A /* Swansea_City_Logo.png in Resources */,
+				845E07D81D653B6B00AF4C7A /* FC_Bologna.png in Resources */,
+				845E08351D653B6B00AF4C7A /* Logo_Benfica_Lissabon.png in Resources */,
+				845E07A41D653B6B00AF4C7A /* Atletico_Madrid_logo.png in Resources */,
+				845E088B1D653B6B00AF4C7A /* SpVgg_Greuther_Fürth_logo.png in Resources */,
+				845E07C21D653B6B00AF4C7A /* Clermont_Foot_Auvergne.png in Resources */,
+				845E088F1D653B6B00AF4C7A /* Stade_Reims_Logo.png in Resources */,
+				845E083E1D653B6B00AF4C7A /* Logo_Manchester_City.png in Resources */,
+				845E089E1D653B6B00AF4C7A /* UMadeira.png in Resources */,
+				845E07D91D653B6B00AF4C7A /* FC_Crotone.png in Resources */,
+				845E07FF1D653B6B00AF4C7A /* Flag_of_Portugal.png in Resources */,
+				845E081A1D653B6B00AF4C7A /* Go_Ahead_Eagles.png in Resources */,
+				845E07CD1D653B6B00AF4C7A /* EA_Guingamp_Logo.png in Resources */,
+				845E08061D653B6B00AF4C7A /* Flag_of_the_Czech_Republic.png in Resources */,
+				845E08A51D653B6B00AF4C7A /* VfB_Stuttgart_Logo.png in Resources */,
+				845E08101D653B6B00AF4C7A /* FSV_Mainz_05_Logo.png in Resources */,
+				845E08181D653B6B00AF4C7A /* Gimnàstic_tarragona_200px.png in Resources */,
 				84E0A77C1D2697B600B86C93 /* AKMatchesViewController.xib in Resources */,
+				845E08461D653B6B00AF4C7A /* Logo_Vfl_Osnabrueck.png in Resources */,
+				845E08651D653B6B00AF4C7A /* RCD_Espanyol_De_Barcelona.png in Resources */,
+				845E07F41D653B6B00AF4C7A /* Flag_of_Belgium.png in Resources */,
+				845E08501D653B6B00AF4C7A /* Nacional_Funchal.png in Resources */,
+				845E087D1D653B6B00AF4C7A /* SCO_Angers.png in Resources */,
+				845E079D1D653B6B00AF4C7A /* AS_Nancy_Logo.png in Resources */,
+				845E087F1D653B6B00AF4C7A /* SD_Eibar_logo.png in Resources */,
+				845E08AB1D653B6B00AF4C7A /* Vitória_Setúbal.png in Resources */,
 				84BEC0EC1D23DA60008E43E5 /* AKUserViewCell.xib in Resources */,
+				845E083F1D653B6B00AF4C7A /* Logo_Moreirense.png in Resources */,
+				845E08491D653B6B00AF4C7A /* main-logo.png in Resources */,
+				845E087B1D653B6B00AF4C7A /* SC_Paderborn_07_Logo.png in Resources */,
+				845E08591D653B6B00AF4C7A /* Olympique_Nimes.png in Resources */,
+				845E08451D653B6B00AF4C7A /* Logo_TSG_Hoffenheim.png in Resources */,
+				845E08211D653B6B00AF4C7A /* Holstein_Kiel_Logo.png in Resources */,
+				845E085A1D653B6B00AF4C7A /* Paris_Saint-Germain_(seit_2013).png in Resources */,
+				845E08861D653B6B00AF4C7A /* Shrewsbury_Town_Badge_2015-.png in Resources */,
+				845E08291D653B6B00AF4C7A /* KAA_Gent_logo.png in Resources */,
+				845E07931D653B6B00AF4C7A /* AC_Mailand_Logo.png in Resources */,
 				84E0A7591D2473EE00B86C93 /* AKLeaguesViewController.xib in Resources */,
+				845E08921D653B6B00AF4C7A /* Stuttgarter_Kickers.png in Resources */,
+				845E07BC1D653B6B00AF4C7A /* Celta_Vigo.png in Resources */,
+				845E080F1D653B6B00AF4C7A /* FSV_Frankfurt_1899.png in Resources */,
+				845E07B81D653B6B00AF4C7A /* CD_Lugo_logo.png in Resources */,
+				845E07911D653B6B00AF4C7A /* AC_Chievo_Verona.png in Resources */,
+				845E08891D653B6B00AF4C7A /* Sporting_Clube_de_Braga.png in Resources */,
+				845E086E1D653B6B00AF4C7A /* Rio_Ave_FC.png in Resources */,
+				845E07E31D653B6B00AF4C7A /* FC_Nantes_(seit_2008).png in Resources */,
+				845E08191D653B6B00AF4C7A /* Girondins_Bordeaux_Logo.png in Resources */,
+				845E08781D653B6B00AF4C7A /* SC_Cambuur-Leeuwarden.png in Resources */,
+				845E078D1D653B6B00AF4C7A /* 180px-Club_Deportivo_Leganés.png in Resources */,
+				845E08741D653B6B00AF4C7A /* Sampdoria_Genua.png in Resources */,
+				845E07CF1D653B6B00AF4C7A /* Elche_CF.png in Resources */,
 				84BEC0F11D23DA60008E43E5 /* AKLoadingView.xib in Resources */,
+				845E07B11D653B6B00AF4C7A /* Burnley_FC_badge.png in Resources */,
+				845E08571D653B6B00AF4C7A /* Olympique_Lyon.png in Resources */,
+				845E08A71D653B6B00AF4C7A /* VfR_Aalen_Wappen.png in Resources */,
+				845E07E41D653B6B00AF4C7A /* FC_Pacos_de_Ferreira.png in Resources */,
+				845E07E61D653B6B00AF4C7A /* FC_Schalke_04_Logo.png in Resources */,
+				845E07961D653B6B00AF4C7A /* Afc_bournemouth.png in Resources */,
+				845E07EA1D653B6B00AF4C7A /* FC_Toulouse_Logo.png in Resources */,
+				845E08441D653B6B00AF4C7A /* Logo_SV_Wehen_Wiesbaden.png in Resources */,
+				845E08231D653B6B00AF4C7A /* HSV-Logo.png in Resources */,
+				845E07AF1D653B6B00AF4C7A /* Bradford_City_AFC.png in Resources */,
+				845E089A1D653B6B00AF4C7A /* TSV_1860_München.png in Resources */,
+				845E07D11D653B6B00AF4C7A /* ES_Troyes_AC.png in Resources */,
+				845E07E51D653B6B00AF4C7A /* FC_Porto_1922-2005.png in Resources */,
+				845E08271D653B6B00AF4C7A /* Jahn_Regensburg_logo2014.png in Resources */,
+				845E07BF1D653B6B00AF4C7A /* Chelsea_crest.png in Resources */,
+				845E07A61D653B6B00AF4C7A /* AZ_Alkmaar.png in Resources */,
+				845E08431D653B6B00AF4C7A /* Logo_SG_Dynamo_Dresden_neu.png in Resources */,
 				84E0A76B1D254C9400B86C93 /* AKLeaguesViewCell.xib in Resources */,
+				845E07EC1D653B6B00AF4C7A /* FC_Twente_Enschede_(ab_2006).png in Resources */,
+				845E07CE1D653B6B00AF4C7A /* Eintracht_Frankfurt_Logo.png in Resources */,
+				845E083C1D653B6B00AF4C7A /* Logo_Feyenoord_Rotterdam.png in Resources */,
+				845E08331D653B6B00AF4C7A /* Logo_Arminia_Bielefeld.png in Resources */,
+				845E07B01D653B6B00AF4C7A /* Brighton_&_Hove_Albion_logo.png in Resources */,
+				845E084E1D653B6B00AF4C7A /* Msv_duisburg(neu).png in Resources */,
+				845E080C1D653B6B00AF4C7A /* For_article_Girona_FC.png in Resources */,
+				845E07EB1D653B6B00AF4C7A /* FC_Tours.png in Resources */,
+				845E07AC1D653B6B00AF4C7A /* Boavista_F.C._logo.png in Resources */,
+				845E086A1D653B6B00AF4C7A /* Real_Sociedad_San_Sebastián.png in Resources */,
+				845E08631D653B6B00AF4C7A /* RC_Deportivo_La_Coruña_logo.png in Resources */,
+				845E07C91D653B6B00AF4C7A /* Degraafschap.png in Resources */,
+				845E085B1D653B6B00AF4C7A /* PEC_Zwolle_2012.png in Resources */,
+				845E07FC1D653B6B00AF4C7A /* Flag_of_Italy.png in Resources */,
+				845E08731D653B6B00AF4C7A /* S.S.C._Napoli_logo.png in Resources */,
 				8444DA8D1D364CAA005909BA /* AKMatchesViewCell.xib in Resources */,
+				845E07D01D653B6B00AF4C7A /* Emblema_CD_Tondela.png in Resources */,
+				845E08B01D653B6B00AF4C7A /* Wigan_Athletic.png in Resources */,
+				845E08301D653B6B00AF4C7A /* Logo-VfL-Wolfsburg.png in Resources */,
+				845E07C31D653B6B00AF4C7A /* Colchester_United_FC_logo.png in Resources */,
+				845E081F1D653B6B00AF4C7A /* Heracles_Almelo.png in Resources */,
+				845E07DB1D653B6B00AF4C7A /* Fc_erzgebirge_aue.png in Resources */,
+				845E07A11D653B6B00AF4C7A /* Atalanta_BC.png in Resources */,
+				845E084D1D653B6B00AF4C7A /* Millwall_FC_logo.png in Resources */,
+				845E08261D653B6B00AF4C7A /* Ipswich_Town.png in Resources */,
+				845E07E81D653B6B00AF4C7A /* FC_Sochaux_Logo_2010.png in Resources */,
+				845E08111D653B6B00AF4C7A /* Fulham_fc.png in Resources */,
+				845E07DC1D653B6B00AF4C7A /* FC_Gillingham_Logo.svg.png in Resources */,
+				845E07941D653B6B00AF4C7A /* AD_Alcorcón_logo.png in Resources */,
+				845E08121D653B6B00AF4C7A /* G_D_Chaves.png in Resources */,
+				845E080D1D653B6B00AF4C7A /* Fortuna_Düsseldorf.png in Resources */,
+				845E081D1D653B6B00AF4C7A /* Hannover_96_Logo.png in Resources */,
+				845E08251D653B6B00AF4C7A /* Hull_City_AFC.png in Resources */,
+				845E07ED1D653B6B00AF4C7A /* FC_Utrecht.png in Resources */,
+				845E07E01D653B6B00AF4C7A /* FC_Lorient_neu.png in Resources */,
+				845E080B1D653B6B00AF4C7A /* Football_Bourg_en_Bresse_Péronnas_logo.png in Resources */,
+				845E08A21D653B6B00AF4C7A /* US_Sassuolo_Calcio.png in Resources */,
+				845E08071D653B6B00AF4C7A /* Flag_of_Turkey.png in Resources */,
+				845E08AD1D653B6B00AF4C7A /* Watford.png in Resources */,
+				845E08AE1D653B6B00AF4C7A /* West_Bromwich_Albion.png in Resources */,
+				845E088C1D653B6B00AF4C7A /* SpVgg_Unterhaching_Logo_2012.png in Resources */,
+				845E078E1D653B6B00AF4C7A /* 1_FC_Magdeburg.png in Resources */,
+				845E07B41D653B6B00AF4C7A /* Cagliari_Calcio.png in Resources */,
+				845E079B1D653B6B00AF4C7A /* Arsenal_FC.png in Resources */,
+				845E08AA1D653B6B00AF4C7A /* Vitoria_Guimaraes.png in Resources */,
+				845E08951D653B6B00AF4C7A /* Svdarmstadt98.png in Resources */,
+				845E08911D653B6B00AF4C7A /* Stoke_City.png in Resources */,
+				845E07B31D653B6B00AF4C7A /* Bury_FC.png in Resources */,
+				845E079A1D653B6B00AF4C7A /* Albacete_balompie.png in Resources */,
+				845E08541D653B6B00AF4C7A /* Nottingham_Forest_logo.png in Resources */,
+				845E08981D653B6B00AF4C7A /* Torino_FC_Logo.png in Resources */,
+				845E07A01D653B6B00AF4C7A /* Aston_Villa_logo.png in Resources */,
+				845E08931D653B6B00AF4C7A /* SV-Werder-Bremen-Logo.png in Resources */,
+				845E08361D653B6B00AF4C7A /* Logo_Eintracht_Braunschweig.png in Resources */,
+				845E082F1D653B6B00AF4C7A /* Levante_ud.png in Resources */,
+				845E08471D653B6B00AF4C7A /* LogoSmc2013.png in Resources */,
+				845E089D1D653B6B00AF4C7A /* UE_Llagostera.png in Resources */,
+				845E082A1D653B6B00AF4C7A /* Karlsruher_SC_Logo.png in Resources */,
+				845E07D41D653B6B00AF4C7A /* FC-Ingolstadt_logo.png in Resources */,
 				84E277FD1D24363B00F14BBD /* AKSeasonsViewController.xib in Resources */,
+				845E07EF1D653B6B00AF4C7A /* FC_Zenit_1_star_2015_logo.png in Resources */,
+				845E086B1D653B6B00AF4C7A /* Real_Sporting_de_Gijon.png in Resources */,
 				84BEC0F51D23DA60008E43E5 /* Assets.xcassets in Resources */,
+				845E07F31D653B6B00AF4C7A /* Flag_of_Austria.png in Resources */,
+				845E08831D653B6B00AF4C7A /* SG_Sonnenhof.png in Resources */,
+				845E08791D653B6B00AF4C7A /* SC_Fortuna_Koln.png in Resources */,
+				845E080E1D653B6B00AF4C7A /* Frosinonestemma.png in Resources */,
+				845E07891D653B6B00AF4C7A /* 1._FC_Heidenheim_1846.png in Resources */,
+				845E08051D653B6B00AF4C7A /* Flag_of_Switzerland_(Pantone).png in Resources */,
+				845E07FA1D653B6B00AF4C7A /* Flag_of_Iceland.png in Resources */,
+				845E089F1D653B6B00AF4C7A /* Union_Deportiva_Almeria.png in Resources */,
+				845E07C81D653B6B00AF4C7A /* CSKA_Moscow_logo.png in Resources */,
+				845E08801D653B6B00AF4C7A /* Sd_huesca.png in Resources */,
+				845E08881D653B6B00AF4C7A /* Sparta_Rotterdam.png in Resources */,
+				845E07F51D653B6B00AF4C7A /* Flag_of_Croatia.png in Resources */,
+				845E08561D653B6B00AF4C7A /* Oldham_Athletic_new_badge.png in Resources */,
+				845E07CC1D653B6B00AF4C7A /* Doncaster_Rovers_FC.png in Resources */,
+				845E082E1D653B6B00AF4C7A /* Leicester02.png in Resources */,
+				845E08011D653B6B00AF4C7A /* Flag_of_Russia.png in Resources */,
+				845E08041D653B6B00AF4C7A /* Flag_of_Sweden.png in Resources */,
+				845E07D51D653B6B00AF4C7A /* FC_Arouca.png in Resources */,
 				84BEC0F71D23DA60008E43E5 /* Main.storyboard in Resources */,
+				845E07F11D653B6B00AF4C7A /* FCO_Dijon.png in Resources */,
+				845E08721D653B6B00AF4C7A /* Rotherham_United_FC.png in Resources */,
+				845E08151D653B6B00AF4C7A /* GD_Estoril_Praia.png in Resources */,
+				845E081E1D653B6B00AF4C7A /* Hellas_Verona_1903_FC.png in Resources */,
+				845E07D71D653B6B00AF4C7A /* Fc_barcelona.png in Resources */,
+				845E082D1D653B6B00AF4C7A /* Le_Havre_AC.png in Resources */,
+				845E07DF1D653B6B00AF4C7A /* FC_Liverpool.png in Resources */,
+				845E08081D653B6B00AF4C7A /* Flag_of_Ukraine.png in Resources */,
+				845E08991D653B6B00AF4C7A /* Tottenham_Hotspur.png in Resources */,
+				845E07F91D653B6B00AF4C7A /* Flag_of_Hungary.png in Resources */,
+				845E08811D653B6B00AF4C7A /* SD_Ponferradina_logo.png in Resources */,
+				845E07E11D653B6B00AF4C7A /* FC_Málaga.png in Resources */,
+				845E07A81D653B6B00AF4C7A /* Bayer_04_Leverkusen_Logo.png in Resources */,
+				845E08A31D653B6B00AF4C7A /* Valenciennes_AFC_(2008).png in Resources */,
+				845E08761D653B6B00AF4C7A /* SC-Freiburg_Logo-neu.png in Resources */,
+				845E07FD1D653B6B00AF4C7A /* Flag_of_Northern_Ireland.png in Resources */,
+				845E08411D653B6B00AF4C7A /* Logo_ParisFC_2011.png in Resources */,
+				845E089C1D653B6B00AF4C7A /* Udinese_Calcio.png in Resources */,
+				845E07F81D653B6B00AF4C7A /* Flag_of_Germany.png in Resources */,
+				845E07E71D653B6B00AF4C7A /* FC_Shakhtar_Donetsk.png in Resources */,
+				845E08671D653B6B00AF4C7A /* Real_Betis.png in Resources */,
+				845E08091D653B6B00AF4C7A /* Flag_of_Wales_2.png in Resources */,
+				845E085C1D653B6B00AF4C7A /* Pescara_Calcio.png in Resources */,
+				845E08A61D653B6B00AF4C7A /* VfL_Bochum_logo.png in Resources */,
 				84E277FF1D24363B00F14BBD /* AKSeasonsViewCell.xib in Resources */,
+				845E08A01D653B6B00AF4C7A /* US_Créteil.png in Resources */,
+				845E08941D653B6B00AF4C7A /* SV_Sandhausen.png in Resources */,
+				845E07CA1D653B6B00AF4C7A /* Deportivo_Alaves_logo.png in Resources */,
+				845E08531D653B6B00AF4C7A /* Norwich_City.png in Resources */,
+				845E07FE1D653B6B00AF4C7A /* Flag_of_Poland.png in Resources */,
+				845E08601D653B6B00AF4C7A /* Queens_Park_Rangers.png in Resources */,
+				845E07C01D653B6B00AF4C7A /* Chemnitzer_FC_Logo.png in Resources */,
+				845E07CB1D653B6B00AF4C7A /* Derby_County_crest.png in Resources */,
+				845E08401D653B6B00AF4C7A /* Logo_Olympiakos_Piräus.png in Resources */,
+				845E07E91D653B6B00AF4C7A /* FC_Southampton.png in Resources */,
+				845E089B1D653B6B00AF4C7A /* UD_Las_Palmas_logo.png in Resources */,
+				845E079E1D653B6B00AF4C7A /* AS_Rom.png in Resources */,
+				845E078F1D653B6B00AF4C7A /* 200px-Union_sportive_Orléans_Loiret_football_2.png in Resources */,
+				845E07981D653B6B00AF4C7A /* AJ_Auxerre.png in Resources */,
+				845E08381D653B6B00AF4C7A /* Logo_FC_Bayern_München.png in Resources */,
+				845E08971D653B6B00AF4C7A /* Swindon_Town_FC.png in Resources */,
+				845E084C1D653B6B00AF4C7A /* Middlesbrough_crest.png in Resources */,
+				845E079F1D653B6B00AF4C7A /* AS_Saint-Etienne_(aktuell).png in Resources */,
+				845E07BB1D653B6B00AF4C7A /* CD_Tenerife_Logo.png in Resources */,
+				845E083D1D653B6B00AF4C7A /* Logo_Malmö_FF.png in Resources */,
+				845E08701D653B6B00AF4C7A /* Roda_JC_Kerkrade_(2011).png in Resources */,
+				845E08A41D653B6B00AF4C7A /* VfB_Lubeck.png in Resources */,
+				845E08221D653B6B00AF4C7A /* HSC_Montpellier_Logo.png in Resources */,
+				845E082C1D653B6B00AF4C7A /* Lazio_Rom.svg.png in Resources */,
+				845E08711D653B6B00AF4C7A /* Rot_Weiss_Erfurt_Logo.png in Resources */,
+				845E085F1D653B6B00AF4C7A /* PSV_Eindhoven.png in Resources */,
+				845E08201D653B6B00AF4C7A /* Hertha_BSC_Logo_2012.png in Resources */,
+				845E084F1D653B6B00AF4C7A /* MTAFC_logo.png in Resources */,
+				845E08031D653B6B00AF4C7A /* Flag_of_Spain.png in Resources */,
+				845E08871D653B6B00AF4C7A /* Southend_United.png in Resources */,
+				845E08511D653B6B00AF4C7A /* NEC_Nijmegen.png in Resources */,
 				84E0A7721D26949700B86C93 /* AKTeamsViewController.xib in Resources */,
+				845E07A21D653B6B00AF4C7A /* Athletic_Club_Bilbao.png in Resources */,
+				845E07BA1D653B6B00AF4C7A /* CD_Numancia_logo.png in Resources */,
+				845E07AA1D653B6B00AF4C7A /* Birmingham_City_FC_logo.png in Resources */,
+				845E07C41D653B6B00AF4C7A /* Coventry_City_FC_logo.png in Resources */,
+				845E088D1D653B6B00AF4C7A /* Stade_Brestois_29.png in Resources */,
+				845E08641D653B6B00AF4C7A /* RC_Lens_Logo.png in Resources */,
+				845E07B91D653B6B00AF4C7A /* CD_Mirandés_logo.png in Resources */,
+				845E08AF1D653B6B00AF4C7A /* West_Ham_United_FC.png in Resources */,
+				845E085E1D653B6B00AF4C7A /* Port_Vale_logo.png in Resources */,
+				845E08161D653B6B00AF4C7A /* Genoa_CFC.png in Resources */,
+				845E083B1D653B6B00AF4C7A /* Logo_FC_St_Pauli.png in Resources */,
+				845E07B71D653B6B00AF4C7A /* Cádiz_CF_logo.png in Resources */,
+				845E07FB1D653B6B00AF4C7A /* Flag_of_Ireland.png in Resources */,
+				845E08421D653B6B00AF4C7A /* Logo_RedStarFC.png in Resources */,
+				845E07A91D653B6B00AF4C7A /* Belenenses_Lissabon.png in Resources */,
+				845E07E21D653B6B00AF4C7A /* FC_Metz_Logo.png in Resources */,
+				845E087E1D653B6B00AF4C7A /* Scunthorpe_United_FC_logo.png in Resources */,
+				845E084A1D653B6B00AF4C7A /* Manchester_United_FC.png in Resources */,
+				845E08611D653B6B00AF4C7A /* Rayo_vallecano_madrid.png in Resources */,
+				845E08681D653B6B00AF4C7A /* Real_Madrid_Logo.png in Resources */,
+				845E08001D653B6B00AF4C7A /* Flag_of_Romania.png in Resources */,
 				84BEC0F61D23DA60008E43E5 /* LaunchScreen.storyboard in Resources */,
+				845E080A1D653B6B00AF4C7A /* Fleetwood_Town_FC.png in Resources */,
+				845E07F61D653B6B00AF4C7A /* Flag_of_England.png in Resources */,
+				845E07A31D653B6B00AF4C7A /* Athletic_Club_Bilbao.svg.png in Resources */,
+				845E086F1D653B6B00AF4C7A /* Rochdale_badge.png in Resources */,
+				845E07C11D653B6B00AF4C7A /* Chesterfield_FC_crest.png in Resources */,
+				845E08771D653B6B00AF4C7A /* SC_Bastia.png in Resources */,
+				845E07F71D653B6B00AF4C7A /* Flag_of_France.png in Resources */,
+				845E08AC1D653B6B00AF4C7A /* Walsall_FC.png in Resources */,
+				845E08551D653B6B00AF4C7A /* OGC_Nice_logo.png in Resources */,
+				845E086C1D653B6B00AF4C7A /* Real_Valladolid_Logo.png in Resources */,
+				845E08A91D653B6B00AF4C7A /* Vitesse_Arnheim.png in Resources */,
+				845E07B21D653B6B00AF4C7A /* Burton_Albion_FC_logo.svg.png in Resources */,
+				845E07AE1D653B6B00AF4C7A /* Borussia_Mönchengladbach_logo.png in Resources */,
+				845E08841D653B6B00AF4C7A /* Sheffield_United_FC_logo.png in Resources */,
+				845E078C1D653B6B00AF4C7A /* 1._FC_Union_Berlin.png in Resources */,
 				84BEC0EF1D23DA60008E43E5 /* AKUserViewController.xib in Resources */,
+				845E082B1D653B6B00AF4C7A /* Kickers_Wurzburg.png in Resources */,
+				845E08311D653B6B00AF4C7A /* Logo_1_FC_Kaiserslautern.png in Resources */,
 				843E0E961D3A5DAD00C733C2 /* AKTournamentViewCell.xib in Resources */,
+				845E08851D653B6B00AF4C7A /* Sheffield_Wednesday_crest_from_2016.png in Resources */,
+				845E07B51D653B6B00AF4C7A /* Cardiff_City_Logo.png in Resources */,
+				845E07C71D653B6B00AF4C7A /* Crystal_Palace_F.C._logo_(2013).png in Resources */,
+				845E08371D653B6B00AF4C7A /* Logo_FC_Augsburg.png in Resources */,
+				845E07921D653B6B00AF4C7A /* AC_Florenz.png in Resources */,
+				845E088E1D653B6B00AF4C7A /* Stade_Laval.png in Resources */,
+				845E079C1D653B6B00AF4C7A /* AS_Monaco.png in Resources */,
+				845E08281D653B6B00AF4C7A /* Juventus_Turin.png in Resources */,
+				845E08481D653B6B00AF4C7A /* LOSC_Lille_Crest_2012.png in Resources */,
+				845E08A81D653B6B00AF4C7A /* Villarreal_CF_logo.png in Resources */,
+				845E08241D653B6B00AF4C7A /* Huddersfield_Town_F.C.png in Resources */,
+				845E08521D653B6B00AF4C7A /* Newcastle_United_Logo.png in Resources */,
+				845E07C51D653B6B00AF4C7A /* Córdoba_CF_logo.png in Resources */,
+				845E08A11D653B6B00AF4C7A /* US_Palermo.png in Resources */,
+				845E07AB1D653B6B00AF4C7A /* Blackpool_FC_logo.png in Resources */,
+				845E08321D653B6B00AF4C7A /* Logo_Academica_de_Coimbra.png in Resources */,
+				845E07EE1D653B6B00AF4C7A /* FC_Valencia.png in Resources */,
+				845E07BE1D653B6B00AF4C7A /* Chamois_Niort_Logo.png in Resources */,
+				845E08821D653B6B00AF4C7A /* Sevilla_cf_200px.png in Resources */,
+				845E087C1D653B6B00AF4C7A /* SC_Preussen_Muenster_Logo.png in Resources */,
 				84E0A7861D26995100B86C93 /* AKTournamentViewController.xib in Resources */,
+				845E085D1D653B6B00AF4C7A /* Peterborough_United.png in Resources */,
+				845E08901D653B6B00AF4C7A /* Stade_Rennais_Football_Club.png in Resources */,
+				845E08341D653B6B00AF4C7A /* Logo_BATE_Baryssau.svg.png in Resources */,
+				845E07DE1D653B6B00AF4C7A /* FC_Hansa_Rostock.png in Resources */,
+				845E08391D653B6B00AF4C7A /* Logo_FC_Empoli.png in Resources */,
+				845E086D1D653B6B00AF4C7A /* Real_zaragoza.png in Resources */,
+				845E078A1D653B6B00AF4C7A /* 1._FC_Köln.png in Resources */,
+				845E08131D653B6B00AF4C7A /* Galatasaray_Sports_Club_Logo.png in Resources */,
+				845E081C1D653B6B00AF4C7A /* Hallescher_FC_Logo_2012.png in Resources */,
+				845E07A71D653B6B00AF4C7A /* Barnsley_FC.png in Resources */,
+				845E08141D653B6B00AF4C7A /* Gazélec_Ajaccio_logo.png in Resources */,
+				845E07B61D653B6B00AF4C7A /* Carpi_FC_1909_logo.png in Resources */,
+				845E07F01D653B6B00AF4C7A /* Fcenergie.png in Resources */,
+				845E08581D653B6B00AF4C7A /* Olympique_Marseille_Logo.png in Resources */,
 				84F0F3C31D33D60B002A8A94 /* AKTeamsViewCell.xib in Resources */,
+				845E083A1D653B6B00AF4C7A /* Logo_FC_Internazionale_Milano_2014.png in Resources */,
+				845E08171D653B6B00AF4C7A /* Getafe_CF.png in Resources */,
+				845E07F21D653B6B00AF4C7A /* Flag_of_Albania.png in Resources */,
+				845E08661D653B6B00AF4C7A /* Rcd_mallorca.png in Resources */,
+				845E07BD1D653B6B00AF4C7A /* Cf_reus_deportiu_200.png in Resources */,
+				845E088A1D653B6B00AF4C7A /* Sporting_Clube_de_Portugal.png in Resources */,
+				845E07DD1D653B6B00AF4C7A /* FC_Groningen.png in Resources */,
+				845E08B11D653B6B00AF4C7A /* Willem_II_Tilburg.png in Resources */,
 				843E0EA51D3CE2B900C733C2 /* AKTabBarViewController.xib in Resources */,
+				845E07A51D653B6B00AF4C7A /* Atletico_Osasuna.png in Resources */,
+				845E07971D653B6B00AF4C7A /* AFC_Sunderland.png in Resources */,
+				845E08021D653B6B00AF4C7A /* Flag_of_Slovakia.png in Resources */,
+				845E08751D653B6B00AF4C7A /* SBV_Excelsior_logo.png in Resources */,
+				845E07901D653B6B00AF4C7A /* AC_Ajaccio.png in Resources */,
+				845E07AD1D653B6B00AF4C7A /* Borussia_Dortmund_logo.png in Resources */,
+				845E087A1D653B6B00AF4C7A /* SC_Heerenveen.png in Resources */,
+				845E07D31D653B6B00AF4C7A /* Evian_Thonon_Gaillard.png in Resources */,
+				845E07DA1D653B6B00AF4C7A /* FC_Dynamo_Kyiv_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,6 @@
 #import "AKUserView.h"
 
 @implementation AKUserView
+@dynamic tableView;
 
 @end
