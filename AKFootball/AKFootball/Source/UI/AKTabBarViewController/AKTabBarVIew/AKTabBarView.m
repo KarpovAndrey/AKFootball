@@ -10,19 +10,4 @@
 
 @implementation AKTabBarView
 
-#pragma mark -
-#pragma mark Handling Interface
-
-- (IBAction)onMatchesButtonClick:(id)sender {
-    
-}
-
-- (IBAction)onTeamesButtonClick:(id)sender {
-    
-}
-
-- (IBAction)onTournamentButtonClick:(id)sender {
-    
-}
-
 @end

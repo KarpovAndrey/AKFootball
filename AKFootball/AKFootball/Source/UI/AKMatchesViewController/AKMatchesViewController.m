@@ -13,7 +13,9 @@
 #import "AKLeague.h"
 #import "AKMatch.h"
 #import "AKTournamentViewController.h"
+#import "AKTeamsViewController.h"
 #import "AKFootballConstants.h"
+#import "AKTabBarViewController.h"
 
 #define kAKCGRectHeaderValue        CGRectMake(0, 30, tableView.frame.size.width, 20)
 #define kAKCGRectHeaderViewValue    CGRectMake(0, 20, tableView.frame.size.width, 10)
@@ -33,6 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     if (self.context.state == kAKModelLoadingState) {
         [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     }
@@ -53,6 +56,14 @@ AKRootViewAndReturnIfNil(AKMatchesView)
 
 - (NSString *)navigationItemTitle {
     return kAKMatchesNavigationItemTitle;
+}
+
+- (void)setCurrentViewControllerIndex:(NSUInteger)currentViewControllerIndex {
+    if (_currentViewControllerIndex != currentViewControllerIndex) {
+        _currentViewControllerIndex = currentViewControllerIndex;
+        
+        
+    }
 }
 
 #pragma mark -
@@ -93,14 +104,6 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     [headerView addSubview:headerLabel];
     
     return headerView;
-}
-
-///////////////////////need to delete whet tab bar will ready
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    AKTournamentViewController *controller = [AKTournamentViewController new];
-    controller.league = self.league;
-    
-    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark -
@@ -158,6 +161,33 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     self.context = [[AKMatchContext alloc] initWithID:self.league.ID];
     [super refreshTable];
+}
+
+#pragma mark -
+#pragma mark Handling Interface
+
+- (IBAction)onTeamsButtonClick:(id)sender {
+    AKTeamsViewController *controller = self.customTabBarController.controllersCollection[0];
+    controller.customTabBarController = self.customTabBarController;
+    controller.currentViewControllerIndex = 0;
+//    [self.navigationController popViewControllerAnimated:NO];
+    [self.customTabBarController showViewController:controller sender:sender];
+}
+
+- (IBAction)onTournamentButtonClick:(id)sender {
+    AKTournamentViewController *controller = self.customTabBarController.controllersCollection[2];
+    controller.customTabBarController = self.customTabBarController;
+    controller.currentViewControllerIndex = 2;
+//    for (UIViewController *viewController in self.navigationController.viewControllers) {
+//        if ([viewController isMemberOfClass:[AKTournamentViewController class]]) {
+//            [self.navigationController popToViewController:controller animated:NO];
+//            
+//            return;
+//        }
+//    }
+//    
+//    [self.navigationController pushViewController:controller animated:NO];
+    [self.customTabBarController showViewController:controller sender:sender];
 }
 
 @end

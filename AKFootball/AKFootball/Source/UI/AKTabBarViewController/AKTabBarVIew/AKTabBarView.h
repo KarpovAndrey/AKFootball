@@ -13,8 +13,4 @@
 @property (nonatomic, strong) IBOutlet UIButton    *teamsButton;
 @property (nonatomic, strong) IBOutlet UIButton    *tournamentButton;
 
-- (IBAction)onMatchesButtonClick:(id)sender;
-- (IBAction)onTeamesButtonClick:(id)sender;
-- (IBAction)onTournamentButtonClick:(id)sender;
-
 @end

@@ -13,14 +13,14 @@
 #import "AKTeamContext.h"
 #import "AKDispatch.h"
 #import "AKMatchesViewController.h"
+#import "AKTournamentViewController.h"
 #import "AKFootballConstants.h"
-
 #import "AKTabBarViewController.h"
+#import "AKView.h"
 
 @interface AKTeamsViewController ()
 @property (nonatomic, readonly) AKTeamsView             *rootView;
 @property (nonatomic, strong)   NSArray                 *teamsArray;
-//@property (nonatomic, strong)   AKTabBarViewController  *tabBarController;
 
 - (void)loadContextWithObject:(NSSet *)teams;
 
@@ -34,63 +34,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    AKTabBarViewController *tabBarController = [AKTabBarViewController new];
-//    CGRect screenBound = [[UIScreen mainScreen] bounds];
-//    CGSize screenSize = screenBound.size;
-//    
-//    CGRect rect = CGRectMake(0, screenSize.height - 50, screenSize.width, 50);
-//    tabBarController.view.frame = rect;
-//
-//    [self addChildViewController:tabBarController];
-//    [self.rootView.tabBarView addSubview:tabBarController.view];
-//    [tabBarController didMoveToParentViewController:self];
+    if (!(self.customTabBarController)) {
+        AKTabBarViewController *controller = [AKTabBarViewController new];
+        controller.league = self.league;
+        [self addChildViewController:controller];
+        controller.view.frame = self.rootView.tabBarView.frame;
+        [controller didMoveToParentViewController:self];
+        self.customTabBarController = controller;
+        self.currentViewControllerIndex = 0;
+    }
     
     if (self.context.state == kAKModelLoadingState) {
         [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     }
     
 }
-
-//- (void)presentDetailController:(AKTabBarViewController *)detailVC{
-//    
-//    //0. Remove the current Detail View Controller showed
-//    if (self.self.tabBarController){
-//        [self removeCurrentDetailViewController];
-//    }
-//    
-//    //1. Add the detail controller as child of the container
-//    [self addChildViewController:detailVC];
-//    
-//    //2. Define the detail controller's view size
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGRect screenBound = [[UIScreen mainScreen] bounds];
-//    CGSize screenSize = screenBound.size;
-//    
-//    CGRect rect = CGRectMake(0, screenSize.height - 50, screenSize.width, 50);
-//    detailVC.view.frame = rect;
-//
-//    //3. Add the Detail controller's view to the Container's detail view and save a reference to the detail View Controller
-//    [self.rootView addSubview:detailVC.view];
-//    self.tabBarController = detailVC;
-//    
-//    //4. Complete the add flow calling the function didMoveToParentViewController
-//    [detailVC didMoveToParentViewController:self];
-//    
-//}
-//
-//- (void)removeCurrentDetailViewController{
-//    
-//    //1. Call the willMoveToParentViewController with nil
-//    //   This is the last method where your detailViewController can perform some operations before neing removed
-//    [self.tabBarController willMoveToParentViewController:nil];
-//    
-//    //2. Remove the DetailViewController's view from the Container
-//    [self.tabBarController.view removeFromSuperview];
-//    
-//    //3. Update the hierarchy"
-//    //   Automatically the method didMoveToParentViewController: will be called on the detailViewController)
-//    [self.tabBarController removeFromParentViewController];
-//}
 
 #pragma mark -
 #pragma mark Accessors
@@ -109,6 +67,18 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     return kAKTeamsNavigationItemTitle;
 }
 
+- (void)setCurrentViewControllerIndex:(NSUInteger)currentViewControllerIndex {
+    if (_currentViewControllerIndex != currentViewControllerIndex) {
+        _currentViewControllerIndex = currentViewControllerIndex;
+        
+        UIView *view = [self.customTabBarController.controllersCollection[currentViewControllerIndex] view];
+//        [self.view addSubview:view];
+        self.rootView.customView = view;
+        view.frame = self.rootView.frame;
+        [self.view bringSubviewToFront:self.rootView.customView];
+    }
+}
+
 #pragma mark -
 #pragma mark UITableViewDataSource Protocol
 
@@ -121,14 +91,6 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     [cell fillWithModel:self.teamsArray[indexPath.row]];
     
     return cell;
-}
-
-///////////////////////need to delete whet tab bar will ready
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    AKMatchesViewController *controller = [AKMatchesViewController new];
-    controller.league = self.league;
-    
-    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark -
@@ -157,6 +119,27 @@ AKRootViewAndReturnIfNil(AKTeamsView)
     [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     self.context = [[AKTeamContext alloc] initWithID:self.league.ID];
     [super refreshTable];
+}
+
+#pragma mark -
+#pragma mark Handling Interface
+
+- (IBAction)onMatchesButtonClick:(id)sender {
+//    AKMatchesViewController *controller = self.customTabBarController.controllersCollection[1];
+//    controller.customTabBarController = self.customTabBarController;
+////    [self.navigationController pushViewController:controller animated:YES];
+//    [self addChildViewController:controller];
+//    controller.view.frame = self.rootView.tabBarView.frame;
+//    [controller didMoveToParentViewController:self];
+//    self.view = controller.view;
+    self.currentViewControllerIndex = 1;
+}
+
+- (IBAction)onTournamentButtonClick:(id)sender {
+    AKTournamentViewController *controller = self.customTabBarController.controllersCollection[2];
+    controller.customTabBarController = self.customTabBarController;
+//    [self.navigationController pushViewController:controller animated:YES];
+    [self.customTabBarController showViewController:controller sender:sender];
 }
 
 @end

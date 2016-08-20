@@ -12,6 +12,9 @@
 #import "AKLeague.h"
 #import "AKTournamentContext.h"
 #import "AKFootballConstants.h"
+#import "AKTeamsViewController.h"
+#import "AKMatchesViewController.h"
+#import "AKTabBarViewController.h"
 
 @interface AKTournamentViewController ()
 @property (nonatomic, readonly) AKTournamentView            *rootView;
@@ -48,6 +51,14 @@ AKRootViewAndReturnIfNil(AKTournamentView)
 
 - (NSString *)navigationItemTitle {
     return kAKTournamentNavigationItemTitle;
+}
+
+- (void)setCurrentViewControllerIndex:(NSUInteger)currentViewControllerIndex {
+    if (_currentViewControllerIndex != currentViewControllerIndex) {
+        _currentViewControllerIndex = currentViewControllerIndex;
+        
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 #pragma mark -
@@ -93,6 +104,45 @@ AKRootViewAndReturnIfNil(AKTournamentView)
     [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     self.context = [[AKTournamentContext alloc] initWithID:self.league.ID];
     [super refreshTable];
+}
+
+#pragma mark -
+#pragma mark Handling Interface
+
+- (IBAction)onTeamsButtonClick:(id)sender {
+    AKTeamsViewController *controller = self.customTabBarController.controllersCollection[0];
+    controller.customTabBarController = self.customTabBarController;
+    controller.currentViewControllerIndex = 0;
+    
+//    for (UIViewController *viewController in self.navigationController.viewControllers) {
+//        if ([viewController isMemberOfClass:[AKMatchesViewController class]]) {
+//            [self.navigationController popToViewController:controller animated:NO];
+//            
+//            return;
+//        }
+//    }
+//    
+//    [self.navigationController popToViewController:controller animated:NO];
+
+    [self.customTabBarController showViewController:controller sender:sender];
+
+}
+
+- (IBAction)onMatchesButtonClick:(id)sender {
+    AKMatchesViewController *controller = self.customTabBarController.controllersCollection[1];
+    controller.customTabBarController = self.customTabBarController;
+    controller.currentViewControllerIndex = 1;
+//    for (UIViewController *viewController in self.navigationController.viewControllers) {
+//        if ([viewController isMemberOfClass:[AKMatchesViewController class]]) {
+//            [self.navigationController popToViewController:controller animated:NO];
+//            
+//            return;
+//        }
+//    }
+//        
+//    [self.navigationController pushViewController:controller animated:NO];
+
+    [self.customTabBarController showViewController:controller sender:sender];
 }
 
 @end

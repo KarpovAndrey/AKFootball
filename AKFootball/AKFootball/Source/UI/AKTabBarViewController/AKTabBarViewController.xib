@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AKTabBarViewController">
@@ -12,62 +14,75 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AKTabBarView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-4O-DDf" userLabel="Teams">
-                    <rect key="frame" x="0.0" y="0.0" width="106" height="50"/>
-                    <color key="backgroundColor" red="0.033356600040000003" green="0.66183894229999995" blue="0.64319901940000002" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpw-2M-0Tp" userLabel="Matches">
+                    <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="106" id="Ykv-Hv-T4l"/>
+                        <constraint firstAttribute="width" secondItem="rpw-2M-0Tp" secondAttribute="height" multiplier="5:2" id="DZq-Wo-CtL"/>
                     </constraints>
-                    <state key="normal" title="Teams"/>
-                    <connections>
-                        <action selector="onTeamesButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="MeF-IK-QvQ"/>
-                    </connections>
+                    <state key="selected" image="matches"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-rp-59N" userLabel="Tournament">
-                    <rect key="frame" x="214" y="0.0" width="106" height="50"/>
-                    <color key="backgroundColor" red="0.033356600040000003" green="0.66183894229999995" blue="0.64319901940000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Tournament"/>
-                    <connections>
-                        <action selector="onTournamentButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="g0H-5c-E50"/>
-                    </connections>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-rp-59N" userLabel="Tournament">
+                    <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CVU-rp-59N" secondAttribute="height" multiplier="5:2" id="Yge-4w-oMO"/>
+                    </constraints>
+                    <state key="disabled" image="tournamentOff"/>
+                    <state key="selected" image="tournament"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Yge-4w-oMO"/>
+                        </mask>
+                    </variation>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpw-2M-0Tp" userLabel="Matches">
-                    <rect key="frame" x="107" y="0.0" width="107" height="50"/>
-                    <color key="backgroundColor" red="0.033356600040000003" green="0.66183894229999995" blue="0.64319901940000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Matches"/>
-                    <connections>
-                        <action selector="onMatchesButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0fs-Rb-1U7"/>
-                    </connections>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-4O-DDf">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Qxj-4O-DDf" secondAttribute="height" multiplier="5:2" id="sQH-Yf-uHd"/>
+                    </constraints>
+                    <state key="selected" image="team"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.20829885456803507" green="0.061540663080155357" blue="0.31620739484444638" alpha="0.86252693965517246" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Qxj-4O-DDf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2bt-sQ-iDM"/>
-                <constraint firstAttribute="bottom" secondItem="CVU-rp-59N" secondAttribute="bottom" id="Bda-UK-Gd9"/>
-                <constraint firstItem="CVU-rp-59N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CpQ-Hm-xzG"/>
-                <constraint firstItem="rpw-2M-0Tp" firstAttribute="centerY" secondItem="CVU-rp-59N" secondAttribute="centerY" id="Dce-Wr-gGn"/>
-                <constraint firstItem="rpw-2M-0Tp" firstAttribute="centerY" secondItem="Qxj-4O-DDf" secondAttribute="centerY" id="GKw-Mx-yxf"/>
-                <constraint firstItem="CVU-rp-59N" firstAttribute="leading" secondItem="rpw-2M-0Tp" secondAttribute="trailing" id="OD5-yP-qGb"/>
-                <constraint firstAttribute="trailing" secondItem="CVU-rp-59N" secondAttribute="trailing" id="Zvs-0W-Nqe"/>
-                <constraint firstItem="rpw-2M-0Tp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gxc-Kg-7J3"/>
-                <constraint firstItem="Qxj-4O-DDf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="leC-YA-pKA"/>
-                <constraint firstItem="rpw-2M-0Tp" firstAttribute="top" secondItem="CVU-rp-59N" secondAttribute="top" id="pQe-hi-moO"/>
-                <constraint firstAttribute="bottom" secondItem="Qxj-4O-DDf" secondAttribute="bottom" id="rRn-kv-YBZ"/>
-                <constraint firstItem="rpw-2M-0Tp" firstAttribute="leading" secondItem="Qxj-4O-DDf" secondAttribute="trailing" constant="1" id="ykR-7T-vxa"/>
+                <constraint firstAttribute="trailing" secondItem="CVU-rp-59N" secondAttribute="trailing" id="4H7-F2-hFp"/>
+                <constraint firstItem="CVU-rp-59N" firstAttribute="firstBaseline" secondItem="Qxj-4O-DDf" secondAttribute="firstBaseline" id="4K0-RQ-ehF"/>
+                <constraint firstItem="Qxj-4O-DDf" firstAttribute="top" secondItem="rpw-2M-0Tp" secondAttribute="top" id="80e-dU-igd"/>
+                <constraint firstItem="CVU-rp-59N" firstAttribute="baseline" secondItem="rpw-2M-0Tp" secondAttribute="baseline" id="8y3-u9-SDU"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="firstBaseline" secondItem="Qxj-4O-DDf" secondAttribute="firstBaseline" id="B0E-OF-ytU"/>
+                <constraint firstItem="CVU-rp-59N" firstAttribute="leading" secondItem="rpw-2M-0Tp" secondAttribute="trailing" id="BFX-sq-61d"/>
+                <constraint firstItem="Qxj-4O-DDf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bx4-XV-j9o"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="bottom" secondItem="CVU-rp-59N" secondAttribute="bottom" id="Dd5-1d-67W"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="baseline" secondItem="Qxj-4O-DDf" secondAttribute="baseline" id="Ig7-Wp-gGv"/>
+                <constraint firstItem="Qxj-4O-DDf" firstAttribute="bottom" secondItem="rpw-2M-0Tp" secondAttribute="bottom" id="Pcd-lw-7lc"/>
+                <constraint firstAttribute="bottom" secondItem="Qxj-4O-DDf" secondAttribute="bottom" id="SgY-wG-6mg"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="top" secondItem="CVU-rp-59N" secondAttribute="top" id="Til-ep-OeJ"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UTX-AY-ZUk"/>
+                <constraint firstItem="rpw-2M-0Tp" firstAttribute="firstBaseline" secondItem="CVU-rp-59N" secondAttribute="firstBaseline" id="cgV-e1-3GD"/>
+                <constraint firstItem="Qxj-4O-DDf" firstAttribute="baseline" secondItem="CVU-rp-59N" secondAttribute="baseline" id="ghf-bI-wCI"/>
+                <constraint firstItem="Qxj-4O-DDf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rUJ-z9-Om2"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="matchesButton" destination="rpw-2M-0Tp" id="wV0-de-yjs"/>
-                <outlet property="teamsButton" destination="Qxj-4O-DDf" id="thh-vf-VIt"/>
-                <outlet property="tournamentButton" destination="CVU-rp-59N" id="NZs-GG-hVj"/>
+                <outlet property="matchesButton" destination="rpw-2M-0Tp" id="xeE-VF-GkA"/>
+                <outlet property="teamsButton" destination="Qxj-4O-DDf" id="lIg-nO-nUQ"/>
+                <outlet property="tournamentButton" destination="CVU-rp-59N" id="gAw-ir-g1B"/>
             </connections>
-            <point key="canvasLocation" x="258" y="283"/>
+            <point key="canvasLocation" x="317.5" y="305"/>
         </view>
     </objects>
+    <resources>
+        <image name="matches" width="45" height="27"/>
+        <image name="team" width="45" height="27"/>
+        <image name="tournament" width="45" height="27"/>
+        <image name="tournamentOff" width="45" height="27"/>
+    </resources>
 </document>

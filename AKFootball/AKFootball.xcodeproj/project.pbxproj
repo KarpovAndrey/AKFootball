@@ -998,8 +998,8 @@
 		843E0EA61D3CE2D200C733C2 /* AKTabBarVIew */ = {
 			isa = PBXGroup;
 			children = (
-				843E0EA81D3CE31600C733C2 /* AKTabBarView.m */,
 				843E0EA71D3CE31600C733C2 /* AKTabBarView.h */,
+				843E0EA81D3CE31600C733C2 /* AKTabBarView.m */,
 			);
 			path = AKTabBarVIew;
 			sourceTree = "<group>";

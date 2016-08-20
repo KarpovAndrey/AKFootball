@@ -11,13 +11,5 @@
 @implementation AKTeamsView
 @dynamic tableView;
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-//        self.controllersCollection = IBOutletCollection(UIViewController)
-    }
-    
-    return self;
-}
 
 @end

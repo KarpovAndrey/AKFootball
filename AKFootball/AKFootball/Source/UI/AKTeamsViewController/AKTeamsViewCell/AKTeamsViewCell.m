@@ -22,8 +22,14 @@
         self.customImageView.image = [UIImage imageNamed:kAKNoLogoImageName];
     } else {
         NSString *imageFullName = team.pictureURLPath.lastPathComponent;
-        self.customImageView.image = [UIImage imageNamed:[imageFullName substringToIndex:
-                                                          [imageFullName length] - kAKImageSubstring]];
+        NSString *currentImageName = [imageFullName substringToIndex:
+                                      [imageFullName length] - kAKImageSubstringFull];
+        if ([[currentImageName substringFromIndex:[currentImageName length] - kAKImageSubstringShort]
+                                                                        isEqualToString:kAKSVGString]) {
+            self.customImageView.image = [UIImage imageNamed:kAKNoLogoImageName];
+        } else {
+            self.customImageView.image = [UIImage imageNamed:currentImageName];
+        }
     }
 }
 

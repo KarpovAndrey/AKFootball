@@ -29,11 +29,18 @@ static CGFloat const kAKBorderWidth = 1.0f;
                                   cornerRadius:kAKBorderCornerRadius];
     
     NSString *imageFullName = team.pictureURLPath.lastPathComponent;
+    NSString *currentImageName = [imageFullName substringToIndex:
+                                  [imageFullName length] - kAKImageSubstringFull];
     self.teamPositionLabel.text = [NSString stringWithFormat:@"%@", team.position] ;
     self.teamNameLabel.text = [NSString stringWithFormat:@" %@", team.name];
     self.teamPointsLabel.text = [NSString stringWithFormat:@"%@", team.points];
-    self.teamImageLogo.image = [UIImage imageNamed:[imageFullName substringToIndex:
-                                                    [imageFullName length] - kAKImageSubstring]];
+    
+    if ([[currentImageName substringFromIndex:[currentImageName length] - kAKImageSubstringShort]
+         isEqualToString:kAKSVGString]) {
+        self.teamImageLogo.image = [UIImage imageNamed:kAKNoLogoImageName];
+    } else {
+        self.teamImageLogo.image = [UIImage imageNamed:currentImageName];
+    }
 }
 
 @end
