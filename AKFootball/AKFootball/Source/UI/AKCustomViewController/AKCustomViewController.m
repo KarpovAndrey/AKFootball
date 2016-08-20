@@ -71,7 +71,7 @@
             AKDispatchAsyncOnMainThread(^{
                 [strongSelf contextDidLoadWithObject:object];
             });
-        }forState:kAKModelLoadedState
+        } forState:kAKModelLoadedState
                       object:self];
         
         [_context addHandler:^(id object) {
@@ -79,7 +79,7 @@
             AKDispatchAsyncOnMainThread(^{
                 [strongSelf contextDidFailToLoad:object];
             });
-        }forState:kAKModelFailedState
+        } forState:kAKModelFailedState
                       object:self];
     }
 }

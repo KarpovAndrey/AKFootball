@@ -22,10 +22,10 @@
                         <color key="textColor" red="0.32574176788330078" green="0.074253268539905548" blue="0.38463038206100464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
                         <rect key="frame" x="0.0" y="38" width="320" height="6"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fqd-ge-Xan" userLabel="image">

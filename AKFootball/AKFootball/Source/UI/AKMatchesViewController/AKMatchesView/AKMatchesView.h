@@ -11,6 +11,5 @@
 
 @interface AKMatchesView : AKView
 @property (nonatomic, strong) IBOutlet UITableView              *tableView;
-@property (nonatomic, strong) IBOutlet AKTabBarView             *tabBarView;
 
 @end

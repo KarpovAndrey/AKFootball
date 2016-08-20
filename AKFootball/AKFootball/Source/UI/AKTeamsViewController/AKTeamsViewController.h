@@ -10,7 +10,6 @@
 
 @class AKLeague;
 @class AKTabBarViewController;
-@class AKView;
 
 @interface AKTeamsViewController : AKCustomViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)   AKLeague                    *league;
@@ -19,5 +18,6 @@
 
 - (IBAction)onMatchesButtonClick:(id)sender;
 - (IBAction)onTournamentButtonClick:(id)sender;
+- (IBAction)onTeamsButtonClick:(id)sender;
 
 @end

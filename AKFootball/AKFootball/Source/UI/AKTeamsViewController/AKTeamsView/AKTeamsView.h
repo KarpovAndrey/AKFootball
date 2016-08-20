@@ -10,13 +10,12 @@
 #import "AKTabBarView.h"
 
 @interface AKTeamsView : AKView
-@property (nonatomic, strong) IBOutlet UITableView                            *tableView;
-@property (nonatomic, strong) IBOutlet AKTabBarView                           *tabBarView;
-
-@property (nonatomic, strong) IBOutlet UIButton    *matchesButton;
-@property (nonatomic, strong) IBOutlet UIButton    *teamsButton;
-@property (nonatomic, strong) IBOutlet UIButton    *tournamentButton;
-@property (nonatomic, strong) IBOutlet UIView      *customView;
+@property (nonatomic, strong) IBOutlet UITableView      *tableView;
+@property (nonatomic, strong) IBOutlet AKTabBarView     *tabBarView;
+@property (nonatomic, strong) IBOutlet UIButton         *matchesButton;
+@property (nonatomic, strong) IBOutlet UIButton         *teamsButton;
+@property (nonatomic, strong) IBOutlet UIButton         *tournamentButton;
+@property (nonatomic, strong) IBOutlet UIView           *currentView;
 
 
 

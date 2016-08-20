@@ -12,8 +12,9 @@
 @class AKTabBarView;
 
 @interface AKTabBarViewController : UITabBarController
-@property (nonatomic, strong)                           AKLeague              *league;
-@property (nonatomic, readonly)                         AKTabBarView          *rootView;
+@property (nonatomic, strong)       AKLeague              *league;
+@property (nonatomic, readonly)     AKTabBarView          *rootView;
+
 @property (nonatomic, strong) IBOutletCollection(UIViewController)  NSArray   *controllersCollection;
 
 

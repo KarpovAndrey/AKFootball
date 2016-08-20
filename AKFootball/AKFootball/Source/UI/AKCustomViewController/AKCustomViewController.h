@@ -11,8 +11,7 @@
 @class AKContext;
 
 @interface AKCustomViewController : UIViewController
-@property (nonatomic, strong)       AKContext       *context;
-
+@property (nonatomic, strong)   AKContext           *context;
 @property (nonatomic, readonly) NSString            *leftButtonImageName;
 @property (nonatomic, readonly) NSString            *rightButtonImageName;
 @property (nonatomic, readonly) NSString            *loadingViewMessage;

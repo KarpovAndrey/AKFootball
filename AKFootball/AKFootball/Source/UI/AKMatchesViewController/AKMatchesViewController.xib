@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AKMatchesViewController">
@@ -20,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-HM-opV">
-                    <rect key="frame" x="0.0" y="45" width="375" height="572"/>
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" red="0.150069114" green="0.15662898610000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,78 +28,26 @@
                         <outlet property="delegate" destination="-1" id="W8g-3E-drR"/>
                     </connections>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukk-3b-PL9" customClass="AKTabBarView">
-                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZe-rr-uz0" userLabel="team">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="125" id="fKs-zo-p4t"/>
-                            </constraints>
-                            <state key="normal" image="teamOff"/>
-                            <connections>
-                                <action selector="onTeamsButtonClick:" destination="-1" eventType="touchUpInside" id="FN9-Ph-Dom"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-yf-vvQ" userLabel="matces">
-                            <rect key="frame" x="125" y="0.0" width="125" height="50"/>
-                            <state key="normal" image="matches"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOF-Sm-gRf" userLabel="tournament">
-                            <rect key="frame" x="250" y="0.0" width="125" height="50"/>
-                            <state key="normal" image="tournamentOff"/>
-                            <connections>
-                                <action selector="onTournamentButtonClick:" destination="-1" eventType="touchUpInside" id="tmS-V4-EEI"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" red="0.2082988546" green="0.061540663080000002" blue="0.31620739479999999" alpha="0.86252693970000005" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="Hf5-yf-vvQ" firstAttribute="firstBaseline" secondItem="NOF-Sm-gRf" secondAttribute="firstBaseline" id="0tL-gt-tXd"/>
-                        <constraint firstAttribute="bottom" secondItem="EZe-rr-uz0" secondAttribute="bottom" id="4Zc-dQ-k4m"/>
-                        <constraint firstItem="EZe-rr-uz0" firstAttribute="firstBaseline" secondItem="Hf5-yf-vvQ" secondAttribute="firstBaseline" id="ATq-VH-al3"/>
-                        <constraint firstItem="EZe-rr-uz0" firstAttribute="top" secondItem="Hf5-yf-vvQ" secondAttribute="top" id="Cze-BK-f7C"/>
-                        <constraint firstAttribute="trailing" secondItem="NOF-Sm-gRf" secondAttribute="trailing" id="DzD-zv-fzM"/>
-                        <constraint firstItem="NOF-Sm-gRf" firstAttribute="leading" secondItem="Hf5-yf-vvQ" secondAttribute="trailing" id="GLA-Bm-tG1"/>
-                        <constraint firstItem="Hf5-yf-vvQ" firstAttribute="baseline" secondItem="NOF-Sm-gRf" secondAttribute="baseline" id="RBr-Sl-3iy"/>
-                        <constraint firstItem="Hf5-yf-vvQ" firstAttribute="top" secondItem="NOF-Sm-gRf" secondAttribute="top" id="UIa-Np-yrG"/>
-                        <constraint firstItem="EZe-rr-uz0" firstAttribute="top" secondItem="Ukk-3b-PL9" secondAttribute="top" id="Xoc-nc-arz"/>
-                        <constraint firstItem="Hf5-yf-vvQ" firstAttribute="leading" secondItem="EZe-rr-uz0" secondAttribute="trailing" id="aOi-5O-w2a"/>
-                        <constraint firstAttribute="height" constant="50" id="aSX-7a-42D"/>
-                        <constraint firstItem="Hf5-yf-vvQ" firstAttribute="centerX" secondItem="Ukk-3b-PL9" secondAttribute="centerX" id="gCe-Nh-OKC"/>
-                        <constraint firstItem="EZe-rr-uz0" firstAttribute="leading" secondItem="Ukk-3b-PL9" secondAttribute="leading" id="isx-YU-o0z"/>
-                        <constraint firstItem="EZe-rr-uz0" firstAttribute="baseline" secondItem="Hf5-yf-vvQ" secondAttribute="baseline" id="wbc-r7-YQj"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="mkl-dj-0ah" secondAttribute="bottom" id="2ns-UE-2ff"/>
-                <constraint firstItem="mkl-dj-0ah" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7B0-Ng-QZN"/>
-                <constraint firstItem="mkl-dj-0ah" firstAttribute="bottom" secondItem="Ukk-3b-PL9" secondAttribute="bottom" id="9jC-8m-eW9"/>
-                <constraint firstItem="sVg-HM-opV" firstAttribute="trailing" secondItem="Ukk-3b-PL9" secondAttribute="trailing" id="Dgv-Pw-4hw"/>
-                <constraint firstAttribute="trailing" secondItem="mkl-dj-0ah" secondAttribute="trailing" id="IkF-bZ-m8l"/>
-                <constraint firstItem="mkl-dj-0ah" firstAttribute="leading" secondItem="Ukk-3b-PL9" secondAttribute="leading" id="QbQ-Cc-qlz"/>
-                <constraint firstItem="sVg-HM-opV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="ZVD-fp-auw"/>
-                <constraint firstItem="mkl-dj-0ah" firstAttribute="trailing" secondItem="Ukk-3b-PL9" secondAttribute="trailing" id="nLV-2P-gP9"/>
-                <constraint firstAttribute="trailing" secondItem="Ukk-3b-PL9" secondAttribute="trailing" id="nSJ-mF-Wsf"/>
-                <constraint firstItem="Ukk-3b-PL9" firstAttribute="top" secondItem="sVg-HM-opV" secondAttribute="bottom" id="uEp-nG-qSH"/>
-                <constraint firstItem="sVg-HM-opV" firstAttribute="leading" secondItem="Ukk-3b-PL9" secondAttribute="leading" id="xn8-7l-SOq"/>
-                <constraint firstItem="mkl-dj-0ah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zEh-4h-yF1"/>
-                <constraint firstItem="Ukk-3b-PL9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zqk-Hf-IDF"/>
+                <constraint firstItem="mkl-dj-0ah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0gU-Be-7gg"/>
+                <constraint firstAttribute="trailing" secondItem="sVg-HM-opV" secondAttribute="trailing" id="Ef8-qb-eek"/>
+                <constraint firstAttribute="trailing" secondItem="mkl-dj-0ah" secondAttribute="trailing" id="IpM-qB-WSp"/>
+                <constraint firstItem="mkl-dj-0ah" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cfF-bg-fWU"/>
+                <constraint firstAttribute="bottom" secondItem="mkl-dj-0ah" secondAttribute="bottom" id="hdk-Xx-WPV"/>
+                <constraint firstItem="sVg-HM-opV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="o4m-8Y-KdV"/>
+                <constraint firstAttribute="bottom" secondItem="sVg-HM-opV" secondAttribute="bottom" id="y5I-FV-d4y"/>
+                <constraint firstItem="sVg-HM-opV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zbs-7H-Fyf"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
-                <outlet property="tabBarView" destination="Ukk-3b-PL9" id="Lxn-ST-PL8"/>
                 <outlet property="tableView" destination="sVg-HM-opV" id="orH-7u-8hr"/>
             </connections>
         </view>
     </objects>
     <resources>
-        <image name="matches" width="45" height="27"/>
-        <image name="teamOff" width="45" height="27"/>
-        <image name="tournamentOff" width="45" height="27"/>
         <image name="wallpaper" width="320" height="568"/>
     </resources>
 </document>

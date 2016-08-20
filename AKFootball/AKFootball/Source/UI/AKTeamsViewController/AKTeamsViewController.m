@@ -41,7 +41,8 @@
         controller.view.frame = self.rootView.tabBarView.frame;
         [controller didMoveToParentViewController:self];
         self.customTabBarController = controller;
-        self.currentViewControllerIndex = 0;
+        self.rootView.teamsButton.selected = YES;
+        self.rootView.currentView.hidden = YES;
     }
     
     if (self.context.state == kAKModelLoadingState) {
@@ -70,12 +71,15 @@ AKRootViewAndReturnIfNil(AKTeamsView)
 - (void)setCurrentViewControllerIndex:(NSUInteger)currentViewControllerIndex {
     if (_currentViewControllerIndex != currentViewControllerIndex) {
         _currentViewControllerIndex = currentViewControllerIndex;
-        
-        UIView *view = [self.customTabBarController.controllersCollection[currentViewControllerIndex] view];
-//        [self.view addSubview:view];
-        self.rootView.customView = view;
-        view.frame = self.rootView.frame;
-        [self.view bringSubviewToFront:self.rootView.customView];
+        if (currentViewControllerIndex == 0) {
+            self.rootView.currentView.hidden = YES;
+        } else {
+            self.rootView.currentView.hidden = NO;
+            
+            UIView *view = [self.customTabBarController.controllersCollection[currentViewControllerIndex] view];
+            [self.rootView.currentView addSubview:view];
+            view.frame = CGRectMake(0, 0, self.rootView.frame.size.width, self.rootView.frame.size.height - self.rootView.tabBarView.frame.size.height);
+        }
     }
 }
 
@@ -125,21 +129,24 @@ AKRootViewAndReturnIfNil(AKTeamsView)
 #pragma mark Handling Interface
 
 - (IBAction)onMatchesButtonClick:(id)sender {
-//    AKMatchesViewController *controller = self.customTabBarController.controllersCollection[1];
-//    controller.customTabBarController = self.customTabBarController;
-////    [self.navigationController pushViewController:controller animated:YES];
-//    [self addChildViewController:controller];
-//    controller.view.frame = self.rootView.tabBarView.frame;
-//    [controller didMoveToParentViewController:self];
-//    self.view = controller.view;
     self.currentViewControllerIndex = 1;
+    self.rootView.teamsButton.selected = NO;
+    self.rootView.tournamentButton.selected = NO;
+    self.rootView.matchesButton.selected = YES;
 }
 
 - (IBAction)onTournamentButtonClick:(id)sender {
-    AKTournamentViewController *controller = self.customTabBarController.controllersCollection[2];
-    controller.customTabBarController = self.customTabBarController;
-//    [self.navigationController pushViewController:controller animated:YES];
-    [self.customTabBarController showViewController:controller sender:sender];
+    self.currentViewControllerIndex = 2;
+    self.rootView.teamsButton.selected = NO;
+    self.rootView.matchesButton.selected = NO;
+    self.rootView.tournamentButton.selected = YES;
+}
+
+- (IBAction)onTeamsButtonClick:(id)sender {
+    self.currentViewControllerIndex = 0;
+    self.rootView.tournamentButton.selected = NO;
+    self.rootView.matchesButton.selected = NO;
+    self.rootView.teamsButton.selected = YES;
 }
 
 @end

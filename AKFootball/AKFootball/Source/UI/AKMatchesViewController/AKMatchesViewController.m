@@ -58,14 +58,6 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     return kAKMatchesNavigationItemTitle;
 }
 
-- (void)setCurrentViewControllerIndex:(NSUInteger)currentViewControllerIndex {
-    if (_currentViewControllerIndex != currentViewControllerIndex) {
-        _currentViewControllerIndex = currentViewControllerIndex;
-        
-        
-    }
-}
-
 #pragma mark -
 #pragma mark UITableViewDataSource Protocol
 
@@ -116,7 +108,6 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     for (AKMatch *match in [matches allObjects]) {
         if ([match.status isEqualToString:kAKFinishedKey]) {
             [finishedMatches addObject:match];
-            
         } else {
             [sheduledMatches addObject:match];
         }
@@ -161,33 +152,6 @@ AKRootViewAndReturnIfNil(AKMatchesView)
     [self.rootView showLoadingViewWithDefaultMessageAnimated:YES];
     self.context = [[AKMatchContext alloc] initWithID:self.league.ID];
     [super refreshTable];
-}
-
-#pragma mark -
-#pragma mark Handling Interface
-
-- (IBAction)onTeamsButtonClick:(id)sender {
-    AKTeamsViewController *controller = self.customTabBarController.controllersCollection[0];
-    controller.customTabBarController = self.customTabBarController;
-    controller.currentViewControllerIndex = 0;
-//    [self.navigationController popViewControllerAnimated:NO];
-    [self.customTabBarController showViewController:controller sender:sender];
-}
-
-- (IBAction)onTournamentButtonClick:(id)sender {
-    AKTournamentViewController *controller = self.customTabBarController.controllersCollection[2];
-    controller.customTabBarController = self.customTabBarController;
-    controller.currentViewControllerIndex = 2;
-//    for (UIViewController *viewController in self.navigationController.viewControllers) {
-//        if ([viewController isMemberOfClass:[AKTournamentViewController class]]) {
-//            [self.navigationController popToViewController:controller animated:NO];
-//            
-//            return;
-//        }
-//    }
-//    
-//    [self.navigationController pushViewController:controller animated:NO];
-    [self.customTabBarController showViewController:controller sender:sender];
 }
 
 @end
