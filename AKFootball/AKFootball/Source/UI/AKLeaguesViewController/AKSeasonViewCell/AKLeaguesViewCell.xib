@@ -21,24 +21,24 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="m9E-nw-G7a" userLabel="shadowDown">
                         <rect key="frame" x="0.0" y="44" width="320" height="6"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-D6-BUj">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="12" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-D6-BUj">
                         <rect key="frame" x="8" y="0.0" width="312" height="50"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="22"/>
                         <color key="textColor" red="0.32574176788330078" green="0.074253268539905548" blue="0.38463038206100464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="6Jy-RJ-xo4"/>
-                    <constraint firstItem="aCD-3d-QFM" firstAttribute="leading" secondItem="m9E-nw-G7a" secondAttribute="leading" id="AYp-ZG-k2z"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="U8k-jX-Tlg"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ah8-Va-h8l"/>
-                    <constraint firstItem="aCD-3d-QFM" firstAttribute="leading" secondItem="zhF-D6-BUj" secondAttribute="leading" constant="-8" id="bfi-iL-N0a"/>
-                    <constraint firstItem="aCD-3d-QFM" firstAttribute="top" secondItem="zhF-D6-BUj" secondAttribute="top" id="gTk-N0-ghN"/>
-                    <constraint firstItem="zhF-D6-BUj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="l7k-v9-IUE"/>
-                    <constraint firstItem="m9E-nw-G7a" firstAttribute="bottom" secondItem="zhF-D6-BUj" secondAttribute="bottom" id="sgl-BZ-tBy"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7QS-xL-pjY"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="trailing" secondItem="aCD-3d-QFM" secondAttribute="trailing" id="HrI-mc-ASD"/>
+                    <constraint firstItem="aCD-3d-QFM" firstAttribute="top" secondItem="zhF-D6-BUj" secondAttribute="top" id="Htb-32-OnN"/>
+                    <constraint firstItem="m9E-nw-G7a" firstAttribute="bottom" secondItem="zhF-D6-BUj" secondAttribute="bottom" id="MEe-Uh-Ixa"/>
+                    <constraint firstItem="aCD-3d-QFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gvm-kE-kVU"/>
+                    <constraint firstItem="aCD-3d-QFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iv1-p6-yyb"/>
+                    <constraint firstItem="zhF-D6-BUj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ovL-69-X4v"/>
+                    <constraint firstItem="aCD-3d-QFM" firstAttribute="leading" secondItem="m9E-nw-G7a" secondAttribute="leading" id="rLY-x3-DbA"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

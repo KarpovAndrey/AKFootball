@@ -22,33 +22,33 @@
                         <color key="textColor" red="0.32574176788330078" green="0.074253268539905548" blue="0.38463038206100464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-SA-hfi" userLabel="shadowUp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellShadowDown" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Hp-U8b" userLabel="shadowDown">
                         <rect key="frame" x="0.0" y="38" width="320" height="6"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fqd-ge-Xan" userLabel="image">
                         <rect key="frame" x="267" y="0.0" width="53" height="43"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="53" id="buN-bR-lTy"/>
+                            <constraint firstAttribute="width" constant="53" id="Ba4-lP-sVV"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="drt-Hp-U8b" firstAttribute="top" secondItem="OtI-SA-hfi" secondAttribute="bottom" constant="32" id="1e2-oT-G3t"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5bJ-oF-8nc"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="651-Pc-mpD"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="drt-Hp-U8b" secondAttribute="leading" id="EX1-YR-8Nt"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="fqd-ge-Xan" secondAttribute="top" id="KU5-Km-QJO"/>
-                    <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="KqZ-xO-wuh"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="DEf-Yt-0PK" secondAttribute="top" id="RPy-df-SKd"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="trailing" secondItem="fqd-ge-Xan" secondAttribute="trailing" id="XXH-W3-QdD"/>
-                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="fqd-ge-Xan" secondAttribute="bottom" id="agH-Cg-8JK"/>
-                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xVw-3F-Bf2"/>
-                    <constraint firstItem="fqd-ge-Xan" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="zTD-pO-I8R"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D8O-qz-ZKb"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="trailing" secondItem="OtI-SA-hfi" secondAttribute="trailing" id="MNd-mK-cQx"/>
+                    <constraint firstAttribute="bottom" secondItem="DEf-Yt-0PK" secondAttribute="bottom" id="TTg-sW-RXX"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="top" secondItem="DEf-Yt-0PK" secondAttribute="top" id="Tcn-oo-zeD"/>
+                    <constraint firstItem="fqd-ge-Xan" firstAttribute="leading" secondItem="DEf-Yt-0PK" secondAttribute="trailing" constant="2" id="Yr4-Mg-B0b"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="bottom" secondItem="fqd-ge-Xan" secondAttribute="bottom" id="cJW-2m-uaC"/>
+                    <constraint firstItem="drt-Hp-U8b" firstAttribute="top" secondItem="OtI-SA-hfi" secondAttribute="bottom" constant="32" id="eCn-CI-G1O"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="drt-Hp-U8b" secondAttribute="leading" id="eSg-9Z-cbZ"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hbk-30-UkQ"/>
+                    <constraint firstItem="OtI-SA-hfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ird-Tb-yOA"/>
+                    <constraint firstItem="DEf-Yt-0PK" firstAttribute="top" secondItem="fqd-ge-Xan" secondAttribute="top" id="lVm-dV-VJ9"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
