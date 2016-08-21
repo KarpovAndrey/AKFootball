@@ -18,7 +18,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-Cx-E2K" userLabel="Position">
                         <rect key="frame" x="0.0" y="0.0" width="44" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="gW1-QU-od0"/>
+                            <constraint firstAttribute="width" constant="44" id="j7a-kN-Amc"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,19 +27,19 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sot-dE-TrA" userLabel="imageLogo">
                         <rect key="frame" x="44" y="0.0" width="43" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="43" id="ShR-Rb-lK9"/>
+                            <constraint firstAttribute="width" constant="43" id="5zs-yt-3Bn"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-1a-fpf" userLabel="Team">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-1a-fpf" userLabel="Team">
                         <rect key="frame" x="87" y="0.0" width="190" height="43"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="7IV-Vw-obj" userLabel="Points">
                         <rect key="frame" x="277" y="0.0" width="43" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="43" id="vue-JY-g5c"/>
+                            <constraint firstAttribute="width" constant="43" id="9XQ-2O-zcv"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,23 +54,23 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="top" secondItem="sot-dE-TrA" secondAttribute="top" id="0ha-IF-B0a"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="firstBaseline" secondItem="7IV-Vw-obj" secondAttribute="firstBaseline" id="5Kt-4p-3hG"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="baseline" secondItem="7IV-Vw-obj" secondAttribute="baseline" id="6ZB-K5-5D1"/>
-                    <constraint firstItem="7IV-Vw-obj" firstAttribute="leading" secondItem="9qH-1a-fpf" secondAttribute="trailing" id="LYo-0p-T78"/>
-                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="rGk-4L-Ede" secondAttribute="leading" id="QGb-5d-Z8K"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="bottom" secondItem="sot-dE-TrA" secondAttribute="bottom" id="SmI-iV-cxF"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e9G-nL-AIA"/>
-                    <constraint firstItem="7id-gr-YkV" firstAttribute="trailing" secondItem="7IV-Vw-obj" secondAttribute="trailing" id="ktS-Ov-iE1"/>
-                    <constraint firstItem="sot-dE-TrA" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="trailing" id="liw-4E-r1N"/>
-                    <constraint firstItem="rGk-4L-Ede" firstAttribute="top" secondItem="7id-gr-YkV" secondAttribute="bottom" constant="30" id="nc4-2g-0NU"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="leading" secondItem="7id-gr-YkV" secondAttribute="leading" id="oAj-Ip-hyy"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pdb-r4-17D"/>
-                    <constraint firstItem="9qH-1a-fpf" firstAttribute="leading" secondItem="sot-dE-TrA" secondAttribute="trailing" id="tz8-nG-0cr"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" id="uaE-Pg-nyl"/>
-                    <constraint firstItem="7id-gr-YkV" firstAttribute="top" secondItem="YWF-Cx-E2K" secondAttribute="top" id="vpo-NN-sta"/>
-                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="firstBaseline" secondItem="9qH-1a-fpf" secondAttribute="firstBaseline" id="xnq-cP-30O"/>
-                    <constraint firstAttribute="bottom" secondItem="YWF-Cx-E2K" secondAttribute="bottom" id="yNu-Ul-BvG"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="top" secondItem="sot-dE-TrA" secondAttribute="top" id="Foh-XG-jbv"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lrg-0l-D2s"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Nn3-OX-woA"/>
+                    <constraint firstItem="rGk-4L-Ede" firstAttribute="top" secondItem="7id-gr-YkV" secondAttribute="bottom" constant="30" id="PEi-L4-bho"/>
+                    <constraint firstAttribute="bottom" secondItem="YWF-Cx-E2K" secondAttribute="bottom" id="Pp0-qU-iBk"/>
+                    <constraint firstItem="sot-dE-TrA" firstAttribute="leading" secondItem="YWF-Cx-E2K" secondAttribute="trailing" id="Qor-mV-LTf"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="leading" secondItem="7id-gr-YkV" secondAttribute="leading" id="gki-VD-dxf"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="leading" secondItem="rGk-4L-Ede" secondAttribute="leading" id="gtk-nc-EY5"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="firstBaseline" secondItem="9qH-1a-fpf" secondAttribute="firstBaseline" constant="2" id="hds-Z1-LNd"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="baseline" secondItem="9qH-1a-fpf" secondAttribute="baseline" constant="-1" id="i1I-52-XxZ"/>
+                    <constraint firstItem="YWF-Cx-E2K" firstAttribute="bottom" secondItem="sot-dE-TrA" secondAttribute="bottom" id="l86-Nv-NtX"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="leading" secondItem="sot-dE-TrA" secondAttribute="trailing" id="oy7-DJ-Jxg"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="firstBaseline" secondItem="7IV-Vw-obj" secondAttribute="firstBaseline" constant="-2" id="pkI-IY-kzq"/>
+                    <constraint firstItem="9qH-1a-fpf" firstAttribute="baseline" secondItem="7IV-Vw-obj" secondAttribute="baseline" constant="1" id="qEv-VB-ecX"/>
+                    <constraint firstItem="7IV-Vw-obj" firstAttribute="leading" secondItem="9qH-1a-fpf" secondAttribute="trailing" id="raB-FL-4SR"/>
+                    <constraint firstItem="7IV-Vw-obj" firstAttribute="trailing" secondItem="rGk-4L-Ede" secondAttribute="trailing" id="xh2-J1-MS2"/>
+                    <constraint firstItem="7id-gr-YkV" firstAttribute="top" secondItem="sot-dE-TrA" secondAttribute="top" id="ygo-AO-8XQ"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

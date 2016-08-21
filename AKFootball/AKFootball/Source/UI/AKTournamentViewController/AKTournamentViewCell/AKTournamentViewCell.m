@@ -43,4 +43,21 @@ static CGFloat const kAKBorderWidth = 1.0f;
     }
 }
 
+//- (void)fillWithModel:(AKTeam *)team {
+//    self.cellLabel.text = team.name;
+//    if (team.pictureURLPath == nil) {
+//        self.customImageView.image = [UIImage imageNamed:kAKNoLogoImageName];
+//    } else {
+//        NSString *imageFullName = team.pictureURLPath.lastPathComponent;
+//        NSString *currentImageName = [imageFullName substringToIndex:
+//                                      [imageFullName length] - kAKImageSubstringFull];
+//        if ([[currentImageName substringFromIndex:[currentImageName length] - kAKImageSubstringShort]
+//             isEqualToString:kAKSVGString]) {
+//            self.customImageView.image = [UIImage imageNamed:kAKNoLogoImageName];
+//        } else {
+//            self.customImageView.image = [UIImage imageNamed:currentImageName];
+//        }
+//    }
+//}
+
 @end

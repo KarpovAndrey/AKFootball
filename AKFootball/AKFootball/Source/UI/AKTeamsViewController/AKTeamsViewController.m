@@ -129,21 +129,21 @@ AKRootViewAndReturnIfNil(AKTeamsView)
 #pragma mark Handling Interface
 
 - (IBAction)onMatchesButtonClick:(id)sender {
-    self.currentViewControllerIndex = 1;
+    self.currentViewControllerIndex = kAKMatchesControllerNumber;
     self.rootView.teamsButton.selected = NO;
     self.rootView.tournamentButton.selected = NO;
     self.rootView.matchesButton.selected = YES;
 }
 
 - (IBAction)onTournamentButtonClick:(id)sender {
-    self.currentViewControllerIndex = 2;
+    self.currentViewControllerIndex = kAKTournamentControllerNumber;
     self.rootView.teamsButton.selected = NO;
     self.rootView.matchesButton.selected = NO;
     self.rootView.tournamentButton.selected = YES;
 }
 
 - (IBAction)onTeamsButtonClick:(id)sender {
-    self.currentViewControllerIndex = 0;
+    self.currentViewControllerIndex = kAKTeamsControllerNumber;
     self.rootView.tournamentButton.selected = NO;
     self.rootView.matchesButton.selected = NO;
     self.rootView.teamsButton.selected = YES;

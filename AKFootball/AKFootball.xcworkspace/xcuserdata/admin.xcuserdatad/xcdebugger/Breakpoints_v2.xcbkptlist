@@ -101,29 +101,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AKFootball/Source/UI/AKTeamsViewController/AKTeamsViewController.m"
-            timestampString = "493425835.728275"
+            filePath = "AKFootball/Source/UI/AKTournamentViewController/AKTournamentViewCell/AKTournamentViewCell.m"
+            timestampString = "493461212.505436"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-setCurrentViewControllerIndex:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AKFootball/Source/UI/AKTabBarViewController/AKTabBarViewController.m"
-            timestampString = "493426635.34589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-setLeague:"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-fillWithModel:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
